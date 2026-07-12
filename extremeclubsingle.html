@@ -263,6 +263,7 @@ section { padding: 72px 0; }
 .compare-select { width: 100%; padding: 14px 16px; border: 1px solid var(--color-border); border-radius: var(--radius); background: var(--color-surface); color: var(--color-text); font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer; transition: border-color 0.2s; }
 .compare-select:hover, .compare-select:focus { border-color: var(--color-accent); outline: none; }
 .compare-empty { text-align: center; color: var(--color-text-muted); font-size: 15px; padding: 40px 0; }
+.compare-segment-note { display: none; font-size: 13px; color: var(--color-text-muted); margin: -20px 0 32px; }
 .compare-grid { display: grid; grid-template-columns: repeat(var(--compare-cols, 2), 1fr); gap: 24px; }
 .compare-card { height: 100%; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 24px; display: flex; flex-direction: column; transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s; }
 .compare-card:hover { border-color: var(--color-accent); box-shadow: 0 12px 24px rgba(20,24,28,0.06); transform: translateY(-4px); }
@@ -672,13 +673,14 @@ section { padding: 72px 0; }
     <div class="container">
       <span class="eyebrow" style="display:block; text-align:center; color: var(--color-accent);">Porównywarka</span>
       <h2 class="section-title">Porównaj modele</h2>
-      <p>Wybierz do 3 pojazdów z dowolnej kategorii i zestaw je obok siebie — silnik, segment, cenę i kluczowe wyposażenie.</p>
+      <p>Wybierz do 3 pojazdów o tym samym przeznaczeniu i zestaw je obok siebie — silnik, cenę i kluczowe wyposażenie.</p>
     </div>
   </section>
 
   <section class="compare-section">
     <div class="container">
       <div class="compare-picker" id="compare-picker"></div>
+      <p class="compare-segment-note" id="compare-segment-note"></p>
       <div class="compare-result" id="compare-result"></div>
     </div>
   </section>
@@ -1394,12 +1396,19 @@ document.querySelectorAll(".vehicle-grid").forEach(grid => {
   grid.innerHTML = VEHICLES.filter(v => v.category === cat).map(vehicleCard).join("");
 });
 
-let compareSelection = ["seadoo-gtx-limited-325", "canam-maverick-r", null];
+let compareSelection = ["canam-maverick", "canam-maverick-r", null];
+
+function compareLockedSegment() {
+  const chosen = compareSelection.map(id => id && VEHICLES.find(v => v.id === id)).find(Boolean);
+  return chosen ? chosen.segment : null;
+}
 
 function compareOptionsHTML(slotIndex) {
   const excluded = compareSelection.filter((id, i) => i !== slotIndex && id);
+  const lockedSegment = compareLockedSegment();
+  const available = lockedSegment ? VEHICLES.filter(v => v.segment === lockedSegment) : VEHICLES;
   const groups = [];
-  VEHICLES.forEach(v => {
+  available.forEach(v => {
     let group = groups.find(g => g.label === v.categoryLabel);
     if (!group) { group = { label: v.categoryLabel, items: [] }; groups.push(group); }
     group.items.push(v);
@@ -1423,10 +1432,24 @@ function renderComparePicker() {
       </select>
     </div>
   `).join("");
+  const note = document.getElementById("compare-segment-note");
+  if (note) {
+    const segment = compareLockedSegment();
+    note.textContent = segment ? `Porównujesz w segmencie: ${segment} — pozostałe listy pokazują tylko pojazdy tego samego przeznaczenia.` : "";
+    note.style.display = segment ? "block" : "none";
+  }
 }
 
 function setCompareVehicle(slot, id) {
   compareSelection[slot] = id || null;
+  const lockedSegment = compareLockedSegment();
+  if (lockedSegment) {
+    compareSelection = compareSelection.map((sid, i) => {
+      if (!sid || i === slot) return sid;
+      const v = VEHICLES.find(v => v.id === sid);
+      return v && v.segment === lockedSegment ? sid : null;
+    });
+  }
   renderComparePicker();
   renderCompareResult();
 }
