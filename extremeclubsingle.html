@@ -256,6 +256,33 @@ section { padding: 72px 0; }
 .section-header h2 { font-size: 26px; margin: 0 0 6px; }
 .section-header p { color: var(--color-text-muted); margin: 0; }
 .vehicle-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; }
+
+.compare-section { padding: 64px 0; border-bottom: 1px solid var(--color-border); background: var(--color-bg-alt); }
+.compare-picker { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 40px; }
+.compare-slot-label { display: block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-muted); margin-bottom: 8px; }
+.compare-select { width: 100%; padding: 14px 16px; border: 1px solid var(--color-border); border-radius: var(--radius); background: var(--color-surface); color: var(--color-text); font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer; transition: border-color 0.2s; }
+.compare-select:hover, .compare-select:focus { border-color: var(--color-accent); outline: none; }
+.compare-empty { text-align: center; color: var(--color-text-muted); font-size: 15px; padding: 40px 0; }
+.compare-grid { display: grid; grid-template-columns: repeat(var(--compare-cols, 2), 1fr); gap: 24px; }
+.compare-card { height: 100%; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 24px; display: flex; flex-direction: column; transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s; }
+.compare-card:hover { border-color: var(--color-accent); box-shadow: 0 12px 24px rgba(20,24,28,0.06); transform: translateY(-4px); }
+.compare-card-image { aspect-ratio: 4/3; border-radius: var(--radius); overflow: hidden; margin-bottom: 16px; background: linear-gradient(135deg, var(--color-bg-alt), #e6e9ec); }
+.compare-card-image img { width: 100%; height: 100%; object-fit: cover; }
+.compare-specs { border-top: 1px solid var(--color-border); margin: 14px 0 0; padding-top: 14px; display: grid; grid-template-columns: 70px 1fr; row-gap: 8px; }
+.compare-specs dt { color: var(--color-text-muted); font-size: 13px; }
+.compare-specs dd { margin: 0; font-weight: 600; font-size: 13px; }
+.compare-highlights { border: 1px solid var(--color-border); background: var(--color-bg); border-radius: var(--radius); padding: 18px 20px; margin: 20px 0; flex: 1; }
+.compare-highlights h4 { margin: 0 0 10px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-muted); }
+.compare-highlights ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.compare-highlights li { position: relative; padding-left: 22px; font-size: 13px; color: var(--color-text); line-height: 1.4; }
+.compare-highlights li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--color-accent); font-weight: 800; }
+.compare-highlights--canam { border-color: var(--color-dark); }
+.compare-highlights--canam li::before { color: var(--color-dark); }
+.compare-highlights--atv { border-color: var(--color-accent-atv); }
+.compare-highlights--atv li::before { color: var(--color-accent-atv); }
+.compare-highlights--ssv { border-color: var(--color-accent-ssv); }
+.compare-highlights--ssv li::before { color: var(--color-accent-ssv); }
+.compare-card .btn { align-self: flex-start; margin-top: auto; }
 .vehicle-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s; }
 .vehicle-card:hover { border-color: var(--color-accent); transform: translateY(-4px); box-shadow: 0 12px 24px rgba(20,24,28,0.06); }
 .vehicle-image { position: relative; aspect-ratio: 16/10; background: linear-gradient(135deg, var(--color-bg-alt), #e6e9ec); display: flex; align-items: center; justify-content: center; font-size: 42px; overflow: hidden; }
@@ -353,6 +380,7 @@ section { padding: 72px 0; }
   .showcase-tile::before { background: linear-gradient(180deg, rgba(8,17,30,0.1) 0%, rgba(8,17,30,0.55) 55%, rgba(8,17,30,0.9) 100%); }
   .showcase-body { max-width: 100%; padding-bottom: 28px; text-align: left; }
   .lifestyle-cards { grid-template-columns: 1fr; }
+  .compare-grid { grid-template-columns: 1fr; }
   .brand-strip-inner { flex-direction: column; gap: 20px; }
   .brand-strip-sep { width: 44px; height: 1px; }
   .pricing-grid { grid-template-columns: 1fr; max-width: 420px; }
@@ -590,6 +618,17 @@ section { padding: 72px 0; }
       <button class="category-pill" data-jump="ssv">Can-Am — SSV</button>
     </div>
   </nav>
+
+  <section class="compare-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Porównaj modele</h2>
+        <p>Wybierz do 3 pojazdów z dowolnej kategorii i zestaw je obok siebie — silnik, segment, cenę i kluczowe wyposażenie.</p>
+      </div>
+      <div class="compare-picker" id="compare-picker"></div>
+      <div class="compare-result" id="compare-result"></div>
+    </div>
+  </section>
 
   <div class="container">
     <section id="seadoo" class="vehicle-section">
@@ -1288,7 +1327,7 @@ const VEHICLES = [
 ];
 
 function mediaMarkup(v, opts) {
-  const size = opts && opts.size === "detail" ? "detail" : "card";
+  const size = opts && (opts.size === "detail" || opts.size === "compare") ? opts.size : "card";
   if (!v.images || !v.images.length) {
     return v.icon || "";
   }
@@ -1342,6 +1381,78 @@ document.querySelectorAll(".vehicle-grid").forEach(grid => {
   const cat = grid.dataset.category;
   grid.innerHTML = VEHICLES.filter(v => v.category === cat).map(vehicleCard).join("");
 });
+
+let compareSelection = ["seadoo-gtx-limited-325", "canam-maverick-r", null];
+
+function compareOptionsHTML(slotIndex) {
+  const excluded = compareSelection.filter((id, i) => i !== slotIndex && id);
+  const groups = [];
+  VEHICLES.forEach(v => {
+    let group = groups.find(g => g.label === v.categoryLabel);
+    if (!group) { group = { label: v.categoryLabel, items: [] }; groups.push(group); }
+    group.items.push(v);
+  });
+  return groups.map(g => `
+    <optgroup label="${g.label}">
+      ${g.items.map(v => `<option value="${v.id}"${excluded.includes(v.id) ? " disabled" : ""}${v.id === compareSelection[slotIndex] ? " selected" : ""}>${v.name} — ${v.price}</option>`).join("")}
+    </optgroup>
+  `).join("");
+}
+
+function renderComparePicker() {
+  const wrap = document.getElementById("compare-picker");
+  if (!wrap) return;
+  wrap.innerHTML = compareSelection.map((id, i) => `
+    <div class="compare-slot">
+      <span class="compare-slot-label">Pojazd ${i + 1}</span>
+      <select class="compare-select" onchange="setCompareVehicle(${i}, this.value)">
+        <option value="">— Wybierz pojazd —</option>
+        ${compareOptionsHTML(i)}
+      </select>
+    </div>
+  `).join("");
+}
+
+function setCompareVehicle(slot, id) {
+  compareSelection[slot] = id || null;
+  renderComparePicker();
+  renderCompareResult();
+}
+
+function compareCard(v) {
+  const accentClass = v.category === "trojkolowce" ? " compare-highlights--canam" : v.category === "atv" ? " compare-highlights--atv" : v.category === "ssv" ? " compare-highlights--ssv" : "";
+  return `
+    <div class="compare-card">
+      <div class="compare-card-image">${mediaMarkup(v, { size: "compare" })}</div>
+      <span class="vehicle-tag">${v.categoryLabel} · ${v.segment}</span>
+      <div class="vehicle-name">${v.name}</div>
+      <div class="vehicle-price">${v.price}</div>
+      <dl class="compare-specs">
+        <dt>Silnik</dt><dd>${v.engine}</dd>
+      </dl>
+      ${v.highlights ? `
+      <div class="compare-highlights${accentClass}">
+        <h4>Kluczowe wyposażenie</h4>
+        <ul>${v.highlights.map(h => `<li>${h}</li>`).join("")}</ul>
+      </div>` : `<div style="flex:1"></div>`}
+      <button class="btn btn-outline" onclick="openDetail('${v.id}')">Zobacz szczegóły</button>
+    </div>
+  `;
+}
+
+function renderCompareResult() {
+  const wrap = document.getElementById("compare-result");
+  if (!wrap) return;
+  const chosen = compareSelection.map(id => VEHICLES.find(v => v.id === id)).filter(Boolean);
+  if (chosen.length < 2) {
+    wrap.innerHTML = `<p class="compare-empty">Wybierz przynajmniej 2 pojazdy powyżej, aby zobaczyć porównanie.</p>`;
+    return;
+  }
+  wrap.innerHTML = `<div class="compare-grid" style="--compare-cols: ${chosen.length};">${chosen.map(compareCard).join("")}</div>`;
+}
+
+renderComparePicker();
+renderCompareResult();
 
 document.querySelectorAll(".category-pill").forEach(pill => {
   pill.addEventListener("click", () => {
