@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://www.google.com">
 <link rel="preconnect" href="https://maps.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://maps.googleapis.com">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23e0201a'/%3E%3Cstop offset='1' stop-color='%23f4791e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%230f2440'/%3E%3Ctext x='32' y='44' font-family='Arial, sans-serif' font-size='34' font-weight='800' fill='url(%23g)' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232FBFA0'/%3E%3Cstop offset='1' stop-color='%231b7a6e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%230f2440'/%3E%3Ctext x='32' y='44' font-family='Arial, sans-serif' font-size='34' font-weight='800' fill='url(%23g)' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
 <style>
 :root {
   --color-bg: #fbfbfc;
@@ -22,7 +22,7 @@
   --color-surface: #ffffff;
   --color-text: #14181c;
   --color-text-muted: #5b6570;
-  --color-accent: #e0201a;
+  --color-accent: #2FBFA0;
   --color-border: #e2e6ea;
   --color-dark: #0f2440;
   --color-accent-atv: #c98a13;
@@ -114,7 +114,7 @@ section { padding: 72px 0; }
   inset: 0;
   z-index: 1;
   background:
-    radial-gradient(circle at 82% 15%, rgba(224,32,26,0.28), transparent 45%),
+    radial-gradient(circle at 82% 15%, rgba(47,191,160,0.28), transparent 45%),
     radial-gradient(circle at 10% 90%, rgba(19,49,92,0.16), transparent 40%),
     linear-gradient(180deg, rgba(8,17,30,0.78) 0%, rgba(12,26,46,0.5) 45%, rgba(8,17,30,0.92) 100%);
 }
@@ -124,7 +124,7 @@ section { padding: 72px 0; }
   top: 0; right: -10%;
   width: 60%; height: 100%;
   z-index: 1;
-  background: linear-gradient(115deg, transparent 48%, rgba(224,32,26,0.35) 49%, rgba(19,49,92,0.25) 51%, transparent 52%);
+  background: linear-gradient(115deg, transparent 48%, rgba(47,191,160,0.35) 49%, rgba(19,49,92,0.25) 51%, transparent 52%);
   opacity: 0.35;
 }
 .hero-content { position: relative; z-index: 2; width: 100%; max-width: 720px; margin: 0 auto; padding: 40px 24px; text-align: center; }
@@ -139,7 +139,7 @@ section { padding: 72px 0; }
 .brand-strip { background: var(--color-bg); padding: 30px 0; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
 .brand-strip-inner { display: flex; justify-content: center; align-items: center; gap: 32px; flex-wrap: wrap; }
 .brand-strip-item { display: flex; align-items: center; gap: 14px; }
-.brand-strip-icon { display: flex; align-items: center; justify-content: center; flex: none; width: 40px; height: 40px; border-radius: 50%; background: rgba(224,32,26,0.09); color: var(--color-accent); }
+.brand-strip-icon { display: flex; align-items: center; justify-content: center; flex: none; width: 40px; height: 40px; border-radius: 50%; background: rgba(47,191,160,0.09); color: var(--color-accent); }
 .brand-strip-icon svg { width: 20px; height: 20px; }
 .brand-strip-icon--logo { background: none; width: 44px; height: 44px; }
 .brand-strip-icon--logo img { width: 100%; height: 100%; object-fit: contain; }
@@ -198,7 +198,7 @@ section { padding: 72px 0; }
 
 /* Podstrona kontakt — karta informacyjna + mapa obok siebie */
 .contact-main { position: relative; background: var(--color-bg); overflow: hidden; }
-.contact-main::before { content: ""; position: absolute; top: -140px; right: -140px; width: 440px; height: 440px; border-radius: 50%; background: radial-gradient(circle, rgba(224,32,26,0.12), transparent 70%); pointer-events: none; }
+.contact-main::before { content: ""; position: absolute; top: -140px; right: -140px; width: 440px; height: 440px; border-radius: 50%; background: radial-gradient(circle, rgba(47,191,160,0.12), transparent 70%); pointer-events: none; }
 .contact-main .container { position: relative; z-index: 1; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: stretch; }
 .contact-info-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 48px; box-shadow: 0 20px 40px rgba(20,24,28,0.08); display: flex; flex-direction: column; gap: 28px; }
