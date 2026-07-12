@@ -219,7 +219,7 @@ section { padding: 72px 0; }
 .contact-hours dd { margin: 0; color: var(--color-text-muted); font-size: 14px; text-align: right; }
 .contact-map-card { position: relative; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--color-border); box-shadow: 0 20px 40px rgba(20,24,28,0.08); min-height: 420px; }
 .contact-map-card iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-.contact-map-overlay-btn { position: absolute; left: 20px; bottom: 20px; z-index: 1; box-shadow: 0 10px 24px rgba(0,0,0,0.3); }
+.contact-map-card .contact-map-overlay-btn { position: absolute; left: 20px; bottom: 20px; z-index: 1; }
 .contact-map-placeholder { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; background: linear-gradient(135deg, var(--color-bg-alt), #e2e6ea); transition: background 0.2s; }
 .contact-map-placeholder:hover { background: linear-gradient(135deg, #e6e9ec, #d8dde2); }
 .contact-map-placeholder-inner { display: flex; flex-direction: column; align-items: center; gap: 10px; color: var(--color-text-muted); }
@@ -323,12 +323,12 @@ section { padding: 72px 0; }
 .detail-actions { display: flex; gap: 14px; flex-wrap: wrap; }
 .detail-note { margin-top: 20px; font-size: 13px; color: var(--color-text-muted); }
 
-.btn { display: inline-block; padding: 14px 28px; border-radius: 999px; font-weight: 600; font-size: 15px; transition: transform 0.15s; border: none; cursor: pointer; }
-.btn:hover { transform: translateY(-2px); }
-.btn-primary { background: #fff; color: var(--color-text); border: 1px solid var(--color-border); box-shadow: 0 10px 24px rgba(20,24,28,0.12); }
-.btn-primary:hover { border-color: var(--color-accent); }
-.btn-outline { border: 1px solid var(--color-border); color: var(--color-text); background: none; }
-.btn-outline:hover { border-color: var(--color-accent); }
+.btn, .btn-primary, .btn-outline { display: inline-block; position: relative; background: none; border: none; box-shadow: none; padding: 0 0 8px; color: var(--color-text); font-family: inherit; font-size: 14px; font-weight: 700; letter-spacing: 0.3px; text-transform: uppercase; cursor: pointer; }
+.btn::after, .btn-primary::after, .btn-outline::after { content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background: var(--color-border); transition: background 0.2s; }
+.btn:hover::after, .btn-primary:hover::after, .btn-outline:hover::after { background: var(--color-accent); }
+.btn-invert { color: #fff; text-shadow: 0 1px 6px rgba(0,0,0,0.5); }
+.btn-invert::after { background: rgba(255,255,255,0.55); }
+.btn-invert:hover::after { background: var(--color-accent); }
 
 .site-footer { border-top: 1px solid var(--color-border); padding: 32px 0; color: var(--color-text-muted); font-size: 13px; }
 
@@ -457,7 +457,7 @@ section { padding: 72px 0; }
       <h1>Poczuj adrenalinę<br>na wodzie i na lądzie</h1>
       <p>Skutery wodne, quady, pojazdy SSV i trójkołowce dla tych, którzy nie zwalniają. Sprawdzony sprzęt, pełne wsparcie i doradztwo na każdym etapie zakupu.</p>
       <div class="hero-actions">
-        <button class="btn btn-primary" onclick="showCatalog()">Zobacz katalog pojazdów</button>
+        <button class="btn btn-primary btn-invert" onclick="showCatalog()">Zobacz katalog pojazdów</button>
       </div>
       <div class="hero-stats">
         <div><div class="hero-stat-num" style="font-size:22px;">Autoryzowany dealer</div><div class="hero-stat-label">Sea-Doo i Can-Am (BRP)</div></div>
