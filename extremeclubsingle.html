@@ -257,7 +257,7 @@ section { padding: 72px 0; }
 .section-header p { color: var(--color-text-muted); margin: 0; }
 .vehicle-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; }
 
-.compare-section { padding: 64px 0; border-bottom: 1px solid var(--color-border); background: var(--color-bg-alt); }
+.compare-section { padding: 16px 0 64px; }
 .compare-picker { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 40px; }
 .compare-slot-label { display: block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-muted); margin-bottom: 8px; }
 .compare-select { width: 100%; padding: 14px 16px; border: 1px solid var(--color-border); border-radius: var(--radius); background: var(--color-surface); color: var(--color-text); font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer; transition: border-color 0.2s; }
@@ -429,6 +429,7 @@ section { padding: 72px 0; }
           <a onclick="showCatalog('ssv')">SSV</a>
         </div>
       </div>
+      <a id="nav-link-compare" onclick="showCompare()">Porównywarka</a>
       <a id="nav-link-pricing" onclick="showPricing()">Cennik</a>
       <a id="nav-link-contact" onclick="showContact()">Kontakt</a>
     </nav>
@@ -455,9 +456,12 @@ section { padding: 72px 0; }
         </ul>
       </li>
       <li class="nav-overlay-item" style="--i:2">
-        <a onclick="navOverlayNavigate(showPricing)">Cennik</a>
+        <a onclick="navOverlayNavigate(showCompare)">Porównywarka</a>
       </li>
       <li class="nav-overlay-item" style="--i:3">
+        <a onclick="navOverlayNavigate(showPricing)">Cennik</a>
+      </li>
+      <li class="nav-overlay-item" style="--i:4">
         <a onclick="navOverlayNavigate(showContact)">Kontakt</a>
       </li>
     </ul>
@@ -619,17 +623,6 @@ section { padding: 72px 0; }
     </div>
   </nav>
 
-  <section class="compare-section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Porównaj modele</h2>
-        <p>Wybierz do 3 pojazdów z dowolnej kategorii i zestaw je obok siebie — silnik, segment, cenę i kluczowe wyposażenie.</p>
-      </div>
-      <div class="compare-picker" id="compare-picker"></div>
-      <div class="compare-result" id="compare-result"></div>
-    </div>
-  </section>
-
   <div class="container">
     <section id="seadoo" class="vehicle-section">
       <div class="section-header">
@@ -671,6 +664,24 @@ section { padding: 72px 0; }
     <span class="detail-back" onclick="showCatalog()">← Wróć do katalogu</span>
     <div class="detail-layout" id="detail-content"></div>
   </div>
+</div>
+
+<!-- PORÓWNYWARKA -->
+<div id="page-compare" class="page">
+  <section class="pricing-header">
+    <div class="container">
+      <span class="eyebrow" style="display:block; text-align:center; color: var(--color-accent);">Porównywarka</span>
+      <h2 class="section-title">Porównaj modele</h2>
+      <p>Wybierz do 3 pojazdów z dowolnej kategorii i zestaw je obok siebie — silnik, segment, cenę i kluczowe wyposażenie.</p>
+    </div>
+  </section>
+
+  <section class="compare-section">
+    <div class="container">
+      <div class="compare-picker" id="compare-picker"></div>
+      <div class="compare-result" id="compare-result"></div>
+    </div>
+  </section>
 </div>
 
 <!-- CENNIK -->
@@ -836,6 +847,7 @@ section { padding: 72px 0; }
       <div class="footer-col">
         <h5>Firma</h5>
         <a onclick="showHome()">Strona główna</a>
+        <a onclick="showCompare()">Porównywarka</a>
         <a onclick="showPricing()">Cennik</a>
         <a onclick="showContact()">Kontakt</a>
       </div>
@@ -1460,7 +1472,7 @@ document.querySelectorAll(".category-pill").forEach(pill => {
   });
 });
 
-const PAGE_IDS = ["page-home", "page-catalog-list", "page-detail", "page-pricing", "page-contact"];
+const PAGE_IDS = ["page-home", "page-catalog-list", "page-detail", "page-compare", "page-pricing", "page-contact"];
 function showPage(id) {
   PAGE_IDS.forEach(pid => document.getElementById(pid).classList.toggle("active", pid === id));
   window.scrollTo(0, 0);
@@ -1561,6 +1573,11 @@ function renderCatalog(category) {
   }
 }
 
+function renderCompare() {
+  showPage("page-compare");
+  setActiveNavLink("nav-link-compare");
+}
+
 function renderPricing() {
   showPage("page-pricing");
   setActiveNavLink("nav-link-pricing");
@@ -1573,6 +1590,7 @@ function renderContact() {
 
 function showHome() { location.hash = "#/"; router(); }
 function showCatalog(category) { location.hash = category ? `#/katalog/${category}` : "#/katalog"; router(); }
+function showCompare() { location.hash = "#/porownywarka"; router(); }
 function showPricing() { location.hash = "#/cennik"; router(); }
 function showContact() { location.hash = "#/kontakt"; router(); }
 
@@ -1580,6 +1598,8 @@ function router() {
   const hash = location.hash;
   if (hash.startsWith("#/katalog")) {
     renderCatalog(hash.split("/")[2]);
+  } else if (hash.startsWith("#/porownywarka")) {
+    renderCompare();
   } else if (hash.startsWith("#/cennik")) {
     renderPricing();
   } else if (hash.startsWith("#/kontakt")) {
