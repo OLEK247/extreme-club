@@ -866,7 +866,7 @@ const VEHICLES = [
     ],
     highlights: ["Silnik: Rotax, 90 KM", "Dedykowany tryb jazdy Trixx do wykonywania trików", "Pojemność: 3 osoby", "Lekki kadłub polimerowy", "Uniwersalny wybór na wspólne wypady nad wodę"],
     forWho: "Spark Trixx 90 For 3 to propozycja dla grup znajomych i rodzin, które chcą razem cieszyć się zabawową stroną jazdy na skuterze — z możliwością wykonywania trików, ale i zwykłej wspólnej przejażdżki w trójkę. Dobry wybór, gdy zabawa ma być dzielona z innymi, a nie tylko solową akrobacją.",
-    images: ["images/seadoo-spark-trixx-3-1.jpg"] },
+    images: ["images/seadoo-spark-trixx-3-1.jpg"], gallery: ["images/seadoo-spark-trixx-3-life-1.jpg", "images/seadoo-spark-trixx-3-life-2.jpg"] },
   { id: "seadoo-gti-std", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Recreation", name: "GTI Standard 130", price: "14 770 €", engine: "Rotax 130 KM",
     desc: "Uniwersalna, rodzinna platforma Sea-Doo na każdą okazję — od spokojnego rejsu po aktywny dzień na wodzie z bliskimi. 130 KM mocy w komfortowym, stabilnym kadłubie.",
     fullDesc: [
@@ -893,7 +893,7 @@ const VEHICLES = [
     ],
     highlights: ["Silnik: Rotax, 130 KM", "Wzmocnione wykończenie do zastosowań flotowych/rentalowych", "Stabilny kadłub turystyczny ST3", "Pojemność: do 3 osób", "Niskie koszty serwisowania przy intensywnej eksploatacji"],
     forWho: "GTX PRO 130 (Rental) to propozycja przede wszystkim dla wypożyczalni sprzętu wodnego i ośrodków rekreacyjnych, choć równie dobrze sprawdzi się jako niezawodny, prosty w obsłudze skuter turystyczny dla klienta indywidualnego, który ceni solidność ponad zaawansowaną elektronikę.",
-    images: ["images/seadoo-gtx-pro-rental-1.jpg"] },
+    images: ["images/seadoo-gtx-pro-rental-1.jpg", "images/seadoo-gtx-pro-rental-2.jpg"] },
   { id: "seadoo-gtx-170", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Touring", name: "GTX 170", price: "19 210 €", engine: "Rotax 170 KM",
     desc: "Komfort i osiągi w klasie turystycznej Sea-Doo — stabilna jednostka na dłuższe trasy z pasażerem. 170 KM mocy w wygodnym, szerokim kadłubie.",
     fullDesc: [
@@ -1450,10 +1450,10 @@ function renderContact() {
   setActiveNavLink("nav-link-contact");
 }
 
-function showHome() { location.hash = "#/"; }
-function showCatalog(category) { location.hash = category ? `#/katalog/${category}` : "#/katalog"; }
-function showPricing() { location.hash = "#/cennik"; }
-function showContact() { location.hash = "#/kontakt"; }
+function showHome() { location.hash = "#/"; router(); }
+function showCatalog(category) { location.hash = category ? `#/katalog/${category}` : "#/katalog"; router(); }
+function showPricing() { location.hash = "#/cennik"; router(); }
+function showContact() { location.hash = "#/kontakt"; router(); }
 
 function router() {
   const hash = location.hash;
