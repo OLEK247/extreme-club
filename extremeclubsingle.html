@@ -341,9 +341,12 @@ section { padding: 72px 0; }
 .site-footer { border-top: 1px solid var(--color-border); padding: 32px 0; color: var(--color-text-muted); font-size: 13px; }
 
 /* Cennik */
-.pricing-header { text-align: center; }
+.pricing-header { text-align: center; padding: 40px 0 32px; }
+.pricing-header .eyebrow { margin-bottom: 10px; }
+.pricing-header .section-title { margin: 0 0 12px; }
 .pricing-header p { color: var(--color-text-muted); max-width: 560px; margin: 0 auto; }
-.pricing-brp-logo { display: block; height: 54px; width: auto; margin: 28px auto 0; }
+.pricing-brp-logo { display: block; height: 40px; width: auto; margin: 16px auto 0; }
+.pricing-cards { padding-top: 24px; }
 .pricing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; max-width: 1180px; margin: 0 auto; }
 .pricing-card { display: flex; flex-direction: column; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); overflow: hidden; text-decoration: none; color: inherit; cursor: pointer; transition: transform 0.28s cubic-bezier(.2,.8,.2,1), box-shadow 0.28s cubic-bezier(.2,.8,.2,1), border-color 0.28s; }
 .pricing-card:hover { transform: translateY(-6px); box-shadow: 0 24px 48px rgba(20,24,28,0.14); border-color: var(--color-accent); }
@@ -674,7 +677,7 @@ section { padding: 72px 0; }
     </div>
   </section>
 
-  <section>
+  <section class="pricing-cards">
     <div class="container">
       <div class="pricing-grid">
         <a class="pricing-card" href="cenniki/CennikSeaDoo26.pdf" target="_blank" rel="noopener">
