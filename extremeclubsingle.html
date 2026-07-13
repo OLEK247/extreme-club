@@ -186,7 +186,7 @@ section { padding: 72px 0; }
 
 /* Kontakt */
 /* Baner nastrojowy nad sekcją kontaktową */
-.contact-banner { position: relative; margin-top: -72px; aspect-ratio: 16 / 9; min-height: 280px; padding-top: 72px; display: flex; align-items: center; justify-content: center; text-align: center; background: var(--color-dark) url('images/seadoo-lifestyle-beach-trip.jpg') center / cover no-repeat; color: #fff; overflow: hidden; }
+.contact-banner { position: relative; margin-top: -72px; min-height: clamp(480px, 68vh, 760px); padding: 96px 0 64px; display: flex; align-items: center; justify-content: center; text-align: center; background: var(--color-dark) url('images/seadoo-lifestyle-beach-trip.jpg') center 60% / cover no-repeat; color: #fff; overflow: hidden; }
 .contact-banner::before { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.38); }
 .contact-banner::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 140px; z-index: 0; pointer-events: none; background: linear-gradient(180deg, transparent 0%, var(--color-bg) 100%); }
 .contact-banner .container { position: relative; z-index: 1; }
