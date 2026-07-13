@@ -22,7 +22,7 @@
   --color-surface: #ffffff;
   --color-text: #14181c;
   --color-text-muted: #5b6570;
-  --color-accent: #E8590C;
+  --color-accent: #C6362E;
   --color-border: #e2e6ea;
   --color-dark: #0f2440;
   --color-accent-atv: #c98a13;
@@ -287,6 +287,9 @@ section { padding: 72px 0; }
 .detail-gallery-item { aspect-ratio: 4/3; border-radius: var(--radius); overflow: hidden; }
 .detail-gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .detail-tag { display: inline-block; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; padding: 5px 12px; border-radius: 999px; background: var(--color-bg-alt); color: var(--color-text-muted); margin-bottom: 14px; }
+.detail-tag-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 14px; }
+.detail-tag-row .detail-tag { margin-bottom: 0; }
+.detail-brp-logo { height: 32px; width: auto; flex-shrink: 0; }
 .detail-name { font-size: 36px; font-weight: 800; margin: 0 0 12px; }
 .detail-price { font-size: 22px; font-weight: 700; color: var(--color-accent); margin-bottom: 20px; }
 .detail-desc { color: var(--color-text-muted); font-size: 16px; margin-bottom: 28px; }
@@ -1501,7 +1504,10 @@ function openDetail(id) {
       ${(v.gallery || []).map(src => `<div class="detail-gallery-item"><img src="${src}" alt="${v.name}" loading="lazy"></div>`).join("")}
     </div>
     <div>
-      <span class="detail-tag">${v.categoryLabel} · ${v.segment}</span>
+      <div class="detail-tag-row">
+        <span class="detail-tag">${v.categoryLabel} · ${v.segment}</span>
+        <img class="detail-brp-logo" src="images/brp-logo.png" alt="BRP" loading="lazy">
+      </div>
       <h1 class="detail-name">${v.name}</h1>
       <div class="detail-price">${v.price}</div>
       <p class="detail-desc">${v.desc}</p>
