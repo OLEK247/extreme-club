@@ -183,18 +183,6 @@ section { padding: 72px 0; }
 .lifestyle-card-link::after { content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background: var(--color-border); transition: background 0.2s; }
 .lifestyle-card-link:hover::after { background: var(--color-accent); }
 
-/* Dlaczego my */
-.features-section { background: var(--color-bg); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
-/* "Dlaczego my" — układ w stylu galeon-yachts.com, bez kart, wyrównany do lewej */
-.why-us-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
-.why-us-item { text-align: left; }
-.why-us-top { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; }
-.why-us-icon { flex: none; width: 28px; height: 28px; color: var(--color-accent); display: flex; align-items: center; justify-content: center; }
-.why-us-icon svg { width: 26px; height: 26px; }
-.why-us-line { flex: 1; height: 1px; background: var(--color-border); }
-.why-us-item h4 { margin: 0 0 12px; font-size: clamp(21px, 2.4vw, 27px); font-weight: 800; line-height: 1.25; color: var(--color-text); }
-.why-us-item h4 .accent-word { color: var(--color-accent); }
-.why-us-item p { margin: 0; color: var(--color-text-muted); font-size: 14px; line-height: 1.6; max-width: 320px; }
 
 /* Kontakt */
 /* Baner nastrojowy nad sekcją kontaktową */
@@ -391,7 +379,6 @@ section { padding: 72px 0; }
   .brand-strip-inner { flex-direction: column; gap: 20px; }
   .brand-strip-sep { width: 44px; height: 1px; }
   .pricing-grid { grid-template-columns: 1fr; max-width: 420px; }
-  .why-us-grid { grid-template-columns: 1fr; gap: 36px; }
   .contact-strip-inner { flex-direction: column; gap: 28px; }
   .contact-strip-item { padding: 0; }
   .contact-strip-sep { display: none; }
@@ -587,31 +574,28 @@ section { padding: 72px 0; }
     </div>
   </section>
 
-  <section class="features-section">
-    <div class="container">
-      <div class="why-us-grid">
-        <div class="why-us-item">
-          <div class="why-us-top">
-            <span class="why-us-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5.5c0 4.5-3 7.9-7 9.5-4-1.6-7-5-7-9.5V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
-            <span class="why-us-line"></span>
-          </div>
-          <h4>Autoryzowany<br><span class="accent-word">dealer</span></h4>
+  <section class="contact-strip">
+    <div class="container contact-strip-inner">
+      <div class="contact-strip-item">
+        <span class="contact-strip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5.5c0 4.5-3 7.9-7 9.5-4-1.6-7-5-7-9.5V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <div class="contact-strip-text">
+          <strong>Autoryzowany dealer</strong>
           <p>Oficjalna dystrybucja Sea-Doo i Can-Am z pełną gwarancją producenta.</p>
         </div>
-        <div class="why-us-item">
-          <div class="why-us-top">
-            <span class="why-us-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2-2 2.5-2.5z"/></svg></span>
-            <span class="why-us-line"></span>
-          </div>
-          <h4>Serwis i<br><span class="accent-word">wsparcie</span></h4>
+      </div>
+      <span class="contact-strip-sep"></span>
+      <div class="contact-strip-item">
+        <span class="contact-strip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2-2 2.5-2.5z"/></svg></span>
+        <div class="contact-strip-text">
+          <strong>Serwis i wsparcie</strong>
           <p>Profesjonalny serwis posprzedażowy i dostęp do oryginalnych części.</p>
         </div>
-        <div class="why-us-item">
-          <div class="why-us-top">
-            <span class="why-us-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12c0 4.4-4 8-9 8-1.1 0-2.2-.2-3.2-.5L4 21l1.3-3.9C4.5 15.8 4 14 4 12c0-4.4 4-8 9-8s8 3.6 8 8z"/></svg></span>
-            <span class="why-us-line"></span>
-          </div>
-          <h4>Indywidualne<br><span class="accent-word">doradztwo</span></h4>
+      </div>
+      <span class="contact-strip-sep"></span>
+      <div class="contact-strip-item">
+        <span class="contact-strip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12c0 4.4-4 8-9 8-1.1 0-2.2-.2-3.2-.5L4 21l1.3-3.9C4.5 15.8 4 14 4 12c0-4.4 4-8 9-8s8 3.6 8 8z"/></svg></span>
+        <div class="contact-strip-text">
+          <strong>Indywidualne doradztwo</strong>
           <p>Pomożemy dobrać pojazd idealnie dopasowany do Twojego stylu jazdy.</p>
         </div>
       </div>
