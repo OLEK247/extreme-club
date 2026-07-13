@@ -121,9 +121,6 @@ section { padding: 72px 0; }
 .hero-content h1 { font-size: clamp(36px, 5.5vw, 60px); margin: 0 0 20px; font-weight: 800; line-height: 1.05; letter-spacing: -0.5px; text-shadow: 0 2px 12px rgba(0,0,0,0.5); }
 .hero-content p { color: rgba(255,255,255,0.92); font-size: 19px; margin: 0 auto 36px; max-width: 540px; text-shadow: 0 2px 10px rgba(0,0,0,0.7); }
 .hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 56px; }
-.hero-stats { position: relative; display: flex; justify-content: center; gap: 56px; flex-wrap: wrap; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 32px; }
-.hero-stat-num { font-size: 30px; font-weight: 800; }
-.hero-stat-label { font-size: 13px; color: var(--color-on-dark-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; }
 
 /* Pasek marek */
 .brand-strip { background: var(--color-bg); padding: 30px 0; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
@@ -242,10 +239,12 @@ section { padding: 72px 0; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; margin-bottom: 40px; }
 .footer-brand .logo { color: var(--color-text); }
 .footer-brand p { color: var(--color-text-muted); font-size: 14px; margin-top: 12px; max-width: 280px; }
-.footer-social { display: flex; gap: 10px; margin-top: 16px; }
-.footer-social a { display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: var(--color-bg-alt); color: var(--color-text-muted); transition: background 0.2s, color 0.2s; }
-.footer-social a:hover { background: var(--color-accent); color: #fff; }
-.footer-social svg { width: 16px; height: 16px; }
+.social-icon-btn { display: flex; align-items: center; justify-content: center; width: 38px; height: 38px; flex: none; border: 2px solid currentColor; border-radius: 10px; background: transparent; transition: background 0.2s, color 0.2s, border-color 0.2s; }
+.social-icon-btn svg { width: 21px; height: 21px; }
+.nav-social { display: none; align-items: center; }
+body.is-home .nav-social { display: flex; }
+.nav-social .social-icon-btn { color: rgba(255,255,255,0.85); }
+.nav-social .social-icon-btn:hover { background: rgba(255,255,255,0.15); color: #fff; }
 .footer-col h5 { color: var(--color-text); font-size: 13px; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 16px; }
 .footer-col a { display: block; color: var(--color-text-muted); font-size: 14px; margin-bottom: 10px; cursor: pointer; }
 .footer-col a:hover { color: var(--color-text); }
@@ -260,16 +259,14 @@ section { padding: 72px 0; }
 .catalog-header .container { position: relative; z-index: 1; }
 .catalog-header h1 { margin: 0 0 8px; font-size: 40px; text-shadow: 0 2px 10px rgba(0,0,0,0.55), 0 1px 3px rgba(0,0,0,0.85); }
 .catalog-header p { color: rgba(255,255,255,0.92); margin: 0 auto 8px; max-width: 640px; text-shadow: 0 2px 10px rgba(0,0,0,0.55), 0 1px 3px rgba(0,0,0,0.75); }
-.category-nav { position: sticky; top: 0; z-index: 90; background: rgba(251,251,252,0.95); backdrop-filter: blur(6px); border-bottom: 1px solid var(--color-border); padding: 0; margin-bottom: 8px; }
-.category-nav-inner { display: flex; gap: 36px; flex-wrap: wrap; justify-content: center; }
-.category-pill { position: relative; border: none; background: none; color: var(--color-text-muted); padding: 17px 0 15px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.6px; text-transform: uppercase; cursor: pointer; transition: color 0.2s; }
-.category-pill::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--color-border); transition: background 0.2s; }
-.category-pill:hover { color: var(--color-accent); }
-.category-pill:hover::after { background: var(--color-accent); }
-.category-pill.active { color: var(--color-accent); }
-.category-pill.active::after { background: var(--color-accent); }
-.vehicle-section { padding: 56px 0; border-bottom: 1px solid var(--color-border); scroll-margin-top: 150px; }
-.vehicle-section:last-of-type { border-bottom: none; }
+.category-nav { position: sticky; top: 0; z-index: 90; background: rgba(251,251,252,0.98); border-bottom: 1px solid var(--color-border); padding: 0; margin-bottom: 8px; }
+.category-nav-inner { display: flex; gap: 10px; flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: thin; padding: 14px 24px; }
+.category-nav::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: 40px; background: linear-gradient(90deg, rgba(251,251,252,0) 0%, rgba(251,251,252,0.98) 85%); pointer-events: none; }
+.category-pill { position: relative; flex: none; white-space: nowrap; border: 1.5px solid var(--color-border); background: var(--color-surface); color: var(--color-text-muted); padding: 10px 18px; border-radius: 999px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; cursor: pointer; transition: background 0.2s, color 0.2s, border-color 0.2s; }
+.category-pill:hover { color: var(--color-text); border-color: var(--color-text-muted); }
+.category-pill.active { background: var(--color-dark); border-color: var(--color-dark); color: #fff; }
+.vehicle-section { display: none; padding: 40px 0 56px; }
+.vehicle-section.active { display: block; }
 .section-header { margin-bottom: 28px; }
 .section-header h2 { font-size: 26px; margin: 0 0 6px; }
 .section-header p { color: var(--color-text-muted); margin: 0; }
@@ -304,7 +301,16 @@ section { padding: 72px 0; }
 .detail-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .detail-gallery-item { aspect-ratio: 4/3; border-radius: var(--radius); overflow: hidden; }
 .detail-gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.detail-tag { display: inline-block; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; padding: 5px 12px; border-radius: 999px; background: var(--color-bg-alt); color: var(--color-text-muted); margin-bottom: 14px; }
+.detail-tag { display: inline-flex; align-items: center; gap: 7px; font-size: 11.5px; text-transform: uppercase; padding: 7px 14px; border-radius: 999px; background: rgba(198,54,46,0.07); border: 1.5px solid rgba(198,54,46,0.35); color: var(--color-text-muted); margin-bottom: 14px; }
+.detail-tag-brand { font-weight: 800; letter-spacing: 0.6px; color: var(--color-accent); }
+.detail-tag-sep { opacity: 0.5; }
+.detail-tag-segment { font-weight: 600; letter-spacing: 0.5px; color: var(--color-text-muted); }
+.detail-tag--canam { background: rgba(15,36,64,0.06); border-color: rgba(15,36,64,0.3); }
+.detail-tag--canam .detail-tag-brand { color: var(--color-dark); }
+.detail-tag--atv { background: rgba(201,138,19,0.08); border-color: rgba(201,138,19,0.35); }
+.detail-tag--atv .detail-tag-brand { color: var(--color-accent-atv); }
+.detail-tag--ssv { background: rgba(27,122,110,0.08); border-color: rgba(27,122,110,0.35); }
+.detail-tag--ssv .detail-tag-brand { color: var(--color-accent-ssv); }
 .detail-tag-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 14px; }
 .detail-tag-row .detail-tag { margin-bottom: 0; }
 .detail-brp-logo { height: 48px; width: auto; flex-shrink: 0; }
@@ -391,7 +397,6 @@ section { padding: 72px 0; }
   .contact-panel-info { padding: 32px; border-right: none; border-bottom: 1px solid var(--color-border); }
   .contact-panel-map { min-height: 320px; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
-  .hero-stats { gap: 32px; }
   .main-nav { display: none; position: absolute; top: 72px; left: 0; right: 0; flex-direction: column; gap: 0; margin: 0; padding: 8px 0; background: var(--color-surface); border-bottom: 1px solid var(--color-border); box-shadow: 0 16px 32px rgba(20,24,28,0.1); }
   .main-nav.open { display: flex; }
   .main-nav a { padding: 12px 24px; }
@@ -404,6 +409,12 @@ section { padding: 72px 0; }
   .nav-overlay-item > a, .nav-overlay-row { font-size: 19px; }
   .detail-layout { grid-template-columns: 1fr; }
   .detail-image { position: static; top: auto; }
+}
+
+@media (max-width: 480px) {
+  .category-pill { padding: 9px 15px; font-size: 11.5px; }
+  .detail-actions { flex-wrap: nowrap; justify-content: center; gap: 10px; }
+  .detail-actions .btn { font-size: 11.5px; letter-spacing: 0.2px; white-space: nowrap; }
 }
 </style>
 </head>
@@ -422,7 +433,7 @@ section { padding: 72px 0; }
     <nav class="main-nav" id="main-nav">
       <a id="nav-link-home" onclick="showHome()">Strona główna</a>
       <div class="nav-dropdown" id="nav-dropdown">
-        <a id="nav-link-catalog" onclick="showCatalog()">Katalog pojazdów</a>
+        <a id="nav-link-catalog" onclick="toggleCatalogDropdown(event)">Katalog pojazdów</a>
         <button class="nav-caret" aria-label="Rozwiń kategorie katalogu" aria-expanded="false" onclick="toggleCatalogDropdown(event)">▾</button>
         <div class="nav-dropdown-menu" id="nav-dropdown-menu">
           <a onclick="showCatalog('seadoo')">Skutery wodne Sea-Doo</a>
@@ -434,6 +445,9 @@ section { padding: 72px 0; }
       <a id="nav-link-pricing" onclick="showPricing()">Cennik</a>
       <a id="nav-link-contact" onclick="showContact()">Kontakt</a>
     </nav>
+    <div class="nav-social">
+      <a class="social-icon-btn" href="https://www.facebook.com/ExtremeClubLegowo" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.7h2.6l.4-3h-3v-1.9c0-.87.24-1.46 1.5-1.46h1.6V4.2c-.28-.04-1.24-.12-2.36-.12-2.34 0-3.94 1.43-3.94 4.04v2.25H7.7v3h2.6V21h3.2z"/></svg></a>
+    </div>
   </div>
 </header>
 
@@ -446,7 +460,7 @@ section { padding: 72px 0; }
       </li>
       <li class="nav-overlay-item" style="--i:1">
         <div class="nav-overlay-row">
-          <a onclick="navOverlayNavigate(showCatalog)">Katalog pojazdów</a>
+          <a onclick="toggleOverlaySubmenu(event)">Katalog pojazdów</a>
           <button class="nav-overlay-caret-btn" aria-label="Rozwiń kategorie katalogu" aria-expanded="false" onclick="toggleOverlaySubmenu(event)">▾</button>
         </div>
         <ul class="nav-overlay-submenu" id="nav-overlay-submenu">
@@ -470,7 +484,7 @@ section { padding: 72px 0; }
 <div id="page-home" class="page active">
 
   <section class="hero">
-    <video class="hero-video" autoplay muted loop playsinline poster="images/hero-home.webp">
+    <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="images/hero-home.webp">
       <source src="images/hero-video.mp4" type="video/mp4">
     </video>
     <div class="hero-content">
@@ -479,17 +493,14 @@ section { padding: 72px 0; }
       <div class="hero-actions">
         <button class="btn btn-primary btn-invert" onclick="showCatalog()">Zobacz katalog pojazdów</button>
       </div>
-      <div class="hero-stats">
-        <div><div class="hero-stat-num" style="font-size:22px;">Autoryzowany dealer</div><div class="hero-stat-label">Sea-Doo i Can-Am (BRP)</div></div>
-      </div>
     </div>
   </section>
 
   <div class="brand-strip">
     <div class="container brand-strip-inner">
       <div class="brand-strip-item">
-        <span class="brand-strip-icon brand-strip-icon--logo" aria-hidden="true"><img src="images/brp-logo.png" alt=""></span>
-        <span class="brand-strip-text"><strong>BRP</strong><span>Część grupy BRP</span></span>
+        <span class="brand-strip-icon brand-strip-icon--logo" aria-hidden="true"><img src="images/brp-logo.png" alt="" loading="lazy" width="44" height="44"></span>
+        <span class="brand-strip-text"><span>Autoryzowany dealer BRP</span></span>
       </div>
     </div>
   </div>
@@ -620,10 +631,10 @@ section { padding: 72px 0; }
 
   <nav class="category-nav">
     <div class="container category-nav-inner">
-      <button class="category-pill" data-jump="seadoo">Skutery wodne Sea-Doo</button>
-      <button class="category-pill" data-jump="trojkolowce">Can-Am — trójkołowce</button>
-      <button class="category-pill" data-jump="atv">Can-Am — quady ATV</button>
-      <button class="category-pill" data-jump="ssv">Can-Am — SSV</button>
+      <button class="category-pill" data-category="seadoo" onclick="showCatalog('seadoo')">Skutery wodne Sea-Doo</button>
+      <button class="category-pill" data-category="trojkolowce" onclick="showCatalog('trojkolowce')">Can-Am — trójkołowce</button>
+      <button class="category-pill" data-category="atv" onclick="showCatalog('atv')">Can-Am — quady ATV</button>
+      <button class="category-pill" data-category="ssv" onclick="showCatalog('ssv')">Can-Am — SSV</button>
     </div>
   </nav>
 
@@ -677,7 +688,7 @@ section { padding: 72px 0; }
       <span class="eyebrow" style="display:block; text-align:center; color: var(--color-accent);">Cennik</span>
       <h2 class="section-title">Aktualne cenniki pojazdów</h2>
       <p>Pobierz aktualny cennik PDF dla wybranej kategorii pojazdów Sea-Doo i Can-Am.</p>
-      <span class="footer-brp-badge pricing-brp-badge"><img src="images/brp-logo.png" alt="BRP" loading="lazy">Autoryzowany dealer BRP</span>
+      <span class="footer-brp-badge pricing-brp-badge"><img src="images/brp-logo.png" alt="BRP" loading="lazy" width="26" height="26">Autoryzowany dealer BRP</span>
     </div>
   </section>
 
@@ -813,9 +824,6 @@ section { padding: 72px 0; }
       <div class="footer-brand">
         <span class="logo">EXTREME<span>CLUB</span></span>
         <p>Autoryzowany dealer Sea-Doo i Can-Am. Skutery wodne, quady, SSV i trójkołowce dla tych, którzy nie zwalniają.</p>
-        <div class="footer-social">
-          <a href="https://www.facebook.com/ExtremeClubLegowo" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.7h2.6l.4-3h-3v-1.9c0-.87.24-1.46 1.5-1.46h1.6V4.2c-.28-.04-1.24-.12-2.36-.12-2.34 0-3.94 1.43-3.94 4.04v2.25H7.7v3h2.6V21h3.2z"/></svg></a>
-        </div>
       </div>
       <div class="footer-col">
         <h5>Katalog</h5>
@@ -839,7 +847,7 @@ section { padding: 72px 0; }
     </div>
     <div class="footer-bottom">
       <p>&copy; 2026 Extreme Club. Wszelkie prawa zastrzeżone.</p>
-      <span class="footer-brp-badge"><img src="images/brp-logo.png" alt="BRP">Autoryzowany dealer BRP</span>
+      <span class="footer-brp-badge"><img src="images/brp-logo.png" alt="BRP" loading="lazy" width="26" height="26">Autoryzowany dealer BRP</span>
     </div>
   </div>
 </footer>
@@ -1373,15 +1381,10 @@ document.querySelectorAll(".vehicle-grid").forEach(grid => {
   grid.innerHTML = VEHICLES.filter(v => v.category === cat).map(vehicleCard).join("");
 });
 
-document.querySelectorAll(".category-pill").forEach(pill => {
-  pill.addEventListener("click", () => {
-    document.getElementById(pill.dataset.jump).scrollIntoView({ behavior: "smooth" });
-  });
-});
-
 const PAGE_IDS = ["page-home", "page-catalog-list", "page-detail", "page-pricing", "page-contact"];
 function showPage(id) {
   PAGE_IDS.forEach(pid => document.getElementById(pid).classList.toggle("active", pid === id));
+  document.body.classList.toggle("is-home", id === "page-home");
   window.scrollTo(0, 0);
 }
 
@@ -1415,7 +1418,7 @@ function toggleCatalogDropdown(e) {
   e.stopPropagation();
   const menu = document.getElementById("nav-dropdown-menu");
   const isOpen = menu.classList.toggle("open");
-  e.currentTarget.setAttribute("aria-expanded", isOpen);
+  document.querySelector(".nav-caret").setAttribute("aria-expanded", isOpen);
 }
 
 document.addEventListener("click", (e) => {
@@ -1448,7 +1451,7 @@ function toggleOverlaySubmenu(e) {
   e.stopPropagation();
   const submenu = document.getElementById("nav-overlay-submenu");
   const isOpen = submenu.classList.toggle("open");
-  e.currentTarget.setAttribute("aria-expanded", isOpen);
+  document.querySelector(".nav-overlay-caret-btn").setAttribute("aria-expanded", isOpen);
 }
 
 function navOverlayNavigate(action) {
@@ -1469,15 +1472,17 @@ function renderHome() {
   setActiveNavLink("nav-link-home");
 }
 
+const CATALOG_CATEGORIES = ["seadoo", "trojkolowce", "atv", "ssv"];
 function renderCatalog(category) {
+  const cat = CATALOG_CATEGORIES.includes(category) ? category : CATALOG_CATEGORIES[0];
   showPage("page-catalog-list");
   setActiveNavLink("nav-link-catalog");
-  if (category) {
-    setTimeout(() => {
-      const target = document.getElementById(category);
-      if (target) target.scrollIntoView({ behavior: "smooth" });
-    }, 0);
-  }
+  document.querySelectorAll(".vehicle-section").forEach(section => {
+    section.classList.toggle("active", section.id === cat);
+  });
+  document.querySelectorAll(".category-pill").forEach(pill => {
+    pill.classList.toggle("active", pill.dataset.category === cat);
+  });
 }
 
 function renderPricing() {
@@ -1524,6 +1529,7 @@ function loadContactMap() {
 function openDetail(id) {
   const v = VEHICLES.find(x => x.id === id);
   if (!v) return;
+  document.querySelector(".detail-back").onclick = () => showCatalog(v.category);
   document.getElementById("detail-content").innerHTML = `
     <div class="detail-media-col">
       <div class="detail-image">${mediaMarkup(v, { size: "detail" })}</div>
@@ -1531,7 +1537,7 @@ function openDetail(id) {
     </div>
     <div>
       <div class="detail-tag-row">
-        <span class="detail-tag">${v.categoryLabel} · ${v.segment}</span>
+        <span class="detail-tag${v.category === "trojkolowce" ? " detail-tag--canam" : v.category === "atv" ? " detail-tag--atv" : v.category === "ssv" ? " detail-tag--ssv" : ""}"><span class="detail-tag-brand">${v.categoryLabel}</span><span class="detail-tag-sep">·</span><span class="detail-tag-segment">${v.segment}</span></span>
         <img class="detail-brp-logo" src="images/brp-logo.png" alt="BRP" loading="lazy">
       </div>
       <h1 class="detail-name">${v.name}</h1>
@@ -1557,7 +1563,7 @@ function openDetail(id) {
       </div>` : ""}
       <div class="detail-actions">
         <button class="btn btn-primary" onclick="showContact()">Zapytaj o dostępność</button>
-        <button class="btn btn-outline" onclick="showCatalog()">Wróć do katalogu</button>
+        <button class="btn btn-outline" onclick="showCatalog('${v.category}')">Wróć do katalogu</button>
       </div>
       <p class="detail-note">Cena brutto w EUR, przeliczana na PLN wg kursu sprzedaży NBP (tabela C) w dniu zakupu. Zdjęcie poglądowe — zostanie podmienione na materiały producenta.</p>
     </div>
