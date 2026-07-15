@@ -272,59 +272,6 @@ section { padding: 72px 0; }
 .contact-strip-text strong { display: block; font-size: 15px; font-weight: 800; color: var(--color-text); margin-bottom: 4px; }
 .contact-strip-text p { margin: 0; font-size: 13.5px; color: var(--color-text-muted); line-height: 1.5; }
 
-/* Toast powiadomienia */
-
-/* ============================= */
-/* Podstrona SERWIS              */
-/* ============================= */
-.service-banner { position: relative; margin-top: -72px; min-height: clamp(420px, 58vh, 640px); padding: 96px 0 64px; display: flex; align-items: center; justify-content: center; text-align: center; background: var(--color-dark) url('images/hero-pricing-canam.jpg') center 40% / cover no-repeat; color: #fff; overflow: hidden; }
-.service-banner::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,36,64,0.88) 0%, rgba(15,36,64,0.78) 100%); }
-.service-banner .container { position: relative; z-index: 1; }
-.service-banner-eyebrow { display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.75); margin-bottom: 14px; }
-.service-banner h2 { margin: 0 0 14px; font-size: clamp(24px, 3.5vw, 38px); font-weight: 800; text-shadow: 0 2px 8px rgba(0,0,0,0.4); }
-.service-banner p { margin: 0 auto; max-width: 560px; font-size: 15px; color: rgba(255,255,255,0.9); line-height: 1.6; text-shadow: 0 1px 4px rgba(0,0,0,0.6); }
-.service-banner .btn { margin-top: 28px; }
-
-.service-section { padding: 72px 0; }
-.service-section--alt { background: var(--color-bg-alt); }
-.service-section-title { text-align: center; margin-bottom: 48px; }
-.service-section-title h3 { margin: 0 0 10px; font-size: clamp(20px, 2.5vw, 28px); font-weight: 800; }
-.service-section-title p { margin: 0; color: var(--color-text-muted); font-size: 14.5px; max-width: 520px; margin-inline: auto; }
-
-.service-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; }
-.service-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 32px 28px; display: flex; flex-direction: column; gap: 14px; flex: 1 1 320px; max-width: 360px; transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; }
-.service-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(20,24,28,0.1); border-color: var(--color-accent); }
-.service-card-icon { width: 48px; height: 48px; border-radius: 50%; background: rgba(198,54,46,0.09); color: var(--color-accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.service-card-icon svg { width: 22px; height: 22px; }
-.service-card h4 { margin: 0; font-size: 16px; font-weight: 700; }
-.service-card p { margin: 0; font-size: 13.5px; color: var(--color-text-muted); line-height: 1.55; }
-
-.service-why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
-.service-why-card { display: flex; gap: 18px; align-items: flex-start; padding: 28px 24px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); }
-.service-why-num { flex-shrink: 0; width: 40px; height: 40px; border-radius: 50%; background: var(--color-accent); color: #fff; font-size: 16px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
-.service-why-text h4 { margin: 0 0 6px; font-size: 15px; font-weight: 700; }
-.service-why-text p { margin: 0; font-size: 13.5px; color: var(--color-text-muted); line-height: 1.5; }
-
-.service-form-wrap { max-width: 620px; margin: 0 auto; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 40px 36px; box-shadow: 0 20px 40px rgba(20,24,28,0.08); }
-.service-form-wrap h3 { margin: 0 0 6px; font-size: 22px; font-weight: 800; text-align: center; }
-.service-form-wrap > p { margin: 0 0 28px; text-align: center; color: var(--color-text-muted); font-size: 14px; }
-.service-form { display: grid; gap: 18px; }
-.service-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.service-form label { display: flex; flex-direction: column; gap: 5px; font-size: 12.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: var(--color-text-muted); }
-.service-form input,
-.service-form select,
-.service-form textarea { padding: 11px 14px; border: 1px solid var(--color-border); border-radius: 8px; font-size: 14px; font-family: inherit; color: var(--color-text); background: var(--color-bg); transition: border-color 0.2s; }
-.service-form input:focus,
-.service-form select:focus,
-.service-form textarea:focus { outline: none; border-color: var(--color-accent); }
-.service-form textarea { resize: vertical; min-height: 80px; }
-.service-form .btn { width: 100%; justify-content: center; margin-top: 6px; }
-
-@media (max-width: 600px) {
-  .service-form-row { grid-template-columns: 1fr; }
-  .service-form-wrap { padding: 28px 20px; }
-  .service-why-card { flex-direction: column; }
-}
 .toast { position: fixed; left: 50%; bottom: 32px; transform: translate(-50%, 20px); background: var(--color-dark); color: #fff; padding: 14px 26px; border-radius: 999px; font-size: 14px; font-weight: 600; box-shadow: 0 16px 32px rgba(0,0,0,0.25); opacity: 0; pointer-events: none; transition: opacity 0.25s ease, transform 0.25s ease; z-index: 300; }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 
@@ -796,7 +743,6 @@ body.is-home .nav-social { display: flex; }
         </div>
       </div>
       <a id="nav-link-pricing" onclick="showPricing()">Cennik</a>
-      <a id="nav-link-service" onclick="showService()">Serwis</a>
       <a id="nav-link-contact" onclick="showContact()">Kontakt</a>
     </nav>
     <div class="nav-social">
@@ -828,9 +774,6 @@ body.is-home .nav-social { display: flex; }
         <a onclick="navOverlayNavigate(showPricing)">Cennik</a>
       </li>
       <li class="nav-overlay-item" style="--i:3">
-        <a onclick="navOverlayNavigate(showService)">Serwis</a>
-      </li>
-      <li class="nav-overlay-item" style="--i:4">
         <a onclick="navOverlayNavigate(showContact)">Kontakt</a>
       </li>
     </ul>
@@ -1174,101 +1117,6 @@ body.is-home .nav-social { display: flex; }
   </section>
 </div>
 
-<!-- SERWIS -->
-<div id="page-service" class="page">
-  <section class="service-banner">
-    <div class="container">
-      <span class="service-banner-eyebrow">Autoryzowany serwis BRP</span>
-      <h2>Profesjonalny serwis Sea-Doo i Can-Am</h2>
-      <p>Certyfikowani mechanicy, oryginalne części zamienne i diagnostyka komputerowa BUDS. Twój pojazd w najlepszych rękach.</p>
-      <button class="btn btn-invert" onclick="document.getElementById('service-form-section').scrollIntoView({behavior:'smooth'})">Zgłoś pojazd do serwisu</button>
-    </div>
-  </section>
-
-  <section class="service-section">
-    <div class="container">
-      <div class="service-section-title">
-        <h3>Zakres usług</h3>
-        <p>Kompleksowa obsługa serwisowa pojazdów Sea-Doo i Can-Am — od przeglądów po naprawy główne.</p>
-      </div>
-      <div class="service-grid">
-        <div class="service-card">
-          <span class="service-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
-          <h4>Przeglądy okresowe i gwarancyjne</h4>
-          <p>Wpisy do książki gwarancyjnej BRP, przeglądy docierające po pierwszych motogodzinach i coroczne przeglądy serwisowe zgodne z wytycznymi producenta.</p>
-        </div>
-        <div class="service-card">
-          <span class="service-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg></span>
-          <h4>Zimowanie i przygotowanie do sezonu</h4>
-          <p>Konserwacja silnika, zabezpieczenie układu wydechowego, testy szczelności oraz profesjonalne przygotowanie skutera wodnego do zimy lub nadchodzącego sezonu letniego.</p>
-        </div>
-        <div class="service-card">
-          <span class="service-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>
-          <h4>Diagnostyka komputerowa BUDS</h4>
-          <p>Odczyt i kasowanie kodów błędów, programowanie kluczyków D.E.S.S., aktualizacje oprogramowania sterowników i kalibracja systemów elektronicznych pojazdu.</p>
-        </div>
-        <div class="service-card">
-          <span class="service-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
-          <h4>Naprawy mechaniczne i powypadkowe</h4>
-          <p>Naprawy główne silników Rotax, regeneracja pędników i carbon ringów w Sea-Doo oraz kompleksowy serwis zawieszenia i napędów w pojazdach Can-Am.</p>
-        </div>
-        <div class="service-card">
-          <span class="service-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></span>
-          <h4>Montaż akcesoriów i osprzętu</h4>
-          <p>Instalacja systemów audio, wyciągarek, dodatkowego oświetlenia LED, osłon podwozia oraz systemów mocowania bagażu LinQ zgodnie ze specyfikacją BRP.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="service-section" id="service-form-section">
-    <div class="container">
-      <div class="service-form-wrap">
-        <h3>Zgłoś pojazd do serwisu</h3>
-        <p>Wypełnij formularz, a odezwiemy się w ciągu 24 godzin roboczych z potwierdzeniem terminu.</p>
-        <form class="service-form" onsubmit="handleServiceForm(event)">
-          <div class="service-form-row">
-            <label>Imię i nazwisko
-              <input type="text" name="name" required placeholder="Jan Kowalski">
-            </label>
-            <label>Telefon
-              <input type="tel" name="phone" required placeholder="502 123 456">
-            </label>
-          </div>
-          <div class="service-form-row">
-            <label>Kategoria pojazdu
-              <select name="vehicle_type" required>
-                <option value="" disabled selected>Wybierz kategorię</option>
-                <option value="seadoo">Skuter wodny Sea-Doo</option>
-                <option value="atv">Quad ATV Can-Am</option>
-                <option value="ssv">SSV Can-Am (Side-by-Side)</option>
-                <option value="3wv">Trójkołowiec Can-Am</option>
-              </select>
-            </label>
-            <label>Model i rok
-              <input type="text" name="model" placeholder="np. GTX Limited 325, 2024">
-            </label>
-          </div>
-          <label>Rodzaj usługi
-            <select name="service_type" required>
-              <option value="" disabled selected>Wybierz rodzaj usługi</option>
-              <option value="przeglad">Przegląd okresowy / gwarancyjny</option>
-              <option value="zimowanie">Zimowanie / przygotowanie do sezonu</option>
-              <option value="diagnostyka">Diagnostyka komputerowa BUDS</option>
-              <option value="naprawa">Naprawa mechaniczna</option>
-              <option value="akcesoria">Montaż akcesoriów</option>
-              <option value="inne">Inne</option>
-            </select>
-          </label>
-          <label>Dodatkowe informacje
-            <textarea name="message" placeholder="Opisz problem lub podaj preferowany termin wizyty..."></textarea>
-          </label>
-          <button type="submit" class="btn btn-primary">Wyślij zgłoszenie</button>
-        </form>
-      </div>
-    </div>
-  </section>
-</div>
 
 <footer class="site-footer-main">
   <div class="container">
@@ -1289,7 +1137,6 @@ body.is-home .nav-social { display: flex; }
         <h5>Firma</h5>
         <a onclick="showHome()">Strona główna</a>
         <a onclick="showPricing()">Cennik</a>
-        <a onclick="showService()">Serwis</a>
         <a onclick="showContact()">Kontakt</a>
       </div>
       <div class="footer-col">
@@ -2247,7 +2094,7 @@ document.querySelectorAll(".vehicle-grid").forEach(grid => {
   grid.innerHTML = VEHICLES.filter(v => v.category === cat).map(vehicleCard).join("");
 });
 
-const PAGE_IDS = ["page-home", "page-catalog-list", "page-detail", "page-pricing", "page-service", "page-contact"];
+const PAGE_IDS = ["page-home", "page-catalog-list", "page-detail", "page-pricing", "page-contact"];
 function showPage(id) {
   PAGE_IDS.forEach(pid => document.getElementById(pid).classList.toggle("active", pid === id));
   document.body.classList.toggle("is-home", id === "page-home");
@@ -2361,30 +2208,9 @@ function renderContact() {
   setActiveNavLink("nav-link-contact");
 }
 
-function renderService() {
-  showPage("page-service");
-  setActiveNavLink("nav-link-service");
-}
-
-function handleServiceForm(e) {
-  e.preventDefault();
-  const fd = new FormData(e.target);
-  const name = fd.get('name');
-  const phone = fd.get('phone');
-  const vehicleType = fd.get('vehicle_type');
-  const model = fd.get('model') || 'nie podano';
-  const serviceType = fd.get('service_type');
-  const message = fd.get('message') || '';
-  const body = `Cześć, chciałbym zgłosić pojazd do serwisu.%0A%0AImię: ${name}%0ATelefon: ${phone}%0AKategoria: ${vehicleType}%0AModel: ${model}%0AUsługa: ${serviceType}%0A%0A${message}`;
-  window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=kontakt@extreme-club.pl&su=Zgłoszenie serwisowe — ${model}&body=${body}`, '_blank');
-  showToast('Otwieram formularz e-mail — wyślij wiadomość, a odezwiemy się w ciągu 24h!');
-  e.target.reset();
-}
-
 function showHome() { location.hash = "#/"; }
 function showCatalog(category) { location.hash = category ? `#/katalog/${category}` : "#/katalog"; }
 function showPricing() { location.hash = "#/cennik"; }
-function showService() { location.hash = "#/serwis"; }
 function showContact() { location.hash = "#/kontakt"; }
 
 function updateMeta(title, desc, image) {
@@ -2444,9 +2270,6 @@ function router() {
   } else if (hash.startsWith("#/kontakt")) {
     renderContact();
     updateMeta("Kontakt i dojazd — Extreme Club Łęgowo", "Skontaktuj się z nami! Zapraszamy do naszego autoryzowanego salonu BRP w Łęgowie. Zobacz godziny otwarcia i mapę dojazdu.", "images/seadoo-lifestyle-beach-trip.jpg");
-  } else if (hash.startsWith("#/serwis")) {
-    renderService();
-    updateMeta("Autoryzowany Serwis BRP Sea-Doo i Can-Am | Extreme Club", "Profesjonalny serwis pojazdów Sea-Doo i Can-Am. Przeglądy gwarancyjne, zimowanie, diagnostyka BUDS, naprawy i montaż akcesoriów.", "images/seadoo-lifestyle-beach-trip.jpg");
   } else if (hash.startsWith("#/pojazd/")) {
     const id = hash.split("/")[2];
     openDetail(id);
