@@ -2073,7 +2073,7 @@ function openDetail(id) {
     <div class="detail-media-col">
       <div class="detail-slider-wrap">
         ${arrows}
-        <div class="detail-media-slider" id="detail-slider">
+        <div class="detail-media-slider" id="detail-slider" onscroll="updateDotsOnScroll(this)">
           ${slides.join('')}
         </div>
         ${dots}
