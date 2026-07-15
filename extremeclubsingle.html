@@ -522,6 +522,25 @@ body.is-home .nav-social { display: flex; }
   .detail-slider-btn.prev { left: 8px; }
   .detail-slider-btn.next { right: 8px; }
   .detail-slider-btn:disabled { opacity: 0.3; pointer-events: none; }
+  /* Styl dla sekcji "Może Ci się spodobać" na mobile */
+  .detail-related-grid {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 16px;
+    padding-bottom: 12px;
+    justify-content: flex-start;
+  }
+  .detail-related-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .detail-related-card {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -759,7 +778,6 @@ body.is-home .nav-social { display: flex; }
     <section id="seadoo" class="vehicle-section">
       <div class="section-header">
         <h2>Skutery wodne Sea-Doo</h2>
-        <p>Od lekkich modeli Spark po flagowe GTX Limited i sportowe RXP-X / RXT-X.</p>
       </div>
       <div class="vehicle-grid" data-category="seadoo"></div>
     </section>
@@ -767,7 +785,6 @@ body.is-home .nav-social { display: flex; }
     <section id="trojkolowce" class="vehicle-section">
       <div class="section-header">
         <h2>Can-Am — trójkołowce</h2>
-        <p>Spyder F3, Spyder RT, nowość Canyon oraz Ryker — jazda na trzech kołach w wielu odsłonach.</p>
       </div>
       <div class="vehicle-grid" data-category="trojkolowce"></div>
     </section>
@@ -775,7 +792,6 @@ body.is-home .nav-social { display: flex; }
     <section id="atv" class="vehicle-section">
       <div class="section-header">
         <h2>Can-Am — quady ATV</h2>
-        <p>Outlander, Outlander MAX, Renegade oraz wersje 6x6 — do pracy i rekreacji w terenie.</p>
       </div>
       <div class="vehicle-grid" data-category="atv"></div>
     </section>
@@ -783,7 +799,6 @@ body.is-home .nav-social { display: flex; }
     <section id="ssv" class="vehicle-section">
       <div class="section-header">
         <h2>Can-Am — SSV</h2>
-        <p>Maverick, Maverick R oraz Traxter — pojazdy typu side-by-side do sportu i pracy.</p>
       </div>
       <div class="vehicle-grid" data-category="ssv"></div>
     </section>
@@ -1702,7 +1717,7 @@ const VEHICLES = [
     forWho: "Maverick Sport MAX to propozycja dla grup i rodzin, które chcą wspólnie cieszyć się dynamiczną jazdą terenową znaną z Maverick Sport, ale potrzebują miejsca dla czterech osób zamiast dwóch.",
     features: [
       { title: "4-osobowa kabina — wydłużony rozstaw osi", text: "Zabierz w teren dwóch dodatkowych pasażerów bez rezygnacji z dynamicznego charakteru jazdy Maverick Sport." },
-      { title: "Silnik Rotax 976 cm³ V-Twin, 100 KM", text: "Te same wysokie osiągi co w wersji dwuosobowej, mimo dłuższego i cięższego nadwozia." },
+      { title: "Silnik Rotax 976 cm³ V-Twin, 100 KM", text: "Te same wysokie osiągi co w wersji dwuosobowej, bez kompromisów mimo dłuższego i cięższego nadwozia." },
       { title: "Hill Descent Control i tryby SPORT/ECO", text: "Bezpieczny zjazd ze stromizn oraz dostosowanie charakteru jazdy nawet przy pełnym obciążeniu pasażerskim." },
       { title: "Przednie zawieszenie o skoku 11,5\"", text: "Zwinność w terenie zachowana mimo dodatkowej długości nadwozia na czterech pasażerów." }
     ],
@@ -2062,26 +2077,6 @@ function openDetail(id) {
           ${slides.join('')}
         </div>
         ${dots}
-      </div>
-      <div class="detail-accordion">
-        <div class="detail-accordion-item">
-          <button class="detail-accordion-trigger" onclick="this.parentElement.classList.toggle('open')">
-            <span>Gwarancja producenta</span><span class="detail-accordion-icon">+</span>
-          </button>
-          <div class="detail-accordion-panel"><p>Oficjalna dystrybucja Sea-Doo i Can-Am z pełną gwarancją producenta — każdy pojazd trafia do klienta z pełnym pakietem ochrony gwarancyjnej BRP.</p></div>
-        </div>
-        <div class="detail-accordion-item">
-          <button class="detail-accordion-trigger" onclick="this.parentElement.classList.toggle('open')">
-            <span>Serwis i części zamienne</span><span class="detail-accordion-icon">+</span>
-          </button>
-          <div class="detail-accordion-panel"><p>Profesjonalny serwis posprzedażowy w autoryzowanym punkcie oraz dostęp do oryginalnych części zamiennych BRP.</p></div>
-        </div>
-        <div class="detail-accordion-item">
-          <button class="detail-accordion-trigger" onclick="this.parentElement.classList.toggle('open')">
-            <span>Finansowanie i płatność</span><span class="detail-accordion-icon">+</span>
-          </button>
-          <div class="detail-accordion-panel"><p>Zapytaj o dostępne formy płatności i finansowania — dobierzemy rozwiązanie dopasowane do Twojego budżetu.</p></div>
-        </div>
       </div>
     </div>
     <div>
