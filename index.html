@@ -277,8 +277,8 @@ section { padding: 72px 0; }
 /* ============================= */
 /* Podstrona SERWIS              */
 /* ============================= */
-.service-banner { position: relative; margin-top: -72px; min-height: clamp(420px, 58vh, 640px); padding: 96px 0 64px; display: flex; align-items: center; justify-content: center; text-align: center; background: var(--color-dark); color: #fff; overflow: hidden; }
-.service-banner::before { content: ""; position: absolute; inset: 0; background: linear-gradient(160deg, rgba(15,36,64,0.92), rgba(198,54,46,0.18)); }
+.service-banner { position: relative; margin-top: -72px; min-height: clamp(420px, 58vh, 640px); padding: 96px 0 64px; display: flex; align-items: center; justify-content: center; text-align: center; background: var(--color-dark) url('images/service-hero.png') center center / cover no-repeat; color: #fff; overflow: hidden; }
+.service-banner::before { content: ""; position: absolute; inset: 0; background: linear-gradient(160deg, rgba(15,36,64,0.90), rgba(198,54,46,0.22)); }
 .service-banner .container { position: relative; z-index: 1; }
 .service-banner-eyebrow { display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.7); margin-bottom: 14px; }
 .service-banner h2 { margin: 0 0 14px; font-size: clamp(24px, 3.5vw, 38px); font-weight: 800; }
@@ -291,8 +291,8 @@ section { padding: 72px 0; }
 .service-section-title h3 { margin: 0 0 10px; font-size: clamp(20px, 2.5vw, 28px); font-weight: 800; }
 .service-section-title p { margin: 0; color: var(--color-text-muted); font-size: 14.5px; max-width: 520px; margin-inline: auto; }
 
-.service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-.service-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 32px 28px; display: flex; flex-direction: column; gap: 14px; transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; }
+.service-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; }
+.service-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 32px 28px; display: flex; flex-direction: column; gap: 14px; flex: 1 1 320px; max-width: 360px; transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; }
 .service-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(20,24,28,0.1); border-color: var(--color-accent); }
 .service-card-icon { width: 48px; height: 48px; border-radius: 50%; background: rgba(198,54,46,0.09); color: var(--color-accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .service-card-icon svg { width: 22px; height: 22px; }
@@ -1181,7 +1181,7 @@ body.is-home .nav-social { display: flex; }
       <span class="service-banner-eyebrow">Autoryzowany serwis BRP</span>
       <h2>Profesjonalny serwis Sea-Doo i Can-Am</h2>
       <p>Certyfikowani mechanicy, oryginalne części zamienne i diagnostyka komputerowa BUDS. Twój pojazd w najlepszych rękach.</p>
-      <button class="btn btn-primary" onclick="document.getElementById('service-form-section').scrollIntoView({behavior:'smooth'})">Zgłoś pojazd do serwisu</button>
+      <button class="btn btn-invert" onclick="document.getElementById('service-form-section').scrollIntoView({behavior:'smooth'})">Zgłoś pojazd do serwisu</button>
     </div>
   </section>
 
