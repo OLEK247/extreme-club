@@ -2112,6 +2112,26 @@ function openDetail(id) {
           ${v.features.map(f => `<div class="detail-feature-item"><strong>${f.title}</strong><p>${f.text}</p></div>`).join("")}
         </div>
       </div>` : ""}
+      <div class="detail-accordion">
+        <div class="detail-accordion-item">
+          <button class="detail-accordion-trigger" onclick="this.parentElement.classList.toggle('open')">
+            <span>Gwarancja producenta</span><span class="detail-accordion-icon">+</span>
+          </button>
+          <div class="detail-accordion-panel"><p>Oficjalna dystrybucja Sea-Doo i Can-Am z pełną gwarancją producenta — każdy pojazd trafia do klienta z pełnym pakietem ochrony gwarancyjnej BRP.</p></div>
+        </div>
+        <div class="detail-accordion-item">
+          <button class="detail-accordion-trigger" onclick="this.parentElement.classList.toggle('open')">
+            <span>Serwis i części zamienne</span><span class="detail-accordion-icon">+</span>
+          </button>
+          <div class="detail-accordion-panel"><p>Profesjonalny serwis posprzedażowy w autoryzowanym punkcie oraz dostęp do oryginalnych części zamiennych BRP.</p></div>
+        </div>
+        <div class="detail-accordion-item">
+          <button class="detail-accordion-trigger" onclick="this.parentElement.classList.toggle('open')">
+            <span>Finansowanie i płatność</span><span class="detail-accordion-icon">+</span>
+          </button>
+          <div class="detail-accordion-panel"><p>Zapytaj o dostępne formy płatności i finansowania — dobierzemy rozwiązanie dopasowane do Twojego budżetu.</p></div>
+        </div>
+      </div>
       ${v.forWho ? `
       <div class="detail-forwho${v.category === "trojkolowce" ? " detail-forwho--canam" : v.category === "atv" ? " detail-forwho--atv" : v.category === "ssv" ? " detail-forwho--ssv" : ""}">
         <h3>Dla kogo jest ten pojazd</h3>
