@@ -11,6 +11,47 @@
 <meta property="og:description" content="Autoryzowany dealer Sea-Doo i Can-Am. Skutery wodne, quady ATV, pojazdy SSV i trójkołowce. Pełny katalog i serwis.">
 <meta property="og:image" content="images/hero-home.webp">
 <meta name="theme-color" content="#0f2440">
+
+<!-- Schema.org LocalBusiness Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoDealer",
+  "name": "Extreme Club",
+  "image": "https://hilarious-bublanina-1544ac.netlify.app/images/hero-home.webp",
+  "url": "https://hilarious-bublanina-1544ac.netlify.app/",
+  "telephone": "+48 58 682 82 82",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Nowa 88",
+    "addressLocality": "Łęgowo",
+    "postalCode": "83-031",
+    "addressCountry": "PL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 54.234327,
+    "longitude": 18.636041
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday"],
+      "opens": "10:00",
+      "closes": "14:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/extremeclub"
+  ]
+}
+</script>
 <link rel="preconnect" href="https://www.google.com">
 <link rel="preconnect" href="https://maps.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://maps.googleapis.com">
@@ -2013,7 +2054,19 @@ function colorSwatchesMarkup(v, imgId, size) {
 function setVehicleColor(e, imgId, src, btn) {
   e.stopPropagation();
   const img = document.getElementById(imgId);
-  if (img) img.src = src;
+  if (img) {
+    img.style.transition = "opacity 0.18s ease-in-out";
+    img.style.opacity = "0";
+    setTimeout(() => {
+      img.src = src;
+      img.onload = () => {
+        img.style.opacity = "1";
+      };
+      if (img.complete) {
+        img.style.opacity = "1";
+      }
+    }, 180);
+  }
   btn.parentElement.querySelectorAll(".color-swatch").forEach(s => s.classList.remove("active"));
   btn.classList.add("active");
 }
@@ -2024,7 +2077,7 @@ function vehicleCard(v) {
     ? `<img id="${imgId}" src="${v.colors[0].image}" alt="${v.name}" loading="lazy">`
     : mediaMarkup(v, { size: "card" });
   return `
-    <div class="vehicle-card" role="button" tabindex="0" onclick="openDetail('${v.id}')">
+    <div class="vehicle-card" role="button" tabindex="0" onclick="location.hash = '#/pojazd/${v.id}'">
       <div class="vehicle-image">${media}</div>
       <div class="vehicle-body">
         <span class="vehicle-tag">${v.segment}</span>
@@ -2155,21 +2208,74 @@ function renderContact() {
   setActiveNavLink("nav-link-contact");
 }
 
-function showHome() { location.hash = "#/"; router(); }
-function showCatalog(category) { location.hash = category ? `#/katalog/${category}` : "#/katalog"; router(); }
-function showPricing() { location.hash = "#/cennik"; router(); }
-function showContact() { location.hash = "#/kontakt"; router(); }
+function showHome() { location.hash = "#/"; }
+function showCatalog(category) { location.hash = category ? `#/katalog/${category}` : "#/katalog"; }
+function showPricing() { location.hash = "#/cennik"; }
+function showContact() { location.hash = "#/kontakt"; }
+
+function updateMeta(title, desc, image) {
+  document.title = title;
+  const setMeta = (query, val) => {
+    const el = document.querySelector(query);
+    if (el) el.setAttribute("content", val);
+  };
+  setMeta('meta[name="description"]', desc);
+  setMeta('meta[property="og:title"]', title);
+  setMeta('meta[property="og:description"]', desc);
+  if (image) {
+    const absImage = image.startsWith("http") ? image : window.location.origin + "/" + image;
+    setMeta('meta[property="og:image"]', absImage);
+  }
+  setMeta('meta[property="og:url"]', window.location.href);
+}
+
+function updateSchemaMarkup(v) {
+  let script = document.getElementById("schema-product");
+  if (!script) {
+    script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "schema-product";
+    document.head.appendChild(script);
+  }
+  const imgUrl = v.colors && v.colors.length ? v.colors[0].image : (v.images && v.images[0] ? v.images[0] : "images/hero-home.webp");
+  const productSchema = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": v.name,
+    "image": window.location.origin + "/" + imgUrl,
+    "description": v.desc,
+    "brand": {
+      "@type": "Brand",
+      "name": v.categoryLabel
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": parseFloat(v.price.replace(/[^\d.,]/g, "").replace(",", ".")),
+      "availability": "https://schema.org/InStock",
+      "url": window.location.href
+    }
+  };
+  script.textContent = JSON.stringify(productSchema);
+}
 
 function router() {
   const hash = location.hash;
   if (hash.startsWith("#/katalog")) {
     renderCatalog(hash.split("/")[2]);
+    updateMeta("Katalog pojazdów Sea-Doo & Can-Am | Extreme Club", "Wybierz swoją kategorię: skutery wodne Sea-Doo, quady ATV Can-Am, pojazdy SSV oraz trójkołowce.", "images/hero-catalog.webp");
   } else if (hash.startsWith("#/cennik")) {
     renderPricing();
+    updateMeta("Cennik pojazdów Sea-Doo i Can-Am | Extreme Club", "Sprawdź ceny modeli skuterów wodnych, quadów i pojazdów side-by-side w naszym autoryzowanym salonie.", "images/hero-pricing-canam.jpg");
   } else if (hash.startsWith("#/kontakt")) {
     renderContact();
+    updateMeta("Kontakt i dojazd — Extreme Club Łęgowo", "Skontaktuj się z nami! Zapraszamy do naszego autoryzowanego salonu BRP w Łęgowie. Zobacz godziny otwarcia i mapę dojazdu.", "images/seadoo-lifestyle-beach-trip.jpg");
+  } else if (hash.startsWith("#/pojazd/")) {
+    const id = hash.split("/")[2];
+    openDetail(id);
   } else {
     renderHome();
+    updateMeta("Extreme Club — Skutery wodne Sea-Doo, Quady i pojazdy Can-Am", "Extreme Club — autoryzowany dealer Sea-Doo i Can-Am. Skutery wodne, quady ATV, pojazdy SSV i trójkołowce. Pełny katalog i serwis.", "images/hero-home.webp");
   }
 }
 window.addEventListener("hashchange", router);
@@ -2193,6 +2299,11 @@ function galleryMarkup(v) {
 function openDetail(id) {
   const v = VEHICLES.find(x => x.id === id);
   if (!v) return;
+  
+  const imgUrl = v.colors && v.colors.length ? v.colors[0].image : (v.images && v.images[0] ? v.images[0] : "images/hero-home.webp");
+  updateMeta(`${v.name} — ${v.categoryLabel} | Cennik i specyfikacja | Extreme Club`, `${v.desc}`, imgUrl);
+  updateSchemaMarkup(v);
+  
   document.querySelector(".detail-back").onclick = () => showCatalog(v.category);
   const slides = [v.colors && v.colors.length ? `<div class="detail-image"><img id="detail-main-img" src="${v.colors[0].image}" alt="${v.name}" loading="lazy"></div>` : `<div class="detail-image">${mediaMarkup(v, { size: "detail" })}</div>`, ...((v.gallery || []).map(src => `<div class="detail-gallery-item"><img src="${src}" alt="${v.name}" loading="lazy"></div>`))];  
   const dots = slides.length > 1 ? `<div class="detail-slider-dots">${slides.map((_,i) => `<button class="detail-slider-dot${i===0?' active':''}" onclick="sliderGoTo(this,${i})"></button>`).join('')}</div>` : '';
@@ -2289,7 +2400,7 @@ function openDetail(id) {
           ? `<img id="${imgId}" src="${r.colors[0].image}" alt="${r.name}" loading="lazy">`
           : `<img id="${imgId}" src="${r.images[0]}" alt="${r.name}" loading="lazy">`;
         return `
-        <div class="detail-related-card" onclick="openDetail('${r.id}')">
+        <div class="detail-related-card" onclick="location.hash = '#/pojazd/${r.id}'">
           <div class="detail-related-image">${media}</div>
           <div class="detail-related-body">
             <div class="detail-related-segment">${r.segment}</div>
