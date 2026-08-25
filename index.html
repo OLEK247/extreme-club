@@ -557,6 +557,7 @@ body.is-home .nav-social { display: flex; }
   .hero-content h1 { font-size: 32px; }
   .hero-content p { font-size: 15px; max-width: 440px; margin: 0 auto 28px; }
   .hero-content { padding-top: 72px; } /* optycznie obniża napisy w dół, kompensując menu */
+  .hero-scroll { bottom: 20px; } /* nizej, by nie nachodzic na tekst przy mniejszej wysokosci ekranu (np. przegladarka w Messengerze) */
   .contact-banner::after { height: 110px; }
   .showcase-tile { aspect-ratio: 4/5; padding: 0 28px; align-items: flex-end; }
   .seadoo-2026-banner { aspect-ratio: 4/5; min-height: 380px; }
@@ -983,7 +984,7 @@ body.is-home .nav-social { display: flex; }
 
   <section class="hero">
     <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="images/hero-home.webp">
-      <source src="images/hero-video.mp4" type="video/mp4">
+      <source src="images/hero-video.mp4?v=20260825" type="video/mp4">
     </video>
     <div class="hero-content">
       <h1>Poczuj adrenalinę<br>na wodzie i na lądzie</h1>
@@ -1346,7 +1347,7 @@ body.is-home .nav-social { display: flex; }
 <div id="page-contact" class="page">
   <section class="contact-banner">
     <video class="contact-banner-video" id="contact-banner-video" muted loop playsinline preload="none" poster="images/hero-pricing-canam.jpg">
-      <source data-src="images/hero-contact.mp4" type="video/mp4">
+      <source data-src="images/hero-contact.mp4?v=20260825" type="video/mp4">
     </video>
     <div class="container">
       <span class="eyebrow" style="display:block; text-align:center; color:rgba(255,255,255,0.85); text-shadow:0 2px 6px rgba(0,0,0,0.5); margin-bottom:14px;">Kontakt</span>
