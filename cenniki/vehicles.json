@@ -1,0 +1,3187 @@
+[
+  {
+    "id": "seadoo-spark-60-2",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Rec Lite",
+    "name": "Spark 60 For 2",
+    "price": "od 8 690 €",
+    "engine": "Rotax 60 (2 os.)",
+    "desc": "Najlżejszy i najbardziej przystępny skuter w gamie Sea-Doo — prosty w obsłudze, tani w eksploatacji i lekki w transporcie. Idealny pierwszy kontakt ze światem sportów wodnych dla dwóch osób.",
+    "fullDesc": [
+      "Spark 60 For 2 to skuter zaprojektowany z myślą o osobach, które dopiero zaczynają swoją przygodę z jazdą na wodzie. Kompaktowy, lekki kadłub sprawia, że pojazd jest wyjątkowo łatwy w manewrowaniu, cumowaniu i transporcie na przyczepie — bez potrzeby dużego, mocnego samochodu holowniczego.",
+      "Silnik Rotax o mocy 60 KM zapewnia spokojne, przewidywalne przyspieszenie, dzięki czemu skuter świetnie sprawdza się jako pojazd szkoleniowy oraz rodzinny sprzęt na weekendowe wypady nad wodę. Prosta konstrukcja przekłada się na niskie koszty serwisu i eksploatacji."
+    ],
+    "highlights": [
+      "Silnik: Rotax, 60 KM",
+      "Lekki kadłub polimerowy — łatwy transport i wodowanie",
+      "Pojemność: 2 osoby",
+      "Przejrzysty panel wskaźników — czytelna obsługa dla początkujących",
+      "Niskie zużycie paliwa i koszty serwisowe"
+    ],
+    "forWho": "Spark 60 For 2 to propozycja dla osób stawiających pierwsze kroki na skuterze wodnym oraz dla rodzin szukających lekkiego, niedrogiego w utrzymaniu pojazdu na spokojne wyjścia na wodę. To nie jest skuter dla szukających ekstremalnych wrażeń — to narzędzie do nauki i przyjemnej, bezstresowej jazdy.",
+    "features": [
+      {
+        "title": "Silnik Rotax 60 KM",
+        "text": "Spokojne, przewidywalne przyspieszenie, dzięki któremu nauka jazdy przebiega bez stresu, a jednocześnie niskie spalanie nie obciąża domowego budżetu."
+      },
+      {
+        "title": "Lekki kadłub Polytec",
+        "text": "Kompozytowy materiał znacząco redukuje wagę całego pojazdu, dzięki czemu bez problemu przewieziesz go za mniejszym samochodem i samodzielnie zwodujesz bez pomocy dźwigu."
+      },
+      {
+        "title": "Przejrzysty panel wskaźników",
+        "text": "Czytelny odczyt prędkości, poziomu paliwa i licznika godzin sprawia, że nawet pierwsza jazda na wodzie jest w pełni pod kontrolą."
+      },
+      {
+        "title": "Bagażnik dziobowy",
+        "text": "Schowek na drobny sprzęt, telefon w wodoszczelnym pokrowcu czy kluczyki — zawsze pod ręką na krótszych wypadach nad wodę."
+      },
+      {
+        "title": "Niskie koszty serwisowe",
+        "text": "Prosta, sprawdzona konstrukcja mechaniczna przekłada się na tańsze przeglądy i części zamienne w autoryzowanym serwisie BRP."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Sunrise Orange / Dragon Red",
+        "hex1": "#e07a2b",
+        "hex2": "#a3241f",
+        "image": "images/seadoo-spark-60-2-1.jpg"
+      },
+      {
+        "name": "Vapor Blue / Dazzling Blue",
+        "hex1": "#6fa8c9",
+        "hex2": "#1f5f8a",
+        "image": "images/seadoo-spark-90-2-1.webp"
+      }
+    ],
+    "images": [
+      "images/seadoo-spark-60-2-1.jpg",
+      "images/seadoo-spark-60-2-2.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-spark-60-2-life-1.avif",
+      "images/seadoo-spark-60-2-life-2.avif"
+    ]
+  },
+  {
+    "id": "seadoo-spark-90-2",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Rec Lite",
+    "name": "Spark 90 For 2",
+    "price": "od 11 600 €",
+    "engine": "Rotax 90 (2 os.)",
+    "desc": "Mocniejsza odsłona najlżejszego skutera Sea-Doo — 90 KM daje wyraźnie więcej zabawy i przyspieszenia, a kompaktowe rozmiary zostają bez zmian. Świetny wybór dla dwóch osób szukających czegoś żywszego niż podstawowy Spark.",
+    "fullDesc": [
+      "Spark 90 For 2 bazuje na tej samej, sprawdzonej, lekkiej platformie co Spark 60, ale dzięki mocniejszej jednostce napędowej oferuje zauważalnie dynamiczniejsze przyspieszenie i wyższą prędkość maksymalną. To wybór dla tych, którzy cenią kompaktowe rozmiary Sparka, ale chcą więcej emocji z jazdy.",
+      "Lekka konstrukcja kadłuba wciąż ułatwia transport, wodowanie i przechowywanie, a silnik Rotax 90 KM pozostaje przy tym oszczędny w eksploatacji. To skuter, który rośnie razem z umiejętnościami użytkownika — od pierwszych przejażdżek po coraz odważniejszą jazdę."
+    ],
+    "highlights": [
+      "Silnik: Rotax, 90 KM",
+      "Lekki kadłub polimerowy — łatwy transport i wodowanie",
+      "Pojemność: 2 osoby",
+      "Zwinne prowadzenie przy niewielkich gabarytach",
+      "Ekonomiczne zużycie paliwa"
+    ],
+    "forWho": "Spark 90 For 2 sprawdzi się u osób, które próbowały już jazdy na wodzie i szukają nieco więcej mocy niż w podstawowym modelu, wciąż ceniąc sobie lekkość, prostotę i niskie koszty utrzymania. To dobry wybór na drugi skuter w rodzinie albo pierwszy — dla kogoś, kto lubi żywszą jazdę od startu.",
+    "features": [
+      {
+        "title": "Silnik Rotax 90 KM",
+        "text": "Wyraźnie żywsze przyspieszenie niż w wersji 60 KM, dzięki czemu jazda staje się bardziej ekscytująca bez utraty ekonomii spalania na co dzień."
+      },
+      {
+        "title": "Ta sama lekka platforma Spark",
+        "text": "Kompaktowe gabaryty i niska waga oznaczają wygodny transport na przyczepie oraz łatwe przechowywanie w garażu czy na podwórku."
+      },
+      {
+        "title": "Manualna regulacja trymu",
+        "text": "Dostosuj kąt dziobu do warunków na wodzie i własnego stylu jazdy, by uzyskać jeszcze lepszą kontrolę nad pojazdem."
+      },
+      {
+        "title": "Ergonomiczna kierownica z uchwytami",
+        "text": "Pewny chwyt dla kierowcy i pasażera nawet podczas bardziej dynamicznych manewrów na wodzie."
+      },
+      {
+        "title": "Kompatybilność z systemem LinQ",
+        "text": "Szybki montaż dodatkowego bagażnika czy akcesoriów bez narzędzi — sprzęt rośnie razem z Twoimi potrzebami."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Sunrise Orange / Dragon Red",
+        "hex1": "#e07a2b",
+        "hex2": "#a3241f",
+        "image": "images/seadoo-spark-60-2-1.jpg"
+      },
+      {
+        "name": "Vapor Blue / Dazzling Blue",
+        "hex1": "#6fa8c9",
+        "hex2": "#1f5f8a",
+        "image": "images/seadoo-spark-90-2-1.webp"
+      }
+    ],
+    "images": [
+      "images/seadoo-spark-90-2-1.webp"
+    ],
+    "gallery": [
+      "images/seadoo-spark-90-2-life-1.jpg",
+      "images/seadoo-spark-90-2-life-2.webp"
+    ]
+  },
+  {
+    "id": "seadoo-spark-trixx-1",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Rec Lite",
+    "name": "Spark Trixx 90 For 1",
+    "price": "od 11 690 €",
+    "engine": "Rotax 90 (1 os.)",
+    "desc": "Jednoosobowa wersja Sparka z dedykowanym trybem Trixx do wykonywania trików na wodzie — beczek, obrotów i skoków. Zbudowany z myślą o zabawie i pokazywaniu klasy na wodzie, nie tylko o przemieszczaniu się z punktu A do B.",
+    "fullDesc": [
+      "Spark Trixx 90 For 1 to specjalna, jednoosobowa odmiana Sparka wyposażona w dedykowany tryb jazdy Trixx, poszerzoną kierownicę oraz zmodyfikowany stopień do łatwiejszego wsiadania po akrobacjach na wodzie. To skuter zaprojektowany od podstaw z myślą o freestyle'u.",
+      "Tryb Trixx dostraja reakcję gazu i zachowanie jednostki napędowej tak, by ułatwić wykonywanie obrotów, beczek i innych trików, a niska waga całej platformy Spark dodatkowo zwiększa zwinność. To sprzęt, który nagradza odwagę i chęć eksperymentowania na wodzie."
+    ],
+    "highlights": [
+      "Silnik: Rotax, 90 KM",
+      "Dedykowany tryb jazdy Trixx do wykonywania trików",
+      "Poszerzona kierownica i stopień ułatwiający akrobacje",
+      "Pojemność: 1 osoba",
+      "Lekki kadłub — maksymalna zwinność"
+    ],
+    "forWho": "Spark Trixx 90 For 1 to wybór dla tych, dla których jazda na skuterze to przede wszystkim zabawa i pokazywanie umiejętności — freestyle'owców i osób, które chcą nauczyć się wykonywać triki na wodzie. To nie jest pojazd na spokojny rejs — to narzędzie do skoków, obrotów i adrenaliny w czystej, zabawowej formie.",
+    "features": [
+      {
+        "title": "Tryb jazdy Trixx",
+        "text": "Dedykowane ustawienie reakcji gazu i sterowania ułatwia wykonywanie obrotów, beczek i skoków — triki, które na standardowym skuterze wymagałyby dużo więcej wprawy."
+      },
+      {
+        "title": "Poszerzona kierownica Trixx",
+        "text": "Większa kontrola nad pojazdem podczas dynamicznych manewrów, gdy liczy się każdy stopień skrętu w ułamku sekundy."
+      },
+      {
+        "title": "Wysoki stopień wejściowy",
+        "text": "Ułatwia szybki powrót na pokład po wypadnięciu z wody podczas triku, byś mógł kontynuować zabawę bez zbędnych przestojów."
+      },
+      {
+        "title": "Natychmiastowa reakcja silnika Rotax 90 KM",
+        "text": "Precyzyjne dawkowanie mocy jest kluczowe przy wykonywaniu trików wymagających idealnego wyczucia gazu."
+      },
+      {
+        "title": "Najlżejszy kadłub w gamie Sea-Doo",
+        "text": "Minimalna waga przekłada się na maksymalną zwrotność przy każdej zmianie kierunku jazdy."
+      }
+    ],
+    "colors": [
+      {
+        "name": "White / Dragon Red",
+        "hex1": "#e6e6e6",
+        "hex2": "#c8342a",
+        "image": "images/seadoo-spark-trixx-1-color-whitedragonred.webp"
+      },
+      {
+        "name": "Gulfstream Blue / Orange Crush",
+        "hex1": "#2e7fae",
+        "hex2": "#e0722d",
+        "image": "images/seadoo-spark-trixx-1-color-gulfstreamblue.webp"
+      }
+    ],
+    "images": [
+      "images/seadoo-spark-trixx-1-1.jpg",
+      "images/seadoo-spark-trixx-1-2.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-spark-trixx-1-life-1-new.jpg",
+      "images/seadoo-spark-trixx-1-life-2-new.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-spark-trixx-3",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Rec Lite",
+    "name": "Spark Trixx 90 For 3",
+    "price": "od 12 520 €",
+    "engine": "Rotax 90 (3 os.)",
+    "desc": "Trixx w wersji dla trzech osób — te same triki i zabawa co w wariancie jednoosobowym, ale z miejscem na znajomych lub rodzinę na pokładzie. Świetny wybór dla grup, które chcą wspólnie szaleć na wodzie.",
+    "fullDesc": [
+      "Spark Trixx 90 For 3 łączy charakterystyczny, zabawowy charakter linii Trixx z większą pojemnością — dzięki temu do wspólnej jazdy i wykonywania trików można zabrać ze sobą dwie dodatkowe osoby, bez rezygnacji z dedykowanego trybu freestyle.",
+      "Ten sam tryb Trixx, dostrajający reakcję napędu pod kątem wykonywania obrotów i beczek, działa tu identycznie jak w wersji jednoosobowej, a dodatkowa przestrzeń sprawia, że skuter świetnie sprawdza się jako centrum zabawy dla grupy znajomych lub rodziny nad wodą."
+    ],
+    "highlights": [
+      "Silnik: Rotax, 90 KM",
+      "Dedykowany tryb jazdy Trixx do wykonywania trików",
+      "Pojemność: 3 osoby",
+      "Lekki kadłub polimerowy",
+      "Uniwersalny wybór na wspólne wypady nad wodę"
+    ],
+    "forWho": "Spark Trixx 90 For 3 to propozycja dla grup znajomych i rodzin, które chcą razem cieszyć się zabawową stroną jazdy na skuterze — z możliwością wykonywania trików, ale i zwykłej wspólnej przejażdżki w trójkę. Dobry wybór, gdy zabawa ma być dzielona z innymi, a nie tylko solową akrobacją.",
+    "features": [
+      {
+        "title": "Tryb jazdy Trixx",
+        "text": "Ta sama zabawowa charakterystyka co w wersji solo — teraz do dzielenia z dwiema dodatkowymi osobami na pokładzie podczas wspólnych wypadów."
+      },
+      {
+        "title": "Zwiększona pojemność siedzisk",
+        "text": "Miejsce dla trzech osób bez utraty charakterystycznej dla Sparka zwrotności i lekkości prowadzenia."
+      },
+      {
+        "title": "Wzmocnione siedzisko trzyosobowe",
+        "text": "Komfortowe podparcie pleców dla wszystkich pasażerów, nawet przy dynamicznych zwrotach i trikach."
+      },
+      {
+        "title": "Silnik Rotax 90 KM",
+        "text": "Moc wystarczająca do wykonywania trików i wspólnej jazdy nawet przy dodatkowym obciążeniu trzema osobami."
+      },
+      {
+        "title": "Kompatybilność z systemem LinQ",
+        "text": "Łatwy montaż bagażnika bez narzędzi, przydatny podczas dłuższych, wspólnych wypadów nad wodę."
+      }
+    ],
+    "colors": [
+      {
+        "name": "White / Dragon Red",
+        "hex1": "#e6e6e6",
+        "hex2": "#c8342a",
+        "image": "images/seadoo-spark-trixx-3-color-whitedragonred.webp"
+      },
+      {
+        "name": "Gulfstream Blue / Orange Crush",
+        "hex1": "#2e7fae",
+        "hex2": "#e0722d",
+        "image": "images/seadoo-spark-trixx-3-color-gulfstreamblue.webp"
+      }
+    ],
+    "images": [
+      "images/seadoo-spark-trixx-3-1.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-spark-trixx-3-life-1-new.jpg",
+      "images/seadoo-spark-trixx-3-life-2-new.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-gti-std",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Recreation",
+    "name": "GTI Standard 130",
+    "price": "od 14 770 €",
+    "engine": "Rotax 130 KM",
+    "desc": "Uniwersalna, rodzinna platforma Sea-Doo na każdą okazję — od spokojnego rejsu po aktywny dzień na wodzie z bliskimi. 130 KM mocy w komfortowym, stabilnym kadłubie.",
+    "fullDesc": [
+      "GTI Standard 130 to punkt wejścia do rodziny modeli rekreacyjnych Sea-Doo — pojazd zaprojektowany z myślą o komforcie, stabilności i uniwersalności, a nie wyścigowych osiągach. Szeroki, stabilny kadłub zapewnia pewne prowadzenie nawet przy większym obciążeniu.",
+      "Silnik 130 KM zapewnia wystarczającą moc na wodne szaleństwa z rodziną czy znajomymi, a jednocześnie pozostaje ekonomiczny w codziennej eksploatacji. To skuter budowany z myślą o wielu godzinach spędzonych na wodzie, nie o rekordach prędkości."
+    ],
+    "highlights": [
+      "Silnik: Rotax, 130 KM",
+      "Stabilny, szeroki kadłub rekreacyjny",
+      "Pojemność: do 3 osób",
+      "Przejrzysty panel wskaźników",
+      "Przestrzeń na bagaż na krótsze wypady"
+    ],
+    "forWho": "GTI Standard 130 to naturalny wybór dla rodzin i grup znajomych szukających uniwersalnego, wygodnego skutera na weekendowe wypady nad wodę — bez potrzeby sportowych osiągów, za to z naciskiem na komfort i stabilność jazdy dla całej załogi.",
+    "features": [
+      {
+        "title": "Silnik Rotax 130 KM",
+        "text": "Zbalansowana moc do codziennej, rodzinnej jazdy — wystarczająco dynamiczna na zabawę, bez nadmiernego apetytu na paliwo."
+      },
+      {
+        "title": "Szeroki kadłub rekreacyjny",
+        "text": "Zwiększona stabilność przy większym obciążeniu daje pewność mniej doświadczonym pasażerom, także dzieciom na pokładzie."
+      },
+      {
+        "title": "Czytelny panel wskaźników",
+        "text": "Przejrzysty odczyt prędkości, poziomu paliwa i przebiegu — wszystko pod kontrolą podczas rodzinnej wycieczki."
+      },
+      {
+        "title": "Schowek dziobowy i pod siedziskiem",
+        "text": "Miejsce na rzeczy osobiste, kamizelki ratunkowe i drobny sprzęt wodny, zawsze w zasięgu ręki."
+      },
+      {
+        "title": "Platforma do wsiadania z wody",
+        "text": "Ułatwiony powrót na pokład po kąpieli w jeziorze czy morzu — wygodne rozwiązanie dla całej rodziny."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Bright White / Neo Mint",
+        "hex1": "#f2f4f5",
+        "hex2": "#8fd4c8",
+        "image": "images/seadoo-gti-std-2.jpg"
+      }
+    ],
+    "images": [
+      "images/seadoo-gti-std-2.jpg",
+      "images/seadoo-gti-std-1.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-gti-std-life-1.jpg",
+      "images/seadoo-gti-std-life-2.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-gti-se",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Recreation",
+    "name": "GTI SE 170",
+    "price": "od 17 330 €",
+    "engine": "Rotax 170 KM",
+    "desc": "Rozszerzona wersja GTI z większą mocą i bogatszym wyposażeniem SE — komfort i osiągi w jednym, rodzinnym pakiecie. Więcej technologii na pokładzie bez rezygnacji z uniwersalności.",
+    "fullDesc": [
+      "GTI SE 170 rozwija koncepcję rodzinnego GTI o dodatkową moc oraz pakiet wyposażenia SE, który podnosi komfort podróżowania — większy wyświetlacz, wygodniejsze siedzisko i dodatkowe udogodnienia dla pasażerów.",
+      "170 KM mocy Rotax daje wyraźnie więcej przyspieszenia niż wersja Standard, wciąż zachowując stabilny, rodzinny charakter kadłuba GTI. To propozycja dla tych, którzy chcą trochę więcej dynamiki bez przechodzenia do klasy Performance."
+    ],
+    "highlights": [
+      "Silnik: Rotax, 170 KM",
+      "Wyświetlacz 4,5\" cyfrowy",
+      "System zmiennego trymowania (VTS)",
+      "Pojemność: do 3 osób",
+      "Pakiet wyposażenia SE — podwyższony komfort"
+    ],
+    "forWho": "GTI SE 170 to wybór dla rodzin i aktywnych par, które chcą trochę więcej mocy i komfortu niż w podstawowym modelu GTI, ale wciąż w uniwersalnym, przyjaznym w obsłudze pakiecie na co dzień.",
+    "features": [
+      {
+        "title": "Silnik Rotax 170 KM",
+        "text": "Zauważalnie więcej przyspieszenia niż w wersji Standard, bez rezygnacji z rodzinnego, przewidywalnego charakteru jazdy."
+      },
+      {
+        "title": "Wyświetlacz 4,5 cala",
+        "text": "Czytelne informacje o jeździe — prędkość, zużycie paliwa i tryby jazdy w jednym miejscu."
+      },
+      {
+        "title": "System zmiennego trymowania VTS",
+        "text": "Elektroniczna regulacja kąta dziobu jednym przyciskiem, dopasowana do warunków na wodzie i liczby osób na pokładzie."
+      },
+      {
+        "title": "Pakiet wyposażenia SE",
+        "text": "Wygodniejsze siedzisko i dopracowane wykończenia podnoszące komfort podróży dla kierowcy i pasażerów."
+      },
+      {
+        "title": "Szeroki kadłub rekreacyjny",
+        "text": "Stabilna platforma dla rodziny, nawet gdy jazda staje się bardziej dynamiczna dzięki dodatkowej mocy."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Eclipse Black / Laguna Green",
+        "hex1": "#1c1c1c",
+        "hex2": "#2f6b52",
+        "image": "images/seadoo-gti-se-color-eclipseblack.webp"
+      },
+      {
+        "name": "Teal Blue / Manta Green",
+        "hex1": "#1f6b6b",
+        "hex2": "#5a8f3c",
+        "image": "images/seadoo-gti-se-color-tealblue.webp"
+      }
+    ],
+    "images": [
+      "images/seadoo-gti-se-1.jpg",
+      "images/seadoo-gti-se-2.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-gti-se-life-1.jpg",
+      "images/seadoo-gti-se-life-2.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-gtx-170",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Touring",
+    "name": "GTX 170",
+    "price": "od 19 210 €",
+    "engine": "Rotax 170 KM",
+    "desc": "Komfort i osiągi w klasie turystycznej Sea-Doo — stabilna jednostka na dłuższe trasy z pasażerem. 170 KM mocy w wygodnym, szerokim kadłubie.",
+    "fullDesc": [
+      "GTX 170 to wejście do świata turystycznych skuterów Sea-Doo — pojazd zaprojektowany z myślą o dłuższych trasach, komfortowej jeździe z pasażerem i pewności prowadzenia niezależnie od warunków na wodzie.",
+      "Szeroki kadłub ST3 zapewnia stabilność przy różnych falach, a 170 KM mocy wystarcza na dynamiczne, choć nie ekstremalne osiągi. System zmiennego trymowania VTS pozwala dostosować kąt dziobu do warunków i stylu jazdy."
+    ],
+    "highlights": [
+      "Silnik: Rotax, 170 KM",
+      "Kadłub turystyczny ST3 — stabilność na dłuższych trasach",
+      "System zmiennego trymowania (VTS)",
+      "Wyświetlacz 7,6\"",
+      "Pojemność: do 3 osób"
+    ],
+    "forWho": "GTX 170 to dobry wybór dla par i rodzin planujących dłuższe wycieczki wodne, ceniących komfort jazdy i stabilność ponad agresywne osiągi — solidny punkt startowy w klasie turystycznej Sea-Doo.",
+    "features": [
+      {
+        "title": "Silnik Rotax 170 KM",
+        "text": "Pewne, płynne przyspieszenie na dłuższych trasach turystycznych bez nadmiernego zużycia paliwa podczas całodniowych wycieczek."
+      },
+      {
+        "title": "Kadłub turystyczny ST3",
+        "text": "Zaprojektowany z myślą o stabilności i komforcie przy falowaniu — pewność prowadzenia niezależnie od warunków na wodzie."
+      },
+      {
+        "title": "System zmiennego trymowania VTS",
+        "text": "Łatwa regulacja kąta dziobu do warunków, obciążenia i własnego stylu jazdy jednym przyciskiem na kierownicy."
+      },
+      {
+        "title": "Wyświetlacz 7,6 cala",
+        "text": "Pełny wgląd w parametry jazdy — prędkość, zasięg paliwa i dystans — podczas długich tras wodnych."
+      },
+      {
+        "title": "Komfortowe siedzisko dwuosobowe",
+        "text": "Solidne wsparcie dla pleców pasażera, dzięki czemu dłuższe wycieczki nie kończą się zmęczeniem."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Blue Abyss / Gulfstream Blue",
+        "hex1": "#3a4a5c",
+        "hex2": "#3e6f9e",
+        "image": "images/seadoo-gtx-170-new.webp"
+      }
+    ],
+    "images": [
+      "images/seadoo-gtx-170-new.webp"
+    ],
+    "gallery": [
+      "images/seadoo-gtx-170-life-1.jpg",
+      "images/seadoo-gtx-170-life-2.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-gtx-230",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Touring",
+    "name": "GTX 230",
+    "price": "od 21 210 €",
+    "engine": "Rotax 230 KM",
+    "desc": "Więcej mocy i technologii dla dłuższych tras wodnych, przy zachowaniu komfortu jazdy klasy GTX. 230 KM dla tych, którzy chcą więcej dynamiki w turystycznym pakiecie.",
+    "fullDesc": [
+      "GTX 230 rozwija turystyczną platformę GTX o wyraźnie mocniejszy silnik, oferując więcej przyspieszenia i wyższą prędkość maksymalną bez utraty charakterystycznej dla tej linii stabilności i komfortu.",
+      "System iBR (inteligentne hamowanie i cofanie) ułatwia manewrowanie przy doku i w porcie, a mocniejsza jednostka 230 KM sprawia, że dłuższe trasy mijają szybciej, nie tracąc przy tym nic z turystycznego komfortu jazdy."
+    ],
+    "highlights": [
+      "Silnik: Rotax, 230 KM",
+      "iBR — inteligentne hamowanie i cofanie",
+      "System zmiennego trymowania (VTS)",
+      "Kadłub turystyczny ST3",
+      "Pojemność: do 3 osób"
+    ],
+    "forWho": "GTX 230 to propozycja dla tych, którzy chcą klasy turystycznej Sea-Doo z zauważalnie większą dawką mocy — idealny dla par i rodzin regularnie pokonujących dłuższe dystanse na wodzie, które nie chcą rezygnować z dynamiki jazdy.",
+    "features": [
+      {
+        "title": "Silnik Rotax 230 KM",
+        "text": "Wyraźnie więcej mocy niż w wersji 170 KM — dynamiczne odcinki tras turystycznych stają się jeszcze przyjemniejsze."
+      },
+      {
+        "title": "System iBR",
+        "text": "Inteligentne hamowanie i cofanie jedną dźwignią znacząco ułatwia precyzyjne manewrowanie przy doku i w porcie."
+      },
+      {
+        "title": "Kadłub turystyczny ST3",
+        "text": "Stabilność i komfort na dłuższych dystansach niezależnie od warunków panujących na wodzie."
+      },
+      {
+        "title": "System zmiennego trymowania VTS",
+        "text": "Precyzyjna regulacja kąta dziobu w czasie jazdy, dopasowana do obciążenia i prędkości."
+      },
+      {
+        "title": "Rozszerzone schowki bagażowe",
+        "text": "Wystarczająco miejsca na sprzęt na dłuższe wyprawy turystyczne we dwoje lub w rodzinnym gronie."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Blue Abyss / Gulfstream Blue",
+        "hex1": "#3a4a5c",
+        "hex2": "#3e6f9e",
+        "image": "images/seadoo-gtx-230-new.webp"
+      }
+    ],
+    "images": [
+      "images/seadoo-gtx-230-new.webp"
+    ],
+    "gallery": [
+      "images/seadoo-gtx-230-life-1.jpg",
+      "images/seadoo-gtx-230-life-2.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-gtx-limited-325",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Touring",
+    "name": "GTX Limited 325",
+    "price": "od 30 490 €",
+    "engine": "Rotax 325 KM",
+    "desc": "Flagowy model turystyczny Sea-Doo z dotykowym wyświetlaczem 10,25\" i najbogatszym wyposażeniem w gamie. 325 KM mocy supercharged w najbardziej luksusowym pakiecie turystycznym marki.",
+    "fullDesc": [
+      "GTX Limited 325 to szczyt oferty turystycznej Sea-Doo — połączenie najwyższej mocy w segmencie z najbogatszym dostępnym wyposażeniem. To skuter, który ma oferować pełnię komfortu bez kompromisów w osiągach.",
+      "Doładowany silnik Rotax 325 KM zapewnia imponujące przyspieszenie, a 10,25-calowy dotykowy wyświetlacz z pełną nawigacją po ustawieniach jazdy, iBR oraz iDF (automatyczne czyszczenie pompy wodnej) czynią z niego najbardziej zaawansowany technologicznie model w linii turystycznej."
+    ],
+    "highlights": [
+      "Silnik: Rotax, 325 KM (supercharged)",
+      "Wyświetlacz 10,25\" dotykowy z pełną nawigacją ustawień",
+      "iBR — inteligentne hamowanie i cofanie",
+      "iDF — automatyczne czyszczenie pompy wodnej z zanieczyszczeń",
+      "System zmiennego trymowania (VTS)",
+      "Pojemność: do 3 osób"
+    ],
+    "forWho": "GTX Limited 325 to wybór dla klientów, którzy chcą mieć wszystko naraz — najwyższy komfort turystyczny, najbogatszą technologię na pokładzie i moc, która nie ustępuje modelom performance. To skuter dla tych, dla których liczy się pełnia doświadczenia, nie tylko sama jazda z punktu A do B.",
+    "features": [
+      {
+        "title": "Silnik Rotax 325 KM (supercharged)",
+        "text": "Najwyższa moc w całej linii turystycznej Sea-Doo — imponujące przyspieszenie bez kompromisów w komforcie jazdy."
+      },
+      {
+        "title": "Wyświetlacz dotykowy 10,25 cala",
+        "text": "Pełna nawigacja po ustawieniach jazdy, trybach mocy i danych z podróży jednym dotknięciem palca, jak w nowoczesnym samochodzie."
+      },
+      {
+        "title": "System iBR",
+        "text": "Inteligentne hamowanie i cofanie dla pełnej kontroli podczas precyzyjnych manewrów przy doku."
+      },
+      {
+        "title": "System iDF",
+        "text": "Automatyczne czyszczenie pompy wodnej z zanieczyszczeń oznacza mniej przestojów i więcej czasu spędzonego na wodzie."
+      },
+      {
+        "title": "Najbogatszy pakiet wyposażenia Sea-Doo",
+        "text": "Premium wykończenia siedziska, zaawansowany system audio i pełen komfort flagowego modelu turystycznego marki."
+      }
+    ],
+    "colors": [
+      {
+        "name": "White Pearl Premium",
+        "hex1": "#ede9e3",
+        "hex2": "#c3c0ba",
+        "image": "images/seadoo-gtx-limited-325-color-whitepearl.webp"
+      },
+      {
+        "name": "Teal Metallic",
+        "hex1": "#1f6b6b",
+        "hex2": "#123f3f",
+        "image": "images/seadoo-gtx-limited-325-color-tealmetallic.webp"
+      }
+    ],
+    "images": [
+      "images/seadoo-gtx-limited-325-2.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-gtx-limited-325-life-1.jpg",
+      "images/seadoo-gtx-limited-325-life-2.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-gtr-230",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Performance",
+    "name": "GTR 230",
+    "price": "od 18 970 €",
+    "engine": "Rotax 230 KM",
+    "desc": "Sportowe osiągi w przystępnej cenie — dynamiczna jazda bez rozbudowanej elektroniki klasy X. 230 KM mocy w zwrotnym, sportowym kadłubie.",
+    "fullDesc": [
+      "GTR 230 to wejście w świat sportowych osiągów Sea-Doo bez konieczności sięgania po najdroższe modele klasy X. Sportowy kadłub S3 zapewnia dynamiczne prowadzenie w zakrętach, a mocny silnik dostarcza sporą dawkę adrenaliny.",
+      "W porównaniu do wersji GTR X, model 230 rezygnuje z części zaawansowanej elektroniki i regulacji na rzecz bardziej przystępnej ceny — to propozycja dla tych, którzy chcą poczuć sportowy charakter Sea-Doo bez płacenia za pełen pakiet technologii."
+    ],
+    "highlights": [
+      "Silnik: Rotax, 230 KM",
+      "Sportowy kadłub S3",
+      "iBR — inteligentne hamowanie i cofanie",
+      "Zwrotne, dynamiczne prowadzenie w zakrętach",
+      "Pojemność: do 3 osób"
+    ],
+    "forWho": "GTR 230 sprawdzi się u osób, które szukają sportowego charakteru jazdy i dynamicznych osiągów w bardziej przystępnej cenie niż topowe modele X — dobry wybór na pierwszy kontakt ze sportową jazdą na skuterze wodnym.",
+    "features": [
+      {
+        "title": "Silnik Rotax 230 KM",
+        "text": "Sportowy charakter przyspieszenia w wyraźnie bardziej przystępnej cenie niż modele klasy X."
+      },
+      {
+        "title": "Sportowy kadłub S3",
+        "text": "Zwrotne, precyzyjne prowadzenie w zakrętach przy zachowaniu stabilności na prostych odcinkach."
+      },
+      {
+        "title": "System iBR",
+        "text": "Inteligentne hamowanie i cofanie ułatwiające pełną kontrolę podczas dynamicznej jazdy."
+      },
+      {
+        "title": "Sportowe uchwyty kierownicy",
+        "text": "Pewny chwyt i lepsza kontrola podczas bardziej agresywnego stylu jazdy w zakrętach."
+      },
+      {
+        "title": "Kompaktowa, sportowa sylwetka",
+        "text": "Mniejsza waga niż w modelach turystycznych przekłada się na żywszą, bardziej bezpośrednią reakcję na gaz."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Eclipse Black / Reef Blue",
+        "hex1": "#1c1c1e",
+        "hex2": "#2a9d94",
+        "image": "images/seadoo-gtr-230-new.webp"
+      }
+    ],
+    "images": [
+      "images/seadoo-gtr-230-new.webp"
+    ],
+    "gallery": [
+      "images/seadoo-gtr-230-life-2.jpg",
+      "images/seadoo-gtr-230-life-3.avif"
+    ]
+  },
+  {
+    "id": "seadoo-gtr-x-300",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Performance",
+    "name": "GTR-X 300",
+    "price": "od 22 990 €",
+    "engine": "Rotax 300 KM",
+    "desc": "Wersja X z podwyższonymi osiągami dla wymagających — ostrzejsze prowadzenie i mocniejsza jednostka napędowa. 300 KM mocy i pełen pakiet elektroniki sportowej.",
+    "fullDesc": [
+      "GTR-X 300 to odpowiedź Sea-Doo na potrzeby kierowców szukających więcej niż podstawowa wersja GTR — mocniejszy silnik, system siedzenia Ergolock oraz regulowana kierownica dopasowują skuter do agresywnego stylu jazdy.",
+      "300 KM mocy w połączeniu ze sportowym kadłubem S3 przekłada się na ostre, precyzyjne prowadzenie w zakrętach, a dodatkowe systemy elektroniczne (iBR, VTS) dają pełną kontrolę nad zachowaniem jednostki w każdych warunkach."
+    ],
+    "highlights": [
+      "Silnik: Rotax, 300 KM",
+      "System siedzenia Ergolock",
+      "Regulowana kierownica",
+      "iBR — inteligentne hamowanie i cofanie",
+      "System zmiennego trymowania (VTS)",
+      "Sportowy kadłub S3"
+    ],
+    "forWho": "GTR-X 300 to propozycja dla doświadczonych kierowców, którzy chcą sportowych osiągów i precyzyjnego prowadzenia bez sięgania po najmocniejsze modele RXP/RXT — solidny kompromis mocy, kontroli i ceny.",
+    "features": [
+      {
+        "title": "Silnik Rotax 300 KM",
+        "text": "Wyraźnie więcej mocy niż w wersji GTR 230, dla kierowców oczekujących bardziej wymagających osiągów."
+      },
+      {
+        "title": "System siedzenia Ergolock",
+        "text": "Utrzymuje ciało kierowcy w stabilnej pozycji podczas agresywnego pokonywania zakrętów przy dużej prędkości."
+      },
+      {
+        "title": "Regulowana kierownica",
+        "text": "Dopasowanie geometrii do wzrostu i indywidualnego stylu jazdy dla maksymalnej precyzji prowadzenia."
+      },
+      {
+        "title": "System iBR",
+        "text": "Precyzyjne hamowanie i cofanie zachowane nawet przy najbardziej dynamicznej jeździe."
+      },
+      {
+        "title": "Sportowy kadłub S3",
+        "text": "Ostre, przewidywalne prowadzenie przy dużych prędkościach i dynamicznej zmianie kierunku."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Eclipse Black / Deep Marsala",
+        "hex1": "#1c1c1e",
+        "hex2": "#7a1c2e",
+        "image": "images/seadoo-gtr-x-300-new.webp"
+      }
+    ],
+    "images": [
+      "images/seadoo-gtr-x-300-new.webp"
+    ],
+    "gallery": [
+      "images/seadoo-gtr-x-300-life-1.jpg",
+      "images/seadoo-gtr-x-300-life-2.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-rxp-x-325",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Performance",
+    "name": "RXP-X 325",
+    "price": "od 26 690 €",
+    "engine": "Rotax 325 KM",
+    "desc": "Wyścigowa geometria i maksymalna moc na wodzie — jeden z najbardziej zwrotnych skuterów Sea-Doo. 325 KM supercharged mocy w najbardziej agresywnie prowadzącym kadłubie w gamie.",
+    "fullDesc": [
+      "RXP-X 325 to najbardziej zwrotny i precyzyjny w prowadzeniu skuter w ofercie Sea-Doo — skonstruowany z myślą o możliwie najkrótszym promieniu skrętu i natychmiastowej reakcji na ruchy kierowcy.",
+      "Doładowany silnik Rotax 325 KM w połączeniu ze sportowym kadłubem S3 i systemem siedzenia Ergolock pozwala utrzymać pełną kontrolę ciała nawet przy najbardziej dynamicznym pokonywaniu zakrętów. To skuter budowany z myślą o jeździe na granicy przyczepności."
+    ],
+    "highlights": [
+      "Silnik: Rotax, 325 KM (supercharged)",
+      "Najkrótszy promień skrętu w gamie Sea-Doo",
+      "System siedzenia Ergolock",
+      "Regulowana kierownica",
+      "iBR — inteligentne hamowanie i cofanie",
+      "Sportowy kadłub S3"
+    ],
+    "forWho": "RXP-X 325 to wybór dla doświadczonych kierowców szukających maksymalnej zwrotności i precyzji prowadzenia — tych, dla których liczy się każdy stopień kąta w zakręcie, a nie tylko prędkość w linii prostej.",
+    "features": [
+      {
+        "title": "Silnik Rotax 325 KM (supercharged)",
+        "text": "Jeden z najmocniejszych silników w gamie Sea-Doo — natychmiastowe przyspieszenie na każde żądanie gazu."
+      },
+      {
+        "title": "Najkrótszy promień skrętu w gamie",
+        "text": "Geometria kadłuba zoptymalizowana pod kątem maksymalnej zwrotności w zakrętach, niedostępnej w innych modelach Sea-Doo."
+      },
+      {
+        "title": "System siedzenia Ergolock",
+        "text": "Pełna kontrola ciała nawet przy jeździe na granicy przyczepności, kluczowa podczas najbardziej agresywnego prowadzenia."
+      },
+      {
+        "title": "Regulowana kierownica",
+        "text": "Precyzyjne dopasowanie geometrii do indywidualnego, zawodniczego stylu jazdy."
+      },
+      {
+        "title": "System iBR",
+        "text": "Natychmiastowa reakcja hamowania przy dynamicznym pokonywaniu toru wodnego."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Gulfstream Blue Premium",
+        "hex1": "#1f5fa8",
+        "hex2": "#123a6b",
+        "image": "images/seadoo-rxp-x-325-color-gulfstreamblue.webp"
+      },
+      {
+        "name": "Ice Metal / Manta Green",
+        "hex1": "#c9ccce",
+        "hex2": "#5a8f3c",
+        "image": "images/seadoo-rxp-x-325-color-icemetal.webp"
+      }
+    ],
+    "images": [
+      "images/seadoo-rxp-x-325-1.jpg",
+      "images/seadoo-rxp-x-325-2.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-rxp-x-325-life-1.jpg",
+      "images/seadoo-rxp-x-325-life-2.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-rxt-x-325",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Performance",
+    "name": "RXT-X 325",
+    "price": "od 28 980 €",
+    "engine": "Rotax 325 KM",
+    "desc": "Najbardziej zaawansowany skuter wodny performance w gamie Sea-Doo — 325 KM supercharged mocy, wyścigowa geometria kadłuba i pełna kontrola w każdym zakręcie. Stworzony dla tych, którzy szukają maksymalnej adrenaliny na wodzie.",
+    "fullDesc": [
+      "RXT-X 325 to szczytowe osiągnięcie inżynierii Sea-Doo w klasie performance — pojazd zaprojektowany z myślą o entuzjastach prędkości i precyzyjnego prowadzenia, którzy nie idą na kompromisy. To wybór dla doświadczonych riderów szukających wrażeń zbliżonych do jazdy sportowym torem wyścigowym, ale na wodzie.",
+      "Sercem jednostki jest doładowany silnik Rotax 325 KM, zapewniający błyskawiczne przyspieszenie i wysoką prędkość maksymalną, przy zachowaniu pełnej kontroli dzięki sportowemu kadłubowi S3 zoptymalizowanemu pod kątem agresywnego pokonywania zakrętów. System Ergolock (fotel i podnóżki) pozwala utrzymać pełną kontrolę nad ciałem podczas dynamicznej jazdy, a regulowana kierownica dopasowuje się do stylu jazdy użytkownika."
+    ],
+    "highlights": [
+      "Silnik: Rotax, 325 KM",
+      "Wyświetlacz: 10,25\" ekran dotykowy z pełną nawigacją po ustawieniach jazdy",
+      "iBR (intelligent Brake & Reverse) — inteligentne hamowanie i cofanie",
+      "iDF (intelligent Debris Free) — automatyczne czyszczenie pompy wodnej z zanieczyszczeń",
+      "Zmienny system trymowania (VTS) do regulacji kąta dziobu w czasie jazdy",
+      "Sportowy kadłub S3 zoptymalizowany pod kątem stabilności przy dużych prędkościach i ostrego prowadzenia w zakrętach",
+      "Pojemność: do 3 osób"
+    ],
+    "forWho": "RXT-X 325 to propozycja dla osób szukających czystej adrenaliny i maksymalnych osiągów — kierowców z doświadczeniem, którzy cenią sobie precyzję prowadzenia, dynamiczne przyspieszenie i technologię wspierającą agresywny styl jazdy. To nie jest skuter na spokojny rodzinny rejs — to narzędzie dla tych, dla których liczy się prędkość, kontrola i emocje na najwyższym poziomie.",
+    "features": [
+      {
+        "title": "Silnik Rotax 325 KM (supercharged)",
+        "text": "Flagowa jednostka napędowa performance Sea-Doo — błyskawiczne przyspieszenie i wysoka prędkość maksymalna na każdym akwenie."
+      },
+      {
+        "title": "Wyświetlacz dotykowy 10,25 cala",
+        "text": "Pełna nawigacja po ustawieniach jazdy i trybach mocy, dostępna dotykiem palca nawet w rękawiczkach."
+      },
+      {
+        "title": "System iBR",
+        "text": "Inteligentne hamowanie i cofanie dla pełnej kontroli przy dynamicznej, sportowej jeździe."
+      },
+      {
+        "title": "System iDF",
+        "text": "Automatyczne czyszczenie pompy wodnej z zanieczyszczeń oznacza mniej przestojów podczas agresywnej jazdy."
+      },
+      {
+        "title": "Sportowy kadłub S3 z systemem Ergolock",
+        "text": "Stabilność przy dużych prędkościach i pełna kontrola ciała podczas najbardziej dynamicznych zakrętów."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Gulfstream Blue Premium",
+        "hex1": "#1f5fa8",
+        "hex2": "#123a6b",
+        "image": "images/seadoo-rxt-x-325-color-gulfstreamblue.webp"
+      },
+      {
+        "name": "Ice Metal / Manta Green",
+        "hex1": "#c9ccce",
+        "hex2": "#5a8f3c",
+        "image": "images/seadoo-rxt-x-325-color-icemetal.webp"
+      }
+    ],
+    "images": [
+      "images/seadoo-rxt-x-325-1.jpg",
+      "images/seadoo-rxt-x-325-2.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-rxt-x-325-life-1.jpg",
+      "images/seadoo-rxt-x-325-life-2.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-explorer-pro-170",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Adventure",
+    "name": "Explorer Pro 170",
+    "price": "od 24 420 €",
+    "engine": "Rotax 170 KM",
+    "desc": "Pojazd stworzony do eksploracji — dodatkowa przestrzeń na bagaż i osprzęt do dłuższych wypraw wodnych. 170 KM mocy w kadłubie zoptymalizowanym pod większe obciążenie.",
+    "fullDesc": [
+      "Explorer Pro 170 to odpowiedź Sea-Doo na potrzeby osób planujących dłuższe wyprawy poza utarte szlaki wodne — dodatkowe schowki z przodu i z tyłu pozwalają zabrać ze sobą sprzęt biwakowy, wędkarski czy fotograficzny.",
+      "Kadłub T3-X zaprojektowano z myślą o stabilności przy większym obciążeniu, co ma znaczenie przy dłuższych trasach z pełnym ekwipunkiem na pokładzie. 170 KM mocy zapewnia wystarczającą dynamikę przy zachowaniu ekonomii spalania na długich dystansach."
+    ],
+    "highlights": [
+      "Silnik: Rotax, 170 KM",
+      "Kadłub T3-X zoptymalizowany pod większe obciążenie",
+      "Rozszerzone schowki na sprzęt (przód i tył)",
+      "Stabilność przy dłuższych trasach z pełnym ekwipunkiem",
+      "Pojemność: do 3 osób"
+    ],
+    "forWho": "Explorer Pro 170 to wybór dla osób planujących dłuższe wyprawy wodne poza utarte szlaki — wędkarzy, fotografów przyrody czy po prostu miłośników odkrywania nowych zakątków, którzy potrzebują dodatkowej przestrzeni na sprzęt.",
+    "features": [
+      {
+        "title": "Silnik Rotax 170 KM",
+        "text": "Ekonomiczna jednostka napędowa dostosowana do dłuższych tras z pełnym obciążeniem bagażowym na pokładzie."
+      },
+      {
+        "title": "Kadłub T3-X",
+        "text": "Zoptymalizowany pod większe obciążenie, zapewnia stabilność przy transportowaniu sprzętu na dłuższych wyprawach."
+      },
+      {
+        "title": "Rozszerzone schowki przód i tył",
+        "text": "Miejsce na sprzęt biwakowy, wędkarski lub fotograficzny — wszystko, czego potrzebujesz na wielogodzinną eksplorację."
+      },
+      {
+        "title": "Wzmocnione mocowania LinQ",
+        "text": "Szybki montaż dodatkowych boxów i akcesoriów transportowych bez użycia narzędzi."
+      },
+      {
+        "title": "Zwiększona autonomia paliwowa",
+        "text": "Dłuższy zasięg na wyprawach poza utarte szlaki wodne, bez konieczności częstego tankowania."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Eclipse Black / Lemon Zest",
+        "hex1": "#1c1c1e",
+        "hex2": "#c8d400",
+        "image": "images/seadoo-explorer-pro-170-2.jpg"
+      }
+    ],
+    "images": [
+      "images/seadoo-explorer-pro-170-2.jpg",
+      "images/seadoo-explorer-pro-170-1.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-explorer-pro-170-life-1.jpg",
+      "images/seadoo-explorer-pro-170-life-2.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-explorer-pro-230",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Adventure",
+    "name": "Explorer Pro 230",
+    "price": "od 25 740 €",
+    "engine": "Rotax 230 KM",
+    "desc": "Mocniejsza wersja Explorera dla dłuższych i bardziej wymagających wypraw poza utarte szlaki. 230 KM mocy przy zachowaniu tej samej, pojemnej konstrukcji.",
+    "fullDesc": [
+      "Explorer Pro 230 zachowuje całą pojemność i funkcjonalność wersji 170, dodając wyraźnie więcej mocy — to ważne, gdy skuter jest w pełni obciążony sprzętem na dłuższą wyprawę, a dodatkowa dynamika ułatwia pokonywanie większych dystansów.",
+      "Kadłub T3-X w wersji 230 KM radzi sobie jeszcze pewniej z trudniejszymi warunkami na wodzie, zachowując stabilność przy większym obciążeniu bagażowym charakterystycznym dla dłuższych ekspedycji."
+    ],
+    "highlights": [
+      "Silnik: Rotax, 230 KM",
+      "Kadłub T3-X zoptymalizowany pod większe obciążenie",
+      "Rozszerzone schowki na sprzęt (przód i tył)",
+      "Większa dynamika na dłuższych, wymagających trasach",
+      "Pojemność: do 3 osób"
+    ],
+    "forWho": "Explorer Pro 230 to propozycja dla najbardziej wymagających podróżników wodnych, planujących dłuższe wyprawy z pełnym ekwipunkiem — tam, gdzie dodatkowa moc realnie ułatwia pokonywanie dystansu i trudniejszych warunków.",
+    "features": [
+      {
+        "title": "Silnik Rotax 230 KM",
+        "text": "Dodatkowa moc niezbędna przy pełnym obciążeniu sprzętem podczas dłuższej, wymagającej wyprawy."
+      },
+      {
+        "title": "Kadłub T3-X",
+        "text": "Pewna stabilność nawet w trudniejszych warunkach na wodzie, przy dużym obciążeniu bagażowym typowym dla wypraw."
+      },
+      {
+        "title": "Rozszerzone schowki przód i tył",
+        "text": "Pojemność wystarczająca na wielodniową wyprawę wodną z pełnym ekwipunkiem."
+      },
+      {
+        "title": "Wzmocnione mocowania LinQ",
+        "text": "Łatwy montaż dodatkowych boxów transportowych, bez konieczności modyfikacji kadłuba."
+      },
+      {
+        "title": "Wyższa dynamika na dystansie",
+        "text": "Mocniejsza jednostka napędowa skraca czas pokonywania dłuższych tras eksploracyjnych."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Eclipse Black / Lemon Zest",
+        "hex1": "#1c1c1e",
+        "hex2": "#c8d400",
+        "image": "images/seadoo-explorer-pro-230-front.jfif"
+      }
+    ],
+    "images": [
+      "images/seadoo-explorer-pro-230-front.jfif",
+      "images/seadoo-explorer-pro-230-1.jpg",
+      "images/seadoo-explorer-pro-230-2.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-explorer-pro-230-life-1.jpg",
+      "images/seadoo-explorer-pro-230-life-2.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-fish-pro-sport-170",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Sport Fishing",
+    "name": "FishPro Sport 170",
+    "price": "od 21 700 €",
+    "engine": "Rotax 170 KM",
+    "desc": "Skuter zaprojektowany z myślą o wędkarstwie — uchwyty na wędki, przestrzeń na sprzęt i stabilna platforma. 170 KM mocy dla wędkarzy, którzy chcą szybko dotrzeć w ulubione miejsce łowienia.",
+    "fullDesc": [
+      "FishPro Sport 170 to skuter wodny zaprojektowany od podstaw z myślą o wędkarzach — z dedykowanymi uchwytami na wędki, dodatkową przestrzenią na sprzęt połowowy oraz stabilną platformą ułatwiającą łowienie bezpośrednio z pokładu.",
+      "170 KM mocy pozwala szybko dotrzeć do ulubionych łowisk, a stabilny kadłub zapewnia pewność podczas zarzucania i wyciągania sprzętu na wodzie. To połączenie funkcjonalności specjalistycznej łodzi wędkarskiej ze zwrotnością skutera."
+    ],
+    "highlights": [
+      "Silnik: Rotax, 170 KM",
+      "Dedykowane uchwyty na wędki",
+      "Dodatkowa przestrzeń na sprzęt wędkarski",
+      "Stabilna platforma do łowienia z pokładu",
+      "Pojemność: do 3 osób"
+    ],
+    "forWho": "FishPro Sport 170 to skuter dla wędkarzy, którzy chcą szybko i wygodnie dotrzeć do swoich ulubionych łowisk, nie rezygnując przy tym z funkcjonalności typowej dla dedykowanego sprzętu wędkarskiego.",
+    "features": [
+      {
+        "title": "Silnik Rotax 170 KM",
+        "text": "Wystarczająca moc, by szybko dotrzeć do ulubionego łowiska, zanim ryby przestaną brać."
+      },
+      {
+        "title": "Dedykowane uchwyty na wędki",
+        "text": "Bezpieczne mocowanie sprzętu wędkarskiego podczas przemieszczania się po wodzie, bez ryzyka uszkodzenia."
+      },
+      {
+        "title": "Stabilna platforma do łowienia",
+        "text": "Pewne oparcie podczas zarzucania i wyciągania sprzętu bezpośrednio z pokładu skutera."
+      },
+      {
+        "title": "Dodatkowa przestrzeń na sprzęt połowowy",
+        "text": "Schowki dopasowane do przechowywania przynęt, kołowrotków i pozostałych akcesoriów wędkarskich."
+      },
+      {
+        "title": "Wykończenie pokładu odporne na sól i wodę",
+        "text": "Trwałość materiałów w stałym kontakcie ze sprzętem wędkarskim i wilgocią."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Vapor Blue / Catalyst Grey",
+        "hex1": "#5b9bd5",
+        "hex2": "#6e7578",
+        "image": "images/seadoo-fish-pro-sport-170-1.jpg"
+      }
+    ],
+    "images": [
+      "images/seadoo-fish-pro-sport-170-1.jpg",
+      "images/seadoo-fish-pro-sport-170-2.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-fish-pro-sport-170-life-1.jpg",
+      "images/seadoo-fish-pro-sport-170-life-2.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-wake-pro-230",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Tow Sports",
+    "name": "Wake Pro 230",
+    "price": "od 24 310 €",
+    "engine": "Rotax 230 KM",
+    "desc": "Dedykowany do wakeboardingu i sportów holowanych — wzmocniony uchwyt holowniczy i stabilne prowadzenie. 230 KM mocy dla tych, którzy tworzą fale i holują innych.",
+    "fullDesc": [
+      "Wake Pro 230 to skuter zaprojektowany z myślą o sportach holowanych — wakeboardingu, nartach wodnych i innych aktywnościach wymagających stabilnego, przewidywalnego holowania z odpowiednim uchwytem.",
+      "Wzmocniony punkt holowniczy umieszczony wysoko nad linią wody ułatwia wyciąganie osoby holowanej z wody, a 230 KM mocy zapewnia dynamiczne przyspieszenie potrzebne do szybkiego wyciągnięcia jeźdźca na deskę. Sportowy kadłub zachowuje stabilność przy holowaniu na różnych prędkościach."
+    ],
+    "highlights": [
+      "Silnik: Rotax, 230 KM",
+      "Wzmocniony, wysoko umieszczony uchwyt holowniczy",
+      "Stabilne prowadzenie przy holowaniu na różnych prędkościach",
+      "Dynamiczne przyspieszenie do szybkiego wyciągania jeźdźca",
+      "Pojemność: do 3 osób"
+    ],
+    "forWho": "Wake Pro 230 to wybór dla entuzjastów wakeboardingu, nart wodnych i innych sportów holowanych — zarówno tych, którzy sami jeżdżą na desce, jak i tych, którzy najczęściej holują innych i potrzebują do tego dedykowanego, stabilnego sprzętu.",
+    "features": [
+      {
+        "title": "Silnik Rotax 230 KM",
+        "text": "Dynamiczne przyspieszenie potrzebne do szybkiego i pewnego wyciągnięcia jeźdźca na deskę wakeboardową."
+      },
+      {
+        "title": "Wzmocniony uchwyt holowniczy",
+        "text": "Wysoko umieszczony punkt mocowania liny ułatwia kontrolę osoby holowanej i redukuje ryzyko zaczepienia liny o wodę."
+      },
+      {
+        "title": "Stabilne prowadzenie przy holowaniu",
+        "text": "Przewidywalne zachowanie kadłuba przy różnych prędkościach holowania, niezależnie od poziomu zaawansowania jeźdźca."
+      },
+      {
+        "title": "Sportowy kadłub",
+        "text": "Zachowuje pełną kontrolę nawet przy falach generowanych podczas jazdy z liną holowniczą."
+      },
+      {
+        "title": "Dedykowany uchwyt na deskę wakeboardową",
+        "text": "Bezpieczny transport deski na pokładzie między kolejnymi podejściami na wodzie."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Eclipse Black / Vapor Blue",
+        "hex1": "#1c1c1e",
+        "hex2": "#5b9bd5",
+        "image": "images/seadoo-wake-pro-230-new.webp"
+      }
+    ],
+    "images": [
+      "images/seadoo-wake-pro-230-new.webp"
+    ],
+    "gallery": [
+      "images/seadoo-wake-pro-230-2.jpg",
+      "images/seadoo-wake-pro-230-life-2.webp"
+    ]
+  },
+  {
+    "id": "canam-f3-s",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Cruising",
+    "name": "Spyder F3 S",
+    "price": "od 25 350 €",
+    "engine": "Rotax 1330 ACE, SE6",
+    "desc": "Sportowy trójkołowiec Can-Am do jazdy miejskiej i rekreacyjnej — agresywna stylistyka i dynamiczne prowadzenie.",
+    "fullDesc": [
+      "Spyder F3 S to najbardziej sportowa i najlżejsza odsłona rodziny F3 — trójkołowiec zbudowany z myślą o dynamicznej jeździe miejskiej i rekreacyjnej, a nie długodystansowym turystykowaniu. Smukła, muskularna stylistyka i przyciemnione 10-szprychowe felgi podkreślają agresywny charakter maszyny.",
+      "Silnik Rotax 1330 ACE o mocy 115 KM w połączeniu z większą zębatką i bardziej dynamiczną reakcją gazu w trybie Sport zapewnia żywe przyspieszenie, a układ Dynamic Power Steering (DPS) oraz systemy stabilności i trakcji (VSS/TCS) pozwalają w pełni wykorzystać moc silnika przy zachowaniu kontroli nad pojazdem."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1330 ACE, 115 KM",
+      "Waga sucha: 408 kg — najlżejszy model w rodzinie F3",
+      "6-biegowa półautomatyczna skrzynia biegów z biegiem wstecznym",
+      "Systemy VSS, TCS, ABS oraz DPS (wspomaganie kierownicy)",
+      "Tryb Sport z bardziej dynamiczną reakcją gazu"
+    ],
+    "forWho": "Spyder F3 S to propozycja dla kierowców, którzy cenią sobie sportowy charakter jazdy, zwinność i lekkość prowadzenia bardziej niż rozbudowane schowki czy komfort na długich trasach. To dobry wybór na dynamiczną jazdę miejską i rekreacyjną — nie jest to jednak pojazd stworzony do wielogodzinnego, dalekiego turystykowania z bagażem.",
+    "features": [
+      {
+        "title": "Silnik Rotax 1330 ACE, 115 KM",
+        "text": "Żywe przyspieszenie i dynamiczna reakcja gazu w trybie Sport sprawiają, że każdy wyjazd miejski czy rekreacyjny dostarcza realnych emocji za kierownicą."
+      },
+      {
+        "title": "Najlżejszy model w rodzinie F3 — 408 kg",
+        "text": "Niska waga przekłada się na wyjątkową zwinność w zakrętach i łatwość manewrowania, których nie znajdziesz w cięższych, turystycznych wersjach Spydera."
+      },
+      {
+        "title": "Dynamic Power Steering (DPS)",
+        "text": "Wspomaganie kierownicy odciąża ręce podczas dynamicznej jazdy, pozwalając w pełni skupić się na przyjemności z prowadzenia."
+      },
+      {
+        "title": "Systemy VSS, TCS i ABS",
+        "text": "Elektroniczna kontrola stabilności i trakcji działa w tle, dając pewność, że pełnię mocy silnika wykorzystasz bezpiecznie w każdych warunkach."
+      },
+      {
+        "title": "6-biegowa skrzynia półautomatyczna",
+        "text": "Płynne zmiany biegów bez sprzęgła upraszczają prowadzenie, zachowując przy tym sportowy charakter jazdy."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Circuit Yellow Metallic",
+        "hex1": "#d9c62a",
+        "hex2": "#8f7a12",
+        "image": "images/canam-f3-s-color-circuityellow.jpg"
+      },
+      {
+        "name": "Monolith Black Satin",
+        "hex1": "#2b2b2b",
+        "hex2": "#0d0d0d",
+        "image": "images/canam-f3-s-color-monolithblack.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-f3-s-1.jpg",
+      "images/canam-f3-s-2.jpg"
+    ],
+    "gallery": [
+      "images/canam-f3-s-life-1.avif",
+      "images/canam-f3-s-life-2.avif"
+    ]
+  },
+  {
+    "id": "canam-f3-ltd",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Cruising",
+    "name": "Spyder F3 LTD",
+    "price": "od 31 600 €",
+    "engine": "Rotax 1330 ACE, SE6",
+    "desc": "Wersja LTD z rozbudowanym wyposażeniem premium — więcej komfortu na dłuższe trasy.",
+    "fullDesc": [
+      "Spyder F3 LTD to wersja F3 zbudowana z myślą o komforcie i dłuższych trasach — zachowuje sportowy charakter linii F3, ale dokłada rozbudowane schowki, twarde sakwy boczne oraz kufer z oparciem dla pasażera, znacząco zwiększając praktyczność pojazdu na dłuższe wyjazdy.",
+      "Tylne zawieszenie z regulacją preload ułatwia dostosowanie pojazdu do obciążenia bagażem lub jazdy z pasażerem, a podgrzewane manetki i system audio BRP Audio Premium z 6 głośnikami podnoszą komfort podczas długich godzin za kierownicą."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1330 ACE, 115 KM",
+      "Waga sucha: 448 kg",
+      "Pojemność schowków: 139,5 l (sakwy boczne, kufer, schowek)",
+      "Tylne zawieszenie z regulacją preload",
+      "Podgrzewane manetki i system audio BRP Audio Premium (6 głośników)"
+    ],
+    "forWho": "Spyder F3 LTD sprawdzi się u kierowców, którzy chcą zachować sportowy charakter modelu F3, ale potrzebują realnej przestrzeni bagażowej i dodatkowego komfortu na dłuższe trasy — z pasażerem lub bez. To rozsądny kompromis między dynamiką a praktycznością turystyczną.",
+    "features": [
+      {
+        "title": "Rozbudowane schowki — 139,5 l",
+        "text": "Twarde sakwy boczne i kufer z oparciem dla pasażera pozwalają zabrać bagaż na dłuższy wyjazd bez rezygnacji ze sportowego charakteru F3."
+      },
+      {
+        "title": "Tylne zawieszenie z regulacją preload",
+        "text": "Szybkie dostosowanie do obciążenia bagażem lub jazdy z pasażerem utrzymuje pewne prowadzenie niezależnie od załadunku."
+      },
+      {
+        "title": "Podgrzewane manetki",
+        "text": "Komfort rąk podczas chłodniejszych, dłuższych tras, bez konieczności rezygnowania z jazdy poza sezonem letnim."
+      },
+      {
+        "title": "System audio BRP Audio Premium (6 głośników)",
+        "text": "Bogate brzmienie w trakcie jazdy podnosi komfort długich, wielogodzinnych tras drogowych."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Vegas White Pearl",
+        "hex1": "#ede9e3",
+        "hex2": "#c3c0ba",
+        "image": "images/canam-f3-ltd-1.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-f3-ltd-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-f3-ltd-life-1.avif",
+      "images/canam-f3-ltd-life-2.avif"
+    ]
+  },
+  {
+    "id": "canam-f3-ltd-special",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Cruising",
+    "name": "Spyder F3 LTD Special Series",
+    "price": "od 34 050 €",
+    "engine": "Rotax 1330 ACE, SE6",
+    "desc": "Edycja specjalna F3 LTD z unikalnym malowaniem Mars Red Metallic i pełnym wyposażeniem LTD.",
+    "fullDesc": [
+      "Spyder F3 LTD Special Series to najbogaciej wyposażona odmiana F3 — bazuje na wersji Limited, dokładając wygodniejszy fotel komfortowy, uchwyt kierownicy o skróconym zasięgu oraz regulowane oparcie kierowcy, a całość wieńczy unikalne malowanie Mars Red Metallic dostępne tylko w tej edycji.",
+      "Dodatkowo model otrzymuje kamerę cofania oraz reflektory przeciwmgielne LED, co czyni go najbardziej dopracowaną wersją F3 pod względem wyposażenia i gotowości do długich podróży drogowych."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1330 ACE, 115 KM",
+      "Waga sucha: 448 kg",
+      "Komfortowy fotel i regulowane oparcie kierowcy",
+      "Kamera cofania i reflektory przeciwmgielne LED",
+      "Unikalne malowanie Mars Red Metallic — dostępne tylko w tej edycji"
+    ],
+    "forWho": "Spyder F3 LTD Special Series to propozycja dla klientów, którzy chcą mieć najbogaciej wyposażoną wersję F3 z unikalnym wzornictwem i dodatkowymi udogodnieniami — bez kompromisów w wyposażeniu, gotową do długich tras drogowych w pełnym komforcie.",
+    "features": [
+      {
+        "title": "Malowanie Mars Red Metallic",
+        "text": "Unikalna kolorystyka dostępna wyłącznie w tej edycji podkreśla ekskluzywny charakter pojazdu na drodze i na parkingu."
+      },
+      {
+        "title": "Komfortowy fotel i regulowane oparcie kierowcy",
+        "text": "Dopasowanie pozycji siedzenia do własnej sylwetki znacząco redukuje zmęczenie podczas długich podróży."
+      },
+      {
+        "title": "Kamera cofania",
+        "text": "Bezpieczne i pewne manewrowanie przy parkowaniu, mimo braku typowego lusterka wstecznego w trójkołowcu."
+      },
+      {
+        "title": "Reflektory przeciwmgielne LED",
+        "text": "Lepsza widoczność w trudnych warunkach pogodowych, także po zmroku, na dłuższych trasach."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Mars Red Metallic",
+        "hex1": "#8b1c1c",
+        "hex2": "#6b1010",
+        "image": "images/canam-f3-ltd-special-1.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-f3-ltd-special-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-f3-ltd-special-life-1.avif",
+      "images/canam-f3-ltd-special-life-2.avif"
+    ]
+  },
+  {
+    "id": "canam-rt-ltd",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Touring",
+    "name": "Spyder RT LTD",
+    "price": "od 34 800 €",
+    "engine": "Rotax 1330 ACE, SE6",
+    "desc": "Flagowy trójkołowiec turystyczny Can-Am — komfort na długie trasy, kufry i rozbudowane wyposażenie.",
+    "fullDesc": [
+      "Spyder RT LTD to flagowy trójkołowiec turystyczny Can-Am — zaprojektowany od podstaw jako pojazd do wielogodzinnych podróży we dwoje, z największą w gamie przestrzenią bagażową sięgającą 177 litrów oraz w pełni zintegrowanymi kuframi bocznymi i tylnym.",
+      "Podgrzewane siedzenia i manetki, 10,25-calowy dotykowy wyświetlacz z BRP Connect i Apple CarPlay oraz system audio BRP Audio Premium z 6 głośnikami sprawiają, że długie trasy mijają w komforcie zbliżonym do luksusowego samochodu turystycznego."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1330 ACE, 115 KM",
+      "Waga sucha: 464 kg",
+      "Pojemność schowków: 177 l (sakwy, kufer tylny)",
+      "Podgrzewane siedzenia i manetki",
+      "Wyświetlacz 10,25\" dotykowy z Apple CarPlay i audio premium (6 głośników)"
+    ],
+    "forWho": "Spyder RT LTD to naturalny wybór dla par planujących długie, wielodniowe podróże trójkołowcem — tam, gdzie liczy się komfort, pojemność bagażowa i technologia pokładowa, a nie sportowe osiągi czy zwinność w mieście.",
+    "features": [
+      {
+        "title": "Największa przestrzeń bagażowa w gamie — 177 l",
+        "text": "W pełni zintegrowane kufry boczne i tylny mieszczą bagaż na wielodniową wyprawę dla dwóch osób bez potrzeby dodatkowych sakw."
+      },
+      {
+        "title": "Podgrzewane siedzenia i manetki",
+        "text": "Komfort podczas długich, wielogodzinnych tras nawet w chłodniejsze dni, dla kierowcy i pasażera."
+      },
+      {
+        "title": "Wyświetlacz 10,25\" z Apple CarPlay",
+        "text": "Nawigacja, muzyka i połączenia pod ręką na dotykowym ekranie, bez sięgania po telefon podczas jazdy."
+      },
+      {
+        "title": "System audio BRP Audio Premium (6 głośników)",
+        "text": "Bogate brzmienie umila długie godziny na trasie, budując atmosferę zbliżoną do luksusowej podróży samochodem."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Pearl White",
+        "hex1": "#ede9e3",
+        "hex2": "#c3c0ba",
+        "image": "images/canam-rt-ltd-color-pearlwhite.jpg"
+      },
+      {
+        "name": "Carbon Black",
+        "hex1": "#2b2b2b",
+        "hex2": "#0d0d0d",
+        "image": "images/canam-rt-ltd-color-carbonblack.jpg"
+      },
+      {
+        "name": "Mineral Blue",
+        "hex1": "#3d5a75",
+        "hex2": "#1f3346",
+        "image": "images/canam-rt-ltd-color-mineralblue.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-rt-ltd-color-pearlwhite.jpg",
+      "images/canam-rt-ltd-color-carbonblack.jpg"
+    ],
+    "gallery": [
+      "images/canam-rt-ltd-life-1.jpg",
+      "images/canam-rt-ltd-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-rt-sea-to-sky",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Touring",
+    "name": "Spyder RT Sea-to-Sky",
+    "price": "od 37 000 €",
+    "engine": "Rotax 1330 ACE, SE6",
+    "desc": "Najbogatsza wersja RT z pełnym pakietem turystycznym premium i unikalnym malowaniem.",
+    "fullDesc": [
+      "Spyder RT Sea-to-Sky to najbardziej luksusowa odmiana modelu RT — bazuje na pełnym pakiecie turystycznym Limited, dodając adaptacyjne, piankowe siedzenia z haftowanym logo Sea-to-Sky, zdejmowane oparcie kierowcy oraz regulowane deflektory boczne ograniczające podmuchy wiatru.",
+      "Kamera cofania jest tu wyposażeniem standardowym, a unikalna, ekskluzywna stylistyka i malowanie odróżniają ten model od pozostałych wersji RT, czyniąc go wizytówką całej gamy turystycznej Can-Am."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1330 ACE, 115 KM",
+      "Waga sucha: 464 kg",
+      "Adaptacyjne, piankowe siedzenia z haftowanym logo Sea-to-Sky",
+      "Regulowane boczne deflektory powietrza",
+      "Kamera cofania w standardzie i ekskluzywna stylistyka"
+    ],
+    "forWho": "Spyder RT Sea-to-Sky to propozycja dla klientów, którzy chcą mieć najbardziej ekskluzywną i najlepiej wyposażoną wersję turystyczną Can-Am — z unikalnym wzornictwem i najwyższym poziomem komfortu siedzenia na najdłuższych nawet trasach.",
+    "features": [
+      {
+        "title": "Adaptacyjne, piankowe siedzenia Sea-to-Sky",
+        "text": "Haftowane logo i pianka dopasowująca się do sylwetki dają najwyższy poziom komfortu na wielogodzinnych trasach turystycznych."
+      },
+      {
+        "title": "Regulowane boczne deflektory powietrza",
+        "text": "Ograniczają podmuchy wiatru docierające do kierowcy i pasażera, czyniąc jazdę spokojniejszą przy wyższych prędkościach."
+      },
+      {
+        "title": "Zdejmowane oparcie kierowcy",
+        "text": "Elastyczna konfiguracja pojazdu pod solową jazdę sportową lub komfortową podróż z pasażerem."
+      },
+      {
+        "title": "Kamera cofania w standardzie",
+        "text": "Bezpieczne manewrowanie tym najbardziej rozbudowanym modelem RT bez zgadywania, co znajduje się z tyłu."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Mars Red Metallic",
+        "hex1": "#a3241f",
+        "hex2": "#5c110e",
+        "image": "images/canam-rt-sea-to-sky-color-marsred-v2.avif"
+      }
+    ],
+    "images": [
+      "images/canam-rt-sea-to-sky-color-marsred-v2.avif"
+    ],
+    "gallery": [
+      "images/canam-rt-sea-to-sky-life-1.jpg",
+      "images/canam-rt-sea-to-sky-life-2.webp"
+    ]
+  },
+  {
+    "id": "canam-canyon-std",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Adventure",
+    "name": "Canyon STD",
+    "price": "od 28 240 €",
+    "engine": "Rotax 1330 ACE, SE6",
+    "desc": "Nowość Can-Am — trójkołowiec adventure na trudniejsze trasy, łączący styl Spydera z możliwościami off-road.",
+    "fullDesc": [
+      "Canyon STD to zupełnie nowa propozycja Can-Am — trójkołowiec adventure łączący sylwetkę i prowadzenie znane ze Spydera z realnymi możliwościami jazdy w terenie: 160 mm prześwitu, 10,2 cala skoku zawieszenia przodu i 9,2 cala z tyłu pozwalają pewnie pokonywać nierówne, szutrowe i polne drogi.",
+      "Cztery tryby jazdy — Normal, Sport, All-Road i Rally — pozwalają dostosować charakter prowadzenia do nawierzchni, a 21 punktów mocowania systemu LinQ umożliwia szeroką personalizację pojazdu pod indywidualne potrzeby kierowcy."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1330 ACE, 115 KM",
+      "Waga sucha: 452 kg",
+      "Prześwit: 160 mm, skok zawieszenia przód/tył: 10,2\"/9,2\"",
+      "4 tryby jazdy: Normal, Sport, All-Road, Rally",
+      "21 punktów mocowania systemu LinQ"
+    ],
+    "forWho": "Canyon STD to propozycja dla solowych kierowców, którzy chcą trójkołowca gotowego do jazdy poza asfaltem i otwartego na dalszą personalizację poprzez system LinQ — bez rozbudowanego pakietu wyposażenia pasażerskiego typowego dla wersji XT czy Redrock.",
+    "features": [
+      {
+        "title": "Prześwit 160 mm i duży skok zawieszenia",
+        "text": "Realna zdolność pokonywania nierównych, szutrowych i polnych dróg, których nie przejedziesz standardowym Spyderem."
+      },
+      {
+        "title": "4 tryby jazdy: Normal, Sport, All-Road, Rally",
+        "text": "Dostosuj charakter prowadzenia do nawierzchni jednym przyciskiem — od miejskiego asfaltu po luźny szutr."
+      },
+      {
+        "title": "21 punktów mocowania systemu LinQ",
+        "text": "Szeroka personalizacja pojazdu pod indywidualne potrzeby — dodatkowe kufry, oświetlenie czy sprzęt turystyczny bez trwałej ingerencji w konstrukcję."
+      },
+      {
+        "title": "Silnik Rotax 1330 ACE, 115 KM",
+        "text": "Wystarczająca moc do pewnego pokonywania podjazdów i trudniejszego terenu, przy zachowaniu charakterystycznego prowadzenia Spydera."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Catalyst Grey",
+        "hex1": "#7a7d82",
+        "hex2": "#5a5d62",
+        "image": "images/canam-canyon-std-1.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-canyon-std-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-canyon-std-life-1.jpg",
+      "images/canam-canyon-std-life-2.webp"
+    ]
+  },
+  {
+    "id": "canam-canyon-xt",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Adventure",
+    "name": "Canyon XT",
+    "price": "od 33 030 €",
+    "engine": "Rotax 1330 ACE, SE6",
+    "desc": "Wersja XT z rozszerzonym wyposażeniem terenowym dla bardziej wymagających tras.",
+    "fullDesc": [
+      "Canyon XT to wersja Canyon rozbudowana z myślą o jeździe we dwoje — dochodzi oparcie dla pasażera, samopoziomujące się tylne zawieszenie kompensujące obciążenie oraz zdejmowane aluminiowe kufry boczne i tylny o łącznej pojemności 120,6 l.",
+      "Podgrzewane manetki dla kierowcy i pasażera oraz komfortowe podnóżki dodatkowo podnoszą wygodę na dłuższych, wymagających trasach, przy zachowaniu tych samych czterech trybów jazdy i możliwości terenowych co w wersji STD."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1330 ACE, 115 KM",
+      "Waga sucha: 470 kg",
+      "Aluminiowe kufry boczne i tylny — 120,6 l pojemności",
+      "Samopoziomujące się tylne zawieszenie",
+      "Podgrzewane manetki kierowcy i pasażera"
+    ],
+    "forWho": "Canyon XT sprawdzi się u par i kierowców planujących dłuższe wyprawy terenowe z pasażerem lub bagażem — tam, gdzie liczy się dodatkowa przestrzeń bagażowa i komfort na trudniejszych, dłuższych trasach adventure.",
+    "features": [
+      {
+        "title": "Aluminiowe kufry — 120,6 l pojemności",
+        "text": "Zdejmowane kufry boczne i tylny mieszczą ekwipunek na dłuższą wyprawę terenową z pasażerem, bez kompromisów w mobilności."
+      },
+      {
+        "title": "Samopoziomujące się tylne zawieszenie",
+        "text": "Automatycznie kompensuje obciążenie bagażem i pasażerem, utrzymując stabilne prowadzenie niezależnie od załadunku."
+      },
+      {
+        "title": "Podgrzewane manetki kierowcy i pasażera",
+        "text": "Komfort obu osób na trasie nawet w chłodniejsze dni podróży terenowej."
+      },
+      {
+        "title": "Oparcie dla pasażera",
+        "text": "Dodatkowe bezpieczeństwo i wygoda drugiej osoby na wymagających, dłuższych odcinkach adventure."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Catalyst Grey / Viper Red",
+        "hex1": "#7a7d82",
+        "hex2": "#c41e1e",
+        "image": "images/canam-canyon-xt-1.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-canyon-xt-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-canyon-xt-life-1.webp",
+      "images/canam-canyon-xt-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-canyon-redrock",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Adventure",
+    "name": "Canyon Redrock",
+    "price": "od 35 220 €",
+    "engine": "Rotax 1330 ACE, SE6",
+    "desc": "Najbogatsza wersja Canyon w wyjątkowym malowaniu Moss Green, z pełnym wyposażeniem podróżnym.",
+    "fullDesc": [
+      "Canyon Redrock to najbardziej zaawansowana wersja Canyon — bazuje na pakiecie XT, ale zastępuje standardowe zawieszenie systemem KYB Smart-Shox, czyli półaktywnym zawieszeniem automatycznie dostosowującym tłumienie do rodzaju terenu i stylu jazdy.",
+      "Model dodaje kamerę cofania, niestandardowy, w pełni konfigurowalny tryb jazdy Custom oraz unikalne, ekskluzywne malowanie Moss Green z pomarańczowym akcentem na przednim kole, co czyni go wizytówką całej linii adventure Can-Am."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1330 ACE, 115 KM",
+      "Waga sucha: 470 kg",
+      "Zawieszenie KYB Smart-Shox — półaktywne, dostosowujące się do terenu",
+      "Konfigurowalny tryb jazdy Custom",
+      "Kamera cofania w standardzie"
+    ],
+    "forWho": "Canyon Redrock to propozycja dla klientów, którzy chcą najbardziej zaawansowanej technologicznie wersji Canyon — z inteligentnym zawieszeniem reagującym na teren, pełną personalizacją trybu jazdy i unikalnym wzornictwem, bez kompromisów w wyposażeniu.",
+    "features": [
+      {
+        "title": "Zawieszenie KYB Smart-Shox",
+        "text": "Półaktywne tłumienie automatycznie dostosowuje się do rodzaju terenu i stylu jazdy, dając komfort i kontrolę bez ręcznej regulacji."
+      },
+      {
+        "title": "Konfigurowalny tryb jazdy Custom",
+        "text": "Ustaw własne parametry reakcji gazu i zawieszenia dopasowane dokładnie do Twojego stylu prowadzenia."
+      },
+      {
+        "title": "Malowanie Moss Green z akcentem na przednim kole",
+        "text": "Unikalna, ekskluzywna stylistyka wyróżniająca ten model spośród całej linii adventure Can-Am."
+      },
+      {
+        "title": "Kamera cofania w standardzie",
+        "text": "Bezpieczne manewrowanie tym najbardziej zaawansowanym modelem Canyon w każdych warunkach terenowych."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Moss Green",
+        "hex1": "#4a6b3a",
+        "hex2": "#3a5530",
+        "image": "images/canam-canyon-redrock-1.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-canyon-redrock-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-canyon-redrock-life-1.jpg",
+      "images/canam-canyon-redrock-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-ryker-std-600",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Recreation",
+    "name": "Ryker STD 600",
+    "price": "od 12 230 €",
+    "engine": "Rotax 600 ACE, CVT",
+    "desc": "Najbardziej przystępny trójkołowiec Can-Am — idealny wybór na start przygody z jazdą trójkołową.",
+    "fullDesc": [
+      "Ryker STD 600 to najbardziej przystępny cenowo i najlżejszy trójkołowiec w gamie Can-Am — zaprojektowany z myślą o osobach stawiających pierwsze kroki w jeździe trójkołowej. Regulowane bez narzędzi podnóżki, pedał hamulca i kierownica (system UFit) pozwalają dopasować pojazd do sylwetki kierowcy.",
+      "Silnik Rotax 600 ACE o mocy 50 KM w połączeniu z automatyczną skrzynią CVT zapewnia spokojne, przewidywalne prowadzenie, a systemy stabilności, trakcji i ABS działają w tle, ułatwiając naukę jazdy na trzech kołach."
+    ],
+    "highlights": [
+      "Silnik: Rotax 600 ACE, 50 KM",
+      "Waga sucha: 270 kg — najlżejszy model w gamie",
+      "Automatyczna skrzynia CVT z biegiem wstecznym",
+      "System UFit — regulacja podnóżek, pedału i kierownicy bez narzędzi",
+      "Systemy VSS, TCS i ABS w standardzie"
+    ],
+    "forWho": "Ryker STD 600 to propozycja dla osób, które nigdy wcześniej nie jeździły na trójkołowcu i szukają lekkiego, przystępnego cenowo i łatwego w prowadzeniu pojazdu na start. To nie jest maszyna dla szukających mocnych wrażeń — to narzędzie do spokojnej nauki i codziennej, bezstresowej jazdy.",
+    "features": [
+      {
+        "title": "System UFit",
+        "text": "Regulacja podnóżek, pedału hamulca i kierownicy bez narzędzi pozwala dopasować pojazd do własnej sylwetki w kilka minut."
+      },
+      {
+        "title": "Automatyczna skrzynia CVT",
+        "text": "Brak sprzęgła i ręcznej zmiany biegów znacząco upraszcza naukę jazdy dla osób stawiających pierwsze kroki na trzech kołach."
+      },
+      {
+        "title": "Najlżejszy model w gamie — 270 kg",
+        "text": "Niska waga ułatwia manewrowanie i buduje pewność siebie u początkujących kierowców."
+      },
+      {
+        "title": "Systemy VSS, TCS i ABS w standardzie",
+        "text": "Elektroniczne wsparcie stabilności działa w tle, dodatkowo zabezpieczając na etapie nauki jazdy."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Triple Black",
+        "hex1": "#1c1c1e",
+        "hex2": "#2c2c2e",
+        "image": "images/canam-ryker-std-600-1.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-ryker-std-600-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-ryker-std-600-life-2.webp",
+      "images/canam-ryker-std-600-life-3.png"
+    ]
+  },
+  {
+    "id": "canam-ryker-std-900",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Recreation",
+    "name": "Ryker STD 900",
+    "price": "od 13 300 €",
+    "engine": "Rotax 900 ACE, CVT",
+    "desc": "Mocniejsza wersja Rykera z silnikiem 900 ACE — więcej dynamiki przy tej samej lekkości prowadzenia.",
+    "fullDesc": [
+      "Ryker STD 900 bazuje na tej samej, sprawdzonej platformie co STD 600, ale dzięki 3-cylindrowemu silnikowi Rotax 900 ACE oferuje wyraźnie więcej mocy i dynamiki przy zachowaniu tej samej lekkości i prostoty prowadzenia.",
+      "To wybór dla tych, którzy cenią kompaktowe rozmiary i niską wagę podstawowego Rykera, ale chcą odczuwalnie żywszego przyspieszenia — bez konieczności sięgania po droższe warianty Sport czy Rally."
+    ],
+    "highlights": [
+      "Silnik: Rotax 900 ACE, 82 KM",
+      "Waga sucha: 280 kg",
+      "Automatyczna skrzynia CVT z biegiem wstecznym",
+      "System UFit — regulacja ergonomii bez narzędzi",
+      "Systemy VSS, TCS i ABS w standardzie"
+    ],
+    "forWho": "Ryker STD 900 sprawdzi się u osób, które próbowały już jazdy na trójkołowcu lub od razu szukają więcej mocy niż w wersji 600, wciąż ceniąc sobie lekkość i przystępną cenę podstawowego Rykera. Dobry wybór na pierwszy trójkołowiec dla kogoś, kto lubi żywszą jazdę od startu.",
+    "features": [
+      {
+        "title": "Silnik Rotax 900 ACE, 82 KM",
+        "text": "3-cylindrowa jednostka daje wyraźnie więcej przyspieszenia niż wersja 600, przy zachowaniu tej samej lekkości platformy."
+      },
+      {
+        "title": "System UFit",
+        "text": "Bezobsługowa regulacja ergonomii — podnóżków, pedału i kierownicy — dopasowuje pojazd do sylwetki kierowcy."
+      },
+      {
+        "title": "Automatyczna skrzynia CVT z biegiem wstecznym",
+        "text": "Prosta, wygodna obsługa na co dzień bez ręcznej zmiany biegów."
+      },
+      {
+        "title": "Systemy VSS, TCS i ABS w standardzie",
+        "text": "Elektroniczne wsparcie stabilności i trakcji zapewnia bezpieczeństwo przy bardziej dynamicznym charakterze jazdy."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Triple Black",
+        "hex1": "#1c1c1e",
+        "hex2": "#2c2c2e",
+        "image": "images/canam-ryker-std-900-1.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-ryker-std-900-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-ryker-std-900-life-2.webp",
+      "images/canam-ryker-std-900-life-3.avif"
+    ]
+  },
+  {
+    "id": "canam-ryker-sport",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Recreation",
+    "name": "Ryker Sport",
+    "price": "od 15 200 €",
+    "engine": "Rotax 900 ACE, CVT",
+    "desc": "Sportowa wersja Rykera z dodatkowym wyposażeniem i bardziej agresywnym charakterem jazdy.",
+    "fullDesc": [
+      "Ryker Sport to bardziej dynamiczna odmiana Rykera z silnikiem Rotax 900 ACE, wyposażona w zawieszenie KYB HPG z regulacją preload oraz komfortowy fotel Sport, co przekłada się na lepsze prowadzenie przy energicznej jeździe.",
+      "Tryb Sport dostraja reakcję gazu pod kątem bardziej dynamicznego charakteru jazdy, a tempomat ułatwia dłuższe trasy — to wersja dla kierowców, którzy chcą więcej z podstawowej platformy Rykera bez przechodzenia na wariant terenowy Rally."
+    ],
+    "highlights": [
+      "Silnik: Rotax 900 ACE, 82 KM",
+      "Waga sucha: 291 kg",
+      "Zawieszenie KYB HPG z regulacją preload",
+      "Tryb Sport — bardziej dynamiczna reakcja gazu",
+      "Tempomat i komfortowy fotel Sport"
+    ],
+    "forWho": "Ryker Sport to propozycja dla kierowców, którzy chcą bardziej angażującego, dynamicznego charakteru jazdy niż w podstawowym Rykerze, ale wciąż w lekkiej, kompaktowej formule miejskiej i rekreacyjnej — bez nastawienia na jazdę w terenie.",
+    "features": [
+      {
+        "title": "Zawieszenie KYB HPG z regulacją preload",
+        "text": "Lepsze prowadzenie przy energicznej jeździe i możliwość dostosowania do obciążenia czy stylu jazdy."
+      },
+      {
+        "title": "Tryb Sport",
+        "text": "Bardziej dynamiczna reakcja gazu podkręca charakter jazdy, gdy najważniejsza jest przyjemność z prowadzenia."
+      },
+      {
+        "title": "Komfortowy fotel Sport",
+        "text": "Lepsze podparcie podczas bardziej agresywnego prowadzenia, bez utraty wygody na co dzień."
+      },
+      {
+        "title": "Tempomat",
+        "text": "Ułatwia dłuższe trasy poza miastem, odciążając rękę od stałego trzymania przepustnicy."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Triple Black / Viper Red",
+        "hex1": "#1c1c1e",
+        "hex2": "#c41e1e",
+        "image": "images/canam-ryker-sport-1.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-ryker-sport-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-ryker-sport-life-2.webp",
+      "images/canam-ryker-sport-life-3.png"
+    ]
+  },
+  {
+    "id": "canam-ryker-rally",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Recreation",
+    "name": "Ryker Rally",
+    "price": "od 17 160 €",
+    "engine": "Rotax 900 ACE, CVT",
+    "desc": "Wersja Rally z dostrojonym zawieszeniem i oponami do jazdy poza asfaltem.",
+    "fullDesc": [
+      "Ryker Rally to wersja dostrojona do jazdy poza asfaltem — wyposażona w opony XPS Rally ze wzmocnionymi felgami oraz zawieszenie KYB HPG ze zdalnym zbiornikiem i 4-stopniową regulacją tłumienia, pozwalające pewnie pokonywać nierówny teren.",
+      "Dedykowany tryb Rally ułatwia kontrolowane, sportowe zachowanie pojazdu na luźnej nawierzchni (m.in. driftowanie na zakrętach), a komfortowy fotel Rally i tempomat sprawiają, że pojazd sprawdza się równie dobrze na dłuższych, mieszanych trasach asfaltowo-terenowych."
+    ],
+    "highlights": [
+      "Silnik: Rotax 900 ACE, 82 KM",
+      "Opony XPS Rally ze wzmocnionymi felgami",
+      "Zawieszenie KYB HPG ze zdalnym zbiornikiem, 4-stopniowa regulacja tłumienia",
+      "Dedykowany tryb Rally do jazdy w terenie",
+      "Tempomat i komfortowy fotel Rally"
+    ],
+    "forWho": "Ryker Rally to wybór dla kierowców szukających przygody poza utartym asfaltem — tych, którzy chcą trójkołowca zdolnego do pewnej jazdy po żwirze, polnych drogach i luźnej nawierzchni, przy zachowaniu całej zwinności i lekkości platformy Ryker.",
+    "features": [
+      {
+        "title": "Opony XPS Rally ze wzmocnionymi felgami",
+        "text": "Pewna przyczepność na żwirze i luźnej nawierzchni, gdzie standardowe opony szosowe by zawiodły."
+      },
+      {
+        "title": "Zawieszenie KYB HPG ze zdalnym zbiornikiem",
+        "text": "4-stopniowa regulacja tłumienia pozwala dostroić pojazd do konkretnego terenu i stylu jazdy."
+      },
+      {
+        "title": "Dedykowany tryb Rally",
+        "text": "Ułatwia kontrolowane, sportowe zachowanie pojazdu na luźnej nawierzchni, w tym driftowanie na zakrętach."
+      },
+      {
+        "title": "Komfortowy fotel Rally i tempomat",
+        "text": "Sprawdza się równie dobrze na dłuższych, mieszanych trasach asfaltowo-terenowych jak i typowo terenowych wypadach."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Milky White / Triple Black",
+        "hex1": "#e8e8e8",
+        "hex2": "#1c1c1e",
+        "image": "images/canam-ryker-rally-1.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-ryker-rally-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-ryker-rally-life-1.jpg",
+      "images/canam-ryker-rally-life-2.webp"
+    ]
+  },
+  {
+    "id": "canam-outlander-pro",
+    "category": "atv",
+    "categoryLabel": "Can-Am ATV",
+    "segment": "Rec-Ute",
+    "name": "Outlander PRO",
+    "price": "od 10 890 €",
+    "engine": "HD5 / HD7",
+    "desc": "Najbardziej przystępny quad użytkowy z gamy Outlander — solidna podstawa do pracy w gospodarstwie i terenie.",
+    "fullDesc": [
+      "Outlander PRO to najbardziej przystępny cenowo quad użytkowy w gamie Can-Am — zbudowany od podstaw z myślą o codziennej pracy w gospodarstwie i terenie, a nie o osiągach rekreacyjnych. Solidny przedni zderzak, tylny zderzak oraz pełna osłona podwozia chronią pojazd podczas intensywnej eksploatacji.",
+      "Silnik Rotax ACE 650 dostępny w dwóch wersjach mocy — HD5 (40 KM) i HD7 (50 KM) — w połączeniu z systemem Tri-Mode Dynamic Power Steering oraz mechanizmem Visco-4Lok zapewnia pewną trakcję i łatwe prowadzenie nawet przy dużym obciążeniu."
+    ],
+    "highlights": [
+      "Silnik: Rotax ACE 650, HD5 (40 KM) lub HD7 (50 KM)",
+      "Waga sucha: ok. 370 kg",
+      "Udźwig holowniczy: 830 kg",
+      "Tri-Mode Dynamic Power Steering i przedni dyferencjał Visco-4Lok",
+      "Pełna osłona podwozia oraz przedni i tylny zderzak"
+    ],
+    "forWho": "Outlander PRO to propozycja dla rolników, leśników i właścicieli gospodarstw, którzy potrzebują niedrogiego, solidnego quada roboczego do codziennych zadań — bez rozbudowanego wyposażenia rekreacyjnego typowego dla wersji sportowych czy dwuosobowych.",
+    "features": [
+      {
+        "title": "Silnik Rotax ACE 650 (HD5 / HD7)",
+        "text": "Dwa warianty mocy pozwalają dobrać jednostkę napędową dokładnie do zakresu codziennych prac gospodarskich."
+      },
+      {
+        "title": "Tri-Mode Dynamic Power Steering",
+        "text": "Trzy tryby wspomagania kierownicy ułatwiają manewrowanie zarówno w wąskich przejściach, jak i przy pełnym obciążeniu."
+      },
+      {
+        "title": "Przedni dyferencjał Visco-4Lok",
+        "text": "Pewna trakcja na nierównym, śliskim terenie bez potrzeby ręcznego przełączania blokady."
+      },
+      {
+        "title": "Pełna osłona podwozia i zderzaki",
+        "text": "Ochrona najważniejszych podzespołów podczas intensywnej, codziennej eksploatacji w trudnym terenie."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Desert Tan",
+        "hex1": "#c9a876",
+        "hex2": "#8f7245",
+        "image": "images/canam-outlander-pro-color-deserttan.webp",
+        "price": "od 10 890 €"
+      },
+      {
+        "name": "Compass Green",
+        "hex1": "#4d5a3f",
+        "hex2": "#2c3324",
+        "image": "images/canam-outlander-pro-color-compassgreen.webp",
+        "price": "od 12 960 €"
+      }
+    ],
+    "images": [
+      "images/canam-outlander-pro-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-outlander-pro-life-1.avif",
+      "images/canam-outlander-pro-life-2.avif"
+    ]
+  },
+  {
+    "id": "canam-outlander",
+    "category": "atv",
+    "categoryLabel": "Can-Am ATV",
+    "segment": "Rec-Ute",
+    "name": "Outlander",
+    "price": "od 11 990 €",
+    "engine": "500 / 700 / 850 / 1000R",
+    "desc": "Uniwersalny quad rekreacyjno-użytkowy dostępny w wielu wariantach silnikowych — od 500 do 1000R.",
+    "fullDesc": [
+      "Outlander to najbardziej uniwersalny quad w gamie Can-Am — dostępny w czterech wariantach silnikowych, od ekonomicznego 500 po najmocniejszy 1000R, co pozwala dopasować pojazd zarówno do lekkiej pracy w terenie, jak i bardziej wymagającej jazdy rekreacyjnej.",
+      "Najmocniejsza wersja 1000R korzysta z silnika Rotax V-Twin 999 cm³ o mocy 101 KM z inteligentną kontrolą przepustnicy (iTC) i trybami jazdy, a podwozie z zawieszeniem o skoku 10,8 cala z przodu i 12 cali z tyłu zapewnia komfort na nierównym terenie. Wodoszczelny schowek przedni i zdejmowany kufer tylny dodają praktyczności na co dzień."
+    ],
+    "highlights": [
+      "Silniki: 500 / 700 / 850 / 1000R (do 101 KM, Rotax V-Twin)",
+      "Inteligentna kontrola przepustnicy (iTC) z trybami jazdy",
+      "Skok zawieszenia: 10,8\" przód / 12\" tył",
+      "Wodoszczelny schowek przedni i zdejmowany kufer tylny",
+      "System LinQ do szybkiego montażu akcesoriów"
+    ],
+    "forWho": "Outlander to naturalny wybór dla osób szukających jednego, uniwersalnego quada do wielu zastosowań — od prac gospodarskich po rekreacyjną jazdę w terenie — z możliwością dobrania mocy silnika do własnych potrzeb i budżetu.",
+    "features": [
+      {
+        "title": "4 warianty silnikowe (500–1000R)",
+        "text": "Dobierz moc dokładnie do swoich zastosowań i budżetu — od ekonomicznej pracy po dynamiczną jazdę rekreacyjną."
+      },
+      {
+        "title": "Inteligentna kontrola przepustnicy (iTC)",
+        "text": "Tryby jazdy dostosowują reakcję silnika do warunków, dając płynniejsze i bardziej przewidywalne prowadzenie."
+      },
+      {
+        "title": "Zawieszenie o skoku 10,8\"/12\"",
+        "text": "Komfortowa jazda po nierównym terenie bez przenoszenia każdej nierówności na kierowcę."
+      },
+      {
+        "title": "System LinQ",
+        "text": "Szybki montaż dodatkowych kufrów i akcesoriów bez narzędzi — sprzęt rośnie razem z Twoimi potrzebami."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Tundra Green",
+        "hex1": "#4a6b3a",
+        "hex2": "#3a5530",
+        "image": "images/canam-outlander-1.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-outlander-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-outlander-life-1.jpg",
+      "images/canam-outlander-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-outlander-max",
+    "category": "atv",
+    "categoryLabel": "Can-Am ATV",
+    "segment": "Rec-Ute",
+    "name": "Outlander MAX",
+    "price": "od 12 990 €",
+    "engine": "500 / 700 / 850 / 1000R",
+    "desc": "Dwuosobowa wersja Outlandera z dodatkowym miejscem pasażera, bez utraty osiągów terenowych.",
+    "fullDesc": [
+      "Outlander MAX to dwuosobowa wersja Outlandera — zachowuje te same warianty silnikowe i możliwości terenowe co model jednoosobowy, ale dokłada wydłużone podwozie i przekształcalne siedzenie z oparciem dla pasażera, które w razie potrzeby można zamienić z powrotem w pojedyncze siodło.",
+      "Selektywny napęd 2WD/4WD z mechanizmem Visco-Lok oraz układ Tri-Mode Dynamic Power Steering ułatwiają prowadzenie także przy pełnym obciążeniu dwuosobowym, a system LinQ pozwala szybko, bez narzędzi, montować dodatkowe kufry i akcesoria."
+    ],
+    "highlights": [
+      "Silniki: 500 / 700 / 850 / 1000R (do 101 KM)",
+      "Przekształcalne siedzenie dwuosobowe z oparciem pasażera",
+      "Selektywny napęd 2WD/4WD z Visco-Lok",
+      "Tri-Mode Dynamic Power Steering",
+      "System LinQ do szybkiego montażu akcesoriów"
+    ],
+    "forWho": "Outlander MAX sprawdzi się u osób, które regularnie jeżdżą quadem z pasażerem — czy to w pracy, czy rekreacyjnie — i potrzebują pełnowymiarowego, wygodnego miejsca z tyłu, bez rezygnacji z osiągów i możliwości terenowych jednoosobowego Outlandera.",
+    "features": [
+      {
+        "title": "Przekształcalne siedzenie dwuosobowe",
+        "text": "W razie potrzeby zamienisz je z powrotem w pojedyncze siodło — elastyczność dopasowana do bieżących zadań."
+      },
+      {
+        "title": "Selektywny napęd 2WD/4WD z Visco-Lok",
+        "text": "Pewna trakcja przy pełnym obciążeniu dwuosobowym, bez utraty zwrotności na lżejszym terenie."
+      },
+      {
+        "title": "Tri-Mode Dynamic Power Steering",
+        "text": "Łatwiejsze manewrowanie cięższym, dwuosobowym pojazdem nawet w ciasnych warunkach terenowych."
+      },
+      {
+        "title": "System LinQ",
+        "text": "Szybki montaż dodatkowych kufrów, bez narzędzi, na przewóz sprzętu obok pasażera."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Granite Grey",
+        "hex1": "#5a5e62",
+        "hex2": "#34373a",
+        "image": "images/canam-outlander-max-color-granitegrey.jpg",
+        "price": "od 12 990 €"
+      },
+      {
+        "name": "Legion Red",
+        "hex1": "#b02420",
+        "hex2": "#6e1512",
+        "image": "images/canam-outlander-max-color-legionred.jpg",
+        "price": "od 18 250 €"
+      }
+    ],
+    "images": [
+      "images/canam-outlander-max-color-granitegrey.jpg",
+      "images/canam-outlander-max-color-legionred.jpg"
+    ],
+    "gallery": [
+      "images/canam-outlander-max-life-1.jpg",
+      "images/canam-outlander-max-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-outlander-max-pro",
+    "category": "atv",
+    "categoryLabel": "Can-Am ATV",
+    "segment": "Rec-Ute",
+    "name": "Outlander MAX PRO",
+    "price": "od 14 370 €",
+    "engine": "HD7 / HD8 / HD10",
+    "desc": "Wersja PRO z podwyższonym wyposażeniem roboczym, przystosowana do intensywnej pracy.",
+    "fullDesc": [
+      "Outlander MAX PRO łączy dwuosobowe podwozie MAX z roboczym charakterem wersji PRO — silnik Rotax ACE 650 HD7 o mocy 50 KM w połączeniu z systemem Tri-Mode Dynamic Power Steering i przednim dyferencjałem Visco-4Lok zapewnia pewną trakcję przy pracy z pasażerem lub dodatkowym obciążeniem.",
+      "Wzmocnione opony XPS Trail King na 12-calowych aluminiowych felgach oraz pełna osłona podwozia czynią ten model odpornym na intensywną, codzienną eksploatację w trudnych warunkach terenowych."
+    ],
+    "highlights": [
+      "Silnik: Rotax ACE 650 HD7, 50 KM",
+      "Tri-Mode Dynamic Power Steering i Visco-4Lok",
+      "Opony XPS Trail King 26\" na 12\" felgach aluminiowych",
+      "Przekształcalne siedzenie dwuosobowe",
+      "Pełna osłona podwozia do pracy w trudnym terenie"
+    ],
+    "forWho": "Outlander MAX PRO to propozycja dla osób pracujących w terenie, które potrzebują dodatkowego miejsca dla pasażera lub pomocnika przy pracach gospodarskich — bez rezygnacji z solidności i trakcji typowej dla linii roboczej PRO.",
+    "features": [
+      {
+        "title": "Silnik Rotax ACE 650 HD7, 50 KM",
+        "text": "Wystarczająca moc do pracy z pasażerem lub dodatkowym obciążeniem, bez utraty ekonomii eksploatacji."
+      },
+      {
+        "title": "Opony XPS Trail King na 12\" felgach",
+        "text": "Wzmocniona konstrukcja opon lepiej znosi codzienną, intensywną pracę w trudnym terenie."
+      },
+      {
+        "title": "Przekształcalne siedzenie dwuosobowe",
+        "text": "Elastyczność między przewozem pomocnika a maksymalizacją przestrzeni roboczej."
+      },
+      {
+        "title": "Pełna osłona podwozia",
+        "text": "Ochrona podzespołów przed uszkodzeniami podczas pracy w wymagających warunkach terenowych."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Compass Green",
+        "hex1": "#4d5a3f",
+        "hex2": "#2c3324",
+        "image": "images/canam-outlander-max-pro-color-compassgreen.webp",
+        "price": "od 14 370 €"
+      }
+    ],
+    "images": [
+      "images/canam-outlander-max-pro-1.jpg",
+      "images/canam-outlander-max-pro-2.jpg"
+    ],
+    "gallery": [
+      "images/canam-outlander-max-pro-life-1.avif",
+      "images/canam-outlander-max-pro-life-2.avif"
+    ]
+  },
+  {
+    "id": "canam-outlander-x-mr",
+    "category": "atv",
+    "categoryLabel": "Can-Am ATV",
+    "segment": "Rec-Sport / Rec-Ute",
+    "name": "Outlander X MR",
+    "price": "od 15 020 €",
+    "engine": "700 / 1000R",
+    "desc": "Wersja X MR (Mud Race) do jazdy w błocie i trudnym terenie — wzmocnione zawieszenie i osłony.",
+    "fullDesc": [
+      "Outlander X MR (Mud Race) to wersja Outlandera zaprojektowana specjalnie do jazdy w błocie i płytkiej wodzie — przeniesiony wyżej chłodnik, opony Bilorra Silverback 30 cali na 14-calowych felgach oraz wyciągarka WARN pozwalają pewnie pokonywać najtrudniejsze, grząskie odcinki trasy.",
+      "Wzmocniony przedni zderzak, amortyzatory FOX HPG z przodu i z tyłu oraz dedykowane podnóżki do jazdy w błocie dopełniają specjalistyczne wyposażenie, a najmocniejsza wersja 1000R z silnikiem Rotax V-Twin 999 cm³ (101 KM) i systemem Visco-4Lok zapewnia moc potrzebną do wydostania się z najgłębszego błota."
+    ],
+    "highlights": [
+      "Silniki: 700 / 1000R (do 101 KM, Rotax V-Twin)",
+      "Opony Bilorra Silverback 30\" na 14\" felgach",
+      "Wyciągarka WARN i wzmocniony przedni zderzak",
+      "Amortyzatory FOX HPG z przodu i z tyłu",
+      "Przeniesiony wyżej chłodnik — ochrona przed zalaniem w błocie"
+    ],
+    "forWho": "Outlander X MR to wybór dla najbardziej wymagających entuzjastów jazdy w błocie i trudnym, grząskim terenie — nie jest to quad do lekkiej jazdy rekreacyjnej czy prac gospodarskich, lecz wyspecjalizowana maszyna do ekstremalnych warunków.",
+    "features": [
+      {
+        "title": "Opony Bilorra Silverback 30\" na 14\" felgach",
+        "text": "Agresywny bieżnik i duża średnica zapewniają przyczepność tam, gdzie standardowe opony grzęzną w błocie."
+      },
+      {
+        "title": "Wyciągarka WARN",
+        "text": "Pewność wydostania się z najgłębszego błota i najtrudniejszych, grząskich odcinków trasy."
+      },
+      {
+        "title": "Przeniesiony wyżej chłodnik",
+        "text": "Ochrona układu chłodzenia przed zalaniem podczas jazdy w głębokim błocie czy płytkiej wodzie."
+      },
+      {
+        "title": "Amortyzatory FOX HPG (przód i tył)",
+        "text": "Precyzyjne tłumienie nierówności terenu przy zachowaniu pełnej kontroli nad pojazdem."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Granite Grey",
+        "hex1": "#5a5e62",
+        "hex2": "#34373a",
+        "image": "images/canam-outlander-x-mr-1.jpg",
+        "price": "od 15 020 €"
+      },
+      {
+        "name": "Loft Green Satin",
+        "hex1": "#6b7259",
+        "hex2": "#3f4432",
+        "image": "images/canam-outlander-x-mr-color-loftgreen.jpg",
+        "price": "od 21 470 €"
+      }
+    ],
+    "images": [
+      "images/canam-outlander-x-mr-1.jpg",
+      "images/canam-outlander-x-mr-color-loftgreen.jpg"
+    ],
+    "gallery": [
+      "images/canam-outlander-x-mr-life-2.jpg",
+      "images/canam-outlander-x-mr-life-3.webp"
+    ]
+  },
+  {
+    "id": "canam-renegade",
+    "category": "atv",
+    "categoryLabel": "Can-Am ATV",
+    "segment": "Rec-Sport",
+    "name": "Renegade",
+    "price": "od 16 310 €",
+    "engine": "650 / 1000R",
+    "desc": "Sportowy quad terenowy o wysokich osiągach, dla aktywnej jazdy rekreacyjnej.",
+    "fullDesc": [
+      "Renegade to sportowy quad terenowy Can-Am, zaprojektowany z myślą o dynamicznej, aktywnej jeździe rekreacyjnej, a nie pracy gospodarskiej — agresywna stylistyka i niska, sportowa sylwetka odróżniają go od utylitarnych modeli Outlander.",
+      "Zawieszenie z przednimi wahaczami z drążkiem stabilizatora (skok 9,2 cala) oraz tylnym zawieszeniem TTI (skok 9,9 cala) na amortyzatorach SHOWA zapewnia dynamiczne, precyzyjne prowadzenie w zakrętach, a inteligentna kontrola przepustnicy z trybami Standard, ECO i Sport pozwala dostosować charakter jazdy do warunków."
+    ],
+    "highlights": [
+      "Silniki: 650 (62 KM) / 1000R (91 KM)",
+      "Zawieszenie: przód 9,2\", tył TTI 9,9\", amortyzatory SHOWA",
+      "Inteligentna kontrola przepustnicy: tryby Standard, ECO, Sport",
+      "Prześwit: 10,5\", wysokość siedziska: 34,5\"",
+      "Selektywny napęd 2WD/4WD z Visco-Lok"
+    ],
+    "forWho": "Renegade to propozycja dla kierowców szukających sportowego charakteru jazdy i dynamicznego prowadzenia w terenie — dla tych, dla których liczy się przyjemność z jazdy i osiągi, a nie przestrzeń ładunkowa czy możliwości robocze.",
+    "features": [
+      {
+        "title": "Zawieszenie TTI z amortyzatorami SHOWA",
+        "text": "Dynamiczne, precyzyjne prowadzenie w zakrętach — charakter jazdy bliższy quadowi sportowemu niż utylitarnemu."
+      },
+      {
+        "title": "Tryby jazdy: Standard, ECO, Sport",
+        "text": "Dostosuj reakcję przepustnicy do warunków — od oszczędnej jazdy po pełną dynamikę na trasie."
+      },
+      {
+        "title": "Silniki 650 / 1000R (do 91 KM)",
+        "text": "Wybór mocy pozwala dopasować osiągi do własnych oczekiwań względem dynamiki jazdy."
+      },
+      {
+        "title": "Niska, sportowa sylwetka",
+        "text": "Agresywna stylistyka i niższy środek ciężkości podkreślają rekreacyjny, a nie roboczy charakter tego quada."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Catalyst Gray & Orange Crush",
+        "hex1": "#8a8d90",
+        "hex2": "#c9541f",
+        "image": "images/canam-renegade-1.jpg",
+        "price": "od 16 310 €"
+      },
+      {
+        "name": "Hyper Silver & Legion Red",
+        "hex1": "#c7c9cb",
+        "hex2": "#b02420",
+        "image": "images/canam-renegade-color-hypersilver-v2.avif",
+        "price": "od 21 300 €"
+      }
+    ],
+    "images": [
+      "images/canam-renegade-1.jpg",
+      "images/canam-renegade-2.jpg"
+    ],
+    "gallery": [
+      "images/canam-renegade-life-1.jpg",
+      "images/canam-renegade-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-outlander-6x6",
+    "category": "atv",
+    "categoryLabel": "Can-Am ATV",
+    "segment": "6x6",
+    "name": "Outlander 6x6",
+    "price": "od 17 600 €",
+    "engine": "700 / 850 / 1000R",
+    "desc": "Sześciokołowy quad do zastosowań specjalistycznych i transportu w trudnym terenie.",
+    "fullDesc": [
+      "Outlander 6x6 to sześciokołowy quad zaprojektowany do najcięższych zadań transportowych i pracy w terenie, gdzie zwykły napęd 4x4 nie wystarcza — selektywny napęd 4WD/6WD z mechanizmem Visco-Lok QE zapewnia maksymalną trakcję na każdej nawierzchni.",
+      "Skrzynia ładunkowa o udźwigu 453 kg oraz łączna pojemność schowków sięgająca 275 litrów czynią go jednym z najbardziej wydajnych transportowo quadów w swojej klasie, a wzmocniony zderzak, osłona podwozia i wyciągarka 1588 kg dodatkowo zwiększają jego odporność na trudne warunki pracy."
+    ],
+    "highlights": [
+      "Silniki: 700 / 850 / 1000R (do 101 KM)",
+      "Selektywny napęd 4WD/6WD z Visco-Lok QE",
+      "Udźwig skrzyni ładunkowej: 453 kg",
+      "Udźwig holowniczy: 830 kg, pojemność schowków: 275 l",
+      "Wyciągarka 1588 kg i pełna osłona podwozia"
+    ],
+    "forWho": "Outlander 6x6 to propozycja dla gospodarstw, leśnictwa i firm serwisowych, które potrzebują maksymalnej trakcji i udźwigu w najtrudniejszym terenie — tam, gdzie standardowy quad 4x4 przestaje wystarczać.",
+    "features": [
+      {
+        "title": "Selektywny napęd 4WD/6WD z Visco-Lok QE",
+        "text": "Maksymalna trakcja na każdej nawierzchni tam, gdzie zwykły napęd 4x4 przestaje dawać radę."
+      },
+      {
+        "title": "Skrzynia ładunkowa — udźwig 453 kg",
+        "text": "Duża przestrzeń transportowa do przewozu narzędzi, paszy czy materiałów w gospodarstwie."
+      },
+      {
+        "title": "Wyciągarka 1588 kg",
+        "text": "Wsparcie przy wyciąganiu ciężkiego sprzętu lub własnego pojazdu z najtrudniejszego terenu."
+      },
+      {
+        "title": "Pełna osłona podwozia i zderzak",
+        "text": "Odporność na uszkodzenia podczas codziennej, intensywnej pracy w terenie."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Granite Grey",
+        "hex1": "#5a5e62",
+        "hex2": "#34373a",
+        "image": "images/canam-outlander-6x6-color-granitegrey.webp",
+        "price": "od 17 600 €"
+      },
+      {
+        "name": "Stealth Black",
+        "hex1": "#1c1c1c",
+        "hex2": "#0a0a0a",
+        "image": "images/canam-outlander-6x6-color-stealthblack.webp",
+        "price": "od 22 600 €"
+      }
+    ],
+    "images": [
+      "images/canam-outlander-6x6-1.jpg",
+      "images/canam-outlander-6x6-2.jpg"
+    ],
+    "gallery": [
+      "images/canam-outlander-6x6-life-1.webp",
+      "images/canam-outlander-6x6-life-2.webp"
+    ]
+  },
+  {
+    "id": "canam-outlander-max-6x6",
+    "category": "atv",
+    "categoryLabel": "Can-Am ATV",
+    "segment": "6x6",
+    "name": "Outlander MAX 6x6",
+    "price": "od 19 990 €",
+    "engine": "850 / 1000R",
+    "desc": "Dwuosobowa wersja 6x6 z dodatkowym miejscem pasażera i maksymalną trakcją.",
+    "fullDesc": [
+      "Outlander MAX 6x6 łączy sześciokołowy napęd i udźwig modelu 6x6 z dwuosobowym podwoziem MAX — pozwala zabrać ze sobą pomocnika lub pasażera bez utraty możliwości transportowych i trakcyjnych typowych dla wersji sześciokołowej.",
+      "Napęd 4WD/6WD z Visco-Lok QE oraz zawieszenie z podwójnymi wahaczami na amortyzatorach z 9,8-calowym skokiem zapewniają stabilność nawet przy pełnym obciążeniu dwuosobowym i ładunkiem w skrzyni, a Tri-Mode Dynamic Power Steering ułatwia manewrowanie ciężkim pojazdem."
+    ],
+    "highlights": [
+      "Silniki: 850 / 1000R (do 101 KM)",
+      "Dwuosobowe podwozie z przekształcalnym siedzeniem",
+      "Selektywny napęd 4WD/6WD z Visco-Lok QE",
+      "Skok zawieszenia: 9,8\" — podwójne wahacze",
+      "Tri-Mode Dynamic Power Steering"
+    ],
+    "forWho": "Outlander MAX 6x6 sprawdzi się w gospodarstwach i firmach, gdzie praca w najtrudniejszym terenie regularnie wymaga zabrania ze sobą drugiej osoby — łącząc maksymalną trakcję sześciokołowego napędu z praktycznością dwuosobowego podwozia.",
+    "features": [
+      {
+        "title": "Napęd 4WD/6WD z Visco-Lok QE",
+        "text": "Maksymalna trakcja przy pełnym obciążeniu dwuosobowym i ładunku w skrzyni, w najtrudniejszym terenie."
+      },
+      {
+        "title": "Zawieszenie z podwójnymi wahaczami — skok 9,8\"",
+        "text": "Stabilność i komfort nawet przy pełnym załadowaniu pojazdu."
+      },
+      {
+        "title": "Przekształcalne siedzenie dwuosobowe",
+        "text": "Zabierz pomocnika lub pasażera bez utraty możliwości transportowych sześciokołowej platformy."
+      },
+      {
+        "title": "Tri-Mode Dynamic Power Steering",
+        "text": "Ułatwia manewrowanie ciężkim, sześciokołowym pojazdem nawet w ciasnych warunkach."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Granite Grey",
+        "hex1": "#5a5e62",
+        "hex2": "#34373a",
+        "image": "images/canam-outlander-max-6x6-2.jpg",
+        "price": "od 19 990 €"
+      },
+      {
+        "name": "Stealth Black",
+        "hex1": "#1c1c1c",
+        "hex2": "#0a0a0a",
+        "image": "images/canam-outlander-max-6x6-1.jpg",
+        "price": "od 23 850 €"
+      }
+    ],
+    "images": [
+      "images/canam-outlander-max-6x6-1.jpg",
+      "images/canam-outlander-max-6x6-2.jpg"
+    ],
+    "gallery": [
+      "images/canam-outlander-max-6x6-life-1.jpg",
+      "images/canam-outlander-max-6x6-life-2.webp"
+    ]
+  },
+  {
+    "id": "canam-maverick-trail",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Rec-Sport ≤60''",
+    "name": "Maverick Trail",
+    "price": "od 16 230 €",
+    "engine": "700 / 1000",
+    "desc": "Kompaktowy SSV do wąskich szlaków leśnych — świetna zwrotność przy szerokości do 60 cali.",
+    "fullDesc": [
+      "Maverick Trail to najbardziej dostępny cenowo i najwęższy pojazd SSV w gamie Can-Am — przy szerokości zaledwie 127 cm (50 cali) swobodnie mieści się na wąskich, leśnych i górskich szlakach, na które szersze SSV się nie zmieszczą. Dedykowany fotel kierowcy i pasażera w układzie Ergo-Lok zapewnia komfort mimo kompaktowych wymiarów nadwozia.",
+      "Dostępny w dwóch wariantach silnikowych — 700 (52 KM, Rotax ACE) oraz 1000 (75 KM, Rotax V-Twin) — pozwala dobrać moc do własnych potrzeb, a selektywny napęd 2WD/4WD z mechanizmem Visco-Lok QE zapewnia pewną trakcję na zróżnicowanej nawierzchni."
+    ],
+    "highlights": [
+      "Silniki: 700 (52 KM) / 1000 (75 KM)",
+      "Szerokość: 127 cm — najwęższy SSV w gamie Can-Am",
+      "Selektywny napęd 2WD/4WD z Visco-Lok QE",
+      "Skok zawieszenia: przód 10\", tył 10,5\"",
+      "Udźwig holowniczy: 680 kg"
+    ],
+    "forWho": "Maverick Trail to propozycja dla osób szukających przystępnego cenowo wejścia w świat pojazdów SSV oraz dla tych, którzy jeżdżą wąskimi, technicznymi szlakami leśnymi i górskimi, gdzie szersze pojazdy się nie zmieszczą.",
+    "features": [
+      {
+        "title": "Szerokość 127 cm — najwęższy SSV w gamie",
+        "text": "Swobodnie zmieści się na wąskich, technicznych szlakach leśnych i górskich, gdzie szersze SSV utkną."
+      },
+      {
+        "title": "Fotele Ergo-Lok",
+        "text": "Dedykowany kształt siedzeń kierowcy i pasażera zapewnia komfort mimo kompaktowych wymiarów nadwozia."
+      },
+      {
+        "title": "Selektywny napęd 2WD/4WD z Visco-Lok QE",
+        "text": "Pewna trakcja na zróżnicowanej nawierzchni bez zbędnego zużycia paliwa na łatwiejszych odcinkach."
+      },
+      {
+        "title": "Silniki 700 / 1000 (do 75 KM)",
+        "text": "Wybór mocy pozwala dopasować pojazd do własnych potrzeb i budżetu na starcie z SSV."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Catalyst Gray",
+        "hex1": "#8a8d90",
+        "hex2": "#4a4d50",
+        "image": "images/canam-maverick-trail-color-catalystgray-v2.png",
+        "price": "od 16 230 €"
+      },
+      {
+        "name": "Triple Black",
+        "hex1": "#2b2b2b",
+        "hex2": "#0d0d0d",
+        "image": "images/canam-maverick-trail-1.jpg",
+        "price": "od 18 470 €"
+      }
+    ],
+    "images": [
+      "images/canam-maverick-trail-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-maverick-trail-life-1.avif",
+      "images/canam-maverick-trail-life-2.avif"
+    ]
+  },
+  {
+    "id": "canam-traxter",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Utility",
+    "name": "Traxter",
+    "price": "od 16 990 €",
+    "engine": "HD7 / HD9 / HD11",
+    "desc": "Podstawowy model użytkowy z rodziny Traxter — niezawodny pojazd roboczy na co dzień.",
+    "fullDesc": [
+      "Traxter to podstawowy, wszechstronny pojazd roboczy Can-Am — dostępny w trzech wariantach silnikowych, od HD7 (52 KM) przez HD9 (65 KM) po najnowszy HD11 z 3-cylindrowym silnikiem 999 cm³ (95 KM), co pozwala dopasować moc do zakresu wykonywanej pracy.",
+      "Fotel typu VERSA-PRO ze składanymi siedziskami pasażerów umożliwia szybką zmianę konfiguracji kabiny w zależności od potrzeb — od przewozu dwóch osób po maksymalizację przestrzeni roboczej, a udźwig holowniczy sięgający 1134 kg czyni go solidnym narzędziem pracy."
+    ],
+    "highlights": [
+      "Silniki: HD7 (52 KM) / HD9 (65 KM) / HD11 (95 KM, 999 cm³ 3-cyl.)",
+      "Fotel VERSA-PRO ze składanymi siedziskami pasażerów",
+      "Udźwig holowniczy: do 1134 kg",
+      "Selektywny napęd 2WD/4WD z Visco-Lok QE",
+      "Skrzynia ładunkowa o dużej pojemności roboczej"
+    ],
+    "forWho": "Traxter to propozycja dla gospodarstw, firm serwisowych i właścicieli terenów, którzy potrzebują niedrogiego, uniwersalnego pojazdu roboczego z możliwością wyboru mocy silnika dopasowanej do zakresu codziennych zadań.",
+    "features": [
+      {
+        "title": "3 warianty silnikowe: HD7 / HD9 / HD11",
+        "text": "Dopasuj moc dokładnie do zakresu wykonywanej pracy — od lżejszych zadań po najbardziej wymagające prace gospodarskie."
+      },
+      {
+        "title": "Fotel VERSA-PRO ze składanymi siedziskami",
+        "text": "Szybka zmiana konfiguracji kabiny — od przewozu dwóch osób po maksymalizację przestrzeni roboczej."
+      },
+      {
+        "title": "Udźwig holowniczy do 1134 kg",
+        "text": "Solidne narzędzie pracy zdolne przeciągnąć ciężkie przyczepy i sprzęt gospodarski."
+      },
+      {
+        "title": "Selektywny napęd 2WD/4WD z Visco-Lok QE",
+        "text": "Pewna trakcja na różnych nawierzchniach bez zbędnego zużycia paliwa."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Compass Green",
+        "hex1": "#4d5a3f",
+        "hex2": "#2c3324",
+        "image": "images/canam-traxter-color-compassgreen.webp",
+        "price": "od 16 990 €"
+      },
+      {
+        "name": "Dusty Navy Satin",
+        "hex1": "#2b4d63",
+        "hex2": "#17222c",
+        "image": "images/canam-traxter-color-dustynavy.webp",
+        "price": "od 25 290 €"
+      }
+    ],
+    "images": [
+      "images/canam-traxter-1.jpg",
+      "images/canam-traxter-2.jpg"
+    ],
+    "gallery": [
+      "images/canam-traxter-life-1.jpg",
+      "images/canam-traxter-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-maverick-sport",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Rec-Sport ≤60''",
+    "name": "Maverick Sport",
+    "price": "od 21 900 €",
+    "engine": "1000R",
+    "desc": "Sportowy SSV o szerokości do 60 cali — dynamiczne prowadzenie na wąskich trasach.",
+    "fullDesc": [
+      "Maverick Sport to pojazd SSV zorientowany na wszechstronne osiągi terenowe — od tras w zaroślach, przez skaliste podjazdy, po błotniste odcinki. Silnik Rotax 976 cm³ V-Twin o mocy 100 KM z inteligentną kontrolą przepustnicy zapewnia dynamiczne, ale przewidywalne prowadzenie w każdych warunkach.",
+      "Przednie zawieszenie o skoku 11,5 cala oraz podwójne wentylowane tarcze hamulcowe 220 mm z zaciskami dwutłoczkowymi zapewniają kontrolę przy szybkiej jeździe terenowej, a system kontroli zjazdu (Hill Descent Control) i tryby SPORT/ECO pozwalają dostosować charakter jazdy do warunków."
+    ],
+    "highlights": [
+      "Silnik: Rotax 976 cm³ V-Twin, 100 KM (1000R)",
+      "Skok przedniego zawieszenia: 11,5\"",
+      "Podwójne wentylowane tarcze 220 mm, zaciski dwutłoczkowe",
+      "Tryby jazdy SPORT/ECO oraz Hill Descent Control",
+      "Selektywny napęd 2WD/4WD z Visco-Lok QE"
+    ],
+    "forWho": "Maverick Sport sprawdzi się u kierowców szukających wszechstronnego pojazdu SSV do aktywnej jazdy terenowej — od leśnych duktów po bardziej wymagające, skaliste i błotniste odcinki — bez przechodzenia na najbardziej ekstremalne modele Turbo RR.",
+    "features": [
+      {
+        "title": "Silnik Rotax 976 cm³ V-Twin, 100 KM",
+        "text": "Dynamiczne, ale przewidywalne prowadzenie na trasach w zaroślach, skalistych podjazdach i błotnistych odcinkach."
+      },
+      {
+        "title": "Przednie zawieszenie o skoku 11,5\"",
+        "text": "Pochłania nierówności terenu przy szybkiej jeździe, utrzymując pełną kontrolę nad pojazdem."
+      },
+      {
+        "title": "Hill Descent Control i tryby SPORT/ECO",
+        "text": "Bezpieczny, kontrolowany zjazd ze stromych podjazdów oraz możliwość dostosowania charakteru jazdy do warunków."
+      },
+      {
+        "title": "Podwójne wentylowane tarcze 220 mm",
+        "text": "Pewne hamowanie przy dynamicznej jeździe terenowej, niezależnie od warunków nawierzchni."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Triple Black",
+        "hex1": "#1c1c1e",
+        "hex2": "#2c2c2e",
+        "image": "images/canam-maverick-sport-1.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-maverick-sport-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-maverick-sport-life-1.avif",
+      "images/canam-maverick-sport-life-2.avif"
+    ]
+  },
+  {
+    "id": "canam-traxter-max",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Utility",
+    "name": "Traxter MAX",
+    "price": "od 23 050 €",
+    "engine": "HD9 / HD11",
+    "desc": "Wersja MAX z dodatkowymi miejscami dla pasażerów, bez utraty przestrzeni roboczej.",
+    "fullDesc": [
+      "Traxter MAX to szersza, bardziej rozbudowana odmiana Traxtera — poszerzona o 64-calowa rama z wygiętymi wahaczami zwiększa stabilność i prześwit do 33 cm, a silnik Rotax 976 cm³ V-Twin (HD9, 65 KM) zapewnia więcej mocy niż podstawowy wariant HD7.",
+      "Hamulce ABS oraz fotel VERSA-PRO ze składanymi siedziskami pasażerów podnoszą zarówno bezpieczeństwo, jak i wygodę przewozu dodatkowych osób, bez utraty przestrzeni roboczej typowej dla całej linii Traxter."
+    ],
+    "highlights": [
+      "Silnik: Rotax 976 cm³ V-Twin, 65 KM (HD9)",
+      "Poszerzona rama 64\" z wygiętymi wahaczami",
+      "Prześwit: 33 cm",
+      "Hamulce ABS w standardzie",
+      "Fotel VERSA-PRO ze składanymi siedziskami pasażerów"
+    ],
+    "forWho": "Traxter MAX sprawdzi się u użytkowników potrzebujących większej stabilności i prześwitu niż w podstawowym Traxterze oraz dodatkowego bezpieczeństwa dzięki hamulcom ABS — przy zachowaniu pełnej wszechstronności roboczej całej linii.",
+    "features": [
+      {
+        "title": "Poszerzona rama 64\" z wygiętymi wahaczami",
+        "text": "Większa stabilność i prześwit 33 cm ułatwiają pokonywanie trudniejszego terenu bez utraty kontroli."
+      },
+      {
+        "title": "Silnik Rotax 976 cm³ V-Twin, 65 KM (HD9)",
+        "text": "Więcej mocy niż podstawowy wariant HD7, przydatnej przy pracy z pełnym obciążeniem."
+      },
+      {
+        "title": "Hamulce ABS w standardzie",
+        "text": "Dodatkowe bezpieczeństwo hamowania na różnych nawierzchniach, także przy większej masie pojazdu."
+      },
+      {
+        "title": "Fotel VERSA-PRO ze składanymi siedziskami",
+        "text": "Wygoda przewozu dodatkowych osób bez utraty przestrzeni roboczej."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Compass Green",
+        "hex1": "#4d5a3f",
+        "hex2": "#2c3324",
+        "image": "images/canam-traxter-max-color-compassgreen-v2.png",
+        "price": "od 23 050 €"
+      },
+      {
+        "name": "Stealth Black",
+        "hex1": "#1c1c1c",
+        "hex2": "#0a0a0a",
+        "image": "images/canam-traxter-max-color-stealthblack.jpg",
+        "price": "od 29 990 €"
+      }
+    ],
+    "images": [
+      "images/canam-traxter-max-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-traxter-max-life-1.jpeg",
+      "images/canam-traxter-max-life-2.jpeg"
+    ]
+  },
+  {
+    "id": "canam-maverick-sport-max",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Rec-Sport ≤60''",
+    "name": "Maverick Sport MAX",
+    "price": "od 23 970 €",
+    "engine": "1000R",
+    "desc": "Sportowy SSV MAX na czteroosobową załogę — zabawa w terenie z bliskimi.",
+    "fullDesc": [
+      "Maverick Sport MAX to czteroosobowa wersja Maverick Sport — wydłużony rozstaw osi pozwala zabrać w teren dwóch dodatkowych pasażerów, bez rezygnacji z silnika Rotax 976 cm³ V-Twin o mocy 100 KM ani z dynamicznego charakteru jazdy znanego z wersji dwuosobowej.",
+      "Te same rozwiązania co w Maverick Sport — przednie zawieszenie o skoku 11,5 cala, podwójne wentylowane tarcze hamulcowe 220 mm oraz tryby SPORT/ECO z funkcją Hill Descent Control — zapewniają, że dodatkowa długość nadwozia nie odbiera pojazdowi zwinności w terenie."
+    ],
+    "highlights": [
+      "Silnik: Rotax 976 cm³ V-Twin, 100 KM (1000R)",
+      "4-osobowa kabina — wydłużony rozstaw osi",
+      "Skok przedniego zawieszenia: 11,5\"",
+      "Podwójne wentylowane tarcze 220 mm",
+      "Tryby jazdy SPORT/ECO oraz Hill Descent Control"
+    ],
+    "forWho": "Maverick Sport MAX to propozycja dla grup i rodzin, które chcą wspólnie cieszyć się dynamiczną jazdą terenową znaną z Maverick Sport, ale potrzebują miejsca dla czterech osób zamiast dwóch.",
+    "features": [
+      {
+        "title": "4-osobowa kabina — wydłużony rozstaw osi",
+        "text": "Zabierz w teren dwóch dodatkowych pasażerów bez rezygnacji z dynamicznego charakteru jazdy Maverick Sport."
+      },
+      {
+        "title": "Silnik Rotax 976 cm³ V-Twin, 100 KM",
+        "text": "Te same wysokie osiągi co w wersji dwuosobowej, bez kompromisów mimo dłuższego i cięższego nadwozia."
+      },
+      {
+        "title": "Hill Descent Control i tryby SPORT/ECO",
+        "text": "Bezpieczny zjazd ze stromizn oraz dostosowanie charakteru jazdy nawet przy pełnym obciążeniu pasażerskim."
+      },
+      {
+        "title": "Przednie zawieszenie o skoku 11,5\"",
+        "text": "Zwinność w terenie zachowana mimo dodatkowej długości nadwozia na czterech pasażerów."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Triple Black",
+        "hex1": "#1c1c1e",
+        "hex2": "#2c2c2e",
+        "image": "images/canam-maverick-sport-max-2.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-maverick-sport-max-2.jpg"
+    ],
+    "gallery": [
+      "images/canam-maverick-sport-max-life-1.webp",
+      "images/canam-maverick-sport-max-life-2.webp"
+    ]
+  },
+  {
+    "id": "canam-traxter-6x6",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Utility",
+    "name": "Traxter 6x6",
+    "price": "od 25 430 €",
+    "engine": "HD10",
+    "desc": "Sześciokołowa wersja Traxtera do zadań specjalnych i maksymalnego udźwigu.",
+    "fullDesc": [
+      "Traxter 6x6 to sześciokołowa wersja Traxtera zaprojektowana do zadań, w których standardowy napęd 4x4 nie wystarcza — silnik Rotax 976 cm³ V-Twin (HD10, 82 KM) w połączeniu z przekładnią PRO-TORQ CVT i selektywnym napędem Turf/2WD/4WD z Visco-Lok QE zapewnia wyjątkową trakcję na każdej nawierzchni.",
+      "Modułowa, długa skrzynia ładunkowa o wymiarach 180 x 138 x 25 cm oraz najwyższy w klasie udźwig holowniczy sięgający 1360 kg czynią go jednym z najbardziej wydajnych transportowo pojazdów roboczych w swojej kategorii."
+    ],
+    "highlights": [
+      "Silnik: Rotax 976 cm³ V-Twin, 82 KM (HD10)",
+      "Sześciokołowy napęd Turf/2WD/4WD z Visco-Lok QE",
+      "Udźwig holowniczy: 1360 kg — najwyższy w klasie",
+      "Modułowa skrzynia ładunkowa: 180 x 138 x 25 cm",
+      "Przekładnia PRO-TORQ CVT z systemem QRS"
+    ],
+    "forWho": "Traxter 6x6 to propozycja dla gospodarstw rolnych, leśnictwa i firm transportowych, które potrzebują maksymalnej trakcji i udźwigu w najtrudniejszym terenie — tam, gdzie standardowy napęd 4x4 przestaje wystarczać.",
+    "features": [
+      {
+        "title": "Sześciokołowy napęd Turf/2WD/4WD z Visco-Lok QE",
+        "text": "Wyjątkowa trakcja na każdej nawierzchni, tam gdzie zwykły napęd 4x4 przestaje dawać radę."
+      },
+      {
+        "title": "Udźwig holowniczy 1360 kg — najwyższy w klasie",
+        "text": "Zdolność ciągnięcia najcięższych przyczep i sprzętu transportowego w gospodarstwie."
+      },
+      {
+        "title": "Modułowa skrzynia ładunkowa 180 x 138 x 25 cm",
+        "text": "Duża, elastyczna przestrzeń transportowa dopasowana do różnych zadań gospodarskich."
+      },
+      {
+        "title": "Przekładnia PRO-TORQ CVT z systemem QRS",
+        "text": "Płynna, wydajna praca silnika przy dużym obciążeniu i niskich prędkościach roboczych."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Tundra Green",
+        "hex1": "#4a6b3a",
+        "hex2": "#3a5530",
+        "image": "images/canam-traxter-6x6-1.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-traxter-6x6-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-traxter-6x6-life-1.jpg",
+      "images/canam-traxter-6x6-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-traxter-pro",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Utility",
+    "name": "Traxter PRO",
+    "price": "od 27 490 €",
+    "engine": "HD10",
+    "desc": "Najbardziej rozbudowana wersja użytkowa Traxtera, z pełnym wyposażeniem roboczym.",
+    "fullDesc": [
+      "Traxter PRO to najbardziej rozbudowana robocza odmiana Traxtera — silnik Rotax 976 cm³ V-Twin (HD10, 82 KM) współpracuje z konfiguracją nadwozia przypominającą pakę pickupa, co dodatkowo zwiększa możliwości transportowe pojazdu.",
+      "Fotel VERSA-PRO z bocznym profilowaniem i regulacją pozycji kierowcy oraz tylna szyba w kabinie podnoszą komfort podczas długich godzin pracy, czyniąc ten model gotowym do najbardziej wymagających, całodniowych zadań roboczych."
+    ],
+    "highlights": [
+      "Silnik: Rotax 976 cm³ V-Twin, 82 KM (HD10)",
+      "Konfiguracja nadwozia typu paka pickupa",
+      "Fotel VERSA-PRO z regulacją pozycji kierowcy",
+      "Tylna szyba w kabinie",
+      "Selektywny napęd 2WD/4WD z Visco-Lok QE"
+    ],
+    "forWho": "Traxter PRO to wybór dla profesjonalistów i gospodarstw wymagających maksymalnej wydajności transportowej oraz komfortu podczas długich, intensywnych dni pracy w terenie.",
+    "features": [
+      {
+        "title": "Konfiguracja nadwozia typu paka pickupa",
+        "text": "Zwiększone możliwości transportowe dopasowane do najbardziej wymagających, profesjonalnych zadań."
+      },
+      {
+        "title": "Silnik Rotax 976 cm³ V-Twin, 82 KM (HD10)",
+        "text": "Wystarczająca moc do intensywnej, całodniowej pracy pod dużym obciążeniem."
+      },
+      {
+        "title": "Fotel VERSA-PRO z regulacją pozycji",
+        "text": "Boczne profilowanie i dopasowanie do sylwetki kierowcy redukują zmęczenie podczas długich godzin pracy."
+      },
+      {
+        "title": "Tylna szyba w kabinie",
+        "text": "Dodatkowy komfort i ochrona przed warunkami atmosferycznymi podczas pracy w terenie."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Compass Green",
+        "hex1": "#4d5a3f",
+        "hex2": "#2c3324",
+        "image": "images/canam-traxter-pro-color-compassgreen-v2.jpg",
+        "price": "od 27 490 €"
+      },
+      {
+        "name": "Stealth Black",
+        "hex1": "#1c1c1c",
+        "hex2": "#0a0a0a",
+        "image": "images/canam-traxter-pro-color-stealthblack-v2.jpg",
+        "price": "od 28 310 €"
+      }
+    ],
+    "images": [
+      "images/canam-traxter-pro-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-traxter-pro-life-1.jpg",
+      "images/canam-traxter-pro-life-2.webp"
+    ]
+  },
+  {
+    "id": "canam-maverick",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Rec-Sport ≥64''",
+    "name": "Maverick",
+    "price": "od 29 840 €",
+    "engine": "Turbo RR",
+    "desc": "Szeroki, wyczynowy SSV z turbodoładowanym silnikiem Rotax — stworzony do jazdy na granicy możliwości.",
+    "fullDesc": [
+      "Maverick (Turbo RR) to wysokowydajny pojazd SSV Can-Am — 3-cylindrowy, turbodoładowany silnik Rotax ACE 900 cm³ ze zintegrowanym intercoolerem generuje aż 200 KM mocy, czyniąc ten model jednym z najbardziej dynamicznych pojazdów w swojej klasie.",
+      "Inteligentna kontrola przepustnicy (iTC) oraz wysokowydajny filtr powietrza pozwalają w pełni wykorzystać potencjał silnika niezależnie od warunków terenowych, a agresywna, sportowa sylwetka podkreśla nastawienie na osiągi, a nie pracę użytkową."
+    ],
+    "highlights": [
+      "Silnik: Rotax ACE 900 cm³ Turbo, 200 KM",
+      "Zintegrowany intercooler i wysokowydajny filtr powietrza",
+      "Inteligentna kontrola przepustnicy (iTC)",
+      "Sportowa, dwuosobowa sylwetka nastawiona na osiągi",
+      "Zaawansowany układ turbodoładowania Rotax"
+    ],
+    "forWho": "Maverick (Turbo RR) to propozycja dla kierowców szukających najwyższych osiągów i adrenaliny w terenie — nie jest to pojazd do pracy gospodarskiej, lecz maszyna zbudowana wyłącznie z myślą o dynamicznej, sportowej jeździe.",
+    "features": [
+      {
+        "title": "Silnik Rotax ACE 900 cm³ Turbo, 200 KM",
+        "text": "Turbodoładowanie ze zintegrowanym intercoolerem daje jeden z najbardziej dynamicznych pojazdów w swojej klasie."
+      },
+      {
+        "title": "Inteligentna kontrola przepustnicy (iTC)",
+        "text": "Precyzyjne dawkowanie mocy pozwala w pełni wykorzystać potencjał silnika niezależnie od warunków terenowych."
+      },
+      {
+        "title": "Wysokowydajny filtr powietrza",
+        "text": "Stabilna praca turbodoładowanego silnika nawet w zapylonych, wymagających warunkach terenowych."
+      },
+      {
+        "title": "Sportowa, dwuosobowa sylwetka",
+        "text": "Agresywna stylistyka podkreśla nastawienie na osiągi, nie na pracę użytkową."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Scandi Blue & Orange Crush (DS)",
+        "hex1": "#2f5f7a",
+        "hex2": "#c9541f",
+        "image": "images/canam-maverick-color-scandiblue-v2.jpg",
+        "price": "od 29 840 €"
+      },
+      {
+        "name": "Triple Black (X RS)",
+        "hex1": "#2b2b2b",
+        "hex2": "#0d0d0d",
+        "image": "images/canam-maverick-1-white.webp",
+        "price": "od 39 990 €"
+      },
+      {
+        "name": "Loft Green Satin (X RC)",
+        "hex1": "#5f6b52",
+        "hex2": "#333d2c",
+        "image": "images/canam-maverick-loftgreen-white.webp",
+        "price": "od 41 990 €"
+      },
+      {
+        "name": "Dusty Navy Satin (X RS SAS)",
+        "hex1": "#2b4d63",
+        "hex2": "#17222c",
+        "image": "images/canam-maverick-2.jpg",
+        "price": "od 42 290 €"
+      }
+    ],
+    "images": [
+      "images/canam-maverick-1-white.webp"
+    ],
+    "gallery": [
+      "images/canam-maverick-life-1.webp",
+      "images/canam-maverick-life-2.webp"
+    ]
+  },
+  {
+    "id": "canam-maverick-max",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Rec-Sport ≥64''",
+    "name": "Maverick MAX",
+    "price": "od 45 990 €",
+    "engine": "Turbo RR",
+    "desc": "Czteroosobowa wersja Maverick o wysokich osiągach — ekstremalna jazda w większym gronie.",
+    "fullDesc": [
+      "Maverick MAX to czteroosobowa wersja topowego Maverick Turbo RR — wydłużony rozstaw osi pozwala zabrać w teren trzech dodatkowych pasażerów, a turbodoładowany silnik Rotax ACE 900 cm³ o mocy 200 KM zapewnia dokładnie te same, wysokie osiągi co w wersji dwuosobowej.",
+      "Dzięki temu grupa czterech osób może wspólnie doświadczyć pełni sportowego charakteru Maverick Turbo RR — bez kompromisów w mocy silnika czy dynamice prowadzenia, jedynie z większą przestrzenią pasażerską."
+    ],
+    "highlights": [
+      "Silnik: Rotax ACE 900 cm³ Turbo, 200 KM",
+      "4-osobowa kabina — wydłużony rozstaw osi",
+      "Zintegrowany intercooler i wysokowydajny filtr powietrza",
+      "Inteligentna kontrola przepustnicy (iTC)",
+      "Pełna moc silnika bez kompromisów względem wersji 2-osobowej"
+    ],
+    "forWho": "Maverick MAX to propozycja dla grup przyjaciół i rodzin, które chcą wspólnie doświadczyć najwyższych osiągów pojazdu SSV Can-Am — bez rezygnacji z mocy i dynamiki na rzecz dodatkowych miejsc pasażerskich.",
+    "features": [
+      {
+        "title": "4-osobowa kabina — wydłużony rozstaw osi",
+        "text": "Trzech dodatkowych pasażerów może wspólnie doświadczyć pełni sportowego charakteru Maverick Turbo RR."
+      },
+      {
+        "title": "Silnik Rotax ACE 900 cm³ Turbo, 200 KM",
+        "text": "Dokładnie te same, wysokie osiągi co w wersji dwuosobowej, bez kompromisów mimo dłuższego nadwozia."
+      },
+      {
+        "title": "Zintegrowany intercooler",
+        "text": "Stabilna moc turbodoładowanego silnika niezależnie od intensywności jazdy w grupie."
+      },
+      {
+        "title": "Inteligentna kontrola przepustnicy (iTC)",
+        "text": "Przewidywalne, pełne wykorzystanie mocy silnika przy jeździe z pełnym obciążeniem pasażerskim."
+      }
+    ],
+    "images": [
+      "images/canam-maverick-max-1-v2.png"
+    ],
+    "gallery": [
+      "images/canam-maverick-max-life-2.webp",
+      "images/canam-maverick-max-life-3.avif"
+    ]
+  },
+  {
+    "id": "canam-maverick-r",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Rec-Sport ≥64''",
+    "name": "Maverick R",
+    "price": "od 54 540 €",
+    "engine": "999T DCT",
+    "desc": "Najbardziej ekstremalny SSV w gamie Can-Am — silnik 999T ze skrzynią DCT i technologią wyścigową.",
+    "fullDesc": [
+      "Maverick R to flagowy, najbardziej zaawansowany pojazd SSV w historii Can-Am — turbodoładowany silnik Rotax 999T o mocy 240 KM współpracuje z 7-biegową, dwusprzęgłową przekładnią DCT wykonującą zmiany biegów w zaledwie 0,2 sekundy, co jest rozwiązaniem bezprecedensowym w tej klasie pojazdów.",
+      "Amortyzatory FOX 2.5 PODIUM z regulacją kompresji QS3 i skokiem 63,5 cm z przodu i z tyłu oraz system Smart-Lok zapewniający pełną kontrolę nad blokadą przedniego dyferencjału (2WD/4WD, 4WD Trail Activ, 4WD Trail) czynią ten model zdolnym do najbardziej wymagającej, szybkiej jazdy terenowej — potwierdzonej sukcesami w zawodach wyścigowych."
+    ],
+    "highlights": [
+      "Silnik: Rotax 999T Turbo, 240 KM",
+      "7-biegowa, dwusprzęgłowa przekładnia DCT — zmiana biegu w 0,2 s",
+      "Amortyzatory FOX 2.5 PODIUM QS3, skok 63,5 cm (przód i tył)",
+      "System Smart-Lok — pełna kontrola blokady dyferencjału",
+      "Wyświetlacz dotykowy 10,25\" z nawigacją BRP GO! i aktualizacjami OTA"
+    ],
+    "forWho": "Maverick R to propozycja dla najbardziej wymagających kierowców i entuzjastów wyścigów terenowych, szukających absolutnie najwyższych osiągów, najszybszej przekładni i najbardziej zaawansowanej technologii dostępnej w gamie Can-Am — bez kompromisów w jakiejkolwiek dziedzinie.",
+    "features": [
+      {
+        "title": "Silnik Rotax 999T Turbo, 240 KM",
+        "text": "Najwyższe osiągi w historii Can-Am SSV, potwierdzone sukcesami w zawodach wyścigowych."
+      },
+      {
+        "title": "Przekładnia DCT — zmiana biegu w 0,2 s",
+        "text": "Błyskawiczne, dwusprzęgłowe zmiany biegów bez utraty mocy, rozwiązanie bezprecedensowe w tej klasie pojazdów."
+      },
+      {
+        "title": "Amortyzatory FOX 2.5 PODIUM QS3",
+        "text": "Skok 63,5 cm i regulacja kompresji zapewniają kontrolę przy najbardziej wymagającej, szybkiej jeździe terenowej."
+      },
+      {
+        "title": "System Smart-Lok",
+        "text": "Pełna kontrola nad blokadą przedniego dyferencjału — dostosuj zachowanie napędu do konkretnej sytuacji na trasie."
+      },
+      {
+        "title": "Wyświetlacz 10,25\" z nawigacją BRP GO!",
+        "text": "Aktualizacje OTA i pełna nawigacja dotykowa na pokładzie najbardziej zaawansowanego SSV w gamie."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Triple Black (wersja X RS DCT)",
+        "hex1": "#2b2b2b",
+        "hex2": "#0d0d0d",
+        "image": "images/canam-maverick-r-1-white.webp",
+        "price": "od 54 540 €"
+      },
+      {
+        "name": "Dusty Navy (wersja X RS DCT SAS)",
+        "hex1": "#2b4d63",
+        "hex2": "#17222c",
+        "image": "images/canam-maverick-r-color-dustynavy.webp",
+        "price": "od 56 340 €"
+      },
+      {
+        "name": "Loft Green Satin (wersja X RC DCT SAS)",
+        "hex1": "#5f6b52",
+        "hex2": "#333d2c",
+        "image": "images/canam-maverick-r-color-loftgreen-v2.png",
+        "price": "od 63 400 €"
+      }
+    ],
+    "images": [
+      "images/canam-maverick-r-1-white.webp",
+      "images/canam-maverick-r-2.jpg"
+    ],
+    "gallery": [
+      "images/canam-maverick-r-life-1.jpg",
+      "images/canam-maverick-r-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-maverick-r-max",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Rec-Sport ≥64''",
+    "name": "Maverick R MAX",
+    "price": "od 60 880 €",
+    "engine": "999T DCT",
+    "desc": "Czteroosobowa wersja Maverick R o topowych osiągach — szczyt oferty Can-Am SSV.",
+    "fullDesc": [
+      "Maverick R MAX to czteroosobowa wersja flagowego Maverick R — znacznie wydłużony rozstaw osi (do 457 cm) pozwala zabrać w teren trzech dodatkowych pasażerów, zachowując przy tym ten sam turbodoładowany silnik Rotax 999T o mocy 240 KM i 7-biegową przekładnię DCT.",
+      "Amortyzatory FOX 2.5 PODIUM QS3 ze skokiem 61 cm (nieznacznie mniejszym niż w wersji 2-osobowej ze względu na wydłużone nadwozie) oraz system Smart-Lok zapewniają wysoką kontrolę nad pojazdem nawet przy pełnym obciążeniu pasażerskim, czyniąc Maverick R MAX najbardziej zaawansowanym technologicznie wieloosobowym SSV w gamie Can-Am."
+    ],
+    "highlights": [
+      "Silnik: Rotax 999T Turbo, 240 KM",
+      "4-osobowa kabina — wydłużony rozstaw osi (do 457 cm)",
+      "7-biegowa, dwusprzęgłowa przekładnia DCT",
+      "Amortyzatory FOX 2.5 PODIUM QS3, skok 61 cm",
+      "System Smart-Lok i wyświetlacz 10,25\" z nawigacją BRP GO!"
+    ],
+    "forWho": "Maverick R MAX to propozycja dla grup i rodzin, które chcą dzielić się najwyższymi osiągami flagowego Maverick R — z miejscem dla czterech osób, bez kompromisów w mocy silnika, technologii czy jakości zawieszenia.",
+    "features": [
+      {
+        "title": "4-osobowa kabina — rozstaw osi do 457 cm",
+        "text": "Trzech dodatkowych pasażerów dzieli topowe osiągi Maverick R w jednym, wydłużonym nadwoziu."
+      },
+      {
+        "title": "Silnik Rotax 999T Turbo, 240 KM",
+        "text": "Ten sam turbodoładowany silnik co w wersji dwuosobowej, bez utraty mocy mimo większej masy pojazdu."
+      },
+      {
+        "title": "Przekładnia DCT 7-biegowa dwusprzęgłowa",
+        "text": "Błyskawiczne zmiany biegów przekładają się na dynamiczną jazdę nawet w pełnej, czteroosobowej konfiguracji."
+      },
+      {
+        "title": "Amortyzatory FOX 2.5 PODIUM QS3",
+        "text": "Wysoka kontrola nad pojazdem przy pełnym obciążeniu pasażerskim, mimo nieco mniejszego skoku niż w wersji 2-osobowej."
+      },
+      {
+        "title": "System Smart-Lok i wyświetlacz 10,25\"",
+        "text": "Pełna kontrola napędu i nawigacja BRP GO! na pokładzie najbardziej zaawansowanego, wieloosobowego SSV w gamie."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Dusty Navy & Legion Red",
+        "hex1": "#2b4d63",
+        "hex2": "#17222c",
+        "image": "images/canam-maverick-r-max-color-dustynavy-v2.jpg",
+        "price": "od 60 880 €"
+      }
+    ],
+    "images": [
+      "images/canam-maverick-r-max-1.jpg",
+      "images/canam-maverick-r-max-2.jpg"
+    ],
+    "gallery": [
+      "images/canam-maverick-r-max-life-1.jpg",
+      "images/canam-maverick-r-max-life-2.webp"
+    ]
+  },
+  {
+    "id": "canam-pulse",
+    "category": "electric",
+    "categoryLabel": "Can-Am Electric",
+    "segment": "Naked / Street",
+    "name": "Pulse",
+    "price": "od 16 899 €",
+    "engine": "Rotax E-Power",
+    "desc": "Elektryczny motocykl typu Naked stworzony do miasta — kompaktowy, zwrotny i błyskawicznie przyspieszający, bez hałasu i bez spalin.",
+    "fullDesc": [
+      "Can-Am Pulse to miejski motocykl typu Naked napędzany w pełni elektrycznie. Kompaktowe gabaryty i niska waga sprawiają, że pojazd jest wyjątkowo zwrotny w gęstym ruchu miejskim, a natychmiastowy moment obrotowy silnika Rotax E-Power daje żywe, sportowe przyspieszenie od pierwszych metrów.",
+      "Płynny napęd łańcuchowy pracuje niemal bezgłośnie, dzięki czemu jazda po mieście nie generuje hałasu typowego dla motocykli spalinowych. Ciekłochłodzona bateria i pokładowa ładowarka pozwalają na szybkie ładowanie z domowego gniazdka lub stacji poziomu 2, a 10,25-calowy wyświetlacz dotykowy z Apple CarPlay utrzymuje pełną łączność podczas jazdy."
+    ],
+    "highlights": [
+      "Silnik: Rotax E-Power, napęd w pełni elektryczny",
+      "Zasięg: do 160 km w trybie miejskim",
+      "Ładowanie 20→80% w ok. 50 minut (ładowarka poziomu 2)",
+      "Cichy napęd łańcuchowy i zero wibracji",
+      "10,25\" ekran dotykowy z Apple CarPlay"
+    ],
+    "forWho": "Pulse to wybór dla mieszkańców miast szukających zwinnego, taniego w eksploatacji i przyjemnego w prowadzeniu motocykla na co dzień — bez konieczności tankowania, z niskimi kosztami serwisu i pełną ciszą podczas jazdy.",
+    "features": [
+      {
+        "title": "Jednostka napędowa Rotax E-Power",
+        "text": "Natychmiastowe przyspieszenie od zera obrotów sprawdza się przy każdym ruszaniu ze świateł w mieście."
+      },
+      {
+        "title": "10,25\" ekran dotykowy z Apple CarPlay",
+        "text": "Nawigacja, muzyka i połączenia zawsze pod ręką, bez sięgania po telefon podczas jazdy."
+      },
+      {
+        "title": "Aplikacja BRP GO!",
+        "text": "Podgląd stanu naładowania, zasięgu i lokalizacji pojazdu bezpośrednio ze smartfona, gdziekolwiek jesteś."
+      },
+      {
+        "title": "System komunikacji VIBE",
+        "text": "Łączność z innymi motocyklistami w grupie oraz dostęp do asystenta głosowego bez dodatkowego osprzętu montowanego w kasku."
+      },
+      {
+        "title": "Cichy napęd łańcuchowy",
+        "text": "Płynna, niemal bezgłośna jazda po osiedlu czy w godzinach nocnych bez budzenia sąsiadów."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Bright White",
+        "hex1": "#f2f2f0",
+        "hex2": "#cfcfcf",
+        "image": "images/canam-pulse-1-v2.avif"
+      },
+      {
+        "name": "Sterling Silver ('73)",
+        "hex1": "#c7c9cb",
+        "hex2": "#8a8d90",
+        "image": "images/canam-pulse-silver-v2.webp"
+      }
+    ],
+    "images": [
+      "images/canam-pulse-1-v2.avif",
+      "images/canam-pulse-silver-v2.webp"
+    ],
+    "gallery": [
+      "images/canam-pulse-lifestyle.jpg",
+      "images/canam-pulse-life-2.webp"
+    ]
+  },
+  {
+    "id": "canam-origin",
+    "category": "electric",
+    "categoryLabel": "Can-Am Electric",
+    "segment": "Dual-Sport",
+    "name": "Origin",
+    "price": "od 17 499 €",
+    "engine": "Rotax E-Power",
+    "desc": "Elektryczny motocykl dual-sport, który łączy dziedzictwo motocrossowe Can-Am z cichym, bezemisyjnym napędem. Radzi sobie równie dobrze w terenie, co na asfalcie.",
+    "fullDesc": [
+      "Can-Am Origin to pierwszy w pełni elektryczny motocykl dual-sport marki — zbudowany na bazie jednostki napędowej Rotax E-Power, opracowanej wspólnie z zespołem odpowiedzialnym za historyczne sukcesy Can-Am w motocrossie. Natychmiastowy moment obrotowy dostępny od pierwszego obrotu koła sprawia, że wyjście z zakrętu czy pokonywanie przeszkód terenowych staje się przewidywalne i pełne kontroli.",
+      "Lekka aluminiowa rama, długoskokowe zawieszenie oraz opony terenowe pozwalają swobodnie zjechać z asfaltu na leśną drogę, a cicha praca silnika elektrycznego otwiera dostęp do miejsc, gdzie hałas spalinowego motocykla byłby nie do przyjęcia. 10,25-calowy ekran dotykowy z Apple CarPlay i aplikacja BRP GO! trzymają jeźdźca w pełni połączonego z pojazdem."
+    ],
+    "highlights": [
+      "Silnik: Rotax E-Power, napęd w pełni elektryczny",
+      "Zasięg: do 145 km w trybie miejskim",
+      "Ładowanie 20→80% w ok. 50 minut (ładowarka poziomu 2)",
+      "10,25\" ekran dotykowy z Apple CarPlay",
+      "Zero emisji spalin i minimalny poziom hałasu"
+    ],
+    "forWho": "Origin to propozycja dla jeźdźców, którzy chcą łączyć jazdę terenową i miejską bez kompromisów w postaci hałasu, wibracji czy kosztów tankowania — świetny wybór dla osób ceniących nowoczesną technologię i ciche, czyste dojazdy poza utarte szlaki.",
+    "features": [
+      {
+        "title": "Jednostka napędowa Rotax E-Power",
+        "text": "Natychmiastowy moment obrotowy od zera obrotów ułatwia pokonywanie przeszkód terenowych i dynamiczne ruszanie w mieście."
+      },
+      {
+        "title": "10,25\" ekran dotykowy z Apple CarPlay",
+        "text": "Nawigacja, muzyka i połączenia zawsze pod ręką, bez sięgania po telefon podczas jazdy."
+      },
+      {
+        "title": "Aplikacja BRP GO!",
+        "text": "Podgląd stanu naładowania, zasięgu i historii przejazdów bezpośrednio ze smartfona."
+      },
+      {
+        "title": "System komunikacji VIBE",
+        "text": "Łączność z innymi motocyklistami w grupie bez dodatkowego osprzętu montowanego w kasku."
+      },
+      {
+        "title": "Cicha, bezemisyjna jazda",
+        "text": "Dostęp do terenów i tras, gdzie hałas silnika spalinowego byłby uciążliwy lub zabroniony."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Bright White",
+        "hex1": "#f2f2f0",
+        "hex2": "#cfcfcf",
+        "image": "images/canam-origin-1-v2.avif"
+      },
+      {
+        "name": "Sterling Silver ('73)",
+        "hex1": "#c7c9cb",
+        "hex2": "#8a8d90",
+        "image": "images/canam-origin-silver-v2.webp"
+      }
+    ],
+    "images": [
+      "images/canam-origin-1-v2.avif",
+      "images/canam-origin-silver-v2.webp"
+    ],
+    "gallery": [
+      "images/canam-origin-lifestyle.jpg",
+      "images/canam-origin-life-2.webp"
+    ]
+  },
+  {
+    "id": "canam-outlander-electric",
+    "category": "electric",
+    "categoryLabel": "Can-Am Electric",
+    "segment": "ATV",
+    "name": "Outlander Electric",
+    "price": "od 18 990 €",
+    "engine": "Rotax E-Power",
+    "desc": "Pierwszy masowo produkowany elektryczny quad ATV — cicha praca silnika, zero wibracji i pełna moc dostępna natychmiast po wciśnięciu gazu.",
+    "fullDesc": [
+      "Outlander Electric to przełomowy quad w gamie Can-Am — pierwszy tego typu pojazd napędzany w pełni elektrycznie, dostępny w regularnej sprzedaży. Jednostka Rotax E-Power generuje 47 KM i 72 Nm momentu obrotowego dostępnego od zera obrotów, a niemal bezgłośna praca silnika i minimalne wibracje sprawiają, że jazda staje się zaskakująco komfortowa nawet po wielu godzinach pracy.",
+      "Trzy tryby jazdy — Normal, Sport i Work — pozwalają dopasować charakter reakcji na gaz do zadania: od precyzyjnej pracy w gospodarstwie po dynamiczną jazdę rekreacyjną. Udźwig holowniczy sięgający 830 kg stawia Outlander Electric w czołówce segmentu, a ładowanie 20→80% w ok. 50 minut na ładowarce poziomu 2 minimalizuje przestoje."
+    ],
+    "highlights": [
+      "Silnik: Rotax E-Power, 47 KM / 72 Nm",
+      "Zasięg: do 80 km, ładowanie 20→80% w ok. 50 min",
+      "Udźwig holowniczy do 830 kg",
+      "3 tryby jazdy: Normal, Sport, Work",
+      "5 lat gwarancji na baterię"
+    ],
+    "forWho": "Outlander Electric sprawdzi się w gospodarstwach i firmach, gdzie liczy się cicha praca (np. blisko zabudowań czy zwierząt), a także u entuzjastów szukających nowoczesnej alternatywy dla spalinowego quada — bez kosztów paliwa i z niższymi kosztami serwisowymi.",
+    "features": [
+      {
+        "title": "Jednostka Rotax E-Power, 47 KM",
+        "text": "Pełny moment obrotowy dostępny natychmiast po wciśnięciu manetki gazu, bez opóźnienia typowego dla silników spalinowych."
+      },
+      {
+        "title": "Trzy tryby jazdy",
+        "text": "Normal, Sport i Work pozwalają dopasować charakter napędu do pracy w terenie lub dynamicznej jazdy rekreacyjnej."
+      },
+      {
+        "title": "Udźwig holowniczy 830 kg",
+        "text": "Jeden z najwyższych wyników w segmencie elektrycznych ATV, wystarczający do większości prac gospodarskich."
+      },
+      {
+        "title": "Cicha, niemal bezwibracyjna praca",
+        "text": "Komfort jazdy w pobliżu zabudowań gospodarczych czy zwierząt, gdzie hałas silnika spalinowego byłby uciążliwy."
+      },
+      {
+        "title": "5 lat gwarancji na baterię",
+        "text": "Długoterminowe bezpieczeństwo inwestycji w kluczowy podzespół napędu elektrycznego."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Granite Grey",
+        "hex1": "#5b5f63",
+        "hex2": "#2e3134",
+        "image": "images/canam-outlander-electric-1-v2.avif"
+      },
+      {
+        "name": "Bright White",
+        "hex1": "#f2f2f0",
+        "hex2": "#cfcfcf",
+        "image": "images/canam-outlander-electric-color-brightwhite-v2.png"
+      }
+    ],
+    "images": [
+      "images/canam-outlander-electric-1-v2.avif"
+    ],
+    "gallery": [
+      "images/canam-outlander-electric-life-1.avif",
+      "images/canam-outlander-electric-life-2.avif"
+    ]
+  },
+  {
+    "id": "canam-outlander-max-electric",
+    "category": "electric",
+    "categoryLabel": "Can-Am Electric",
+    "segment": "ATV",
+    "name": "Outlander MAX Electric",
+    "price": "od 20 560 €",
+    "engine": "Rotax E-Power",
+    "desc": "Dwuosobowa, elektryczna wersja Outlandera — ten sam cichy, bezemisyjny napęd, dodatkowe miejsce dla pasażera i wydłużony rozstaw osi dla większej stabilności.",
+    "fullDesc": [
+      "Outlander MAX Electric bazuje na tej samej jednostce Rotax E-Power co wersja jednoosobowa, oferując 47 KM i 72 Nm momentu obrotowego w pełni elektrycznego napędu. Wydłużone nadwozie z siedzeniem dla pasażera i dedykowanymi uchwytami sprawia, że quad świetnie sprawdza się przy pracy w dwie osoby lub na wspólnych wypadach rekreacyjnych.",
+      "Dłuższy rozstaw osi poprawia stabilność podczas jazdy z pasażerem i ładunkiem, a cicha, bezwibracyjna praca silnika elektrycznego pozostaje równie komfortowa jak w wersji jednoosobowej. Ładowanie 20→80% zajmuje ok. 50 minut na ładowarce poziomu 2, a trzy tryby jazdy — Normal, Sport, Work — pozwalają dopasować charakter napędu do zadania."
+    ],
+    "highlights": [
+      "Silnik: Rotax E-Power, 47 KM / 72 Nm",
+      "Miejsce dla kierowcy i pasażera — wydłużony rozstaw osi",
+      "Zasięg: do 80 km, ładowanie 20→80% w ok. 50 min",
+      "Udźwig holowniczy do 830 kg",
+      "5 lat gwarancji na baterię"
+    ],
+    "forWho": "Outlander MAX Electric to propozycja dla gospodarstw i firm, w których quad wykorzystywany jest przez dwie osoby jednocześnie, a także dla rodzin szukających cichego, elektrycznego pojazdu na wspólne wypady w teren.",
+    "features": [
+      {
+        "title": "Jednostka Rotax E-Power, 47 KM",
+        "text": "Ten sam pełny moment obrotowy od zera obrotów co w wersji jednoosobowej, mimo dodatkowego miejsca dla pasażera."
+      },
+      {
+        "title": "Wydłużony rozstaw osi",
+        "text": "Większa stabilność podczas jazdy z pasażerem i dodatkowym ładunkiem na bagażnikach."
+      },
+      {
+        "title": "Trzy tryby jazdy",
+        "text": "Normal, Sport i Work pozwalają dopasować charakter napędu do pracy w terenie lub jazdy rekreacyjnej we dwoje."
+      },
+      {
+        "title": "Cicha, niemal bezwibracyjna praca",
+        "text": "Komfort jazdy dla obu osób na pokładzie, nawet podczas dłuższych tras."
+      },
+      {
+        "title": "5 lat gwarancji na baterię",
+        "text": "Długoterminowe bezpieczeństwo inwestycji w kluczowy podzespół napędu elektrycznego."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Bright White",
+        "hex1": "#f2f2f0",
+        "hex2": "#cfcfcf",
+        "image": "images/canam-outlander-max-electric-1-v2.png"
+      },
+      {
+        "name": "Granite Grey",
+        "hex1": "#5b5f63",
+        "hex2": "#2e3134",
+        "image": "images/canam-outlander-max-electric-color-granitegrey-v2.avif"
+      }
+    ],
+    "images": [
+      "images/canam-outlander-max-electric-1-v2.png"
+    ],
+    "gallery": [
+      "images/canam-outlander-max-electric-life-1.avif",
+      "images/canam-outlander-max-electric-life-2.jpeg"
+    ]
+  }
+]

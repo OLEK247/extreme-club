@@ -1,0 +1,11 @@
+# Pliki robocze i pomocnicze — nie wdrażać
+*.exe
+_debug.html
+catalog_dump.txt
+ZDJECIA-DO-PODMIANY.txt
+_new*
+xdddd*
+
+# Systemowe
+.DS_Store
+Thumbs.db
