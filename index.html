@@ -58,6 +58,9 @@
   ]
 }
 </script>
+<link rel="preconnect" href="https://www.google.com">
+<link rel="preconnect" href="https://maps.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://maps.googleapis.com">
 <link rel="icon" type="image/png" href="images/favicon.png">
 <style>
 :root {
@@ -275,39 +278,8 @@ section { padding: 72px 0; }
 .contact-map-col { display: flex; flex-direction: column; gap: 0; }
 .contact-map-wrap { position: relative; border-radius: var(--radius); overflow: hidden; height: 480px; }
 .contact-map-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
-.contact-map-placeholder { position: absolute; inset: 0; width: 100%; height: 100%; border: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; padding: 24px; text-align: center; background: var(--color-dark); color: #fff; cursor: pointer; font-family: inherit; }
-.contact-map-placeholder svg { width: 34px; height: 34px; color: var(--color-accent); }
-.contact-map-placeholder span { font-size: 15px; font-weight: 700; }
-.contact-map-placeholder small { font-size: 12px; color: rgba(255,255,255,0.6); max-width: 320px; }
-.contact-map-placeholder small a { color: rgba(255,255,255,0.85); text-decoration: underline; cursor: pointer; }
-.contact-map-placeholder small a:hover { color: #fff; }
-.contact-map-placeholder:hover { background: #132a4a; }
-.contact-map-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 16px; font-size: 13px; font-weight: 700; color: var(--color-text-muted); text-decoration: none; transition: color 0.15s; }
-.contact-map-link:hover { color: var(--color-accent); }
-.contact-map-link svg { width: 15px; height: 15px; }
 
 /* Pasek benefitów pod mapą */
-/* Formularz zapytania ofertowego */
-.contact-form-section { padding: 64px 0 0; }
-.contact-form-card { max-width: 640px; margin: 0 auto; background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 40px; }
-.contact-form-head h2 { margin: 0 0 8px; font-size: clamp(22px, 2.4vw, 28px); font-weight: 800; letter-spacing: -0.3px; }
-.contact-form-sub { margin: 0 0 28px; color: var(--color-text-muted); font-size: 14.5px; }
-.contact-form { display: flex; flex-direction: column; gap: 18px; }
-.contact-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.contact-form-field { display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 700; color: var(--color-text); }
-.contact-form-field input, .contact-form-field textarea { font-family: inherit; font-size: 15px; font-weight: 400; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: 10px; background: var(--color-surface); color: var(--color-text); outline: none; transition: border-color 0.2s, box-shadow 0.2s; resize: vertical; }
-.contact-form-field input:focus, .contact-form-field textarea:focus { border-color: var(--color-accent); box-shadow: 0 0 0 3px rgba(3,105,161,0.12); }
-.contact-form-consent { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: var(--color-text-muted); line-height: 1.5; cursor: pointer; }
-.contact-form-consent input { margin-top: 3px; flex: none; }
-.contact-form-consent a { color: var(--color-text); text-decoration: underline; cursor: pointer; }
-.contact-form-submit { align-self: flex-start; font-family: inherit; font-size: 14px; font-weight: 700; letter-spacing: 0.3px; text-transform: uppercase; color: #fff; background: var(--color-accent); border: none; border-radius: 10px; padding: 14px 28px; cursor: pointer; transition: opacity 0.2s; }
-.contact-form-submit:hover { opacity: 0.88; }
-.contact-form-hp { position: absolute; left: -9999px; }
-@media (max-width: 640px) {
-  .contact-form-card { padding: 28px 22px; }
-  .contact-form-grid { grid-template-columns: 1fr; }
-}
-
 .contact-strip { background: var(--color-bg); padding: 72px 0; margin-top: 72px; border-top: 1px solid var(--color-border); }
 .contact-strip-inner { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
 .contact-strip-item { display: flex; flex-direction: column; gap: 12px; padding: 0 40px 0 0; }
@@ -919,7 +891,7 @@ body.is-home .nav-social { display: flex; }
 .events-notify-eyebrow { display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.85); margin: 0 0 12px; text-shadow: 0 2px 6px rgba(0,0,0,0.5); }
 .events-notify-card h1 { margin: 0 0 14px; font-size: clamp(24px, 3vw, 34px); font-weight: 800; text-shadow: 0 2px 10px rgba(0,0,0,0.55); }
 .events-notify-card > p { margin: 0 auto 28px; max-width: 460px; color: rgba(255,255,255,0.92); text-shadow: 0 2px 8px rgba(0,0,0,0.65), 0 1px 3px rgba(0,0,0,0.8); font-size: 15px; line-height: 1.65; }
-.events-notify-submit { display: inline-flex; align-items: center; gap: 12px; color: #fff; font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; text-decoration: underline; text-underline-offset: 6px; background: none; border: none; cursor: pointer; padding: 0; transition: opacity 0.15s; }
+.events-notify-submit { display: inline-flex; align-items: center; gap: 12px; margin-top: 28px; color: #fff; font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; text-decoration: underline; text-underline-offset: 6px; background: none; border: none; cursor: pointer; padding: 0; transition: opacity 0.15s; }
 .events-notify-submit:hover { opacity: 0.75; }
 .events-notify-submit svg { width: 17px; height: 17px; flex: none; }
 
@@ -1104,7 +1076,7 @@ body.is-home .nav-social { display: flex; }
         <div class="showcase-tile" role="button" tabindex="0" style="background-image:url('images/canam-maverick-lifestyle-desert-action.jpg')" onclick="showCatalog('ssv')">
           <div class="showcase-body">
             <h3>UTV / SSV</h3>
-            <p>Maverick, Maverick R, Traxter i inne pojazdy SSV Can-Am.</p>
+            <p>Maverick, Maverick R, Traxter i inne pojazdy SSV <span style="white-space: nowrap;">Can-Am</span>.</p>
             <button type="button" class="showcase-link" onclick="event.stopPropagation(); showCatalog('ssv')">Zobacz ofertę</button>
           </div>
         </div>
@@ -1118,21 +1090,21 @@ body.is-home .nav-social { display: flex; }
         <div class="showcase-tile" role="button" tabindex="0" style="background-image:url('images/showcase-onroad.jpg')" onclick="showCatalog('trojkolowce')">
           <div class="showcase-body">
             <h3>On Road</h3>
-            <p>Spyder F3, Spyder RT, Canyon, Ryker — trójkołowce Can-Am.</p>
+            <p>Spyder F3, Spyder RT, Canyon, Ryker — trójkołowce <span style="white-space: nowrap;">Can-Am</span>.</p>
             <button type="button" class="showcase-link" onclick="event.stopPropagation(); showCatalog('trojkolowce')">Zobacz ofertę</button>
           </div>
         </div>
         <div class="showcase-tile" role="button" tabindex="0" style="background-image:url('images/showcase-atv.jpg')" onclick="showCatalog('atv')">
           <div class="showcase-body">
             <h3>ATV</h3>
-            <p>Outlander, Outlander MAX, Renegade i inne quady Can-Am.</p>
+            <p>Outlander, Outlander MAX, Renegade i inne quady <span style="white-space: nowrap;">Can-Am</span>.</p>
             <button type="button" class="showcase-link" onclick="event.stopPropagation(); showCatalog('atv')">Zobacz ofertę</button>
           </div>
         </div>
         <div class="showcase-tile" role="button" tabindex="0" style="background-image:url('images/canam-outlander-electric-mud.jpg')" onclick="showCatalog('electric')">
           <div class="showcase-body">
             <h3>Elektryczne</h3>
-            <p>Can-Am Origin, Pulse oraz Outlander Electric — pełna moc bez emisji.</p>
+            <p><span style="white-space: nowrap;">Can-Am</span> Origin, Pulse oraz Outlander Electric — pełna moc bez emisji.</p>
             <button type="button" class="showcase-link" onclick="event.stopPropagation(); showCatalog('electric')">Zobacz ofertę</button>
           </div>
         </div>
@@ -1246,7 +1218,7 @@ body.is-home .nav-social { display: flex; }
   <div class="catalog-search-bar container">
     <div class="catalog-search-wrap">
       <svg class="catalog-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      <input type="search" class="catalog-search-input" id="catalog-search-input" placeholder="Wpisz czego szukasz..." oninput="catalogSearch(this.value)" autocomplete="off">
+      <input type="text" class="catalog-search-input" id="catalog-search-input" placeholder="Wpisz czego szukasz..." oninput="catalogSearch(this.value)" autocomplete="off">
       <button class="catalog-search-clear" id="catalog-search-clear" onclick="catalogSearchClear()" title="Wyczyść">✕</button>
     </div>
     <div class="catalog-search-count" id="catalog-search-count"></div>
@@ -1428,57 +1400,10 @@ body.is-home .nav-social { display: flex; }
           </div>
         </div>
         <div class="contact-map-col">
-          <div class="contact-map-wrap" id="contact-map-wrap">
-            <button type="button" class="contact-map-placeholder" onclick="loadContactMap()">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-7.5 7-12a7 7 0 1 0-14 0c0 4.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
-              <span>Kliknij, aby załadować mapę Google</span>
-              <small>Nastąpi połączenie z serwerami Google — zobacz <a onclick="event.stopPropagation(); showPrivacy()">politykę prywatności</a></small>
-            </button>
+          <div class="contact-map-wrap">
+            <iframe src="https://www.google.com/maps?q=Nowa+88,+83-031+Łęgowo&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa dojazdu do Extreme Club"></iframe>
           </div>
-          <a class="contact-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Nowa+88,+83-031+Łęgowo" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            Otwórz w Google Maps
-          </a>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact-form-section">
-    <div class="container">
-      <div class="contact-form-card">
-        <div class="contact-form-head">
-          <p class="contact-eyebrow">Zapytanie ofertowe</p>
-          <h2>Napisz do nas, oddzwonimy</h2>
-          <p class="contact-form-sub">Wypełnij krótki formularz — odpowiadamy na zapytania w ciągu 24 godzin roboczych.</p>
-        </div>
-        <form name="zapytanie" class="contact-form" onsubmit="submitContactForm(event)" data-netlify="true" netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="zapytanie">
-          <div class="contact-form-hp"><label>Nie wypełniaj tego pola<input name="bot-field"></label></div>
-          <div class="contact-form-grid">
-            <label class="contact-form-field">
-              <span>Imię i nazwisko *</span>
-              <input type="text" name="imie" required autocomplete="name">
-            </label>
-            <label class="contact-form-field">
-              <span>Telefon lub e-mail *</span>
-              <input type="text" name="kontakt" required autocomplete="tel">
-            </label>
-          </div>
-          <label class="contact-form-field">
-            <span>Interesujący model (opcjonalnie)</span>
-            <input type="text" name="model" id="contact-form-vehicle" placeholder="np. Sea-Doo GTX 170">
-          </label>
-          <label class="contact-form-field">
-            <span>Wiadomość *</span>
-            <textarea name="wiadomosc" rows="4" required placeholder="Napisz, w czym możemy pomóc..."></textarea>
-          </label>
-          <label class="contact-form-consent">
-            <input type="checkbox" required>
-            <span>Wyrażam zgodę na przetwarzanie danych w celu udzielenia odpowiedzi na zapytanie, zgodnie z <a onclick="showPrivacy()">polityką prywatności</a>. *</span>
-          </label>
-          <button type="submit" class="contact-form-submit">Wyślij zapytanie</button>
-        </form>
       </div>
     </div>
   </section>
@@ -1554,7 +1479,7 @@ body.is-home .nav-social { display: flex; }
       <p>Przetwarzamy dane podane dobrowolnie w wiadomościach e-mail lub podczas rozmowy telefonicznej (imię, numer telefonu, adres e-mail, treść zapytania) wyłącznie w celu udzielenia odpowiedzi na zapytanie ofertowe dotyczące pojazdów Sea-Doo i Can-Am.</p>
 
       <h3>Pliki cookies</h3>
-      <p>Strona wykorzystuje wyłącznie niezbędne pliki cookies pochodzące od osadzonej mapy Google Maps, ładowanej dopiero po Twoim kliknięciu w sekcji Kontakt. Google, jako dostawca zewnętrzny, może wówczas ustawić własne pliki cookies zgodnie ze swoją <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">polityką prywatności</a>. Strona nie korzysta z narzędzi analitycznych ani reklamowych śledzących użytkowników.</p>
+      <p>Strona wykorzystuje wyłącznie niezbędne pliki cookies pochodzące od osadzonej mapy Google Maps w sekcji Kontakt. Google, jako dostawca zewnętrzny, może ustawić własne pliki cookies zgodnie ze swoją <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">polityką prywatności</a>. Strona nie korzysta z narzędzi analitycznych ani reklamowych śledzących użytkowników.</p>
 
       <h3>Twoje prawa</h3>
       <p>Masz prawo dostępu do swoich danych, ich sprostowania, usunięcia oraz ograniczenia przetwarzania. W tym celu skontaktuj się z nami pod adresem podanym powyżej.</p>
@@ -1604,7 +1529,7 @@ body.is-home .nav-social { display: flex; }
 </footer>
 
 <div class="cookie-banner" id="cookie-banner">
-  <p>Ta strona wykorzystuje wyłącznie niezbędne pliki cookies (mapa Google, ładowana po kliknięciu). Nie używamy narzędzi analitycznych ani reklamowych. Szczegóły w <a onclick="showPrivacy()" style="cursor:pointer;">polityce prywatności</a>.</p>
+  <p>Ta strona wykorzystuje wyłącznie niezbędne pliki cookies (mapa Google w sekcji Kontakt). Nie używamy narzędzi analitycznych ani reklamowych. Szczegóły w <a onclick="showPrivacy()" style="cursor:pointer;">polityce prywatności</a>.</p>
   <div class="cookie-banner-actions">
     <button type="button" class="cookie-banner-decline" onclick="dismissCookieBanner()">Odrzuć</button>
     <button type="button" class="cookie-banner-accept" onclick="acceptCookieBanner()">Akceptuję</button>
@@ -1929,7 +1854,7 @@ const VEHICLES = [
       { title: "Sportowy kadłub", text: "Zachowuje pełną kontrolę nawet przy falach generowanych podczas jazdy z liną holowniczą." },
       { title: "Dedykowany uchwyt na deskę wakeboardową", text: "Bezpieczny transport deski na pokładzie między kolejnymi podejściami na wodzie." }
     ],
-    colors: [{ name: "Eclipse Black / Vapor Blue", hex1: "#1c1c1e", hex2: "#5b9bd5", image: "images/seadoo-wake-pro-230-new.webp" }],
+    colors: [{ name: "Sand / Dazzling Blue", hex1: "#c9b896", hex2: "#1565c0", image: "images/seadoo-wake-pro-230-new.webp" }],
     images: ["images/seadoo-wake-pro-230-new.webp"], gallery: ["images/seadoo-wake-pro-230-2.jpg", "images/seadoo-wake-pro-230-life-2.webp"] },
 
   { id: "canam-f3-s", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Cruising", name: "Spyder F3 S", price: "od 25 350 €", engine: "Rotax 1330 ACE, SE6",
@@ -2143,7 +2068,7 @@ const VEHICLES = [
       { title: "Dedykowany tryb Rally", text: "Ułatwia kontrolowane, sportowe zachowanie pojazdu na luźnej nawierzchni, w tym driftowanie na zakrętach." },
       { title: "Komfortowy fotel Rally i tempomat", text: "Sprawdza się równie dobrze na dłuższych, mieszanych trasach asfaltowo-terenowych jak i typowo terenowych wypadach." }
     ],
-    colors: [{ name: "Milky White / Triple Black", hex1: "#e8e8e8", hex2: "#1c1c1e", image: "images/canam-ryker-rally-1.jpg" }],
+    colors: [{ name: "Triple Black", hex1: "#1c1c1e", hex2: "#2c2c2e", image: "images/canam-ryker-rally-1.jpg" }],
     images: ["images/canam-ryker-rally-1.jpg"],
     gallery: ["images/canam-ryker-rally-life-1.jpg", "images/canam-ryker-rally-life-2.webp"] },
 
@@ -2180,7 +2105,7 @@ const VEHICLES = [
       { title: "Zawieszenie o skoku 10,8\"/12\"", text: "Komfortowa jazda po nierównym terenie bez przenoszenia każdej nierówności na kierowcę." },
       { title: "System LinQ", text: "Szybki montaż dodatkowych kufrów i akcesoriów bez narzędzi — sprzęt rośnie razem z Twoimi potrzebami." }
     ],
-    colors: [{ name: "Tundra Green", hex1: "#4a6b3a", hex2: "#3a5530", image: "images/canam-outlander-1.jpg" }],
+    colors: [{ name: "Granite Grey", hex1: "#5a5e62", hex2: "#34373a", image: "images/canam-outlander-1.jpg" }],
     images: ["images/canam-outlander-1.jpg"],
     gallery: ["images/canam-outlander-life-1.jpg", "images/canam-outlander-life-2.jpg"] },
   { id: "canam-outlander-max", category: "atv", categoryLabel: "Can-Am ATV", segment: "Rec-Ute", name: "Outlander MAX", price: "od 12 990 €", engine: "500 / 700 / 850 / 1000R",
@@ -2409,7 +2334,7 @@ const VEHICLES = [
       { title: "Modułowa skrzynia ładunkowa 180 x 138 x 25 cm", text: "Duża, elastyczna przestrzeń transportowa dopasowana do różnych zadań gospodarskich." },
       { title: "Przekładnia PRO-TORQ CVT z systemem QRS", text: "Płynna, wydajna praca silnika przy dużym obciążeniu i niskich prędkościach roboczych." }
     ],
-    colors: [{ name: "Tundra Green", hex1: "#4a6b3a", hex2: "#3a5530", image: "images/canam-traxter-6x6-1.jpg" }],
+    colors: [{ name: "Compass Green", hex1: "#4d5a3f", hex2: "#2c3324", image: "images/canam-traxter-6x6-1.jpg" }],
     images: ["images/canam-traxter-6x6-1.jpg"],
     gallery: ["images/canam-traxter-6x6-life-1.jpg", "images/canam-traxter-6x6-life-2.jpg"] },
   { id: "canam-traxter-pro", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Utility", name: "Traxter PRO", price: "od 27 490 €", engine: "HD10",
@@ -2573,10 +2498,10 @@ const VEHICLES = [
       { title: "5 lat gwarancji na baterię", text: "Długoterminowe bezpieczeństwo inwestycji w kluczowy podzespół napędu elektrycznego." }
     ],
     colors: [
-      { name: "Granite Grey", hex1: "#5b5f63", hex2: "#2e3134", image: "images/canam-outlander-electric-1-v2.avif" },
-      { name: "Bright White", hex1: "#f2f2f0", hex2: "#cfcfcf", image: "images/canam-outlander-electric-color-brightwhite-v2.png" }
+      { name: "Bright White", hex1: "#f2f2f0", hex2: "#cfcfcf", image: "images/canam-outlander-electric-color-brightwhite-v2.png" },
+      { name: "Granite Grey", hex1: "#5b5f63", hex2: "#2e3134", image: "images/canam-outlander-electric-1-v2.avif" }
     ],
-    images: ["images/canam-outlander-electric-1-v2.avif"], gallery: ["images/canam-outlander-electric-life-1.avif", "images/canam-outlander-electric-life-2.avif"] },
+    images: ["images/canam-outlander-electric-color-brightwhite-v2.png"], gallery: ["images/canam-outlander-electric-life-1.avif", "images/canam-outlander-electric-life-2.avif"] },
 
   { id: "canam-outlander-max-electric", category: "electric", categoryLabel: "Can-Am Electric", segment: "ATV", name: "Outlander MAX Electric", price: "od 20 560 €", engine: "Rotax E-Power",
     desc: "Dwuosobowa, elektryczna wersja Outlandera — ten sam cichy, bezemisyjny napęd, dodatkowe miejsce dla pasażera i wydłużony rozstaw osi dla większej stabilności.",
@@ -2884,42 +2809,9 @@ function renderPricing() {
   setActiveNavLink("nav-link-pricing");
 }
 
-let _inquiryVehicle = null;
-function inquireAboutVehicle(name) {
-  _inquiryVehicle = name;
-  showContact();
-}
-
-function submitContactForm(e) {
-  e.preventDefault();
-  const form = e.target;
-  const data = new FormData(form);
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(data).toString()
-  }).then(() => {
-    showToast("Dziękujemy! Odpowiemy najszybciej, jak to możliwe.");
-    form.reset();
-  }).catch(() => {
-    showToast("Nie udało się wysłać formularza. Zadzwoń: 502 123 568");
-  });
-}
-
-function loadContactMap() {
-  const wrap = document.getElementById("contact-map-wrap");
-  if (!wrap || wrap.querySelector("iframe")) return;
-  wrap.innerHTML = '<iframe src="https://www.google.com/maps?q=Nowa+88,+83-031+%C5%81%C4%99gowo&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa dojazdu do Extreme Club"></iframe>';
-}
-
 function renderContact() {
   showPage("page-contact");
   setActiveNavLink("nav-link-contact");
-  const vehicleField = document.getElementById("contact-form-vehicle");
-  if (vehicleField && _inquiryVehicle) {
-    vehicleField.value = _inquiryVehicle;
-    _inquiryVehicle = null;
-  }
   const video = document.getElementById("contact-banner-video");
   if (video && !video.dataset.loaded) {
     video.dataset.loaded = "1";
@@ -3160,7 +3052,7 @@ function openDetail(id) {
         <p>${v.forWho}</p>
       </div>` : ""}
       <div class="detail-actions">
-        <button class="btn btn-primary" onclick="inquireAboutVehicle('${v.name}')">Zapytaj o dostępność</button>
+        <button class="btn btn-primary" onclick="showContact()">Zapytaj o dostępność</button>
         <button class="btn btn-outline" onclick="showCatalog('${v.category}')">Wróć do katalogu</button>
       </div>
       <p class="detail-note">Cena brutto w EUR, przeliczana na PLN wg kursu sprzedaży NBP (tabela C) w dniu zakupu. Zdjęcia mają charakter poglądowy.</p>

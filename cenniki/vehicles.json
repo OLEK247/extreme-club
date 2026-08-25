@@ -1051,9 +1051,9 @@
     ],
     "colors": [
       {
-        "name": "Eclipse Black / Vapor Blue",
-        "hex1": "#1c1c1e",
-        "hex2": "#5b9bd5",
+        "name": "Sand / Dazzling Blue",
+        "hex1": "#c9b896",
+        "hex2": "#1565c0",
         "image": "images/seadoo-wake-pro-230-new.webp"
       }
     ],
@@ -1735,9 +1735,9 @@
     ],
     "colors": [
       {
-        "name": "Milky White / Triple Black",
-        "hex1": "#e8e8e8",
-        "hex2": "#1c1c1e",
+        "name": "Triple Black",
+        "hex1": "#1c1c1e",
+        "hex2": "#2c2c2e",
         "image": "images/canam-ryker-rally-1.jpg"
       }
     ],
@@ -1853,9 +1853,9 @@
     ],
     "colors": [
       {
-        "name": "Tundra Green",
-        "hex1": "#4a6b3a",
-        "hex2": "#3a5530",
+        "name": "Granite Grey",
+        "hex1": "#5a5e62",
+        "hex2": "#34373a",
         "image": "images/canam-outlander-1.jpg"
       }
     ],
@@ -2585,9 +2585,9 @@
     ],
     "colors": [
       {
-        "name": "Tundra Green",
-        "hex1": "#4a6b3a",
-        "hex2": "#3a5530",
+        "name": "Compass Green",
+        "hex1": "#4d5a3f",
+        "hex2": "#2c3324",
         "image": "images/canam-traxter-6x6-1.jpg"
       }
     ],
@@ -3099,20 +3099,20 @@
     ],
     "colors": [
       {
-        "name": "Granite Grey",
-        "hex1": "#5b5f63",
-        "hex2": "#2e3134",
-        "image": "images/canam-outlander-electric-1-v2.avif"
-      },
-      {
         "name": "Bright White",
         "hex1": "#f2f2f0",
         "hex2": "#cfcfcf",
         "image": "images/canam-outlander-electric-color-brightwhite-v2.png"
+      },
+      {
+        "name": "Granite Grey",
+        "hex1": "#5b5f63",
+        "hex2": "#2e3134",
+        "image": "images/canam-outlander-electric-1-v2.avif"
       }
     ],
     "images": [
-      "images/canam-outlander-electric-1-v2.avif"
+      "images/canam-outlander-electric-color-brightwhite-v2.png"
     ],
     "gallery": [
       "images/canam-outlander-electric-life-1.avif",
