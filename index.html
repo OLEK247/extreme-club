@@ -374,10 +374,10 @@ body.is-home .nav-social { display: flex; }
 .color-swatch:hover { transform: scale(1.12); }
 .color-swatch.active { box-shadow: 0 0 0 2px var(--color-accent); }
 .vehicle-image .color-swatches { position: absolute; left: 10px; bottom: 10px; z-index: 2; }
-.detail-color-swatches { display: flex; gap: 10px; align-items: center; margin: 2px 0 0; flex-wrap: wrap; }
+.detail-color-swatches { display: flex; gap: 10px; align-items: center; justify-content: center; margin: 2px 0 0; flex-wrap: wrap; }
 .detail-color-swatches .color-swatch { width: 26px; height: 26px; }
 .color-swatch-name { font-size: 13px; font-weight: 600; color: var(--color-text-muted); letter-spacing: 0.2px; margin-left: 4px; }
-.detail-color-picker { display: flex; gap: 12px; align-items: center; margin: 4px 0 20px; }
+.detail-color-picker { display: flex; gap: 12px; align-items: center; justify-content: center; flex-wrap: wrap; margin: 4px 0 20px; }
 .detail-color-picker-label { font-weight: 600; color: var(--color-text); font-size: 0.95rem; }
 .detail-spec-download { display: inline-flex; align-items: center; gap: 8px; position: relative; margin: 0 0 24px; padding: 0 0 8px; width: fit-content; color: var(--color-text); font-size: 13.5px; font-weight: 700; letter-spacing: 0.3px; text-transform: uppercase; text-decoration: none; }
 .detail-spec-download::after { content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background: var(--color-border); transition: background 0.2s; }
@@ -707,7 +707,6 @@ body.is-home .nav-social { display: flex; }
     gap: 16px;
     padding-bottom: 12px;
     justify-content: flex-start;
-    touch-action: pan-x;
   }
   .detail-related-grid::-webkit-scrollbar {
     display: none;
@@ -884,7 +883,7 @@ body.is-home .nav-social { display: flex; }
 .event-card-body h3 { margin: 0 0 8px; font-size: 18px; font-weight: 800; }
 .event-card-body p { margin: 0; color: var(--color-text-muted); font-size: 14px; line-height: 1.55; }
 
-.events-notify { position: relative; margin-top: -72px; aspect-ratio: 21/9; min-height: 380px; display: flex; align-items: center; justify-content: center; text-align: center; background: var(--color-dark) url('images/seadoo-lifestyle-beach-trip.jpg') center 40% / cover no-repeat; color: #fff; overflow: hidden; }
+.events-notify { position: relative; margin-top: -72px; aspect-ratio: 21/9; min-height: 380px; display: flex; align-items: center; justify-content: center; text-align: center; background: var(--color-dark) url('images/seadoo-lifestyle-beach-trip.webp') center 40% / cover no-repeat; color: #fff; overflow: hidden; }
 .events-notify::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,17,30,0.65) 0%, rgba(8,17,30,0.82) 50%, rgba(8,17,30,0.55) 75%, var(--color-bg) 100%); }
 .events-notify-card { position: relative; z-index: 1; max-width: 600px; }
 .events-notify-inner { display: contents; }
@@ -1074,14 +1073,14 @@ body.is-home .nav-social { display: flex; }
       <span class="eyebrow" style="display:block; text-align:center; color: var(--color-accent);">Oferta</span>
       <h2 class="section-title">Wybierz swoją kategorię</h2>
       <div class="showcase-grid">
-        <div class="showcase-tile" role="button" tabindex="0" style="background-image:url('images/canam-maverick-lifestyle-desert-action.jpg')" onclick="showCatalog('ssv')">
+        <div class="showcase-tile" role="button" tabindex="0" style="background-image:url('images/canam-maverick-lifestyle-desert-action.webp')" onclick="showCatalog('ssv')">
           <div class="showcase-body">
             <h3>UTV / SSV</h3>
             <p>Maverick, Maverick R, Traxter i inne pojazdy SSV <span style="white-space: nowrap;">Can-Am</span>.</p>
             <button type="button" class="showcase-link" onclick="event.stopPropagation(); showCatalog('ssv')">Zobacz ofertę</button>
           </div>
         </div>
-        <div class="showcase-tile" role="button" tabindex="0" style="background-image:url('images/showcase-seadoo.jpg')" onclick="showCatalog('seadoo')">
+        <div class="showcase-tile" role="button" tabindex="0" style="background-image:url('images/showcase-seadoo.webp')" onclick="showCatalog('seadoo')">
           <div class="showcase-body">
             <h3>Sea-Doo</h3>
             <p>Spark, GTI, GTX, RXP, RXT i inne modele skuterów wodnych.</p>
@@ -1095,14 +1094,14 @@ body.is-home .nav-social { display: flex; }
             <button type="button" class="showcase-link" onclick="event.stopPropagation(); showCatalog('trojkolowce')">Zobacz ofertę</button>
           </div>
         </div>
-        <div class="showcase-tile" role="button" tabindex="0" style="background-image:url('images/showcase-atv.jpg')" onclick="showCatalog('atv')">
+        <div class="showcase-tile" role="button" tabindex="0" style="background-image:url('images/showcase-atv.webp')" onclick="showCatalog('atv')">
           <div class="showcase-body">
             <h3>ATV</h3>
             <p>Outlander, Outlander MAX, Renegade i inne quady <span style="white-space: nowrap;">Can-Am</span>.</p>
             <button type="button" class="showcase-link" onclick="event.stopPropagation(); showCatalog('atv')">Zobacz ofertę</button>
           </div>
         </div>
-        <div class="showcase-tile" role="button" tabindex="0" style="background-image:url('images/canam-outlander-electric-mud.jpg')" onclick="showCatalog('electric')">
+        <div class="showcase-tile" role="button" tabindex="0" style="background-image:url('images/canam-outlander-electric-mud.webp')" onclick="showCatalog('electric')">
           <div class="showcase-body">
             <h3>Elektryczne</h3>
             <p><span style="white-space: nowrap;">Can-Am</span> Origin, Pulse oraz Outlander Electric — pełna moc bez emisji.</p>
@@ -1120,7 +1119,7 @@ body.is-home .nav-social { display: flex; }
       <div class="lifestyle-cards">
         <div class="lifestyle-card" role="button" tabindex="0" onclick="openDetail('canam-canyon-xt')">
           <div class="lifestyle-card-image">
-            <div class="lifestyle-card-image-bg" style="background-image:url('images/canam-canyon-xt-lifestyle-action.jpg'); background-position: 55% 50%;"></div>
+            <div class="lifestyle-card-image-bg" style="background-image:url('images/canam-canyon-xt-lifestyle-action.webp'); background-position: 55% 50%;"></div>
             <span class="lifestyle-card-tag">Nowość</span>
 
           </div>
@@ -1132,7 +1131,7 @@ body.is-home .nav-social { display: flex; }
         </div>
         <div class="lifestyle-card" role="button" tabindex="0" onclick="openDetail('seadoo-spark-90-2')">
           <div class="lifestyle-card-image">
-            <div class="lifestyle-card-image-bg" style="background-image:url('images/seadoo-lifestyle-beach-trip.jpg'); background-position: 40% 78%;"></div>
+            <div class="lifestyle-card-image-bg" style="background-image:url('images/seadoo-lifestyle-beach-trip.webp'); background-position: 40% 78%;"></div>
             <span class="lifestyle-card-tag">Bestseller</span>
 
           </div>
@@ -1144,7 +1143,7 @@ body.is-home .nav-social { display: flex; }
         </div>
         <div class="lifestyle-card" role="button" tabindex="0" onclick="openDetail('canam-maverick-r')">
           <div class="lifestyle-card-image">
-            <div class="lifestyle-card-image-bg" style="background-image:url('images/category-ssv.jpg'); background-position: 50% 38%;"></div>
+            <div class="lifestyle-card-image-bg" style="background-image:url('images/category-ssv.webp'); background-position: 50% 38%;"></div>
             <span class="lifestyle-card-tag">Model flagowy</span>
 
           </div>
@@ -1583,7 +1582,7 @@ const VEHICLES = [
       { name: "Sunrise Orange / Dragon Red", hex1: "#e07a2b", hex2: "#a3241f", image: "images/seadoo-spark-60-2-1.jpg" },
       { name: "Vapor Blue / Dazzling Blue", hex1: "#6fa8c9", hex2: "#1f5f8a", image: "images/seadoo-spark-90-2-1.webp" }
     ],
-    images: ["images/seadoo-spark-90-2-1.webp"], gallery: ["images/seadoo-spark-90-2-life-1.jpg", "images/seadoo-spark-90-2-life-2.webp"] },
+    images: ["images/seadoo-spark-90-2-1.webp"], gallery: ["images/seadoo-spark-90-2-life-1.webp", "images/seadoo-spark-90-2-life-2.webp"] },
   { id: "seadoo-spark-trixx-1", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Rec Lite", name: "Spark Trixx 90 For 1", price: "od 11 690 €", engine: "Rotax 90 (1 os.)",
     desc: "Jednoosobowa wersja Sparka z dedykowanym trybem Trixx do wykonywania trików na wodzie — beczek, obrotów i skoków. Zbudowany z myślą o zabawie i pokazywaniu klasy na wodzie, nie tylko o przemieszczaniu się z punktu A do B.",
     fullDesc: [
@@ -1603,7 +1602,7 @@ const VEHICLES = [
       { name: "White / Dragon Red", hex1: "#e6e6e6", hex2: "#c8342a", image: "images/seadoo-spark-trixx-1-color-whitedragonred.webp" },
       { name: "Gulfstream Blue / Orange Crush", hex1: "#2e7fae", hex2: "#e0722d", image: "images/seadoo-spark-trixx-1-color-gulfstreamblue.webp" }
     ],
-    images: ["images/seadoo-spark-trixx-1-1.jpg", "images/seadoo-spark-trixx-1-2.jpg"], gallery: ["images/seadoo-spark-trixx-1-life-1-new.jpg", "images/seadoo-spark-trixx-1-life-2-new.jpg"] },
+    images: ["images/seadoo-spark-trixx-1-1.jpg", "images/seadoo-spark-trixx-1-2.jpg"], gallery: ["images/seadoo-spark-trixx-1-life-1-new.webp", "images/seadoo-spark-trixx-1-life-2-new.webp"] },
   { id: "seadoo-spark-trixx-3", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Rec Lite", name: "Spark Trixx 90 For 3", price: "od 12 520 €", engine: "Rotax 90 (3 os.)",
     desc: "Trixx w wersji dla trzech osób — te same triki i zabawa co w wariancie jednoosobowym, ale z miejscem na znajomych lub rodzinę na pokładzie. Świetny wybór dla grup, które chcą wspólnie szaleć na wodzie.",
     fullDesc: [
@@ -1623,7 +1622,7 @@ const VEHICLES = [
       { name: "White / Dragon Red", hex1: "#e6e6e6", hex2: "#c8342a", image: "images/seadoo-spark-trixx-3-color-whitedragonred.webp" },
       { name: "Gulfstream Blue / Orange Crush", hex1: "#2e7fae", hex2: "#e0722d", image: "images/seadoo-spark-trixx-3-color-gulfstreamblue.webp" }
     ],
-    images: ["images/seadoo-spark-trixx-3-1.jpg"], gallery: ["images/seadoo-spark-trixx-3-life-1-new.jpg", "images/seadoo-spark-trixx-3-life-2-new.jpg"] },
+    images: ["images/seadoo-spark-trixx-3-1.jpg"], gallery: ["images/seadoo-spark-trixx-3-life-1-new.webp", "images/seadoo-spark-trixx-3-life-2-new.webp"] },
   { id: "seadoo-gti-std", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Recreation", name: "GTI Standard 130", price: "od 14 770 €", engine: "Rotax 130 KM",
     desc: "Uniwersalna, rodzinna platforma Sea-Doo na każdą okazję — od spokojnego rejsu po aktywny dzień na wodzie z bliskimi. 130 KM mocy w komfortowym, stabilnym kadłubie.",
     fullDesc: [
@@ -1640,7 +1639,7 @@ const VEHICLES = [
       { title: "Platforma do wsiadania z wody", text: "Ułatwiony powrót na pokład po kąpieli w jeziorze czy morzu — wygodne rozwiązanie dla całej rodziny." }
     ],
     colors: [{ name: "Bright White / Neo Mint", hex1: "#f2f4f5", hex2: "#8fd4c8", image: "images/seadoo-gti-std-2.jpg" }],
-    images: ["images/seadoo-gti-std-2.jpg", "images/seadoo-gti-std-1.jpg"], gallery: ["images/seadoo-gti-std-life-1.jpg", "images/seadoo-gti-std-life-2.jpg"] },
+    images: ["images/seadoo-gti-std-2.jpg", "images/seadoo-gti-std-1.jpg"], gallery: ["images/seadoo-gti-std-life-1.webp", "images/seadoo-gti-std-life-2.jpg"] },
   { id: "seadoo-gti-se", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Recreation", name: "GTI SE 170", price: "od 17 330 €", engine: "Rotax 170 KM",
     desc: "Rozszerzona wersja GTI z większą mocą i bogatszym wyposażeniem SE — komfort i osiągi w jednym, rodzinnym pakiecie. Więcej technologii na pokładzie bez rezygnacji z uniwersalności.",
     fullDesc: [
@@ -1660,7 +1659,7 @@ const VEHICLES = [
       { name: "Eclipse Black / Laguna Green", hex1: "#1c1c1c", hex2: "#2f6b52", image: "images/seadoo-gti-se-color-eclipseblack.webp" },
       { name: "Teal Blue / Manta Green", hex1: "#1f6b6b", hex2: "#5a8f3c", image: "images/seadoo-gti-se-color-tealblue.webp" }
     ],
-    images: ["images/seadoo-gti-se-1.jpg", "images/seadoo-gti-se-2.jpg"], gallery: ["images/seadoo-gti-se-life-1.jpg", "images/seadoo-gti-se-life-2.jpg"] },
+    images: ["images/seadoo-gti-se-1.jpg", "images/seadoo-gti-se-2.jpg"], gallery: ["images/seadoo-gti-se-life-1.webp", "images/seadoo-gti-se-life-2.webp"] },
   { id: "seadoo-gtx-170", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Touring", name: "GTX 170", price: "od 19 210 €", engine: "Rotax 170 KM",
     desc: "Komfort i osiągi w klasie turystycznej Sea-Doo — stabilna jednostka na dłuższe trasy z pasażerem. 170 KM mocy w wygodnym, szerokim kadłubie.",
     fullDesc: [
@@ -1714,7 +1713,7 @@ const VEHICLES = [
       { name: "White Pearl Premium", hex1: "#ede9e3", hex2: "#c3c0ba", image: "images/seadoo-gtx-limited-325-color-whitepearl.webp" },
       { name: "Teal Metallic", hex1: "#1f6b6b", hex2: "#123f3f", image: "images/seadoo-gtx-limited-325-color-tealmetallic.webp" }
     ],
-    images: ["images/seadoo-gtx-limited-325-2.jpg"], gallery: ["images/seadoo-gtx-limited-325-life-1.jpg", "images/seadoo-gtx-limited-325-life-2.jpg"] },
+    images: ["images/seadoo-gtx-limited-325-2.jpg"], gallery: ["images/seadoo-gtx-limited-325-life-1.webp", "images/seadoo-gtx-limited-325-life-2.webp"] },
   { id: "seadoo-gtr-230", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Performance", name: "GTR 230", price: "od 18 970 €", engine: "Rotax 230 KM",
     desc: "Sportowe osiągi w przystępnej cenie — dynamiczna jazda bez rozbudowanej elektroniki klasy X. 230 KM mocy w zwrotnym, sportowym kadłubie.",
     fullDesc: [
@@ -1748,7 +1747,7 @@ const VEHICLES = [
       { title: "Sportowy kadłub S3", text: "Ostre, przewidywalne prowadzenie przy dużych prędkościach i dynamicznej zmianie kierunku." }
     ],
     colors: [{ name: "Eclipse Black / Deep Marsala", hex1: "#1c1c1e", hex2: "#7a1c2e", image: "images/seadoo-gtr-x-300-new.webp" }],
-    images: ["images/seadoo-gtr-x-300-new.webp"], gallery: ["images/seadoo-gtr-x-300-life-1.jpg", "images/seadoo-gtr-x-300-life-2.jpg"] },
+    images: ["images/seadoo-gtr-x-300-new.webp"], gallery: ["images/seadoo-gtr-x-300-life-1.webp", "images/seadoo-gtr-x-300-life-2.webp"] },
   { id: "seadoo-rxp-x-325", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Performance", name: "RXP-X 325", price: "od 26 690 €", engine: "Rotax 325 KM",
     desc: "Wyścigowa geometria i maksymalna moc na wodzie — jeden z najbardziej zwrotnych skuterów Sea-Doo. 325 KM supercharged mocy w najbardziej agresywnie prowadzącym kadłubie w gamie.",
     fullDesc: [
@@ -1768,7 +1767,7 @@ const VEHICLES = [
       { name: "Gulfstream Blue Premium", hex1: "#1f5fa8", hex2: "#123a6b", image: "images/seadoo-rxp-x-325-color-gulfstreamblue.webp" },
       { name: "Ice Metal / Manta Green", hex1: "#c9ccce", hex2: "#5a8f3c", image: "images/seadoo-rxp-x-325-color-icemetal.webp" }
     ],
-    images: ["images/seadoo-rxp-x-325-1.jpg", "images/seadoo-rxp-x-325-2.jpg"], gallery: ["images/seadoo-rxp-x-325-life-1.jpg", "images/seadoo-rxp-x-325-life-2.jpg"] },
+    images: ["images/seadoo-rxp-x-325-1.jpg", "images/seadoo-rxp-x-325-2.jpg"], gallery: ["images/seadoo-rxp-x-325-life-1.webp", "images/seadoo-rxp-x-325-life-2.jpg"] },
   { id: "seadoo-rxt-x-325", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Performance", name: "RXT-X 325", price: "od 28 980 €", engine: "Rotax 325 KM",
     desc: "Najbardziej zaawansowany skuter wodny performance w gamie Sea-Doo — 325 KM supercharged mocy, wyścigowa geometria kadłuba i pełna kontrola w każdym zakręcie. Stworzony dla tych, którzy szukają maksymalnej adrenaliny na wodzie.",
     fullDesc: [
@@ -1788,7 +1787,7 @@ const VEHICLES = [
       { name: "Gulfstream Blue Premium", hex1: "#1f5fa8", hex2: "#123a6b", image: "images/seadoo-rxt-x-325-color-gulfstreamblue.webp" },
       { name: "Ice Metal / Manta Green", hex1: "#c9ccce", hex2: "#5a8f3c", image: "images/seadoo-rxt-x-325-color-icemetal.webp" }
     ],
-    images: ["images/seadoo-rxt-x-325-1.jpg", "images/seadoo-rxt-x-325-2.jpg"], gallery: ["images/seadoo-rxt-x-325-life-1.jpg", "images/seadoo-rxt-x-325-life-2.jpg"] },
+    images: ["images/seadoo-rxt-x-325-1.jpg", "images/seadoo-rxt-x-325-2.jpg"], gallery: ["images/seadoo-rxt-x-325-life-1.webp", "images/seadoo-rxt-x-325-life-2.jpg"] },
   { id: "seadoo-explorer-pro-170", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Adventure", name: "Explorer Pro 170", price: "od 24 420 €", engine: "Rotax 170 KM",
     desc: "Pojazd stworzony do eksploracji — dodatkowa przestrzeń na bagaż i osprzęt do dłuższych wypraw wodnych. 170 KM mocy w kadłubie zoptymalizowanym pod większe obciążenie.",
     fullDesc: [
@@ -1839,7 +1838,7 @@ const VEHICLES = [
       { title: "Wykończenie pokładu odporne na sól i wodę", text: "Trwałość materiałów w stałym kontakcie ze sprzętem wędkarskim i wilgocią." }
     ],
     colors: [{ name: "Vapor Blue / Catalyst Grey", hex1: "#5b9bd5", hex2: "#6e7578", image: "images/seadoo-fish-pro-sport-170-1.jpg" }],
-    images: ["images/seadoo-fish-pro-sport-170-1.jpg", "images/seadoo-fish-pro-sport-170-2.jpg"], gallery: ["images/seadoo-fish-pro-sport-170-life-1.jpg", "images/seadoo-fish-pro-sport-170-life-2.jpg"] },
+    images: ["images/seadoo-fish-pro-sport-170-1.jpg", "images/seadoo-fish-pro-sport-170-2.jpg"], gallery: ["images/seadoo-fish-pro-sport-170-life-1.webp", "images/seadoo-fish-pro-sport-170-life-2.jpg"] },
   { id: "seadoo-wake-pro-230", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Tow Sports", name: "Wake Pro 230", price: "od 24 310 €", engine: "Rotax 230 KM",
     desc: "Dedykowany do wakeboardingu i sportów holowanych — wzmocniony uchwyt holowniczy i stabilne prowadzenie. 230 KM mocy dla tych, którzy tworzą fale i holują innych.",
     fullDesc: [
@@ -1856,7 +1855,7 @@ const VEHICLES = [
       { title: "Dedykowany uchwyt na deskę wakeboardową", text: "Bezpieczny transport deski na pokładzie między kolejnymi podejściami na wodzie." }
     ],
     colors: [{ name: "Sand / Dazzling Blue", hex1: "#c9b896", hex2: "#1565c0", image: "images/seadoo-wake-pro-230-new.webp" }],
-    images: ["images/seadoo-wake-pro-230-new.webp"], gallery: ["images/seadoo-wake-pro-230-2.jpg", "images/seadoo-wake-pro-230-life-2.webp"] },
+    images: ["images/seadoo-wake-pro-230-new.webp"], gallery: ["images/seadoo-wake-pro-230-2.webp", "images/seadoo-wake-pro-230-life-2.webp"] },
 
   { id: "canam-f3-s", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Cruising", name: "Spyder F3 S", price: "od 25 350 €", engine: "Rotax 1330 ACE, SE6",
     desc: "Sportowy trójkołowiec Can-Am do jazdy miejskiej i rekreacyjnej — agresywna stylistyka i dynamiczne prowadzenie.",
@@ -1874,7 +1873,7 @@ const VEHICLES = [
       { title: "6-biegowa skrzynia półautomatyczna", text: "Płynne zmiany biegów bez sprzęgła upraszczają prowadzenie, zachowując przy tym sportowy charakter jazdy." }
     ],
     colors: [
-      { name: "Circuit Yellow Metallic", hex1: "#d9c62a", hex2: "#8f7a12", image: "images/canam-f3-s-color-circuityellow.jpg" },
+      { name: "Circuit Yellow Metallic", hex1: "#d9c62a", hex2: "#8f7a12", image: "images/canam-f3-s-color-circuityellow.webp" },
       { name: "Monolith Black Satin", hex1: "#2b2b2b", hex2: "#0d0d0d", image: "images/canam-f3-s-color-monolithblack.jpg" }
     ],
     images: ["images/canam-f3-s-1.jpg", "images/canam-f3-s-2.jpg"],
@@ -1933,7 +1932,7 @@ const VEHICLES = [
       { name: "Mineral Blue", hex1: "#3d5a75", hex2: "#1f3346", image: "images/canam-rt-ltd-color-mineralblue.jpg" }
     ],
     images: ["images/canam-rt-ltd-color-pearlwhite.jpg", "images/canam-rt-ltd-color-carbonblack.jpg"],
-    gallery: ["images/canam-rt-ltd-life-1.jpg", "images/canam-rt-ltd-life-2.jpg"] },
+    gallery: ["images/canam-rt-ltd-life-1.webp", "images/canam-rt-ltd-life-2.webp"] },
   { id: "canam-rt-sea-to-sky", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Touring", name: "Spyder RT Sea-to-Sky", price: "od 37 000 €", engine: "Rotax 1330 ACE, SE6",
     desc: "Najbogatsza wersja RT z pełnym pakietem turystycznym premium i unikalnym malowaniem.",
     fullDesc: [
@@ -1952,7 +1951,7 @@ const VEHICLES = [
       { name: "Mars Red Metallic", hex1: "#a3241f", hex2: "#5c110e", image: "images/canam-rt-sea-to-sky-color-marsred-v2.avif" }
     ],
     images: ["images/canam-rt-sea-to-sky-color-marsred-v2.avif"],
-    gallery: ["images/canam-rt-sea-to-sky-life-1.jpg", "images/canam-rt-sea-to-sky-life-2.webp"] },
+    gallery: ["images/canam-rt-sea-to-sky-life-1.webp", "images/canam-rt-sea-to-sky-life-2.webp"] },
   { id: "canam-canyon-std", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Adventure", name: "Canyon STD", price: "od 28 240 €", engine: "Rotax 1330 ACE, SE6",
     desc: "Nowość Can-Am — trójkołowiec adventure na trudniejsze trasy, łączący styl Spydera z możliwościami off-road.",
     fullDesc: [
@@ -1969,7 +1968,7 @@ const VEHICLES = [
     ],
     colors: [{ name: "Catalyst Grey", hex1: "#7a7d82", hex2: "#5a5d62", image: "images/canam-canyon-std-1.jpg" }],
     images: ["images/canam-canyon-std-1.jpg"],
-    gallery: ["images/canam-canyon-std-life-1.jpg", "images/canam-canyon-std-life-2.webp"] },
+    gallery: ["images/canam-canyon-std-life-1.webp", "images/canam-canyon-std-life-2.webp"] },
   { id: "canam-canyon-xt", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Adventure", name: "Canyon XT", price: "od 33 030 €", engine: "Rotax 1330 ACE, SE6",
     desc: "Wersja XT z rozszerzonym wyposażeniem terenowym dla bardziej wymagających tras.",
     fullDesc: [
@@ -1986,7 +1985,7 @@ const VEHICLES = [
     ],
     colors: [{ name: "Catalyst Grey / Viper Red", hex1: "#7a7d82", hex2: "#c41e1e", image: "images/canam-canyon-xt-1.jpg" }],
     images: ["images/canam-canyon-xt-1.jpg"],
-    gallery: ["images/canam-canyon-xt-life-1.webp", "images/canam-canyon-xt-life-2.jpg"] },
+    gallery: ["images/canam-canyon-xt-life-1.webp", "images/canam-canyon-xt-life-2.webp"] },
   { id: "canam-canyon-redrock", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Adventure", name: "Canyon Redrock", price: "od 35 220 €", engine: "Rotax 1330 ACE, SE6",
     desc: "Najbogatsza wersja Canyon w wyjątkowym malowaniu Moss Green, z pełnym wyposażeniem podróżnym.",
     fullDesc: [
@@ -2003,7 +2002,7 @@ const VEHICLES = [
     ],
     colors: [{ name: "Moss Green", hex1: "#4a6b3a", hex2: "#3a5530", image: "images/canam-canyon-redrock-1.jpg" }],
     images: ["images/canam-canyon-redrock-1.jpg"],
-    gallery: ["images/canam-canyon-redrock-life-1.jpg", "images/canam-canyon-redrock-life-2.jpg"] },
+    gallery: ["images/canam-canyon-redrock-life-1.webp", "images/canam-canyon-redrock-life-2.webp"] },
   { id: "canam-ryker-std-600", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Recreation", name: "Ryker STD 600", price: "od 12 230 €", engine: "Rotax 600 ACE, CVT",
     desc: "Najbardziej przystępny trójkołowiec Can-Am — idealny wybór na start przygody z jazdą trójkołową.",
     fullDesc: [
@@ -2020,7 +2019,7 @@ const VEHICLES = [
     ],
     colors: [{ name: "Triple Black", hex1: "#1c1c1e", hex2: "#2c2c2e", image: "images/canam-ryker-std-600-1.jpg" }],
     images: ["images/canam-ryker-std-600-1.jpg"],
-    gallery: ["images/canam-ryker-std-600-life-2.webp", "images/canam-ryker-std-600-life-3.png"] },
+    gallery: ["images/canam-ryker-std-600-life-2.webp", "images/canam-ryker-std-600-life-3.webp"] },
   { id: "canam-ryker-std-900", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Recreation", name: "Ryker STD 900", price: "od 13 300 €", engine: "Rotax 900 ACE, CVT",
     desc: "Mocniejsza wersja Rykera z silnikiem 900 ACE — więcej dynamiki przy tej samej lekkości prowadzenia.",
     fullDesc: [
@@ -2054,7 +2053,7 @@ const VEHICLES = [
     ],
     colors: [{ name: "Triple Black / Viper Red", hex1: "#1c1c1e", hex2: "#c41e1e", image: "images/canam-ryker-sport-1.jpg" }],
     images: ["images/canam-ryker-sport-1.jpg"],
-    gallery: ["images/canam-ryker-sport-life-2.webp", "images/canam-ryker-sport-life-3.png"] },
+    gallery: ["images/canam-ryker-sport-life-2.webp", "images/canam-ryker-sport-life-3.webp"] },
   { id: "canam-ryker-rally", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Recreation", name: "Ryker Rally", price: "od 17 160 €", engine: "Rotax 900 ACE, CVT",
     desc: "Wersja Rally z dostrojonym zawieszeniem i oponami do jazdy poza asfaltem.",
     fullDesc: [
@@ -2071,7 +2070,7 @@ const VEHICLES = [
     ],
     colors: [{ name: "Triple Black", hex1: "#1c1c1e", hex2: "#2c2c2e", image: "images/canam-ryker-rally-1.jpg" }],
     images: ["images/canam-ryker-rally-1.jpg"],
-    gallery: ["images/canam-ryker-rally-life-1.jpg", "images/canam-ryker-rally-life-2.webp"] },
+    gallery: ["images/canam-ryker-rally-life-1.webp", "images/canam-ryker-rally-life-2.webp"] },
 
   { id: "canam-outlander-pro", category: "atv", categoryLabel: "Can-Am ATV", segment: "Rec-Ute", name: "Outlander PRO", price: "od 10 890 €", engine: "HD5 / HD7",
     desc: "Najbardziej przystępny quad użytkowy z gamy Outlander — solidna podstawa do pracy w gospodarstwie i terenie.",
@@ -2108,7 +2107,7 @@ const VEHICLES = [
     ],
     colors: [{ name: "Granite Grey", hex1: "#5a5e62", hex2: "#34373a", image: "images/canam-outlander-1.jpg" }],
     images: ["images/canam-outlander-1.jpg"],
-    gallery: ["images/canam-outlander-life-1.jpg", "images/canam-outlander-life-2.jpg"] },
+    gallery: ["images/canam-outlander-life-1.webp", "images/canam-outlander-life-2.webp"] },
   { id: "canam-outlander-max", category: "atv", categoryLabel: "Can-Am ATV", segment: "Rec-Ute", name: "Outlander MAX", price: "od 12 990 €", engine: "500 / 700 / 850 / 1000R",
     desc: "Dwuosobowa wersja Outlandera z dodatkowym miejscem pasażera, bez utraty osiągów terenowych.",
     fullDesc: [
@@ -2124,11 +2123,11 @@ const VEHICLES = [
       { title: "System LinQ", text: "Szybki montaż dodatkowych kufrów, bez narzędzi, na przewóz sprzętu obok pasażera." }
     ],
     colors: [
-      { name: "Granite Grey", hex1: "#5a5e62", hex2: "#34373a", image: "images/canam-outlander-max-color-granitegrey.jpg", price: "od 12 990 €" },
-      { name: "Legion Red", hex1: "#b02420", hex2: "#6e1512", image: "images/canam-outlander-max-color-legionred.jpg", price: "od 18 250 €" }
+      { name: "Granite Grey", hex1: "#5a5e62", hex2: "#34373a", image: "images/canam-outlander-max-color-granitegrey.webp", price: "od 12 990 €" },
+      { name: "Legion Red", hex1: "#b02420", hex2: "#6e1512", image: "images/canam-outlander-max-color-legionred.webp", price: "od 18 250 €" }
     ],
-    images: ["images/canam-outlander-max-color-granitegrey.jpg", "images/canam-outlander-max-color-legionred.jpg"],
-    gallery: ["images/canam-outlander-max-life-1.jpg", "images/canam-outlander-max-life-2.jpg"] },
+    images: ["images/canam-outlander-max-color-granitegrey.webp", "images/canam-outlander-max-color-legionred.webp"],
+    gallery: ["images/canam-outlander-max-life-1.webp", "images/canam-outlander-max-life-2.webp"] },
   { id: "canam-outlander-max-pro", category: "atv", categoryLabel: "Can-Am ATV", segment: "Rec-Ute", name: "Outlander MAX PRO", price: "od 14 370 €", engine: "HD7 / HD8 / HD10",
     desc: "Wersja PRO z podwyższonym wyposażeniem roboczym, przystosowana do intensywnej pracy.",
     fullDesc: [
@@ -2163,10 +2162,10 @@ const VEHICLES = [
     ],
     colors: [
       { name: "Granite Grey", hex1: "#5a5e62", hex2: "#34373a", image: "images/canam-outlander-x-mr-1.jpg", price: "od 15 020 €" },
-      { name: "Loft Green Satin", hex1: "#6b7259", hex2: "#3f4432", image: "images/canam-outlander-x-mr-color-loftgreen.jpg", price: "od 21 470 €" }
+      { name: "Loft Green Satin", hex1: "#6b7259", hex2: "#3f4432", image: "images/canam-outlander-x-mr-color-loftgreen.webp", price: "od 21 470 €" }
     ],
-    images: ["images/canam-outlander-x-mr-1.jpg", "images/canam-outlander-x-mr-color-loftgreen.jpg"],
-    gallery: ["images/canam-outlander-x-mr-life-2.jpg", "images/canam-outlander-x-mr-life-3.webp"] },
+    images: ["images/canam-outlander-x-mr-1.jpg", "images/canam-outlander-x-mr-color-loftgreen.webp"],
+    gallery: ["images/canam-outlander-x-mr-life-2.webp", "images/canam-outlander-x-mr-life-3.webp"] },
   { id: "canam-renegade", category: "atv", categoryLabel: "Can-Am ATV", segment: "Rec-Sport", name: "Renegade", price: "od 16 310 €", engine: "650 / 1000R",
     desc: "Sportowy quad terenowy o wysokich osiągach, dla aktywnej jazdy rekreacyjnej.",
     fullDesc: [
@@ -2186,7 +2185,7 @@ const VEHICLES = [
       { name: "Hyper Silver & Legion Red", hex1: "#c7c9cb", hex2: "#b02420", image: "images/canam-renegade-color-hypersilver-v2.avif", price: "od 21 300 €" }
     ],
     images: ["images/canam-renegade-1.jpg", "images/canam-renegade-2.jpg"],
-    gallery: ["images/canam-renegade-life-1.jpg", "images/canam-renegade-life-2.jpg"] },
+    gallery: ["images/canam-renegade-life-1.webp", "images/canam-renegade-life-2.webp"] },
   { id: "canam-outlander-6x6", category: "atv", categoryLabel: "Can-Am ATV", segment: "6x6", name: "Outlander 6x6", price: "od 17 600 €", engine: "700 / 850 / 1000R",
     desc: "Sześciokołowy quad do zastosowań specjalistycznych i transportu w trudnym terenie.",
     fullDesc: [
@@ -2226,7 +2225,7 @@ const VEHICLES = [
       { name: "Stealth Black", hex1: "#1c1c1c", hex2: "#0a0a0a", image: "images/canam-outlander-max-6x6-1.jpg", price: "od 23 850 €" }
     ],
     images: ["images/canam-outlander-max-6x6-1.jpg", "images/canam-outlander-max-6x6-2.jpg"],
-    gallery: ["images/canam-outlander-max-6x6-life-1.jpg", "images/canam-outlander-max-6x6-life-2.webp"] },
+    gallery: ["images/canam-outlander-max-6x6-life-1.webp", "images/canam-outlander-max-6x6-life-2.webp"] },
 
   { id: "canam-maverick-trail", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≤60''", name: "Maverick Trail", price: "od 16 230 €", engine: "700 / 1000",
     desc: "Kompaktowy SSV do wąskich szlaków leśnych — świetna zwrotność przy szerokości do 60 cali.",
@@ -2243,7 +2242,7 @@ const VEHICLES = [
       { title: "Silniki 700 / 1000 (do 75 KM)", text: "Wybór mocy pozwala dopasować pojazd do własnych potrzeb i budżetu na starcie z SSV." }
     ],
     colors: [
-      { name: "Catalyst Gray", hex1: "#8a8d90", hex2: "#4a4d50", image: "images/canam-maverick-trail-color-catalystgray-v2.png", price: "od 16 230 €" },
+      { name: "Catalyst Gray", hex1: "#8a8d90", hex2: "#4a4d50", image: "images/canam-maverick-trail-color-catalystgray-v2.webp", price: "od 16 230 €" },
       { name: "Triple Black", hex1: "#2b2b2b", hex2: "#0d0d0d", image: "images/canam-maverick-trail-1.jpg", price: "od 18 470 €" }
     ],
     images: ["images/canam-maverick-trail-1.jpg"],
@@ -2267,7 +2266,7 @@ const VEHICLES = [
       { name: "Dusty Navy Satin", hex1: "#2b4d63", hex2: "#17222c", image: "images/canam-traxter-color-dustynavy.webp", price: "od 25 290 €" }
     ],
     images: ["images/canam-traxter-1.jpg", "images/canam-traxter-2.jpg"],
-    gallery: ["images/canam-traxter-life-1.jpg", "images/canam-traxter-life-2.jpg"] },
+    gallery: ["images/canam-traxter-life-1.webp", "images/canam-traxter-life-2.webp"] },
   { id: "canam-maverick-sport", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≤60''", name: "Maverick Sport", price: "od 21 900 €", engine: "1000R",
     desc: "Sportowy SSV o szerokości do 60 cali — dynamiczne prowadzenie na wąskich trasach.",
     fullDesc: [
@@ -2300,10 +2299,10 @@ const VEHICLES = [
       { title: "Fotel VERSA-PRO ze składanymi siedziskami", text: "Wygoda przewozu dodatkowych osób bez utraty przestrzeni roboczej." }
     ],
     colors: [
-      { name: "Compass Green", hex1: "#4d5a3f", hex2: "#2c3324", image: "images/canam-traxter-max-color-compassgreen-v2.png", price: "od 23 050 €" },
-      { name: "Stealth Black", hex1: "#1c1c1c", hex2: "#0a0a0a", image: "images/canam-traxter-max-color-stealthblack.jpg", price: "od 29 990 €" }
+      { name: "Compass Green", hex1: "#4d5a3f", hex2: "#2c3324", image: "images/canam-traxter-max-color-compassgreen-v2.webp", price: "od 23 050 €" },
+      { name: "Stealth Black", hex1: "#1c1c1c", hex2: "#0a0a0a", image: "images/canam-traxter-max-color-stealthblack.webp", price: "od 29 990 €" }
     ],
-    images: ["images/canam-traxter-max-1.jpg"], gallery: ["images/canam-traxter-max-life-1.jpeg", "images/canam-traxter-max-life-2.jpeg"] },
+    images: ["images/canam-traxter-max-1.jpg"], gallery: ["images/canam-traxter-max-life-1.webp", "images/canam-traxter-max-life-2.webp"] },
   { id: "canam-maverick-sport-max", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≤60''", name: "Maverick Sport MAX", price: "od 23 970 €", engine: "1000R",
     desc: "Sportowy SSV MAX na czteroosobową załogę — zabawa w terenie z bliskimi.",
     fullDesc: [
@@ -2337,7 +2336,7 @@ const VEHICLES = [
     ],
     colors: [{ name: "Compass Green", hex1: "#4d5a3f", hex2: "#2c3324", image: "images/canam-traxter-6x6-1.jpg" }],
     images: ["images/canam-traxter-6x6-1.jpg"],
-    gallery: ["images/canam-traxter-6x6-life-1.jpg", "images/canam-traxter-6x6-life-2.jpg"] },
+    gallery: ["images/canam-traxter-6x6-life-1.webp", "images/canam-traxter-6x6-life-2.jpg"] },
   { id: "canam-traxter-pro", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Utility", name: "Traxter PRO", price: "od 27 490 €", engine: "HD10",
     desc: "Najbardziej rozbudowana wersja użytkowa Traxtera, z pełnym wyposażeniem roboczym.",
     fullDesc: [
@@ -2394,7 +2393,7 @@ const VEHICLES = [
       { title: "Zintegrowany intercooler", text: "Stabilna moc turbodoładowanego silnika niezależnie od intensywności jazdy w grupie." },
       { title: "Inteligentna kontrola przepustnicy (iTC)", text: "Przewidywalne, pełne wykorzystanie mocy silnika przy jeździe z pełnym obciążeniem pasażerskim." }
     ],
-    images: ["images/canam-maverick-max-1-v2.png"],
+    images: ["images/canam-maverick-max-1-v2.webp"],
     gallery: ["images/canam-maverick-max-life-2.webp", "images/canam-maverick-max-life-3.avif"] },
   { id: "canam-maverick-r", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≥64''", name: "Maverick R", price: "od 54 540 €", engine: "999T DCT",
     desc: "Najbardziej ekstremalny SSV w gamie Can-Am — silnik 999T ze skrzynią DCT i technologią wyścigową.",
@@ -2414,10 +2413,10 @@ const VEHICLES = [
     colors: [
       { name: "Triple Black (wersja X RS DCT)", hex1: "#2b2b2b", hex2: "#0d0d0d", image: "images/canam-maverick-r-1-white.webp", price: "od 54 540 €" },
       { name: "Dusty Navy (wersja X RS DCT SAS)", hex1: "#2b4d63", hex2: "#17222c", image: "images/canam-maverick-r-color-dustynavy.webp", price: "od 56 340 €" },
-      { name: "Loft Green Satin (wersja X RC DCT SAS)", hex1: "#5f6b52", hex2: "#333d2c", image: "images/canam-maverick-r-color-loftgreen-v2.png", price: "od 63 400 €" }
+      { name: "Loft Green Satin (wersja X RC DCT SAS)", hex1: "#5f6b52", hex2: "#333d2c", image: "images/canam-maverick-r-color-loftgreen-v2.webp", price: "od 63 400 €" }
     ],
     images: ["images/canam-maverick-r-1-white.webp", "images/canam-maverick-r-2.jpg"],
-    gallery: ["images/canam-maverick-r-life-1.jpg", "images/canam-maverick-r-life-2.jpg"] },
+    gallery: ["images/canam-maverick-r-life-1.webp", "images/canam-maverick-r-life-2.jpg"] },
   { id: "canam-maverick-r-max", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≥64''", name: "Maverick R MAX", price: "od 60 880 €", engine: "999T DCT",
     desc: "Czteroosobowa wersja Maverick R o topowych osiągach — szczyt oferty Can-Am SSV.",
     fullDesc: [
@@ -2437,7 +2436,7 @@ const VEHICLES = [
       { name: "Dusty Navy & Legion Red", hex1: "#2b4d63", hex2: "#17222c", image: "images/canam-maverick-r-max-color-dustynavy-v2.jpg", price: "od 60 880 €" }
     ],
     images: ["images/canam-maverick-r-max-1.jpg", "images/canam-maverick-r-max-2.jpg"],
-    gallery: ["images/canam-maverick-r-max-life-1.jpg", "images/canam-maverick-r-max-life-2.webp"] },
+    gallery: ["images/canam-maverick-r-max-life-1.webp", "images/canam-maverick-r-max-life-2.webp"] },
 
   { id: "canam-pulse", category: "electric", categoryLabel: "Can-Am Electric", segment: "Naked / Street", name: "Pulse", price: "od 16 899 €", engine: "Rotax E-Power",
     desc: "Elektryczny motocykl typu Naked stworzony do miasta — kompaktowy, zwrotny i błyskawicznie przyspieszający, bez hałasu i bez spalin.",
@@ -2459,7 +2458,7 @@ const VEHICLES = [
       { name: "Sterling Silver ('73)", hex1: "#c7c9cb", hex2: "#8a8d90", image: "images/canam-pulse-silver-v2.webp" }
     ],
     images: ["images/canam-pulse-1-v2.avif", "images/canam-pulse-silver-v2.webp"],
-    gallery: ["images/canam-pulse-lifestyle.jpg", "images/canam-pulse-life-2.webp"] },
+    gallery: ["images/canam-pulse-lifestyle.webp", "images/canam-pulse-life-2.webp"] },
 
   { id: "canam-origin", category: "electric", categoryLabel: "Can-Am Electric", segment: "Dual-Sport", name: "Origin", price: "od 17 499 €", engine: "Rotax E-Power",
     desc: "Elektryczny motocykl dual-sport, który łączy dziedzictwo motocrossowe Can-Am z cichym, bezemisyjnym napędem. Radzi sobie równie dobrze w terenie, co na asfalcie.",
@@ -2481,7 +2480,7 @@ const VEHICLES = [
       { name: "Sterling Silver ('73)", hex1: "#c7c9cb", hex2: "#8a8d90", image: "images/canam-origin-silver-v2.webp" }
     ],
     images: ["images/canam-origin-1-v2.avif", "images/canam-origin-silver-v2.webp"],
-    gallery: ["images/canam-origin-lifestyle.jpg", "images/canam-origin-life-2.webp"] },
+    gallery: ["images/canam-origin-lifestyle.webp", "images/canam-origin-life-2.webp"] },
 
   { id: "canam-outlander-electric", category: "electric", categoryLabel: "Can-Am Electric", segment: "ATV", name: "Outlander Electric", price: "od 18 990 €", engine: "Rotax E-Power",
     desc: "Pierwszy masowo produkowany elektryczny quad ATV — cicha praca silnika, zero wibracji i pełna moc dostępna natychmiast po wciśnięciu gazu.",
@@ -2499,10 +2498,10 @@ const VEHICLES = [
       { title: "5 lat gwarancji na baterię", text: "Długoterminowe bezpieczeństwo inwestycji w kluczowy podzespół napędu elektrycznego." }
     ],
     colors: [
-      { name: "Bright White", hex1: "#f2f2f0", hex2: "#cfcfcf", image: "images/canam-outlander-electric-color-brightwhite-v2.png" },
+      { name: "Bright White", hex1: "#f2f2f0", hex2: "#cfcfcf", image: "images/canam-outlander-electric-color-brightwhite-v2.webp" },
       { name: "Granite Grey", hex1: "#5b5f63", hex2: "#2e3134", image: "images/canam-outlander-electric-1-v2.avif" }
     ],
-    images: ["images/canam-outlander-electric-color-brightwhite-v2.png"], gallery: ["images/canam-outlander-electric-life-1.avif", "images/canam-outlander-electric-life-2.avif"] },
+    images: ["images/canam-outlander-electric-color-brightwhite-v2.webp"], gallery: ["images/canam-outlander-electric-life-1.avif", "images/canam-outlander-electric-life-2.avif"] },
 
   { id: "canam-outlander-max-electric", category: "electric", categoryLabel: "Can-Am Electric", segment: "ATV", name: "Outlander MAX Electric", price: "od 20 560 €", engine: "Rotax E-Power",
     desc: "Dwuosobowa, elektryczna wersja Outlandera — ten sam cichy, bezemisyjny napęd, dodatkowe miejsce dla pasażera i wydłużony rozstaw osi dla większej stabilności.",
@@ -2520,10 +2519,10 @@ const VEHICLES = [
       { title: "5 lat gwarancji na baterię", text: "Długoterminowe bezpieczeństwo inwestycji w kluczowy podzespół napędu elektrycznego." }
     ],
     colors: [
-      { name: "Bright White", hex1: "#f2f2f0", hex2: "#cfcfcf", image: "images/canam-outlander-max-electric-1-v2.png" },
+      { name: "Bright White", hex1: "#f2f2f0", hex2: "#cfcfcf", image: "images/canam-outlander-max-electric-1-v2.webp" },
       { name: "Granite Grey", hex1: "#5b5f63", hex2: "#2e3134", image: "images/canam-outlander-max-electric-color-granitegrey-v2.avif" }
     ],
-    images: ["images/canam-outlander-max-electric-1-v2.png"], gallery: ["images/canam-outlander-max-electric-life-1.avif", "images/canam-outlander-max-electric-life-2.jpeg"] }
+    images: ["images/canam-outlander-max-electric-1-v2.webp"], gallery: ["images/canam-outlander-max-electric-life-1.avif", "images/canam-outlander-max-electric-life-2.webp"] }
 ];
 
 const ASSET_V = "20260729j";
@@ -2810,17 +2809,30 @@ function renderPricing() {
   setActiveNavLink("nav-link-pricing");
 }
 
+function loadContactVideo() {
+  const video = document.getElementById("contact-banner-video");
+  if (!video || video.dataset.loaded) return;
+  video.dataset.loaded = "1";
+  const source = video.querySelector("source");
+  source.src = source.dataset.src;
+  video.load();
+  video.play().catch(() => {});
+}
+
+// Wgrywa plik wideo do pamięci podręcznej przeglądarki w tle, zanim
+// użytkownik wejdzie na stronę Kontakt — dzięki temu film nie zacina się
+// przy starcie odtwarzania.
+function prefetchContactVideo() {
+  const source = document.querySelector("#contact-banner-video source");
+  if (!source || source.dataset.prefetched) return;
+  source.dataset.prefetched = "1";
+  fetch(source.dataset.src).catch(() => {});
+}
+
 function renderContact() {
   showPage("page-contact");
   setActiveNavLink("nav-link-contact");
-  const video = document.getElementById("contact-banner-video");
-  if (video && !video.dataset.loaded) {
-    video.dataset.loaded = "1";
-    const source = video.querySelector("source");
-    source.src = source.dataset.src;
-    video.load();
-    video.play().catch(() => {});
-  }
+  loadContactVideo();
 }
 
 /* ============================================================
@@ -2832,7 +2844,7 @@ function renderContact() {
    Przykład:
    { title: "Test jazdy Sea-Doo 2026", date: "12 lipca 2026",
      desc: "Wypróbuj nowe modele Sea-Doo na wodzie w Łęgowie.",
-     image: "images/seadoo-lifestyle-beach-trip.jpg" }
+     image: "images/seadoo-lifestyle-beach-trip.webp" }
 ============================================================ */
 const EVENTS = [
   // <-- tutaj dodawaj kolejne eventy
@@ -2936,7 +2948,7 @@ function router() {
     updateMeta("Cennik pojazdów Sea-Doo i Can-Am | Extreme Club", "Sprawdź ceny modeli skuterów wodnych, quadów i pojazdów side-by-side w naszym autoryzowanym salonie.", "images/hero-pricing-canam.jpg");
   } else if (hash.startsWith("#/kontakt")) {
     renderContact();
-    updateMeta("Kontakt i dojazd — Extreme Club Łęgowo", "Skontaktuj się z nami! Zapraszamy do naszego autoryzowanego salonu BRP w Łęgowie. Zobacz godziny otwarcia i mapę dojazdu.", "images/seadoo-lifestyle-beach-trip.jpg");
+    updateMeta("Kontakt i dojazd — Extreme Club Łęgowo", "Skontaktuj się z nami! Zapraszamy do naszego autoryzowanego salonu BRP w Łęgowie. Zobacz godziny otwarcia i mapę dojazdu.", "images/seadoo-lifestyle-beach-trip.webp");
   } else if (hash.startsWith("#/eventy")) {
     renderEvents();
     updateMeta("Eventy | Extreme Club", "Już niedługo pierwsze eventy Extreme Club — testy jazdy i spotkania ze sprzętem Sea-Doo i Can-Am. Obserwuj nas na Facebooku, żeby dowiedzieć się jako pierwszy.", "images/hero-home.webp");
@@ -3279,6 +3291,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const banner = document.getElementById("cookie-banner");
     if (banner) setTimeout(() => banner.classList.add("show"), 600);
   }
+
+  // Wgraj wideo sekcji Kontakt w tle, gdy przeglądarka jest bezczynna,
+  // żeby nie zacinało się przy wejściu na tę podstronę
+  const idle = window.requestIdleCallback || (cb => setTimeout(cb, 2000));
+  idle(prefetchContactVideo);
 
   const lifestyleGrid = document.querySelector(".lifestyle-cards");
   const lifestyleDots = document.getElementById("lifestyle-dots");
