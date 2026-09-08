@@ -215,7 +215,7 @@ seadoo_recreation = [
 seadoo_touring = [
     ["00011TC00", "GTX 170", "170", "Blue Abyss / Gulfstream Blue", "X", "-", "X", "7.6\" Digital Display", "19 210"],
     ["00012TC00", "GTX 230", "230", "Blue Abyss / Gulfstream Blue", "X", "-", "X", "7.6\" Digital Display", "21 210"],
-    ["00012TB00", "GTX 230", "230", "Blue Abyss / Gulfstream Blue", "X", "X", "X", "7.8' Color LCD Display", "22 610"],
+    ["00012TB00", "GTX 230", "230", "Blue Abyss / Gulfstream Blue", "X", "X", "X", "7.6\" Color LCD Display", "22 610"],
     ["00026TB00", "GTX Limited 325", "325", "Teal Metallic", "X", "X", "X", "10.25\" Touchscreen Display", "30 490"],
     ["00026TA00", "GTX Limited 325", "325", "White Pearl Premium", "X", "X", "X", "10.25\" Touchscreen Display", "30 930"],
 ]
@@ -260,6 +260,72 @@ build_pdf(
 
 
 # ---------------------------------------------------------------------------
+# SEA-DOO — ROCZNIK 2027
+# ---------------------------------------------------------------------------
+
+seadoo27_rec_lite = [
+    ["00061VB00", "Spark 60 For 2", "60", "Sunrise Orange / Dragon Red", "X", "-", "-", "4.5\" Digital Display", "8 950"],
+    ["00064VB00", "Spark Convenience 90 For 2", "90", "Dazzling Blue / Vapor Blue", "X", "-", "-", "4.5\" Digital Display", "11 770"],
+    ["00068VA00", "Spark X 110 For 3 - Audio", "110", "Scandi Blue", "X", "Portable", "X", "4.5\" Digital Display", "15 490"],
+    ["00069VE00", "Spark X Trixx 110 For 1", "110", "Gulfstream Blue / Orange Crush", "X", "-", "X", "4.5\" Digital Display", "13 350"],
+    ["00069VB00", "Spark X Trixx 110 For 3", "110", "Scandi Blue", "X", "Portable", "X", "4.5\" Digital Display", "15 270"],
+]
+
+seadoo27_recreation = [
+    ["00038VA00", "GTI Standard 130", "130", "Bright White / Neo Mint", "X", "-", "-", "4.5\" Digital Display", "15 390"],
+    ["00030VH00", "GTI SE 170", "170", "Teal Blue / Manta Green", "X", "-", "X", "4.5\" Digital Display", "17 690"],
+    ["00030VF00", "GTI SE 170", "170", "Laguna Green", "X", "Integrate", "X", "4.5\" Digital Display", "18 890"],
+]
+
+seadoo27_touring = [
+    ["00025VD00", "GTX PRO 130 (Rental)", "130", "White / Neo Mint", "-", "-", "-", "4.5\" Digital Display", "13 790"],
+    ["00025VA00", "GTX PRO 130 (Rental)", "130", "White / Neo Mint", "X", "-", "-", "4.5\" Digital Display", "15 290"],
+    ["00011VC00", "GTX 170", "170", "Blue Abyss / Gulfstream Blue", "X", "Integrate", "X", "10.25\" Touchscreen Display", "21 990"],
+    ["00012VC00", "GTX 230", "230", "Blue Abyss / Gulfstream Blue", "X", "Integrate", "X", "10.25\" Touchscreen Display", "24 290"],
+    ["00026VB00", "GTX Limited 350", "350", "White Pearl Premium", "X", "Integrate", "X", "10.25\" Touchscreen Display", "32 990"],
+    ["00026VC00", "GTX Limited 350", "350", "Mineral Blue / Liquid Titanium", "X", "Integrate", "X", "10.25\" Touchscreen Display", "32 550"],
+]
+
+seadoo27_performance = [
+    ["00036VC00", "GTR 230", "230", "Eclipse Black / Icelandic Grey", "X", "-", "-", "4.5\" Digital Display", "19 620"],
+    ["00024VA00", "GTR-X 300", "300", "Eclipse Black / Icelandic Grey", "X", "Integrate", "-", "10.25\" Touchscreen Display", "25 900"],
+    ["00023VA00", "RXP-X 350", "350", "Gulfstream Blue Premium", "X", "-", "-", "7.6\" Digital Display", "28 890"],
+    ["00023VH00", "RXP-X 350", "350", "Solar Orange", "X", "Integrate", "-", "10.25\" Touchscreen Display", "31 550"],
+    ["00022VC00", "RXT-X 350", "350", "Gulfstream Blue Premium", "X", "Integrate", "-", "10.25\" Touchscreen Display", "30 990"],
+    ["00022VD00", "RXT-X 350", "350", "Solar Orange / Icelandic Grey", "X", "Integrate", "-", "10.25\" Touchscreen Display", "30 990"],
+    ["00020VB00", "RXP-X Senna 350", "350", "Racing Yellow / Amazon Green", "X", "Integrate", "-", "10.25\" Touchscreen Display", "37 250"],
+]
+
+seadoo27_adventure = [
+    ["00016VA00", "Explorer Pro 230", "230", "Iceland Grey", "X", "Integrate", "X", "10.25\" Touchscreen Display", "26 590"],
+]
+
+seadoo27_sport_fishing = [
+    ["00019VB00", "FishPro Trophy 170", "170", "Flint Grey / Orange Crush", "X", "Integrate", "X", "10.25\" Touchscreen Display", "28 260"],
+]
+
+seadoo27_tow_sports = [
+    ["00035VE00", "Wake 170", "170", "Teal Blue / Grey", "X", "Integrate", "X", "4.5\" Digital Display", "19 990"],
+    ["00013VC00", "Wake PRO 230", "230", "Teal Blue / Manta Green", "X", "Integrate", "X", "10.25\" Touchscreen Display", "24 990"],
+]
+
+seadoo27_sections = [
+    ("REC LITE", seadoo27_rec_lite),
+    ("RECREATION", seadoo27_recreation),
+    ("TOURING", seadoo27_touring),
+    ("PERFORMANCE", seadoo27_performance),
+    ("ADVENTURE", seadoo27_adventure),
+    ("SPORT FISHING", seadoo27_sport_fishing),
+    ("TOW SPORTS", seadoo27_tow_sports),
+]
+
+build_pdf(
+    "cennik-seadoo-2027.pdf", seadoo_header, seadoo27_sections, footer_note, col_widths_seadoo,
+    brp_tagline="Autoryzowany Dealer BRP &nbsp;|&nbsp; Sea-Doo &nbsp;&middot;&nbsp; Rocznik 2027", margin_mm=14,
+)
+
+
+# ---------------------------------------------------------------------------
 # ATV (Outlander / Renegade)
 # ---------------------------------------------------------------------------
 
@@ -293,8 +359,8 @@ atv_high_hp = [
     ["0004VTP00", "Outlander MAX", "XT-P SAS", "1000R", "Mineral Grey & Orange Crush", "INT - NRMM", "X", "24 210"],
     ["0004WTJ00", "Outlander MAX", "LTD SAS", "1000R", "Dusty Navy Satin", "INT - NRMM", "X", "24 670"],
     ["0004ETH00", "Outlander", "XT T ABS", "850", "Fiery Red", "T3b", "", "16 950"],
-    ["0004HTC00", "Outlander", "XT-P T ABS", "1000R", "Mineral grey & Orange Crush", "T3b", "", "21 410"],
-    ["0004HTL00", "Outlander", "XT-P T ABS SAS", "1000R", "Mineral grey & Orange Crush", "T3b", "X", "23 990"],
+    ["0004HTC00", "Outlander", "XT-P T ABS", "1000R", "Mineral Grey & Orange Crush", "T3b", "", "21 410"],
+    ["0004HTL00", "Outlander", "XT-P T ABS SAS", "1000R", "Mineral Grey & Orange Crush", "T3b", "X", "23 990"],
     ["0004PTC00", "Outlander MAX", "DPS T ABS", "850", "Granite Grey", "T3b", "", "16 830"],
     ["0004RTA00", "Outlander MAX", "DPS T ABS", "1000R", "Granite Grey", "T3b", "", "18 250"],
     ["0004RTC00", "Outlander MAX", "DPS T ABS", "1000R", "Legion Red", "T3b", "", "18 250"],
