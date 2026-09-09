@@ -1,5 +1,134 @@
 # TODO — dodanie rocznika 2027 (54 pojazdy)
 
+## ✅ AKTUALIZACJA 2026-09-11 — FINALNY AUDYT CAŁEJ STRONY (6 kroków: struktura, literówki, spójność kolorów w tekście, dane techniczne, reszta strony, martwy kod)
+
+Kompleksowy, ostateczny audyt na życzenie klienta — dosłownie wszystkiego na stronie, w kontynuacji
+poprzednich tur (kolory były już bardzo dokładnie sprawdzone wcześniej, więc ten przebieg skupił się
+głównie na tekstach opisowych, danych technicznych i higienie kodu).
+
+### Krok 1 — Analiza strukturalna (skrypt node po całej tablicy VEHICLES)
+
+Napisany i uruchomiony skrypt sprawdzający: istnienie na dysku każdego pliku z `image`/`images[]`/
+`colors[].image`/`gallery[]`, puste pola (`desc`, `fullDesc`, `forWho`, `highlights`, `features`,
+`engine`), duplikaty `id`. **Wynik: 99/99 pojazdów, ZERO błędów strukturalnych** — żadnych brakujących
+plików, pustych pól ani duplikatów ID. Ten obszar był już czysty.
+
+### Krok 2 — Spot-check literówek (pola `desc`, `forWho`, pierwsze zdanie `fullDesc` — wszystkie 99 pojazdów)
+
+Przeczytane metodycznie wszystkie 99 kompletów tekstów, pogrupowane wg kategorii (Sea-Doo, trójkołowce
+Can-Am, ATV, SSV, elektryczne).
+
+**Znaleziony i naprawiony błąd:**
+- **Outlander XT-P** (`canam-outlander-xtp`, pole `forWho`) — literówka "z **fabryczna** zamontowanym
+  osprzętem Performance" → poprawione na "z **fabrycznie** zamontowanym osprzętem Performance".
+
+Poza tym jednym przypadkiem — żadnych literówek, urwanych zdań, powtórzeń ani błędów gramatycznych
+w przejrzanych polach. Teksty są spójne stylistycznie i poprawne językowo.
+
+### Krok 3 — Spójność tekstu opisowego po wcześniejszych poprawkach kolorów
+
+Sprawdzono `fullDesc`/`features`/`highlights` pojazdów, których kolor był zmieniany w poprzednich
+turach: Traxter HD10, Canyon Redrock (2026 i 2027), cała rodzina Ryker, Outlander XT-P, Explorer Pro
+(170/230), Spark X Trixx, Canyon XT, Wake 170 — pod kątem wzmianek starych, już nieaktualnych nazw
+kolorów w tekście opisowym (nie tylko w polu `colors`).
+
+**Wynik: brak problemów.** Canyon Redrock 2027 poprawnie wspomina wyłącznie "Sandstone" we
+wszystkich polach tekstowych (desc/fullDesc/highlights/features/colors) — zero wzmianek starego
+"Moss Green". Canyon Redrock 2026 (osobny wpis, `canam-canyon-redrock`) poprawnie wspomina "Moss
+Green" — bo dla TEGO rocznika ten kolor jest potwierdzony jako prawidłowy (wg wcześniejszej
+weryfikacji). Explorer Pro poprawnie "Iceland Grey" we wszystkich polach. Grep po starych nazwach
+("Catalyst Gray/Grey", "Viper Red", "Dusty Navy" w kontekście niewłaściwym, "Eclipse Black" jako
+błędny dla niewłaściwego modelu, "Lemon Zest") nie wykazał żadnych nowych niespójności poza tymi już
+udokumentowanymi i zaakceptowanymi we wcześniejszych sekcjach tego pliku.
+
+### Krok 4 — Weryfikacja danych technicznych (WebSearch, próbka wysokiego ryzyka)
+
+Sprawdzone przez wyszukiwanie i oficjalne źródła BRP:
+
+- **Sea-Doo GTX Limited 350 (2027)** — ❌ **BŁĄD ZNALEZIONY I NAPRAWIONY.** Silnik był opisany w
+  kodzie jako "Rotax 1630 **SXHO+**" (pole `engine`, `fullDesc` x1, `highlights`, `features` — 4
+  miejsca). Weryfikacja przez WebSearch (boatingmag.com, sea-doo.brp.com, jetdrift.com) potwierdza:
+  **oficjalna nazwa silnika to "Rotax 1630 ACE"** (350 KM, większy wirnik sprężarki 75.5mm,
+  podniesiony limit obrotów do 8500 rpm) — "SXHO" / "SXHO+" nie jest używaną przez BRP nazwą tej
+  jednostki (istnieje historyczne oznaczenie "1603 XHO" dla innego silnika, ale nie "1630 SXHO+").
+  Naprawiono wszystkie 4 wystąpienia na "Rotax 1630 ACE". Moc 350 KM (zamiast 325 KM) — potwierdzona,
+  poprawna.
+- **Can-Am Traxter HD10 (2027, id `canam-traxter-hd9`)** — ✅ **POTWIERDZONE POPRAWNE.** WebSearch
+  (agriland.ie, can-am.brp.com/off-road) potwierdza: nowy silnik HD10 to trzycylindrowy Rotax ACE
+  999 cm³ o mocy 80 KM, zastępujący dwucylindrowy V-Twin 976cc/65 KM. Zgodne z kodem.
+- **Can-Am Maverick R (2027)** — ✅ **POTWIERDZONE POPRAWNE.** WebSearch (dirtwheelsmag.com,
+  can-am.brp.com) potwierdza: silnik Rotax 999T Turbo, 240 KM, druga generacja 7-biegowej,
+  dwusprzęgłowej przekładni DCT z dodatkowym niskim biegiem (Extra Low) na 2027 rok. Zgodne z kodem.
+
+Po naprawie silnika GTX Limited 350 zweryfikowano ponownie parsowanie `VEHICLES` — wciąż 99/99
+pojazdów, kod parsuje się poprawnie.
+
+### Krok 5 — Reszta strony poza katalogiem (hero, cennik, kontakt, stopka, polityka prywatności)
+
+Przeczytane w całości: sekcja hero (nagłówek + wideo), pasek marek, baner "Rocznik 2027", kafle
+kategorii, karty "Wyróżnione modele", pasek USP, nagłówek katalogu, sekcja cennika (6 kart PDF),
+sekcja kontaktowa (dane, formularz, mapa, godziny otwarcia), pasek USP kontaktowy, sekcja eventów,
+polityka prywatności (5 podsekcji), stopka, banner cookie.
+
+**Wynik: brak literówek i błędów.** Dane kontaktowe (adres "ul. Nowa 88, 83-031 Łęgowo", telefon
+"502 123 568", e-mail "kontakt@extreme-club.pl") są w 100% spójne we wszystkich 8 miejscach na
+stronie, w których występują (JSON-LD, sekcja kontakt, mapa Google x2, polityka prywatności, stopka
+x2 + link "Adres", meta description dla routingu #kontakt). Godziny otwarcia, treść formularza,
+polityka cookies (poprawnie opisuje, że jedyne cookies pochodzą od osadzonej mapy Google) — wszystko
+sensowne i spójne.
+
+### Krok 6 — Martwy kod
+
+Grep po funkcjach zdefiniowanych, ale nigdzie niewywoływanych (uwzględniając wywołania w atrybutach
+`onclick`, string templates itd.). Znalezione 4 funkcje z zerową liczbą wywołań w całym pliku poza
+własną definicją:
+- `galleryMarkup(v)` (linia ~4167) — nieużywana, prawdopodobnie zastąpiona innym mechanizmem renderu
+  galerii w widoku szczegółów produktu.
+- `loadContactVideo()` (linia ~3866) — nieużywana.
+- `openLightbox(images, startIdx)` (linia ~4402) — nieużywana; aktywny mechanizm lightboxa używa
+  innych funkcji (`closeLightbox`, `lightboxNav`, `_lbBgClick`, obsługa klawiszy), które SĄ wywoływane
+  z atrybutów `onclick` w HTML (linie 955-960) i pozostają aktywne.
+- `stepCarousel(uid, dir)` (linia ~3589) — nieużywana; aktywny mechanizm karuzeli używa bezpośrednio
+  `setCarouselSlide(uid, index)`.
+
+**Decyzja: NIE usunięto** tych funkcji w tej turze — z ostrożności (zasada projektu: nie ruszać
+niczego bez pełnej pewności). Wszystkie 4 są prawdopodobnie bezpieczne do usunięcia (zero odwołań
+w całym pliku), ale warto to zrobić w osobnym, dedykowanym commicie porządkowym, żeby nie mieszać
+sprzątania kodu z audytem treści/danych. Nie znaleziono innych oczywistych przypadków martwego kodu
+(dużych zakomentowanych bloków, nieużywanych zmiennych globalnych) poza istniejącymi, udokumentowanymi
+już wcześniej komentarzami `// TODO:` przy pojedynczych polach `images`/`gallery`.
+
+### Podsumowanie tej tury
+
+| Kategoria | Znalezione | Naprawione |
+|---|---|---|
+| Błędy strukturalne (brakujące pliki, puste pola, duplikaty ID) | 0 | 0 |
+| Literówki / błędy językowe | 1 (Outlander XT-P, "fabryczna"→"fabrycznie") | 1 |
+| Niespójność starych kolorów w tekście opisowym | 0 | 0 |
+| Błędy danych technicznych | 1 (GTX Limited 350 — "Rotax 1630 SXHO+" → poprawne "Rotax 1630 ACE") | 1 |
+| Martwy kod (funkcje bez wywołań) | 4 (`galleryMarkup`, `loadContactVideo`, `openLightbox`, `stepCarousel`) | 0 (opisane, nieusunięte — do osobnego porządkowego commita) |
+
+Po wszystkich edycjach: weryfikacja parsowania `VEHICLES` → **99 pojazdów, kod poprawny.** Zmiany
+zostawione w working tree, bez commitu/pusha (zgodnie z instrukcją).
+
+---
+
+## ✅ AKTUALIZACJA 2026-09-10 (noc) — optymalizacja wideo hero
+
+Klient poprosił o optymalizację ładowania filmików na stronie. Sprawdzono cały kod — na stronie
+jest tylko JEDEN element `<video>` (tło sekcji hero, `images/hero-video.mp4`).
+
+**Problem:** plik źródłowy ważył **13,35 MB** (1920×1080, 30 kl/s, ~8 Mb/s) i był ładowany z
+`preload="auto"` + `fetchpriority="high"` — czyli pobierany w pełni i od razu, obciążając
+najważniejszy początkowy fragment ładowania strony (LCP) oraz zużycie danych mobilnych.
+
+**Naprawiono:** przekodowano przez ffmpeg do 1280×720, 24 kl/s, H.264 CRF 30 — plik zmniejszył się
+do **3,86 MB (-71%)**, jakość zweryfikowana wizualnie klatka po klatce, bez zauważalnych artefaktów
+(materiał to ujęcie z drona, dużo ruchu wody — nie da się zejść bardzo niżej bez utraty jakości).
+Wersja WebM/VP9 wypadła gorzej (10+ MB) — pominięta. Podmieniono referencję w `index.html` na
+`images/hero-video-optimized.mp4`, stary ciężki plik usunięty z dysku (nic już go nie referencuje).
+
+
 ## ⚠️ AKTUALIZACJA 2026-09-10 (druga tura) — próba dodania 2. zdjęcia do F3 LTD / RT LTD (biały) — BRAK WYNIKU
 
 **Zadanie:** obecnie `canam-f3-ltd`/`canam-f3-limited-2027` (Vegas White Pearl) i `canam-rt-ltd`/
@@ -811,4 +940,112 @@ karty, jedno po jednym, przed wpięciem do `gallery`.
 
 **Weryfikacja końcowa:** VEHICLES nadal parsuje się poprawnie, liczba pojazdów = 99. Brak
 commitów — zmiany (7 nowych plików w `images/`, edycje `index.html`) zostawione w working tree.
+
+---
+
+## 2026-09-10 (wieczór/noc) — 5 zadań z listy usprawnień klienta
+
+### Zadanie 2: Brakujące/błędne zdjęcia nowych wariantów 2027
+
+Sprawdzono wizualnie (Read) główne zdjęcia całej listy pojazdów: platforma Traxter XU/HD11 (7
+kart), rodzina Ryker MY27 (3 karty), Outlander X MR MAX, Outlander XT-P, Spyder F3-S 2027,
+rodzina Commander (3 karty) — łącznie 17 kart.
+
+**Znalezione i naprawione błędy (2 pojazdy):**
+- ❌→✅ **`canam-traxter-hd9` (Traxter HD10)** — dotychczasowe zdjęcie
+  `canam-traxter-hd10-2027-dolomitegrey-1.png` pokazywało 4-drzwiową wersję **crew MAX** (4 osoby,
+  długie podwozie), całkowicie niezgodną z opisem karty (2-osobowy, bazowy silnik środkowej mocy,
+  bez wzmianki o MAX/crew). Znaleziono i wpięto prawdziwe zdjęcie dealera True North Powersports
+  (cdn.powergo.ca) modelu "2027 Can-Am Defender DPS CAB HD10 Dolomite Grey" — Defender to
+  północnoamerykańska nazwa handlowa tej samej platformy, którą BRP sprzedaje w Europie jako
+  Traxter. Nowe zdjęcie: 2-osobowy, dach ochronny, bez pełnej oszklonej kabiny — zgodne z opisem.
+  Plik: `images/canam-traxter-hd10-2027-dolomitegrey-2.webp` (stary plik usunięty z dysku).
+- ❌→✅ **`canam-ryker-2027` i `canam-ryker-sport-2027`** — dotychczasowe zdjęcia
+  (`canam-ryker-1.png`, `canam-ryker-sport-1.png`) pokazywały **starą generację platformy Ryker**
+  (poprzedni kształt reflektora, inny wzór felg, inna maska) — mimo że opis karty wprost mówi
+  o "największej ewolucji platformy w historii" na MY27 z nowymi reflektorami LED i
+  przeprojektowanymi felgami. Potwierdzono przez oficjalną stronę premierową BRP
+  (`can-am.brp.com/.../global-product-reveal/new-ryker-lineup.html`) i komunikat prasowy z
+  17.08.2026 (prnewswire.com), że MY27 Ryker ma faktycznie nowy przód, nową maskę z napisem
+  modelu na boku i inny wzór felg. Znaleziono i wpięto prawdziwe zdjęcia studyjne z dealerskiego
+  CDN DX1 (psutica.com dla bazowego Rykera, ironhillpowersports.com dla Sport) w kolorze
+  "Intense Black", potwierdzającym nowy wygląd (widoczny napis "RYKER"/"RYKER SPORT" na boku,
+  nowy reflektor, nowa osłona). Pliki: `images/canam-ryker-2027-intenseblack-1.webp`,
+  `images/canam-ryker-sport-2027-intenseblack-1.webp` (stare pliki `canam-ryker-1.png` i
+  `canam-ryker-sport-1.png` pozostały nieużywane na dysku, do ew. usunięcia przy porządkach).
+
+**Sprawdzone i pozostawione bez zmian (15 pojazdów — zdjęcie już poprawnie pokazuje dany wariant):**
+- `canam-traxter-xu` (pełna oszklona kabina, hardtop — zgodne z opisem XU)
+- `canam-traxter-xu-pro-6x6` (6 kół widocznych, klatka bez drzwi — zgodne z 6x6)
+- `canam-traxter-x-mr` (widoczny napis "XMR", szerokie błotniki, olive/tan — zgodne z X MR)
+- `canam-traxter-xt` (kabina 2-osobowa, szary Dolomite Grey — zgodne z XT CAB)
+- `canam-traxter-limited` (kabina biała premium — zgodne z Limited/Hybrid White)
+- `canam-traxter-lonestar` (4-drzwiowa wersja crew MAX, czarny — poprawnie zgodne z opisem
+  "wydłużone podwozie MAX")
+- `canam-ryker-special` — **NIE naprawiono** (brak pewności): platforma na zdjęciu to również
+  stara generacja, ale własny research (DX1 CDN kilku dealerów Special Series) zwracał
+  systematycznie te same pliki co bazowy Ryker (błąd/placeholder po stronie dealera, rozmiary
+  plików identyczne z bazowym modelem) — nie znaleziono ŻADNEGO unikalnego, potwierdzonego
+  zdjęcia nowej platformy w wariancie Special Series (felgi Liquid Titanium + wrap). Zgodnie z
+  zasadą "nigdy nie zgaduj" pozostawiono bez zmian — do uzupełnienia, gdy pojawi się
+  jednoznaczne źródło.
+- `canam-outlander-x-mr-max`, `canam-outlander-xtp` — zdjęcia zgodne z opisem (agresywne opony
+  błotne / pomarańczowe akcenty Performance)
+- `canam-f3-s-2027` (czarny, tytanowe akcenty na ramie — zgodne, plik już miał sufiks `-hq`
+  sugerujący wcześniejszą weryfikację)
+- `canam-commander-dps`, `canam-commander-xt`, `canam-commander-max` — wszystkie 3 poprawnie
+  zróżnicowane (DPS: 2-osobowy bez dachu/zielony; XT: 2-osobowy z hardtopem/szary; MAX: 4-drzwiowy
+  crew/czarny) — zgodne z opisami.
+
+### Zadanie 3: Ryker "Intense Black" — domknięcie twardym źródłem
+
+Znaleziono oficjalną kartę katalogową BRP w PDF: **"2026 RYKER®"**
+(`can-am.brp.com/content/dam/global/en/can-am-on-road/my26/documents/3-wheels/lr/ONRD-MY26-RYK-SPEC-ENNA-Page-LR.pdf`).
+Strona 2 dokumentu, sekcja "Classic series", wprost wymienia **"Intense Black"** jako jedną z
+3 oficjalnych barw panelu (obok "Adrenaline Red" i "Yellow Shock") — to bezpośredni dowód
+z oficjalnego dokumentu BRP, silniejszy niż wcześniejsze oferty dealerskie. Zaktualizowano
+`weryfikacja-kolorow-99-pojazdow.md` (wiersze 9-12, cała starsza rodzina Ryker STD 600/900,
+Sport, Rally) — status zmieniony na "NAPRAWIONE — DOMKNIĘTE TWARDYM ŹRÓDŁEM" z cytatem źródła.
+Żadna zmiana w `index.html` nie była potrzebna (nazwa koloru była już poprawna od poprzedniej
+tury) — to czysto dokumentacyjne domknięcie dowodu.
+
+### Zadanie 4: Weryfikacja formularza kontaktowego
+
+Sprawdzono kod (`id="inquiry-form"`, `data-netlify="true"`, `netlify-honeypot="bot-field"`, ukryte
+pole `form-name`, `initInquiryForm()`) — struktura w pełni poprawna pod Netlify Forms. Uruchomiono
+lokalny serwer testowy (Node.js, port 8123) i w przeglądarce (Browser tool) przetestowano:
+walidację wymaganych pól (natywna walidacja HTML5 `required`/`type="email"` poprawnie blokuje
+niepoprawny email jeszcze przed dojściem do własnego JS), stan sukcesu (zamockowano `fetch`,
+formularz poprawnie czyści pola, pokazuje komunikat sukcesu i toast), brak błędów w konsoli
+przeglądarki. **Wynik: formularz działa poprawnie, nie znaleziono błędów — nic nie zmieniono.**
+
+### Zadanie 5: SEO — struktura nagłówków h1
+
+W tym samym locie testowym (Browser tool + lokalny serwer) sprawdzono liczbę **widocznych**
+`<h1>` (z uwzględnieniem `display:none` na przodkach, bo strona to SPA z routingiem hash) na
+3 widokach: strona główna (`#/`), katalog (`#/katalog`), szczegóły pojazdu (`#/pojazd/...`).
+Na każdym widoku w DOM istnieje 6 elementów `<h1>` (po jednym na każdą "stronę" SPA), ale
+zawsze dokładnie **1 jest widoczny** jednocześnie — problem z pierwotnego audytu już nie
+występuje (widocznie naprawiony w poprzedniej turze). **Nic nie zmieniono.** Dodatkowo
+zweryfikowano `sitemap.xml` — plik istnieje, poprawna struktura XML, dokładnie **109** wpisów
+`<url>`, zgodnie z wymaganiem.
+
+### Zadanie 6: Kompresja nowych obrazów do WebP
+
+Skonwertowano przez ffmpeg (`-quality 83`) 10 wskazanych plików JPG/PNG na WebP: 2×
+canyon-redrock-2027-life, f3-ltd-action-1, 2× f3-ltd-special (front/side), 2× pulse (carbonblack
+studio, sterlingsilver-73-real), rt-ltd-action-1, 2× rt-sea-to-sky-2027-life. Każdy nowy plik
+zweryfikowany wizualnie (Read) przed podmianą — jakość dobra, brak widocznych artefaktów.
+Podmieniono wszystkie referencje w `index.html` (galerie i warianty kolorów), potwierdzono brak
+pozostałych odwołań do starych plików, usunięto stare źródła JPG/PNG z dysku.
+
+**Oszczędność: 1.31 MB → 0.66 MB, czyli ok. 0.65 MB (−49%)** na tych 10 plikach.
+
+### Weryfikacja końcowa (wszystkie 5 zadań)
+
+`node -e "...VEHICLES.length..."` → **`total: 99`** — struktura danych bez zmian liczbowych.
+Serwer testowy (port 8123) i przeglądarka zamknięte, pliki tymczasowe w scratchpad usunięte.
+Brak commitów — wszystkie zmiany (2 nowe zdjęcia Ryker + 1 dla Traxter HD10, 10 plików WebP,
+edycje `index.html` i `weryfikacja-kolorow-99-pojazdow.md`) zostawione w working tree do decyzji
+klienta/zespołu.
 

@@ -253,7 +253,6 @@ section { padding: 72px 0; }
 /* Kontakt */
 /* Baner nastrojowy nad sekcją kontaktową */
 .contact-banner { position: relative; margin-top: -72px; min-height: clamp(480px, 68vh, 760px); padding: 96px 0 64px; display: flex; align-items: center; justify-content: center; text-align: center; background: var(--color-dark); color: #fff; overflow: hidden; }
-.contact-banner-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
 .contact-banner-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; z-index: 0; }
 .contact-banner::before { content: ""; position: absolute; inset: 0; z-index: 1; background: rgba(0,0,0,0.38); }
 
@@ -834,70 +833,6 @@ body.is-home .nav-social { display: flex; }
 }
 
 /* ============================= */
-/* Lightbox                      */
-/* ============================= */
-.lightbox-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 9000;
-  background: rgba(0,0,0,0.93);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.25s ease;
-}
-.lightbox-overlay.open { opacity: 1; pointer-events: auto; }
-.lightbox-img {
-  max-width: 92vw;
-  max-height: 88vh;
-  object-fit: contain;
-  border-radius: 10px;
-  box-shadow: 0 32px 80px rgba(0,0,0,0.55);
-  display: block;
-  user-select: none;
-}
-.lightbox-close {
-  position: absolute;
-  top: 18px; right: 22px;
-  background: rgba(255,255,255,0.12);
-  border: none; color: #fff;
-  font-size: 26px; width: 44px; height: 44px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  transition: background 0.2s;
-  line-height: 1;
-}
-.lightbox-close:hover { background: rgba(255,255,255,0.22); }
-.lightbox-nav {
-  position: absolute;
-  top: 50%; transform: translateY(-50%);
-  background: rgba(255,255,255,0.12);
-  border: none; color: #fff;
-  font-size: 22px; width: 50px; height: 50px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  transition: background 0.2s;
-}
-.lightbox-nav:hover { background: rgba(255,255,255,0.22); }
-.lightbox-nav.prev { left: 20px; }
-.lightbox-nav.next { right: 20px; }
-.lightbox-nav:disabled { opacity: 0.2; pointer-events: none; }
-.lightbox-counter {
-  position: absolute;
-  bottom: 18px; left: 50%; transform: translateX(-50%);
-  color: rgba(255,255,255,0.6);
-  font-size: 13px; font-weight: 600; letter-spacing: 0.5px;
-}
-@media (max-width: 900px) {
-  .lightbox-nav.prev { left: 8px; }
-  .lightbox-nav.next { right: 8px; }
-}
-
-/* ============================= */
 /* Ikonki specyfikacji           */
 /* ============================= */
 .spec-icon {
@@ -951,14 +886,6 @@ body.is-home .nav-social { display: flex; }
 </head>
 <body>
 
-<!-- Lightbox -->
-<div id="lightbox" class="lightbox-overlay" onclick="_lbBgClick(event)">
-  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Zamknij">&times;</button>
-  <button class="lightbox-nav prev" id="lb-prev" onclick="lightboxNav(-1)" aria-label="Poprzednie">&#8592;</button>
-  <img class="lightbox-img" id="lb-img" alt="Zdjęcie pojazdu">
-  <button class="lightbox-nav next" id="lb-next" onclick="lightboxNav(1)" aria-label="Następne">&#8594;</button>
-  <span class="lightbox-counter" id="lb-counter"></span>
-</div>
 
 <header class="top-nav">
   <div class="container header-inner">
@@ -1031,7 +958,7 @@ body.is-home .nav-social { display: flex; }
 
   <section class="hero">
     <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="images/hero-video-poster.webp" fetchpriority="high">
-      <source src="images/hero-video.mp4?v=20260904newclip" type="video/mp4">
+      <source src="images/hero-video-optimized.mp4?v=20260910opt2" type="video/mp4">
     </video>
     <div class="hero-content">
       <h1>Poczuj adrenalinę<br>na wodzie i na lądzie</h1>
@@ -2058,17 +1985,17 @@ const VEHICLES = [
     ],
     images: ["images/seadoo-rxt-x-orange-hero.jpg", "images/seadoo-rxt-x-blue-hero.jpg"], gallery: ["images/seadoo-rxt-x-life-1.png", "images/seadoo-rxt-x-life-2.jpg"] },
 
-  { id: "seadoo-gtx-limited-2027", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Touring", name: "GTX Limited 350", price: "od 32 550 €", engine: "Rotax 1630 SXHO+, 350 KM",
+  { id: "seadoo-gtx-limited-2027", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Touring", name: "GTX Limited 350", price: "od 32 550 €", engine: "Rotax 1630 ACE, 350 KM",
     myYear: 2027,
     desc: "Flagowy model turystyczny Sea-Doo na rocznik 2027 — nowy silnik 350 KM (wcześniej 325), dotykowy wyświetlacz 10,25\" i najbogatsze wyposażenie w gamie.",
     fullDesc: [
-      "GTX Limited na rocznik 2027 to kontynuacja szczytu oferty turystycznej Sea-Doo — na 2027 rok otrzymuje zupełnie nowy silnik Rotax 1630 SXHO+ o mocy 350 KM (zamiast dotychczasowych 325 KM), z większym wirnikiem sprężarki i wzmocnionym układem napędowym.",
+      "GTX Limited na rocznik 2027 to kontynuacja szczytu oferty turystycznej Sea-Doo — na 2027 rok otrzymuje zupełnie nowy silnik Rotax 1630 ACE o mocy 350 KM (zamiast dotychczasowych 325 KM), z większym wirnikiem sprężarki i wzmocnionym układem napędowym.",
       "10,25-calowy dotykowy wyświetlacz z pełną nawigacją po ustawieniach jazdy, system iBR oraz iDF (z funkcją biegu wstecznego) czynią z niego najbardziej zaawansowany technologicznie model w linii turystycznej."
     ],
-    highlights: ["Silnik: Rotax 1630 SXHO+, 350 KM (nowa jednostka na 2027 rok)", "Wyświetlacz 10,25\" dotykowy z pełną nawigacją ustawień", "iBR — inteligentne hamowanie i cofanie", "iDF — automatyczne czyszczenie pompy wodnej z funkcją biegu wstecznego", "Pojemność: do 3 osób"],
+    highlights: ["Silnik: Rotax 1630 ACE, 350 KM (nowa jednostka na 2027 rok)", "Wyświetlacz 10,25\" dotykowy z pełną nawigacją ustawień", "iBR — inteligentne hamowanie i cofanie", "iDF — automatyczne czyszczenie pompy wodnej z funkcją biegu wstecznego", "Pojemność: do 3 osób"],
     forWho: "GTX Limited to wybór dla klientów, którzy chcą mieć wszystko naraz — najwyższy komfort turystyczny, najbogatszą technologię i najmocniejszy silnik w historii linii turystycznej.",
     features: [
-      { title: "Silnik Rotax 1630 SXHO+, 350 KM", text: "Nowa jednostka na 2027 rok — większy wirnik sprężarki i wzmocniony układ napędowy zapewniają najwyższą moc w historii GTX." },
+      { title: "Silnik Rotax 1630 ACE, 350 KM", text: "Nowa jednostka na 2027 rok — większy wirnik sprężarki i wzmocniony układ napędowy zapewniają najwyższą moc w historii GTX." },
       { title: "Wyświetlacz dotykowy 10,25 cala", text: "Pełna nawigacja po ustawieniach jazdy, trybach mocy i danych z podróży." },
       { title: "System iBR", text: "Inteligentne hamowanie i cofanie dla pełnej kontroli podczas precyzyjnych manewrów." },
       { title: "System iDF z biegiem wstecznym", text: "Automatyczne czyszczenie pompy wodnej z zanieczyszczeń, potwierdzone w standardzie na 2027 rok." }
@@ -2329,7 +2256,7 @@ const VEHICLES = [
       { name: "Mineral Blue Satin", hex1: "#4a5f66", hex2: "#2c3a3f", image: "images/canam-f3-ltd-2027-blue.webp" }
     ],
     images: ["images/canam-f3-ltd-1.jpg", "images/canam-f3-ltd-2027-black.webp", "images/canam-f3-ltd-2027-blue.webp"],
-    gallery: ["images/canam-f3-ltd-action-1.jpg"] },
+    gallery: ["images/canam-f3-ltd-action-1.webp"] },
   { id: "canam-f3-ltd-special", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Cruising", name: "Spyder F3 LTD Special Series", price: "od 34 050 €", engine: "Rotax 1330 ACE, SE6",
     desc: "Edycja specjalna F3 LTD z unikalnym malowaniem Mars Red Metallic i pełnym wyposażeniem LTD.",
     fullDesc: [
@@ -2349,7 +2276,7 @@ const VEHICLES = [
       { name: "Dolomite Grey", hex1: "#8a8d91", hex2: "#5a5d61", image: "images/canam-f3-ltd-special-dolomite-hq.webp" }
     ],
     images: ["images/canam-f3-ltd-special-1.jpg", "images/canam-f3-ltd-special-dolomite-hq.webp"],
-    gallery: ["images/canam-f3-ltd-special-side-1.jpg", "images/canam-f3-ltd-special-front-1.jpg"] },
+    gallery: ["images/canam-f3-ltd-special-side-1.webp", "images/canam-f3-ltd-special-front-1.webp"] },
   { id: "canam-rt-ltd", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Touring", name: "Spyder RT LTD", price: "od 34 800 €", engine: "Rotax 1330 ACE, SE6",
     desc: "Flagowy trójkołowiec turystyczny Can-Am — komfort na długie trasy, kufry i rozbudowane wyposażenie.",
     fullDesc: [
@@ -2370,7 +2297,7 @@ const VEHICLES = [
       { name: "Mineral Blue", hex1: "#3d5a75", hex2: "#1f3346", image: "images/canam-rt-ltd-color-mineralblue.jpg" }
     ],
     images: ["images/canam-rt-ltd-color-pearlwhite.jpg", "images/canam-rt-ltd-color-carbonblack.jpg"],
-    gallery: ["images/canam-rt-ltd-action-1.jpg"] },
+    gallery: ["images/canam-rt-ltd-action-1.webp"] },
   { id: "canam-rt-sea-to-sky", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Touring", name: "Spyder RT Sea-to-Sky", price: "od 37 000 €", engine: "Rotax 1330 ACE, SE6",
     desc: "Najbogatsza wersja RT z pełnym pakietem turystycznym premium i unikalnym malowaniem.",
     fullDesc: [
@@ -2525,8 +2452,8 @@ const VEHICLES = [
       { title: "Przekalibrowany system VSS", text: "Elektroniczna kontrola stabilności dostrojona pod nową charakterystykę podwozia." },
       { title: "Nowy wyświetlacz 5\" i sterowanie na kierownicy", text: "Czytelniejsze informacje o jeździe i intuicyjny dostęp do funkcji pojazdu." }
     ],
-    colors: [{ name: "Intense Black", hex1: "#1c1c1e", hex2: "#2c2c2e", image: "images/canam-ryker-1.png" }],
-    images: ["images/canam-ryker-1.png"], gallery: ["images/canam-ryker-black-life-1.jpg", "images/canam-ryker-black-life-2.jpg"] },
+    colors: [{ name: "Intense Black", hex1: "#1c1c1e", hex2: "#2c2c2e", image: "images/canam-ryker-2027-intenseblack-1.webp" }],
+    images: ["images/canam-ryker-2027-intenseblack-1.webp"], gallery: ["images/canam-ryker-black-life-1.jpg", "images/canam-ryker-black-life-2.jpg"] },
 
   { id: "canam-ryker-sport-2027", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Recreation", name: "Ryker Sport", price: "Cena na zapytanie", engine: "Rotax 900 ACE, 80 KM",
     myYear: 2027,
@@ -2543,8 +2470,8 @@ const VEHICLES = [
       { title: "Przekalibrowany system VSS", text: "Elektroniczna kontrola stabilności dostrojona pod bardziej dynamiczny charakter jazdy." },
       { title: "Nowy wyświetlacz 5\" i sterowanie na kierownicy", text: "Czytelniejsze informacje o jeździe i intuicyjny dostęp do funkcji pojazdu." }
     ],
-    colors: [{ name: "Intense Black", hex1: "#1c1c1e", hex2: "#2c2c2e", image: "images/canam-ryker-sport-1.png" }],
-    images: ["images/canam-ryker-sport-1.png"], gallery: ["images/canam-ryker-sport-black-life-1.jpg", "images/canam-ryker-sport-black-life-2.jpg"] },
+    colors: [{ name: "Intense Black", hex1: "#1c1c1e", hex2: "#2c2c2e", image: "images/canam-ryker-sport-2027-intenseblack-1.webp" }],
+    images: ["images/canam-ryker-sport-2027-intenseblack-1.webp"], gallery: ["images/canam-ryker-sport-black-life-1.jpg", "images/canam-ryker-sport-black-life-2.jpg"] },
 
   { id: "canam-ryker-special", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Recreation", name: "Ryker Special Series", price: "Cena na zapytanie", engine: "Rotax 900 ACE, 80 KM",
     myYear: 2027,
@@ -2645,7 +2572,7 @@ const VEHICLES = [
       { name: "Mineral Blue Satin", hex1: "#4a5f66", hex2: "#2c3a3f", image: "images/canam-f3-ltd-2027-blue.webp" }
     ],
     images: ["images/canam-f3-ltd-2027-white.webp", "images/canam-f3-ltd-2027-black.webp", "images/canam-f3-ltd-2027-blue.webp"],
-    gallery: ["images/canam-f3-ltd-action-1.jpg"] },
+    gallery: ["images/canam-f3-ltd-action-1.webp"] },
 
   { id: "canam-rt-2027", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Touring", name: "Spyder RT", price: "Cena na zapytanie", engine: "Rotax 1330 ACE, SE6",
     myYear: 2027,
@@ -2668,7 +2595,7 @@ const VEHICLES = [
       { name: "Mineral Blue", hex1: "#3d5a75", hex2: "#1f3346", image: "images/canam-rt-ltd-color-mineralblue.jpg" }
     ],
     images: ["images/canam-rt-ltd-color-pearlwhite.jpg", "images/canam-rt-ltd-color-carbonblack.jpg"],
-    gallery: ["images/canam-rt-ltd-action-1.jpg"] },
+    gallery: ["images/canam-rt-ltd-action-1.webp"] },
 
   { id: "canam-rt-sea-to-sky-2027", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Touring", name: "Spyder RT Sea-to-Sky", price: "Cena na zapytanie", engine: "Rotax 1330 ACE, SE6",
     myYear: 2027,
@@ -2687,7 +2614,7 @@ const VEHICLES = [
     ],
     colors: [{ name: "Dolomite Grey", hex1: "#8a8d90", hex2: "#5a5d61", image: "images/canam-rt-sea-to-sky-2027-dolomitegrey-1.jpg" }],
     images: ["images/canam-rt-sea-to-sky-2027-dolomitegrey-1.jpg"],
-    gallery: ["images/canam-rt-sea-to-sky-2027-life-1.jpg", "images/canam-rt-sea-to-sky-2027-life-2.jpg"] },
+    gallery: ["images/canam-rt-sea-to-sky-2027-life-1.webp", "images/canam-rt-sea-to-sky-2027-life-2.webp"] },
 
   { id: "canam-canyon-2027", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Adventure", name: "Canyon", price: "Cena na zapytanie", engine: "Rotax 1330 ACE, SE6",
     myYear: 2027,
@@ -2725,7 +2652,7 @@ const VEHICLES = [
     ],
     colors: [{ name: "Sandstone", hex1: "#c9a876", hex2: "#8f7245", image: "images/canam-canyon-redrock-2027-sandstone-1.webp" }],
     images: ["images/canam-canyon-redrock-2027-sandstone-1.webp"],
-    gallery: ["images/canam-canyon-redrock-2027-life-1.jpg", "images/canam-canyon-redrock-2027-life-2.jpg"] },
+    gallery: ["images/canam-canyon-redrock-2027-life-1.webp", "images/canam-canyon-redrock-2027-life-2.webp"] },
 
   { id: "canam-outlander-pro", category: "atv", categoryLabel: "Can-Am ATV", segment: "Rec-Ute", name: "Outlander PRO", price: "od 10 890 €", engine: "HD5 / HD7",
     desc: "Najbardziej przystępny quad użytkowy z gamy Outlander — solidna podstawa do pracy w gospodarstwie i terenie.",
@@ -2910,7 +2837,7 @@ const VEHICLES = [
       "Wzmocnione zawieszenie i sportowo dostrojone amortyzatory FOX z regulacją QS3 (Quick Switch 3 — trzy tryby tłumienia) pozwalają pewnie pokonywać nierówny teren przy wyższych prędkościach, a agresywna stylistyka XT-P odróżnia go od standardowych wersji Outlandera."
     ],
     highlights: ["Silnik: 1000R", "Fabrycznie zamontowany pakiet osprzętu Performance", "Amortyzatory FOX 1.5 PODIUM QS3", "Wyświetlacz dotykowy 10,25\" — nowość MY27", "Nowość w katalogu na rocznik 2027"],
-    forWho: "Outlander XT-P to propozycja dla kierowców szukających gotowego, sportowo-terenowego quada z fabryczna zamontowanym osprzętem Performance — bez konieczności dokupowania i montowania dodatkowych akcesoriów.",
+    forWho: "Outlander XT-P to propozycja dla kierowców szukających gotowego, sportowo-terenowego quada z fabrycznie zamontowanym osprzętem Performance — bez konieczności dokupowania i montowania dodatkowych akcesoriów.",
     features: [
       { title: "Amortyzatory FOX 1.5 PODIUM QS3", text: "Sportowo dostrojone zawieszenie z regulacją tłumienia QS3 (3 tryby) pozwala pewnie pokonywać nierówny teren przy wyższych prędkościach." },
       { title: "Silnik 1000R", text: "Najmocniejsza jednostka napędowa dostępna w gamie Outlander, zapewniająca dynamiczne osiągi w terenie." },
@@ -3239,11 +3166,15 @@ const VEHICLES = [
       { title: "Zaczep holowniczy o dużym udźwigu", text: "Transport przyczep i sprzętu gospodarczego w trudnym terenie." },
       { title: "Napęd 4WD z Visco-Lok QE", text: "Automatyczne dozowanie mocy na koła zapewnia trakcję w błocie i na luźnym podłożu." }
     ],
-    colors: [{ name: "Dolomite Grey", hex1: "#8a8d90", hex2: "#5a5d61", image: "images/canam-traxter-hd10-2027-dolomitegrey-1.png" }],
+    colors: [{ name: "Dolomite Grey", hex1: "#8a8d90", hex2: "#5a5d61", image: "images/canam-traxter-hd10-2027-dolomitegrey-2.webp" }],
     // TODO: gallery puste — usunięte 2 zdjęcia akcji, bo pokazywały zielony pojazd (Compass Green),
     // niezgodny z potwierdzonym kolorem Dolomite Grey. Brak znalezionego oficjalnego zdjęcia akcji
     // w Dolomite Grey dla tej platformy — do uzupełnienia realnym zdjęciem z portalu dealerskiego.
-    images: ["images/canam-traxter-hd10-2027-dolomitegrey-1.png"], gallery: [] },
+    // 2026-09-10: main image podmieniony — poprzedni plik (...-1.png) pokazywał 4-drzwiową wersję
+    // crew MAX, niezgodną z bazowym 2-osobowym Traxter HD10 bez CAB w opisie. Nowe zdjęcie: dealer
+    // True North Powersports (cdn.powergo.ca), model "Defender DPS CAB HD10 Dolomite Grey" (NA-owy
+    // odpowiednik europejskiego Traxter HD10) — 2-osobowy, dach ochronny, bez pełnej oszklonej kabiny.
+    images: ["images/canam-traxter-hd10-2027-dolomitegrey-2.webp"], gallery: [] },
 
   { id: "canam-traxter-xu", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Utility", name: "Traxter XU", price: "Cena na zapytanie", engine: "HD10 (80 KM) / HD11 (95 KM)",
     myYear: 2027,
@@ -3491,10 +3422,10 @@ const VEHICLES = [
     ],
     colors: [
       { name: "Bright White", hex1: "#f2f2f0", hex2: "#cfcfcf", image: "images/canam-pulse-1-v2.avif" },
-      { name: "Sterling Silver ('73)", hex1: "#c7c9cb", hex2: "#8a8d90", image: "images/canam-pulse-sterlingsilver-73-real.png" },
-      { name: "Carbon Black", hex1: "#1c1c1e", hex2: "#2c2c2e", image: "images/canam-pulse-carbonblack-studio.png" }
+      { name: "Sterling Silver ('73)", hex1: "#c7c9cb", hex2: "#8a8d90", image: "images/canam-pulse-sterlingsilver-73-real.webp" },
+      { name: "Carbon Black", hex1: "#1c1c1e", hex2: "#2c2c2e", image: "images/canam-pulse-carbonblack-studio.webp" }
     ],
-    images: ["images/canam-pulse-1-v2.avif", "images/canam-pulse-sterlingsilver-73-real.png", "images/canam-pulse-carbonblack-studio.png"],
+    images: ["images/canam-pulse-1-v2.avif", "images/canam-pulse-sterlingsilver-73-real.webp", "images/canam-pulse-carbonblack-studio.webp"],
     gallery: ["images/canam-pulse-lifestyle.webp", "images/canam-pulse-life-2.webp"] },
 
   { id: "canam-origin", category: "electric", categoryLabel: "Can-Am Electric", segment: "Dual-Sport", name: "Origin", price: "od 17 499 €", engine: "Rotax E-Power",
@@ -3580,12 +3511,6 @@ function setCarouselSlide(uid, index) {
   el.dataset.index = next;
   el.querySelectorAll(".carousel-slide").forEach((slide, i) => slide.classList.toggle("active", i === next));
   el.querySelectorAll(".carousel-dots span").forEach((dot, i) => dot.classList.toggle("active", i === next));
-}
-
-function stepCarousel(uid, dir) {
-  const el = document.getElementById(`carousel-${uid}`);
-  if (!el) return;
-  setCarouselSlide(uid, parseInt(el.dataset.index, 10) + dir);
 }
 
 function colorSwatchesMarkup(v, imgId, size) {
@@ -3857,26 +3782,6 @@ document.addEventListener("click", function(e) {
 function renderPricing() {
   showPage("page-pricing");
   setActiveNavLink("nav-link-pricing");
-}
-
-function loadContactVideo() {
-  const video = document.getElementById("contact-banner-video");
-  if (!video || video.dataset.loaded) return;
-  video.dataset.loaded = "1";
-  const source = video.querySelector("source");
-  source.src = source.dataset.src;
-  video.load();
-  video.play().catch(() => {});
-}
-
-// Wgrywa plik wideo do pamięci podręcznej przeglądarki w tle, zanim
-// użytkownik wejdzie na stronę Kontakt — dzięki temu film nie zacina się
-// przy starcie odtwarzania.
-function prefetchContactVideo() {
-  const source = document.querySelector("#contact-banner-video source");
-  if (!source || source.dataset.prefetched) return;
-  source.dataset.prefetched = "1";
-  fetch(source.dataset.src).catch(() => {});
 }
 
 // Przeglądarki mobilne (np. Safari na iOS) zatrzymują dekodowanie wideo
@@ -4160,10 +4065,6 @@ function router() {
 window.addEventListener("hashchange", router);
 router();
 
-function galleryMarkup(v) {
-  return (v.gallery || []).map(src => `<div class="detail-gallery-item"><img src="${av(src)}" alt="${v.name}" loading="lazy"></div>`).join("");
-}
-
 function siblingYearOf(v) {
   return VEHICLES.find(x => x.name === v.name && x.id !== v.id && !x.tempHidden);
 }
@@ -4392,41 +4293,6 @@ function updateSliderDots(wrap, idx, total) {
 }
 
 /* ============================= */
-// LIGHTBOX
-/* ============================= */
-let _lbImages = [], _lbIdx = 0;
-function openLightbox(images, startIdx) {
-  _lbImages = images; _lbIdx = startIdx;
-  _lbRender();
-  document.getElementById('lightbox').classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-function closeLightbox() {
-  document.getElementById('lightbox').classList.remove('open');
-  document.body.style.overflow = '';
-}
-function _lbBgClick(e) {
-  if (e.target === document.getElementById('lightbox')) closeLightbox();
-}
-function lightboxNav(dir) {
-  _lbIdx = Math.max(0, Math.min(_lbImages.length - 1, _lbIdx + dir));
-  _lbRender();
-}
-function _lbRender() {
-  document.getElementById('lb-img').src = _lbImages[_lbIdx];
-  document.getElementById('lb-counter').textContent = `${_lbIdx + 1} / ${_lbImages.length}`;
-  document.getElementById('lb-prev').disabled = _lbIdx === 0;
-  document.getElementById('lb-next').disabled = _lbIdx === _lbImages.length - 1;
-}
-document.addEventListener('keydown', e => {
-  const lb = document.getElementById('lightbox');
-  if (!lb.classList.contains('open')) return;
-  if (e.key === 'Escape') closeLightbox();
-  if (e.key === 'ArrowLeft') lightboxNav(-1);
-  if (e.key === 'ArrowRight') lightboxNav(1);
-});
-
-/* ============================= */
 // SHIMMER — usunięcie po załadowaniu
 /* ============================= */
 function _markImgSettled(e) {
@@ -4494,11 +4360,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const banner = document.getElementById("cookie-banner");
     if (banner) setTimeout(() => banner.classList.add("show"), 600);
   }
-
-  // Wgraj wideo sekcji Kontakt w tle, gdy przeglądarka jest bezczynna,
-  // żeby nie zacinało się przy wejściu na tę podstronę
-  const idle = window.requestIdleCallback || (cb => setTimeout(cb, 2000));
-  idle(prefetchContactVideo);
 
   const lifestyleGrid = document.querySelector(".lifestyle-cards");
   const lifestyleDots = document.getElementById("lifestyle-dots");
