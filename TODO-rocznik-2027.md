@@ -1,5 +1,135 @@
 # TODO — dodanie rocznika 2027 (54 pojazdy)
 
+## ✅ AKTUALIZACJA 2026-09-09 (kolejna tura, reklamacja klienta) — systematyczny skan galerii 2027 vs 2026 (wszystkie 47 pojazdów) + spot-check danych technicznych
+
+Zgłoszenie klienta: `seadoo-spark-2027` (Spark 90 For 2, Sunrise Orange/Dragon Red) miał pustą
+galerię (`gallery: []`), a jego odpowiednik 2026 (`seadoo-spark-90-2`) miał 2 zdjęcia. Zamiast
+naprawić tylko ten jeden przypadek, wykonano pełny systematyczny skan WSZYSTKICH 47 pojazdów
+`myYear: 2027` — automatyczny skrypt node dopasował każdy do odpowiednika 2026 (po `id` bez
+sufiksu `-2027` lub po nazwie bazowej) i porównał `gallery[]` obu wersji.
+
+### Punkt 1 — spójność galerii 2027 vs 2026
+
+**Wynik skanu:** z 47 pojazdów 2027, tylko **2 miały realny sygnał problemu** (2026 ma więcej
+zdjęć niż 2027, przy dopasowanym odpowiedniku):
+
+1. **`seadoo-spark-2027`** (zgłoszenie klienta) — ✅ **NAPRAWIONE.** Odpowiednik 2026
+   (`seadoo-spark-90-2`) ma `gallery: ["images/seadoo-spark-90-2-life-1.webp",
+   "images/seadoo-spark-90-2-life-2.webp"]`. Oba pliki zweryfikowane wizualnie przez Read tool:
+   pokazują niebiesko-czarny skuter Sea-Doo (dok, kobieta cumująca / zbliżenie na siedzenie) —
+   kolor **dokładnie zgodny** z drugim oficjalnym kolorem karty 2027, "Vapor Blue / Dazzling
+   Blue" (ten sam plik `seadoo-spark-90-2-1.webp` jest już użyty jako swatch tego koloru w
+   `colors[]` obu wersji). Karta 2027 ma dokładnie te same 2 kolory co 2026 (Sunrise Orange/Dragon
+   Red + Vapor Blue/Dazzling Blue), więc reużycie zdjęć jest w pełni uzasadnione — galeria jest
+   współdzielona między kolorami tak jak w innych pojazdach wielokolorowych w katalogu (RXP-X,
+   RXT-X, GTI SE, Spyder F3 Limited). Skopiowano `gallery` 1:1 z `seadoo-spark-90-2` do
+   `seadoo-spark-2027`, usunięto stary komentarz TODO o niezgodnym niebieskim schowku (to była
+   inna, wcześniej usunięta para zdjęć, nie te dodane teraz).
+2. **`seadoo-wake-pro-2027`** (Wake Pro 230, kolor "Teal Blue / Manta Green") — ⚠️ **SPRAWDZONE,
+   NIE NAPRAWIONE — kolor się nie zgadza.** Odpowiednik 2026 (`seadoo-wake-pro-230`) ma 2 zdjęcia
+   galerii, ale jego oficjalny kolor to zupełnie inny wariant — "Sand / Dazzling Blue" (jasny,
+   piaskowo-beżowy kadłub z niebieskimi akcentami). Oba pliki (`seadoo-wake-pro-230-2.webp`,
+   `seadoo-wake-pro-230-life-2.webp`) zweryfikowane wizualnie przez Read tool: **kadłub jest
+   wyraźnie jasny/piaskowy (tan/cream), NIE turkusowo-zielony** — nie pasuje do "Teal Blue / Manta
+   Green" karty 2027. Zgodnie z zasadą projektu (nigdy nie wpinać zdjęcia w złym kolorze) —
+   **świadomie pozostawiono `gallery: []`**. Do znalezienia w kolejnej turze: prawdziwe zdjęcie
+   Wake Pro 230 MY27 w kolorze Teal Blue/Manta Green (WebSearch: sea-doo.brp.com, oficjalna
+   strona ogłoszenia MY27, dealerzy US).
+
+**Pozostałe pojazdy z pustą galerią 2027, bez wiarygodnego odpowiednika 2026 do reużycia**
+(sprawdzone w skanie, ale bez source'u zdjęć — pozostają puste, zgodnie z wcześniejszymi turami
+audytu, patrz sekcje niżej w tym pliku):
+- `canam-outlander-pro-2027` — odpowiednik 2026 (`canam-outlander-pro`) TEŻ ma pustą galerię
+  (`gallery: []`) — brak źródła do skopiowania. Bez zmian.
+- `canam-renegade-2027` — odpowiednik 2026 (`canam-renegade`) TEŻ ma pustą galerię. Bez zmian.
+- `canam-maverick-trail-2027` — odpowiednik 2026 (`canam-maverick-trail`) TEŻ ma pustą galerię
+  (wcześniej celowo wyczyszczona — patrz sekcja "audyt galerii po poprawkach kolorów" niżej w tym
+  pliku, zdjęcia pokazywały dwa różne, niepasujące pojazdy). Bez zmian.
+- `canam-maverick-sport-2027` — odpowiednik 2026 (`canam-maverick-sport`) MA 2 zdjęcia
+  (`.avif`), ale to już było sprawdzone i świadomie odrzucone w poprzedniej turze (sekcja "audyt
+  galerii CAŁEGO katalogu" niżej) — zdjęcia pokazują czarny pojazd (Triple Black, kolor 2026),
+  niezgodny z Granite Grey (kolor 2027). Potwierdzone ponownie w tej turze, bez zmian.
+- `canam-traxter-hd9` (2027, Traxter HD10) — brak odpowiednika 2026 w bazie (nowa platforma).
+  Pusta galeria już udokumentowana wcześniej (poszukiwania bezskuteczne — sekcja "Traxter HD10,
+  Ryker, Commander MAX" niżej).
+- `canam-commander-xt` — pusta galeria, ale to pojazd WYŁĄCZNIE 2027 (cała rodzina Commander nie
+  ma odpowiednika 2026 w katalogu — potwierdzone też brakiem tej rodziny w cenniku PerfectMoto,
+  patrz sekcja cennika ATV/SSV wyżej w tym pliku). Nie dotyczy porównania 2027 vs 2026 — osobny,
+  niższy priorytet temat (Commander DPS i MAX mają swoje galerie, tylko XT nie — do sprawdzenia
+  osobno, poza zakresem tego zgłoszenia).
+
+Pozostałe ~40 pojazdów 2027 albo mają WŁASNĄ, już wypełnioną galerię 2+ zdjęć (Sea-Doo PWC linia,
+Ryker, Spyder, Canyon, Traxter XU/X MR/XT/Limited/Lone Star, Commander DPS/MAX, Maverick R, cała
+linia Outlander poza PRO) — bez zmian, albo mają dokładnie tyle samo zdjęć co odpowiednik 2026
+(`seadoo-gti-2027`, `seadoo-gti-se-2027`, `seadoo-gtx-2027`, `seadoo-explorer-pro-2027`,
+`seadoo-gtr-2027`, `seadoo-gtr-x-2027`, `seadoo-fishpro-sport-2027`, `canam-f3-s-2027`,
+`canam-outlander-2027`, `canam-canyon-redrock-2027`, `canam-maverick-r-2027`) — galeria już
+identyczna, brak rozbieżności.
+
+### Punkt 2 — spot-check danych technicznych (silnik/moc, nazwy kolorów, opisy)
+
+Ze względu na to, że dane techniczne rocznika 2027 były już bardzo dokładnie sprawdzone w
+poprzednich turach (patrz sekcje niżej — Krok 4 finalnego audytu, weryfikacja 99 kolorów w
+`weryfikacja-kolorow-99-pojazdow.md`), w tej turze wykonano tylko krótki spot-check nowo
+edytowanego pojazdu i jego bezpośredniego sąsiedztwa w kodzie:
+- `seadoo-spark-2027` — silnik "Rotax 1000 ACE, 90 KM" w polu `engine`/`highlights` — zgodne z
+  oficjalną specyfikacją Sea-Doo Spark 90 (potwierdzone we wcześniejszych turach, patrz tabela w
+  `weryfikacja-kolorow-99-pojazdow.md`). `desc`/`fullDesc` nie zawierają żadnych nieaktualnych
+  odniesień (opis mówi ogólnie o "kontynuacji bez zmian w karoserii" — bezpieczne sformułowanie,
+  nie podaje konkretnych, możliwych do zdezaktualizowania danych). Bez zmian.
+- `seadoo-wake-pro-2027` — silnik "Rotax 1630 ACE" (do zweryfikowania dokładnej mocy przy okazji
+  następnej tury szukania zdjęcia) — nazwa koloru "Teal Blue / Manta Green" nie była jeszcze
+  jawnie zweryfikowana względem oficjalnego źródła BRP w poprzednich turach (brakuje wpisu w
+  `weryfikacja-kolorow-99-pojazdow.md`) — **NIEZWERYFIKOWANE, do sprawdzenia w kolejnej turze**
+  razem z poszukiwaniem zdjęcia (to samo źródło rozwiąże oba punkty naraz).
+
+Reszta rocznika 2027 (~45 pojazdów) — dane techniczne były już przedmiotem wcześniejszych,
+udokumentowanych tur audytu (patrz sekcje "FINALNY AUDYT", "weryfikacja kolorów 99 pojazdów"
+niżej) — potwierdzone zgodne, nie powtarzano pełnej re-weryfikacji w tej turze z powodu ograniczeń
+czasowych; skupiono się na zgłoszonym problemie galerii i jego pełnym systematycznym domknięciu.
+
+**Weryfikacja końcowa:** `node -e "...VEHICLES.length"` → **99/99 pojazdów, parsowanie
+poprawne** (sprawdzone po edycji `seadoo-spark-2027`). Zmiany zostawione w working tree, bez
+commitu/pusha.
+
+---
+
+## ✅ AKTUALIZACJA — cennik importera dla ATV i SSV 2027
+
+Na żądanie klienta pobrano pełny cennik z perfectmoto.pl/atv-2027/ i /ssv-2027/ (ten sam autoryzowany
+dealer, źródło: cennik importera Taurus Sea Power sp. z o.o.) — 45 wersji ATV + 27 wersji SSV.
+Surowe dane zapisane w `cennik-2027-raw-atv-ssv.md`.
+
+**Zaktualizowano 8 cen** (jednoznaczne dopasowanie nazwa+kolor, bez zgadywania):
+- `canam-outlander-x-mr-max` → od 22 290 € (Loft Green Satin, dokładne dopasowanie)
+- `canam-outlander-xtp` → od 20 990 € (wariant bazowy 1000R)
+- `canam-outlander-2027` → od 11 790 € (najtańszy wariant rodziny, DPS 500 T ABS)
+- `canam-renegade-2027` → od 16 310 € (wariant bazowy 650, Catalyst Gray & Orange Crush)
+- `canam-traxter-x-mr` → od 29 890 € (Loft Green Satin, dokładne dopasowanie)
+- `canam-maverick-trail-2027` → od 18 590 € (najtańszy wariant w pasującym kolorze Granite Grey)
+- `canam-maverick-sport-2027` → od 22 790 € (Granite Grey, dokładne dopasowanie)
+- `canam-maverick-r-2027` → od 53 990 €, plus osobne ceny dla 3 wariantów kolorystycznych
+  (Triple Black 53 990 / Dolomite Grey & Orange Crush 55 990 / Loft Green Satin 60 990 €)
+
+**NIE zaktualizowano** (zbyt duża niejednoznaczność dopasowania wariantu/silnika/koloru do
+generycznej karty katalogowej — świadomie, żeby nie zgadywać):
+- `canam-outlander-pro-2027` — **UWAGA, ważne znalezisko**: PerfectMoto pokazuje kolor **Sandstone**
+  dla całej rodziny Outlander PRO 2027, a nasza strona ma "Desert Tan/Compass Green" — możliwa
+  niezgodność kolorystyczna wymagająca osobnej weryfikacji w kolejnej turze.
+- `canam-outlander-max-6x6-dps-2027` — silnik na stronie "850/1000R", PerfectMoto ma tylko 700/1000,
+  brak jasnego punktu odniesienia.
+- Cała reszta rodziny Traxter (`canam-traxter-hd9`, `-xu`, `-xu-pro-6x6`, `-xt`, `-limited`,
+  `-lonestar`) — nazewnictwo generacji/trimów na PerfectMoto (BASE/XU T/XU T ABS/PRO/MAX) nie
+  mapuje się jasno na nazewnictwo strony (HD10/HD11) bez ryzyka błędu.
+- Cała rodzina Commander (`canam-commander-dps/xt/max`) — **nieobecna w całości** na liście SSV
+  PerfectMoto (tylko 5 rodzin: Maverick R, Maverick, Maverick Trail, Maverick Sport, Traxter — bez
+  Commander) — brak źródła cenowego.
+
+**Linia elektryczna (Pulse/Origin) i Sea-Doo** — nie sprawdzano w tej turze (Sea-Doo już zrobione
+wcześniej; PerfectMoto nie ma osobnej strony electric-2027).
+
+VEHICLES zweryfikowane: 99/99, parsowanie poprawne.
+
 ## ✅ AKTUALIZACJA (dogrywka) — prawdziwy cennik importera + korekta nazwy koloru
 
 Po tym jak dystrybutor odesłał nas do samodzielnego researchu, znaleziono **PerfectMoto.pl**
@@ -1117,6 +1247,50 @@ Podmieniono wszystkie referencje w `index.html` (galerie i warianty kolorów), p
 pozostałych odwołań do starych plików, usunięto stare źródła JPG/PNG z dysku.
 
 **Oszczędność: 1.31 MB → 0.66 MB, czyli ok. 0.65 MB (−49%)** na tych 10 plikach.
+
+## 2026-09-09 — Próba uzupełnienia galerii (5 pojazdów z pustym `gallery: []`)
+
+Zadanie: znaleźć po 2 prawdziwe, różne od siebie zdjęcia "z życia" (NIE studyjne na białym tle)
+dla 5 pojazdów z pustą galerią, dopasowane 1:1 do koloru z karty. Metodologia: WebSearch (kilkanaście
+zapytań, min. 2-4 na pojazd) + WebFetch oficjalnej galerii can-am.brp.com oraz kart dealerskich
+(dx1app.com CDN, equipmentsearch.com, powergo.ca, northshoresports.ca) + pobranie kandydatów przez
+curl + weryfikacja wizualna przez Read PRZED jakąkolwiek edycją `index.html`.
+
+**Wynik: 0 z 5 pojazdów — nie dodano żadnego zdjęcia.** Dla żadnego z 5 pojazdów nie znaleziono
+kandydata spełniającego oba warunki jednocześnie (właściwy kolor + kadr "z życia", nie studio):
+
+1. **`canam-outlander-pro-2027`** (Desert Tan / Compass Green) — oficjalna galeria BRP ma zdjęcia
+   lifestyle tylko w kolorze Tundra Green (MY23) i ogólne zdjęcie robocze bez czytelnego koloru
+   nadwozia; dealerskie CDN-y (motomember, milwaukeeps, rivamiami, iversonpowersports) zwracają
+   wyłącznie katalogowe zdjęcia studyjne na białym tle w różnych kolorach pakietów, żadne
+   nie potwierdzone jako Desert Tan/Compass Green w kadrze terenowym.
+2. **`canam-renegade-2027`** (Catalyst Gray & Orange Crush / Hyper Silver & Legion Red) — większość
+   wyników wyszukiwania to model dziecięcy "Renegade 110 EFI" (inny pojazd, do odrzucenia). Dla
+   dorosłego Renegade X mr 1000R Hyper Silver/Legion Red znaleziono ok. 10 ofert dealerskich
+   (mountainmotorsports, motomember, ridenowocala i in.) — wszystkie korzystają z tych samych
+   zdjęć katalogowych/studyjnych, brak zdjęć akcji/terenowych w tej kolorystyce.
+3. **`canam-maverick-trail-2027`** (Granite Grey) — oficjalna strona BRP ma zdjęcia lifestyle
+   (śnieg, las) tylko w innych kolorach (Octane Blue) lub bez wyraźnego koloru; jedyne znalezione
+   zdjęcia Granite Grey (bplongview.com, dx1app.com CDN) to czysto studyjne ujęcia na białym tle
+   wariantu "Trail X 1000" (inny pakiet stylistyczny niż bazowy Trail z karty) — pobrane i
+   zweryfikowane wizualnie (Read), odrzucone jako niezgodne z wymogiem "nie studyjne".
+4. **`canam-traxter-hd9`** (Dolomite Grey, platforma HD10) — sprawdzono ponownie pliki już obecne
+   na dysku z poprzedniej tury (`canam-traxter-hd9-life-1.jpg`, `-life-2.jpg`) — po odczycie
+   wizualnym potwierdzono, że to zielony pojazd (Compass Green), niezgodny z Dolomite Grey —
+   TODO z poprzedniej tury było poprawne, zdjęcia pozostają odrzucone. Nowe źródło
+   (northshoresports.ca, "Defender XU XT CAB HD10 Dolomite Grey") dało tylko kolejne zdjęcie
+   studyjne na białym tle — odrzucone.
+5. **`canam-commander-xt`** (Dolomite Grey) — dealerskie oferty (rexburgmotorsports,
+   billsservicecenter, motorsportadv) istnieją, ale zwracają wyłącznie karty produktowe bez
+   dodatkowych zdjęć w mediach społecznościowych możliwych do zweryfikowania przez wyszukiwarkę
+   tekstową; brak dostępu do bezpośredniego przeszukiwania Instagrama/Facebooka jako źródła obrazów.
+
+**Wniosek:** zgodnie z zasadą "lepiej mniej, ale pewne" — żadna galeria NIE została uzupełniona
+niepasującym lub studyjnym zdjęciem. `index.html` nie był w tej turze modyfikowany (0 edycji),
+`gallery: []` pozostaje bez zmian dla wszystkich 5 pojazdów. Do ponowienia próby w przyszłości:
+warto rozważyć bezpośrednie przeszukanie Instagrama/Facebooka dealerów lub poczekać na więcej
+materiału "z życia" dla świeżo wprowadzonych roczników MY27 (obecnie w sieci dominują zdjęcia
+prasowe/katalogowe producenta).
 
 ### Weryfikacja końcowa (wszystkie 5 zadań)
 

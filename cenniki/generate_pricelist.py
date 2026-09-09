@@ -25,7 +25,7 @@ ROW_ALT = colors.HexColor("#f1f3f5")
 
 COMPANY_NAME = "EXTREME CLUB"
 COMPANY_ADDRESS = "ul. Nowa 88, 83-031 Łęgowo"
-COMPANY_PHONE = "Tel. 502 123 568"
+COMPANY_PHONE = "Tel. 501 564 518"
 COMPANY_EMAIL = "kontakt@extreme-club.pl"
 
 styles = getSampleStyleSheet()

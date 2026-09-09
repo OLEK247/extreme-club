@@ -36,7 +36,7 @@ WHITE    = colors.white
 
 COMPANY_NAME    = "EXTREME CLUB"
 COMPANY_ADDRESS = "ul. Nowa 88, 83-031 Łęgowo"
-COMPANY_PHONE   = "Tel. 502 123 568"
+COMPANY_PHONE   = "Tel. 501 564 518"
 COMPANY_EMAIL   = "kontakt@extreme-club.pl"
 COMPANY_WEB     = "www.extreme-club.pl"
 
@@ -400,7 +400,7 @@ def main():
             ok += 1
         except Exception as e:
             failed.append((v.get("id"), str(e)))
-    print(f"Wygenerowano {ok}/{len(vehicles)} kart katalogowych → {OUT_DIR}")
+    print(f"Wygenerowano {ok}/{len(vehicles)} kart katalogowych -> {OUT_DIR}")
     if failed:
         print("Błędy:")
         for vid, err in failed: print(f"  - {vid}: {err}")

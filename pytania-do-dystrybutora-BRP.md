@@ -110,8 +110,33 @@ ma takiego zdjęcia pod ręką, sugerowane rozwiązanie: zostawić po 1 zdjęciu
 (nie jest to błąd merytoryczny — inne pojazdy z 2 zdjęciami mają je bo takie zdjęcia istniały; tu po
 prostu nie istnieją publicznie dostępne dobrej jakości).
 
+## ⏳ 5 pojazdów bez ŻADNEGO zdjęcia galerii (dodatkowego, poza głównym) — NOWE, 2026-09-10
+
+Wyczerpujący research (kilkanaście zapytań, dealerzy US/PL, oficjalne strony BRP, komunikaty
+prasowe) nie znalazł ANI JEDNEGO prawdziwego zdjęcia "z życia" (nie katalogowego) w odpowiednim
+kolorze dla żadnego z tych 5 pojazdów:
+
+1. **Outlander PRO (2027)** — kolory Desert Tan / Compass Green. Dostępne w sieci zdjęcia to inny
+   kolor (Tundra Green, MY23) albo zwykłe zdjęcia katalogowe.
+2. **Renegade (2027)** — kolory Catalyst Gray & Orange Crush / Hyper Silver & Legion Red. Wyniki
+   wyszukiwania zdominowane przez model dziecięcy "Renegade 110" (inny pojazd) — dla wersji
+   dorosłej 1000R tylko powielane zdjęcia katalogowe.
+3. **Maverick Trail (2027)** — kolor Granite Grey. Jedyne znalezione zdjęcia w tym kolorze to
+   wariant stylistyczny "Trail X" (inny pakiet niż nasza karta) — odrzucone jako niepasujące.
+4. **Traxter HD10 (`canam-traxter-hd9`, 2027)** — kolor Dolomite Grey, nowa platforma XU. Stare
+   pliki na dysku (`canam-traxter-hd9-life-1/2.jpg`) pokazują zielony pojazd (Compass Green) — już
+   wcześniej świadomie odrzucone, ponownie potwierdzone jako niezgodne.
+5. **Commander XT (2027)** — kolor Dolomite Grey. Dealerzy mają wyłącznie karty produktowe/studyjne.
+
+**Pytanie:** Macie w materiałach marketingowych/systemie zdjęć dealerskich BRP prawdziwe zdjęcia
+"z życia" (nie studyjne, białe tło) dla któregokolwiek z tych 5 pojazdów w podanych wyżej kolorach?
+Wystarczy nawet 1 zdjęcie na pojazd — obecnie żaden z nich nie ma ANI JEDNEGO dodatkowego zdjęcia
+w galerii, tylko zdjęcie główne.
+
+---
+
 ## Jak odpowiedzieć (jeśli w ogóle potrzebne)
 
-Właściwie nic nie jest już wymagane pilnie. Jedyne pytanie, które nadal ma sens (opcjonalnie,
-niekonieczne do uruchomienia strony): **"Macie dodatkowe, prawdziwe zdjęcie (nie katalogowe) Spyder
-F3 Limited lub Spyder RT w białym/perłowym kolorze — inny kąt/scena niż to, które już mamy?"**
+Poza punktem powyżej, nic więcej nie jest wymagane pilnie. Dodatkowo, opcjonalnie: **"Macie
+dodatkowe, prawdziwe zdjęcie (nie katalogowe) Spyder F3 Limited lub Spyder RT w białym/perłowym
+kolorze — inny kąt/scena niż to, które już mamy?"**

@@ -17,7 +17,7 @@
 <meta name="twitter:description" content="Autoryzowany dealer Sea-Doo i Can-Am. Skutery wodne, quady ATV, pojazdy SSV i trójkołowce. Sprawdź pełny katalog i cennik.">
 <meta name="twitter:image" content="https://extreme-club.pl/images/hero-home.webp">
 <meta name="theme-color" content="#0f2440">
-<link rel="preload" as="image" href="images/hero-video-poster.webp" fetchpriority="high">
+<link rel="preload" as="image" href="images/hero-video-poster.webp?v=20260910bright" fetchpriority="high">
 
 <!-- Schema.org LocalBusiness Structured Data -->
 <script type="application/ld+json">
@@ -343,11 +343,20 @@ body.is-home .nav-social { display: flex; }
 .catalog-header p { color: rgba(255,255,255,0.92); margin: 0 auto 8px; max-width: 640px; text-shadow: 0 2px 10px rgba(0,0,0,0.55), 0 1px 3px rgba(0,0,0,0.75); }
 .category-nav { position: sticky; top: 0; z-index: 90; background: rgba(251,251,252,0.98); border-bottom: 1px solid var(--color-border); padding: 0; margin-bottom: 8px; }
 .category-nav-container { position: relative; }
-.category-nav-inner { display: flex; gap: 10px; flex-wrap: nowrap; justify-content: safe center; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: thin; padding: 14px 24px; }
+.category-nav-inner { display: flex; gap: 0; flex-wrap: nowrap; justify-content: safe center; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: thin; padding: 0 24px; }
 .category-nav::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: 40px; background: linear-gradient(90deg, rgba(251,251,252,0) 0%, rgba(251,251,252,0.98) 85%); pointer-events: none; }
-.category-pill { position: relative; flex: none; white-space: nowrap; border: 1.5px solid var(--color-border); background: var(--color-surface); color: var(--color-text-muted); padding: 10px 18px; border-radius: 999px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; cursor: pointer; transition: background 0.2s, color 0.2s, border-color 0.2s; }
-.category-pill:hover { color: var(--color-text); border-color: var(--color-text-muted); }
-.category-pill.active { background: var(--color-dark); border-color: var(--color-dark); color: #fff; }
+.category-pill { position: relative; flex: none; white-space: nowrap; overflow: hidden; border: none; border-right: 1px solid var(--color-border); background: transparent; color: var(--color-text-muted); padding: 17px 22px; border-radius: 0; font-size: 11.5px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: color 0.25s ease, transform 0.25s cubic-bezier(0.22,1,0.36,1); }
+.category-pill::before { content: ""; position: absolute; inset: 0; background: var(--color-bg-alt); transform: translateY(100%); transition: transform 0.3s cubic-bezier(0.22,1,0.36,1); z-index: 0; }
+.category-pill::after { content: ""; position: absolute; left: 50%; right: 50%; bottom: 0; height: 2px; background: var(--color-accent); transition: left 0.3s cubic-bezier(0.22,1,0.36,1), right 0.3s cubic-bezier(0.22,1,0.36,1); z-index: 1; }
+.category-pill-label { position: relative; z-index: 2; }
+.category-nav-inner .category-pill:last-child { border-right: none; }
+.category-pill:hover { color: var(--color-dark); }
+.category-pill:hover::before { transform: translateY(0); }
+.category-pill:hover::after { left: 14px; right: 14px; }
+.category-pill.active { color: #fff; }
+.category-pill.active::before { background: var(--color-dark); transform: translateY(0); }
+.category-pill.active::after { left: 0; right: 0; background: var(--color-accent); }
+.category-pill.active:hover::after { left: 0; right: 0; }
 .category-nav-trigger { display: none; }
 /* Wyszukiwarka */
 .catalog-search-bar { padding: 20px 0 4px; }
@@ -927,8 +936,8 @@ body.is-home .nav-social { display: flex; }
 <div id="page-home" class="page active">
 
   <section class="hero">
-    <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="images/hero-video-poster.webp" fetchpriority="high">
-      <source src="images/hero-video-optimized.mp4?v=20260910opt2" type="video/mp4">
+    <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="images/hero-video-poster.webp?v=20260910bright" fetchpriority="high">
+      <source src="images/hero-video-optimized.mp4?v=20260910bright" type="video/mp4">
     </video>
     <div class="hero-content">
       <h1>Poczuj adrenalinę<br>na wodzie i na lądzie</h1>
@@ -1151,11 +1160,11 @@ body.is-home .nav-social { display: flex; }
         <svg class="category-nav-trigger-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
       <div class="category-nav-inner" id="category-nav-inner">
-        <button class="category-pill" data-category="seadoo" onclick="showCatalog('seadoo')">Skutery wodne Sea-Doo</button>
-        <button class="category-pill" data-category="trojkolowce" onclick="showCatalog('trojkolowce')">Can-Am — trójkołowce</button>
-        <button class="category-pill" data-category="atv" onclick="showCatalog('atv')">Can-Am — quady ATV</button>
-        <button class="category-pill" data-category="ssv" onclick="showCatalog('ssv')">Can-Am — SSV</button>
-        <button class="category-pill" data-category="electric" onclick="showCatalog('electric')">Can-Am — Elektryczne</button>
+        <button class="category-pill" data-category="seadoo" onclick="showCatalog('seadoo')"><span class="category-pill-label">Skutery wodne Sea-Doo</span></button>
+        <button class="category-pill" data-category="trojkolowce" onclick="showCatalog('trojkolowce')"><span class="category-pill-label">Can-Am — trójkołowce</span></button>
+        <button class="category-pill" data-category="atv" onclick="showCatalog('atv')"><span class="category-pill-label">Can-Am — quady ATV</span></button>
+        <button class="category-pill" data-category="ssv" onclick="showCatalog('ssv')"><span class="category-pill-label">Can-Am — SSV</span></button>
+        <button class="category-pill" data-category="electric" onclick="showCatalog('electric')"><span class="category-pill-label">Can-Am — Elektryczne</span></button>
       </div>
     </div>
   </nav>
@@ -1163,7 +1172,7 @@ body.is-home .nav-social { display: flex; }
   <div class="catalog-search-bar container">
     <div class="catalog-search-wrap">
       <svg class="catalog-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      <input type="text" class="catalog-search-input" id="catalog-search-input" placeholder="Wpisz czego szukasz..." oninput="catalogSearch(this.value)" autocomplete="off">
+      <input type="text" class="catalog-search-input" id="catalog-search-input" placeholder="Wyszukaj model" oninput="catalogSearch(this.value)" autocomplete="off">
       <button class="catalog-search-clear" id="catalog-search-clear" onclick="catalogSearchClear()" title="Wyczyść">✕</button>
     </div>
     <div class="catalog-search-count" id="catalog-search-count"></div>
@@ -1273,6 +1282,15 @@ body.is-home .nav-social { display: flex; }
             <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
           </div>
         </a>
+        <a class="pricing-card" href="cenniki/cennik-can-am-off-road-2027.pdf" target="_blank" rel="noopener">
+          <div class="pricing-card-media"><img src="images/pricing-ssv.jpg" alt="Can-Am — SSV rocznik 2027" loading="lazy"></div>
+          <div class="pricing-card-body">
+            <span class="pricing-card-tag">Dokument PDF · Nowość</span>
+            <h3>Can-Am — SSV rocznik 2027</h3>
+            <p>Maverick R, Maverick i Traxter — aktualny cennik nowej gamy 2027.</p>
+            <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
+          </div>
+        </a>
         <a class="pricing-card" href="cenniki/cennik-can-am-trojkolowce.pdf" target="_blank" rel="noopener">
           <div class="pricing-card-media"><img src="images/pricing-trojkolowce.avif" alt="Can-Am — trójkołowce" loading="lazy"></div>
           <div class="pricing-card-body">
@@ -1280,6 +1298,15 @@ body.is-home .nav-social { display: flex; }
             <h3>Can-Am — trójkołowce</h3>
             <p>Spyder F3, Spyder RT, Canyon oraz Ryker.</p>
             <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
+          </div>
+        </a>
+        <a class="pricing-card" href="cenniki/cennik-can-am-trojkolowce-2027.pdf" target="_blank" rel="noopener">
+          <div class="pricing-card-media"><img src="images/pricing-trojkolowce.avif" alt="Can-Am — trójkołowce rocznik 2027" loading="lazy"></div>
+          <div class="pricing-card-body">
+            <span class="pricing-card-tag">Dokument PDF · Nowość</span>
+            <h3>Can-Am — trójkołowce rocznik 2027</h3>
+            <p>Ryker, Spyder F3, Spyder RT i Canyon — aktualny cennik nowej gamy 2027.</p>
+            <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/></svg></span>
           </div>
         </a>
         <a class="pricing-card" href="cenniki/cennik-can-am-elektryczne.pdf" target="_blank" rel="noopener">
@@ -1468,9 +1495,9 @@ body.is-home .nav-social { display: flex; }
       </div>
       <div class="footer-col">
         <h5>Kontakt</h5>
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=Nowa+88,+83-031+Łęgowo" target="_blank" rel="noopener">Adres</a>
-        <a href="tel:+48501564518">501 564 518</a>
-        <a href="mailto:kontakt@extreme-club.pl">Email</a>
+        <a onclick="showContact()" style="cursor:pointer;">Adres</a>
+        <a onclick="showContact()" style="cursor:pointer;">501 564 518</a>
+        <a onclick="showContact()" style="cursor:pointer;">Email</a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -1986,8 +2013,8 @@ const VEHICLES = [
       { name: "Sunrise Orange / Dragon Red", hex1: "#e07a2b", hex2: "#a3241f", image: "images/seadoo-spark-60-2-1.jpg" },
       { name: "Vapor Blue / Dazzling Blue", hex1: "#6fa8c9", hex2: "#1f5f8a", image: "images/seadoo-spark-90-2-1.webp" }
     ],
-    images: ["images/seadoo-spark-60-2-1.jpg", "images/seadoo-spark-90-2-1.webp"], // TODO: galeria pusta - zdjęcia pokazywały niebieski schowek, niezgodny z Sunrise Orange/Dragon Red.
-    gallery: [] },
+    images: ["images/seadoo-spark-60-2-1.jpg", "images/seadoo-spark-90-2-1.webp"],
+    gallery: ["images/seadoo-spark-90-2-life-1.webp", "images/seadoo-spark-90-2-life-2.webp"] }, // zdjęcia z wersji 2026 (seadoo-spark-90-2), zweryfikowane wizualnie - pasują do koloru Vapor Blue/Dazzling Blue (2. oficjalny kolor tej karty)
 
   { id: "seadoo-gti-2027", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Recreation", name: "GTI Standard 130", price: "od 15 390 €", engine: "Rotax 1630 ACE, 130 KM",
     myYear: 2027,
@@ -2735,7 +2762,7 @@ const VEHICLES = [
     images: ["images/canam-outlander-max-6x6-1.jpg", "images/canam-outlander-max-6x6-2.jpg"],
     gallery: ["images/canam-outlander-max-6x6-life-1.webp", "images/canam-outlander-max-6x6-life-2.webp"] },
 
-  { id: "canam-outlander-x-mr-max", category: "atv", categoryLabel: "Can-Am ATV", segment: "Rec-Sport / Rec-Ute", name: "Outlander X MR MAX", price: "Cena na zapytanie", engine: "1000R",
+  { id: "canam-outlander-x-mr-max", category: "atv", categoryLabel: "Can-Am ATV", segment: "Rec-Sport / Rec-Ute", name: "Outlander X MR MAX", price: "od 22 290 €", engine: "1000R",
     myYear: 2027,
     desc: "Nowość na 2027 rok — dłuższe podwozie MAX błotnego specjalisty X MR, wciąż w wersji jednoosobowej, z wyciągarką 3500 lb w standardzie.",
     fullDesc: [
@@ -2753,7 +2780,7 @@ const VEHICLES = [
     colors: [{ name: "Loft Green Satin", hex1: "#3d4a2e", hex2: "#1f2618", image: "images/canam-outlander-x-mr-max-1.png" }],
     images: ["images/canam-outlander-x-mr-max-1.png"], gallery: ["images/canam-outlander-x-mr-max-life-1.jpeg", "images/canam-outlander-x-mr-max-life-2.jpg"] },
 
-  { id: "canam-outlander-xtp", category: "atv", categoryLabel: "Can-Am ATV", segment: "Rec-Sport", name: "Outlander XT-P", price: "Cena na zapytanie", engine: "1000R",
+  { id: "canam-outlander-xtp", category: "atv", categoryLabel: "Can-Am ATV", segment: "Rec-Sport", name: "Outlander XT-P", price: "od 20 990 €", engine: "1000R",
     myYear: 2027,
     desc: "Nowość w gamie na 2027 — sportowo-terenowa wersja Outlandera z fabrycznie zamontowanym osprzętem Performance.",
     fullDesc: [
@@ -2793,7 +2820,7 @@ const VEHICLES = [
     images: ["images/canam-outlander-pro-1.jpg"], // TODO: galeria pusta - zdjęcia pokazywały zielony panel, niezgodny z Desert Tan.
     gallery: [] },
 
-  { id: "canam-outlander-2027", category: "atv", categoryLabel: "Can-Am ATV", segment: "Rec-Ute", name: "Outlander", price: "Cena na zapytanie", engine: "500 / 700 / 850 / 1000R",
+  { id: "canam-outlander-2027", category: "atv", categoryLabel: "Can-Am ATV", segment: "Rec-Ute", name: "Outlander", price: "od 11 790 €", engine: "500 / 700 / 850 / 1000R",
     myYear: 2027,
     desc: "Uniwersalny quad rekreacyjno-użytkowy na rocznik 2027 — dostępny w wielu wariantach silnikowych, od 500 do 1000R.",
     fullDesc: [
@@ -2834,7 +2861,7 @@ const VEHICLES = [
     images: ["images/canam-outlander-max-6x6-2.jpg", "images/canam-outlander-max-6x6-color-black.png"],
     gallery: ["images/canam-outlander-max-6x6-life-1.webp", "images/canam-outlander-max-6x6-life-2.webp"] },
 
-  { id: "canam-renegade-2027", category: "atv", categoryLabel: "Can-Am ATV", segment: "Rec-Sport", name: "Renegade", price: "Cena na zapytanie", engine: "650 / 1000R",
+  { id: "canam-renegade-2027", category: "atv", categoryLabel: "Can-Am ATV", segment: "Rec-Sport", name: "Renegade", price: "od 16 310 €", engine: "650 / 1000R",
     myYear: 2027,
     desc: "Sportowy quad terenowy o wysokich osiągach na rocznik 2027 — dla aktywnej jazdy rekreacyjnej.",
     fullDesc: [
@@ -3139,7 +3166,7 @@ const VEHICLES = [
     colors: [{ name: "Stealth Black", hex1: "#1c1c1e", hex2: "#0a0a0a", image: "images/canam-traxter-xu-pro-6x6-1.png" }],
     images: ["images/canam-traxter-xu-pro-6x6-1.png"], gallery: ["images/canam-traxter-xu-pro-6x6-life-1.jpg", "images/canam-traxter-xu-pro-6x6-life-2.jpg"] },
 
-  { id: "canam-traxter-x-mr", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Utility", name: "Traxter X MR", price: "Cena na zapytanie", engine: "HD10, 80 KM",
+  { id: "canam-traxter-x-mr", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Utility", name: "Traxter X MR", price: "od 29 890 €", engine: "HD10, 80 KM",
     myYear: 2027,
     desc: "Błotny specjalista rodziny Traxter na 2027 — jedyny model utrzymany na sprawdzonej platformie poprzedniej generacji, poza nową linią XU.",
     fullDesc: [
@@ -3266,7 +3293,7 @@ const VEHICLES = [
     colors: [{ name: "Triple Black", hex1: "#1c1c1e", hex2: "#0a0a0a", image: "images/canam-commander-max-official.png" }],
     images: ["images/canam-commander-max-official.png"], gallery: ["images/canam-commander-max-black-life-1.jpg", "images/canam-commander-max-black-life-2.jpg"] },
 
-  { id: "canam-maverick-trail-2027", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≤60''", name: "Maverick Trail", price: "Cena na zapytanie", engine: "700 / 1000",
+  { id: "canam-maverick-trail-2027", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≤60''", name: "Maverick Trail", price: "od 18 590 €", engine: "700 / 1000",
     myYear: 2027,
     desc: "Kompaktowy SSV do wąskich szlaków leśnych na rocznik 2027 — świetna zwrotność przy szerokości do 60 cali.",
     fullDesc: [
@@ -3286,7 +3313,7 @@ const VEHICLES = [
     // TODO: galeria pusta - usunięte 2 zdjęcia (czerwony/żółty pojazd), niezgodne z Granite Grey.
     gallery: [] },
 
-  { id: "canam-maverick-sport-2027", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≤60''", name: "Maverick Sport", price: "Cena na zapytanie", engine: "1000R",
+  { id: "canam-maverick-sport-2027", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≤60''", name: "Maverick Sport", price: "od 22 790 €", engine: "1000R",
     myYear: 2027,
     desc: "Sportowy SSV o szerokości do 60 cali na rocznik 2027 — dynamiczne prowadzenie na wąskich trasach.",
     fullDesc: [
@@ -3306,7 +3333,7 @@ const VEHICLES = [
     // TODO: galeria pusta - usunięte 2 zdjęcia (czarny Triple Black, kolor 2026), niezgodne z Granite Grey.
     gallery: [] },
 
-  { id: "canam-maverick-r-2027", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≥64''", name: "Maverick R", price: "Cena na zapytanie", engine: "999T DCT",
+  { id: "canam-maverick-r-2027", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≥64''", name: "Maverick R", price: "od 53 990 €", engine: "999T DCT",
     myYear: 2027,
     desc: "Najbardziej ekstremalny SSV w gamie Can-Am na rocznik 2027 — silnik 999T z nową, drugą generacją przekładni DCT z dodatkowym niskim biegiem.",
     fullDesc: [
@@ -3322,9 +3349,9 @@ const VEHICLES = [
       { title: "Zintegrowane siatki okienne i plecione przewody hamulcowe", text: "Dodatkowe bezpieczeństwo i precyzja hamowania — nowość na 2027 rok." }
     ],
     colors: [
-      { name: "Triple Black (wersja X RS DCT)", hex1: "#2b2b2b", hex2: "#0d0d0d", image: "images/canam-maverick-r-1-white.webp" },
-      { name: "Dolomite Grey & Orange Crush (wersja X RS DCT SAS)", hex1: "#8a8d90", hex2: "#e0722d", image: "images/canam-maverick-r-2027-dolomitegrey-xrs-1.png" },
-      { name: "Loft Green Satin (wersja X RC DCT SAS)", hex1: "#5f6b52", hex2: "#333d2c", image: "images/canam-maverick-r-color-loftgreen-v2.webp" }
+      { name: "Triple Black (wersja X RS DCT)", hex1: "#2b2b2b", hex2: "#0d0d0d", image: "images/canam-maverick-r-1-white.webp", price: "od 53 990 €" },
+      { name: "Dolomite Grey & Orange Crush (wersja X RS DCT SAS)", hex1: "#8a8d90", hex2: "#e0722d", image: "images/canam-maverick-r-2027-dolomitegrey-xrs-1.png", price: "od 55 990 €" },
+      { name: "Loft Green Satin (wersja X RC DCT SAS)", hex1: "#5f6b52", hex2: "#333d2c", image: "images/canam-maverick-r-color-loftgreen-v2.webp", price: "od 60 990 €" }
     ],
     images: ["images/canam-maverick-r-1-white.webp", "images/canam-maverick-r-2.jpg"],
     gallery: ["images/canam-maverick-r-life-1.webp", "images/canam-maverick-r-life-2.jpg"] },
