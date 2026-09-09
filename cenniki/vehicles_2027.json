@@ -1,0 +1,2760 @@
+[
+  {
+    "id": "seadoo-spark-x",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Rec Lite",
+    "name": "Spark X",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1000 ACE, 110 KM",
+    "myYear": 2027,
+    "desc": "Nowa, mocniejsza odsłona Sparka na rocznik 2027 — nowy silnik Rotax 1000 ACE o mocy 110 KM, premium wykończenie i pokładowy system audio.",
+    "fullDesc": [
+      "Spark X na rocznik 2027 to podniesienie poprzeczki dla najlżejszego skutera Sea-Doo — zachowuje charakterystyczną lekkość i zabawowy charakter, jaki zrewolucjonizował branżę, dokładając nowy silnik Rotax 1000 ACE o mocy 110 KM, premium kolorowany pokład oraz fabryczny system audio BRP.",
+      "Stopień do wsiadania z wody ułatwia szybki powrót na pokład, a system iDF (Intelligent Debris-Free) pozwala oczyścić pompę wodną z wodorostów i zanieczyszczeń jednym przyciskiem na kierownicy, bez wychodzenia z wody."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1000 ACE, 110 KM",
+      "System iBR — inteligentne hamowanie i cofanie",
+      "System iDF — czyszczenie pompy wodnej bez wychodzenia z wody",
+      "Fabryczny system audio BRP (2× 25 W)",
+      "Pojemność: do 3 osób"
+    ],
+    "forWho": "Spark X to propozycja dla osób, które cenią lekkość i przystępność Sparka, ale chcą więcej mocy, premium wykończenia i muzyki na pokładzie — bez przechodzenia na cięższe modele.",
+    "features": [
+      {
+        "title": "Silnik Rotax 1000 ACE, 110 KM",
+        "text": "Nowa jednostka napędowa łącząca osiągi, efektywność i zabawowy charakter, dla dłuższej i szybszej jazdy."
+      },
+      {
+        "title": "System iDF (Intelligent Debris-Free)",
+        "text": "Innowacyjny system czyszczenia pompy wodnej z wodorostów i zanieczyszczeń, sterowany przyciskiem na kierownicy."
+      },
+      {
+        "title": "Fabryczny system audio BRP",
+        "text": "Dwa głośniki 25 W z trybami Concert, Ride i Home, na solidnym, wzmocnionym mocowaniu."
+      },
+      {
+        "title": "Stopień do wsiadania z wody",
+        "text": "Ułatwia szybki i wygodny powrót na pokład po kąpieli lub wypadnięciu podczas jazdy."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Blue Mist / Deep Black",
+        "hex1": "#6b8fa8",
+        "hex2": "#1a1a1a",
+        "image": "images/seadoo-spark-x-hero.png"
+      }
+    ],
+    "images": [
+      "images/seadoo-spark-x-hero.png"
+    ],
+    "gallery": [
+      "images/seadoo-spark-x-life-1.jpeg",
+      "images/seadoo-spark-x-life-2.jpeg"
+    ]
+  },
+  {
+    "id": "seadoo-spark-x-trixx",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Rec Lite",
+    "name": "Spark X Trixx",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1000 ACE, 110 KM",
+    "myYear": 2027,
+    "desc": "Wersja freestyle Sparka X na 2027 — dedykowany tryb Trixx z pakietem podniesionej kierownicy i wydłużonego zakresu VTS do wykonywania trików na wodzie.",
+    "fullDesc": [
+      "Spark X Trixx to najbardziej rozrywkowa odsłona rodziny Spark — łączy lekką, zwrotną platformę z dedykowanym trybem jazdy Trixx, który odblokowuje nowe akrobacje wodne, w tym tzw. odwrócone pączki (reverse donuts), dzięki większemu ciągowi na biegu wstecznym.",
+      "Pakiet Trixx obejmuje regulowaną, podniesioną kierownicę, wydłużony zakres systemu VTS (dwukrotnie większy niż standardowy) oraz kliny na stopnie ułatwiające wykonywanie trików, a nowy silnik Rotax 1000 ACE o mocy 110 KM daje moc potrzebną do dynamicznych manewrów."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1000 ACE, 110 KM",
+      "Tryb Trixx z większym ciągiem wstecznym do akrobacji",
+      "Pakiet Trixx: podniesiona kierownica, wydłużony VTS, kliny na stopnie",
+      "System iBR — inteligentne hamowanie i cofanie",
+      "Pojemność: do 3 osób (wersja for 3)"
+    ],
+    "forWho": "Spark X Trixx to wybór dla tych, którzy traktują skuter wodny jak sprzęt do zabawy i popisów — idealny do wykonywania wheeli, odwróconych pączków i innych trików, zarówno dla początkujących, jak i bardziej doświadczonych zawodników freestyle.",
+    "features": [
+      {
+        "title": "Tryb jazdy Trixx",
+        "text": "Większy ciąg na biegu wstecznym ułatwia wykonywanie odwróconych pączków i innych efektownych manewrów."
+      },
+      {
+        "title": "Silnik Rotax 1000 ACE, 110 KM",
+        "text": "Nowa jednostka napędowa łącząca osiągi, efektywność i zabawowy charakter, dla dłuższej i szybszej jazdy."
+      },
+      {
+        "title": "Wydłużony zakres VTS",
+        "text": "Dwukrotnie większy zakres regulacji trymu niż standardowy VTS, dla łatwiejszego wykonywania trików."
+      },
+      {
+        "title": "Pakiet Trixx",
+        "text": "Regulowana, podniesiona kierownica oraz kliny na stopnie ułatwiające kontrolę podczas akrobacji."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Coral Blast",
+        "hex1": "#e0542a",
+        "hex2": "#7a8a99",
+        "image": "images/seadoo-spark-x-trixx-hero.jpg"
+      }
+    ],
+    "images": [
+      "images/seadoo-spark-x-trixx-hero.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-spark-x-trixx-life-1.jpg",
+      "images/seadoo-spark-x-trixx-life-2.jpeg"
+    ]
+  },
+  {
+    "id": "seadoo-rxp-x",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Performance",
+    "name": "RXP-X 350",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1630 ACE, 350 KM",
+    "myYear": 2027,
+    "desc": "Najmocniejszy silnik w historii Sea-Doo na rocznik 2027 — Rotax 1630 ACE o mocy 350 KM w wyścigowym kadłubie T3-R z systemem Ergolock R.",
+    "fullDesc": [
+      "RXP-X 350 na rocznik 2027 to przeprojektowany od podstaw skuter wyścigowy — nowy silnik Rotax 1630 ACE o mocy 350 KM to najmocniejsza jednostka napędowa, jaką kiedykolwiek zamontowano fabrycznie w skuterze wodnym, w połączeniu z kadłubem T3-R o głębokim kilu zapewniającym niezrównaną precyzję prowadzenia.",
+      "Hydrauliczny tłumik kierownicy o 3 poziomach sztywności, niskoosadzona wyścigowa kierownica oraz system siedzenia Ergolock R z głębokimi zagłębieniami na kolana pozwalają w pełni kontrolować skuter całym ciałem, a tryb Launch Control zapewnia najszybszy możliwy start."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1630 ACE, 350 KM (najmocniejszy w historii Sea-Doo)",
+      "Kadłub wyścigowy T3-R z systemem siedzenia Ergolock R",
+      "Hydrauliczny tłumik kierownicy — 3 poziomy sztywności",
+      "Tryb Launch Control i wyświetlacz dotykowy 10,25\"",
+      "Pojemność: do 2 osób"
+    ],
+    "forWho": "RXP-X 350 to wybór dla najbardziej wymagających i doświadczonych jeźdźców, którzy szukają maksymalnych osiągów i precyzji prowadzenia w zakrętach — model stworzony do sportowej, dynamicznej jazdy na granicy możliwości skutera.",
+    "features": [
+      {
+        "title": "Silnik Rotax 1630 ACE, 350 KM",
+        "text": "Najmocniejsza jednostka napędowa w historii Sea-Doo — błyskawiczne przyspieszenie i wybitne osiągi offshore."
+      },
+      {
+        "title": "System siedzenia Ergolock R",
+        "text": "Wąski profil siedziska z głębokimi zagłębieniami na kolana i regulowanym siodłem pozwala zintegrować się ze skuterem jak nigdy dotąd."
+      },
+      {
+        "title": "Hydrauliczny tłumik kierownicy",
+        "text": "3 pozycje sztywności zwiększają precyzję prowadzenia i eliminują niepożądane odchylenia w trudniejszych warunkach."
+      },
+      {
+        "title": "Pakiet Tech z wyświetlaczem 10,25\"",
+        "text": "Fabryczny, wodoszczelny system audio Bluetooth, dotykowy ekran nawigacyjny i port USB na pokładzie."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Solar Orange Metallic Premium",
+        "hex1": "#e5762a",
+        "hex2": "#1a1a1a",
+        "image": "images/seadoo-rxp-x-hero.jpg"
+      },
+      {
+        "name": "Gulfstream Blue Premium",
+        "hex1": "#1e88d6",
+        "hex2": "#0d3f66",
+        "image": "images/seadoo-rxp-x-blue-main-2027.jpg"
+      }
+    ],
+    "images": [
+      "images/seadoo-rxp-x-hero.jpg",
+      "images/seadoo-rxp-x-blue-main-2027.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-rxp-x-1.png",
+      "images/seadoo-rxp-x-life-2.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-rxp-x-senna",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Performance",
+    "name": "RXP-X Senna 350",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1630 ACE, 350 KM",
+    "myYear": 2027,
+    "limitedEdition": true,
+    "desc": "Limitowana edycja specjalna RXP-X we współpracy z marką Senna — najmocniejszy silnik w gamie Sea-Doo i ekskluzywna, numerowana stylistyka.",
+    "fullDesc": [
+      "RXP-X Senna 350 to limitowana, kolekcjonerska edycja najbardziej sportowego skutera Sea-Doo, stworzona we współpracy z marką Senna — hołdem dla dziedzictwa wyścigowego i dążenia do perfekcji na torze i na wodzie.",
+      "Silnik Rotax o rekordowej mocy 350 KM to najmocniejsza jednostka napędowa, jaką kiedykolwiek zamontowano w seryjnym skuterze Sea-Doo, a ekskluzywna, numerowana grafika oraz dedykowane wykończenia sprawiają, że każdy egzemplarz jest unikatowy."
+    ],
+    "highlights": [
+      "Silnik: Rotax, 350 KM — najmocniejszy w historii Sea-Doo",
+      "Limitowana, numerowana edycja we współpracy z marką Senna",
+      "Kadłub wyścigowy T3-R z podwoziem Ergolock",
+      "Ekskluzywna stylistyka i wykończenia",
+      "Pojemność: do 2 osób"
+    ],
+    "forWho": "RXP-X Senna 350 to propozycja dla kolekcjonerów i najbardziej zaawansowanych jeźdźców, którzy chcą mieć najmocniejszy, limitowany skuter Sea-Doo — zarówno do ekstremalnej jazdy sportowej, jak i jako unikatowy egzemplarz w swojej flocie.",
+    "features": [
+      {
+        "title": "Silnik Rotax 350 KM",
+        "text": "Najmocniejsza jednostka napędowa w historii marki Sea-Doo, dla absolutnie maksymalnych osiągów na wodzie."
+      },
+      {
+        "title": "Limitowana edycja Senna",
+        "text": "Numerowana, kolekcjonerska seria stworzona we współpracy z marką noszącą dziedzictwo wyścigowej perfekcji."
+      },
+      {
+        "title": "Kadłub wyścigowy T3-R i podwozie Ergolock",
+        "text": "Ta sama, sprawdzona geometria co w RXP-X, dostrojona do granicznej mocy silnika."
+      },
+      {
+        "title": "Ekskluzywne wykończenia",
+        "text": "Dedykowana grafika i detale wykończeniowe niedostępne w żadnym innym modelu z gamy Sea-Doo."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Senna Yellow / Green",
+        "hex1": "#d4e04a",
+        "hex2": "#2fa86a",
+        "image": "images/seadoo-rxp-x-senna-hero2.webp"
+      }
+    ],
+    "images": [
+      "images/seadoo-rxp-x-senna-hero2.webp"
+    ],
+    "gallery": [
+      "images/seadoo-rxp-x-senna-life-1.jpg",
+      "images/seadoo-rxp-x-senna-life-2.png"
+    ]
+  },
+  {
+    "id": "seadoo-rxt-x",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Performance",
+    "name": "RXT-X 350",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1630 ACE, 350 KM",
+    "myYear": 2027,
+    "desc": "Najlepszy offshore'owy skuter performance na 2027 — silnik Rotax 1630 ACE 350 KM w kadłubie ST3 z miejscem dla 3 osób.",
+    "fullDesc": [
+      "RXT-X 350 na rocznik 2027 to szczytowe osiągnięcie Sea-Doo w klasie offshore performance — nowy silnik Rotax 1630 ACE o mocy 350 KM, najmocniejszy fabrycznie montowany silnik w branży skuterów wodnych, napędza sprawdzony kadłub ST3 zapewniający wzorcową stabilność i prowadzenie na wzburzonej wodzie.",
+      "Hydrauliczny tłumik kierownicy o 3 poziomach sztywności, dwuczęściowe siedzenie wyścigowe Ergolock oraz przechylna kolumna kierownicy pozwalają w pełni kontrolować skuter, a tryb Launch Control i wyświetlacz dotykowy 10,25\" z nawigacją BRP GO! dopełniają najbardziej zaawansowany pakiet technologiczny w gamie."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1630 ACE, 350 KM (najmocniejszy w historii Sea-Doo)",
+      "Kadłub ST3 — wzorcowa stabilność na wzburzonej wodzie",
+      "Hydrauliczny tłumik kierownicy — 3 poziomy sztywności",
+      "Tryb Launch Control i wyświetlacz dotykowy 10,25\"",
+      "Pojemność: do 3 osób"
+    ],
+    "forWho": "RXT-X 350 to wybór dla tych, którzy szukają sportowych osiągów klasy RXP-X, ale potrzebują dodatkowej przestrzeni dla pasażera lub rodziny — bez kompromisów w dynamice prowadzenia.",
+    "features": [
+      {
+        "title": "Silnik Rotax 1630 ACE, 350 KM",
+        "text": "Najmocniejsza jednostka napędowa w historii Sea-Doo — dynamiczne przyspieszenie przy zachowaniu miejsca dla trzech osób na pokładzie."
+      },
+      {
+        "title": "Kadłub ST3",
+        "text": "Wyznacza standard w prowadzeniu na wzburzonej wodzie, stabilności i osiągach offshore."
+      },
+      {
+        "title": "Hydrauliczny tłumik kierownicy",
+        "text": "3 pozycje sztywności zwiększają precyzję prowadzenia w trudniejszych warunkach na wodzie."
+      },
+      {
+        "title": "Wyświetlacz dotykowy 10,25\" z BRP GO!",
+        "text": "Pełna nawigacja morska, statystyki jazdy i łączność Bluetooth na pokładzie."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Solar Orange Metallic Premium",
+        "hex1": "#e5762a",
+        "hex2": "#6b6b6b",
+        "image": "images/seadoo-rxt-x-orange-hero.jpg"
+      },
+      {
+        "name": "Gulfstream Blue Premium",
+        "hex1": "#1e88d6",
+        "hex2": "#0d3f66",
+        "image": "images/seadoo-rxt-x-blue-hero.jpg"
+      }
+    ],
+    "images": [
+      "images/seadoo-rxt-x-orange-hero.jpg",
+      "images/seadoo-rxt-x-blue-hero.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-rxt-x-life-1.png",
+      "images/seadoo-rxt-x-life-2.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-wake-2027",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Tow Sports",
+    "name": "Wake 170",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1630 ACE, 170 KM",
+    "myYear": 2027,
+    "desc": "Bazowy model rodziny Wake na 2027 — kadłub GTI, pakiet Wake z chowanym masztem do nart i fabryczny system audio.",
+    "fullDesc": [
+      "Wake 170 to wejściowy model rodziny skuterów przeznaczonych do sportów holowanych — oparty na sprawdzonym, umiarkowanie V-kształtnym kadłubie GTI, zapewniającym stabilną, przewidywalną jazdę w zmiennych warunkach na wodzie.",
+      "Pakiet Wake obejmuje chowany maszt do nart LinQ, tryb jazdy Ski z pięcioma gotowymi profilami przyspieszenia oraz zdejmowany stojak na deskę wakeboardową, a fabryczny system audio BRP Premium z dwoma głośnikami 50 W umila czas na wodzie."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1630 ACE, 170 KM",
+      "Kadłub GTI — stabilna jazda w zmiennych warunkach",
+      "Pakiet Wake: chowany maszt LinQ, tryb Ski, stojak na deskę",
+      "Fabryczny system audio BRP Premium (2× 50 W)",
+      "Pojemność: do 3 osób"
+    ],
+    "forWho": "Wake 170 to propozycja dla tych, którzy zaczynają przygodę ze sportami holowanymi i szukają przystępnego cenowo, ale w pełni wyposażonego do tego celu skutera — bez rozbudowanego wyświetlacza dotykowego modelu Wake Pro.",
+    "features": [
+      {
+        "title": "Silnik Rotax 1630 ACE, 170 KM",
+        "text": "Naturalnie zasysany silnik łączący moc z ekonomicznym zużyciem paliwa na dłuższe sesje holowania."
+      },
+      {
+        "title": "Tryb jazdy Ski",
+        "text": "Pięć gotowych profili przyspieszenia zapewnia płynny start i stałe tempo podczas holowania nart wodnych."
+      },
+      {
+        "title": "Chowany maszt do nart LinQ",
+        "text": "Szybki montaż bez narzędzi, ze schowkiem na linę i uchwytami dla osoby obserwującej."
+      },
+      {
+        "title": "Fabryczny system audio BRP Premium",
+        "text": "Dwa wodoszczelne głośniki 50 W ze streamingiem Bluetooth na pokładzie."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Teal Blue / Manta Green",
+        "hex1": "#1f9fb5",
+        "hex2": "#4a9d3c",
+        "image": "images/seadoo-wake-hero.jpg"
+      }
+    ],
+    "images": [
+      "images/seadoo-wake-hero.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-wake-170-life-1.jpg",
+      "images/seadoo-wake-170-life-2.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-wake-pro-2027",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Tow Sports",
+    "name": "Wake Pro 230",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1630 ACE, 230 KM",
+    "myYear": 2027,
+    "desc": "Topowy model rodziny Wake na 2027 — kadłub ST3, wyświetlacz dotykowy 10,25\" i fabryczny system audio premium.",
+    "fullDesc": [
+      "Wake Pro 230 na rocznik 2027 to szczytowa wersja rodziny skuterów do sportów holowanych — bazuje na kadłubie ST3 wyznaczającym standard stabilności i prowadzenia na wzburzonej wodzie, a doładowany silnik Rotax 1630 ACE o mocy 230 KM zapewnia dynamiczne wyciąganie jeźdźca na deskę.",
+      "Wyświetlacz dotykowy 10,25\" z nawigacją BRP GO! i pełną łącznością Bluetooth oraz pakiet Wake z chowanym masztem do nart i zdejmowanym stojakiem na deskę dopełniają najbardziej zaawansowany model w gamie Tow Sports."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1630 ACE, 230 KM (doładowany)",
+      "Kadłub ST3 — wzorcowa stabilność na wzburzonej wodzie",
+      "Wyświetlacz dotykowy 10,25\" z nawigacją BRP GO!",
+      "Fabryczny system audio BRP Premium (2× 50 W)",
+      "Pojemność: do 3 osób"
+    ],
+    "forWho": "Wake Pro 230 to wybór dla entuzjastów wakeboardingu, nart wodnych i innych sportów holowanych, którzy chcą najbardziej zaawansowanego technologicznie i najmocniejszego skutera w rodzinie Wake.",
+    "features": [
+      {
+        "title": "Silnik Rotax 1630 ACE, 230 KM",
+        "text": "Doładowany silnik z zewnętrznym intercoolerem zapewnia dynamiczne przyspieszenie potrzebne do szybkiego wyciągnięcia jeźdźca na deskę."
+      },
+      {
+        "title": "Kadłub ST3",
+        "text": "Wyznacza standard w prowadzeniu na wzburzonej wodzie, stabilności i osiągach offshore."
+      },
+      {
+        "title": "Wyświetlacz dotykowy 10,25\" z BRP GO!",
+        "text": "Pełna nawigacja, statystyki jazdy i łączność Bluetooth na pokładzie."
+      },
+      {
+        "title": "Fabryczny system audio BRP Premium",
+        "text": "Dwa wodoszczelne głośniki 50 W ze streamingiem Bluetooth na pokładzie."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Teal Blue / Manta Green",
+        "hex1": "#1abfae",
+        "hex2": "#4a9d3c",
+        "image": "images/seadoo-wake-pro-hero.jpg"
+      }
+    ],
+    "images": [
+      "images/seadoo-wake-pro-hero.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-wake-pro-230-life-3.jpg",
+      "images/seadoo-wake-pro-life-2.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-fishpro-trophy",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Sport Fishing",
+    "name": "FishPro Trophy",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1630 ACE, 170 KM",
+    "myYear": 2027,
+    "desc": "Topowy model wędkarski Sea-Doo na 2027 — modułowy fotel obrotowy, sonar Garmin 9\" i największa przestrzeń robocza w gamie FishPro.",
+    "fullDesc": [
+      "FishPro Trophy to flagowy model wędkarski Sea-Doo — kadłub ST3 wyznaczający standard stabilności na wzburzonej wodzie łączy się z rozbudowanym, dedykowanym wyposażeniem wędkarskim, w tym 5 uchwytami na wędki, systemem nawigacji i sonarem Garmin 9\" z technologią mid-CHIRP.",
+      "Modułowy fotel obrotowy Ergolock montuje się w kilka sekund, a chłodziarka wędkarska LinQ (51 l) w mgnieniu oka zamienia się w żywą przynętownicę dzięki wbudowanej pompie z ciągłym dopływem świeżej wody."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1630 ACE, 170 KM",
+      "Kadłub ST3 — wzorcowa stabilność na wzburzonej wodzie",
+      "Sonar i GPS Garmin 9\" z technologią mid-CHIRP",
+      "Modułowy fotel obrotowy i chłodziarka-przynętownica LinQ (51 l)",
+      "Pojemność: do 3 osób"
+    ],
+    "forWho": "FishPro Trophy to propozycja dla najbardziej wymagających wędkarzy, którzy szukają najlepiej wyposażonego skutera wędkarskiego w gamie Sea-Doo — z pełnym osprzętem do całodniowych wypraw na wodę.",
+    "features": [
+      {
+        "title": "Silnik Rotax 1630 ACE, 170 KM",
+        "text": "Naturalnie zasysany silnik łączący moc z ekonomicznym zużyciem paliwa na całodniowe wyprawy wędkarskie."
+      },
+      {
+        "title": "Sonar i GPS Garmin 9\"",
+        "text": "Zaawansowana nawigacja, mapowanie i lokalizacja ryb dzięki wbudowanemu przetwornikowi i sonarowi mid-CHIRP."
+      },
+      {
+        "title": "Modułowy fotel obrotowy",
+        "text": "Montuje się w kilka sekund, a podstawa i oparcie chowają się, gdy nie są potrzebne."
+      },
+      {
+        "title": "Chłodziarka-przynętownica LinQ",
+        "text": "Chłodziarka wędkarska (51 l) zamienia się w żywą przynętownicę dzięki zintegrowanej pompie wody."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Shark Grey / Orange Crush",
+        "hex1": "#8a8d90",
+        "hex2": "#e07a2b",
+        "image": "images/seadoo-fishpro-trophy-hero.jpg"
+      }
+    ],
+    "images": [
+      "images/seadoo-fishpro-trophy-hero.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-fishpro-trophy-life-1.png",
+      "images/seadoo-fishpro-trophy-life-2.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-spark-2027",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Rec Lite",
+    "name": "Spark 90 For 2",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1000 ACE, 90 KM",
+    "myYear": 2027,
+    "desc": "Kontynuacja najlżejszego skutera Sea-Doo na rocznik 2027 — ta sama, sprawdzona, lekka platforma w wersji 90 KM dla dwóch osób.",
+    "fullDesc": [
+      "Spark 90 For 2 na rocznik 2027 to kontynuacja najlżejszego i najbardziej przystępnego cenowo skutera w gamie Sea-Doo — bez zmian w karoserii względem poprzedniego rocznika, wciąż oferujący kompaktowe rozmiary, łatwy transport i niskie koszty eksploatacji.",
+      "Lekka konstrukcja kadłuba ułatwia wodowanie i przechowywanie, a silnik 90 KM zapewnia wyraźnie żywsze przyspieszenie niż wersja 60 KM, przy zachowaniu ekonomii spalania."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1000 ACE, 90 KM",
+      "Lekki kadłub polimerowy — łatwy transport i wodowanie",
+      "Pojemność: 2 osoby",
+      "Zwinne prowadzenie przy niewielkich gabarytach",
+      "Ekonomiczne zużycie paliwa"
+    ],
+    "forWho": "Spark 90 For 2 to naturalny wybór na pierwszy skuter wodny — lekki, przystępny cenowo i prosty w obsłudze, idealny dla osób stawiających pierwsze kroki w jeździe na wodzie.",
+    "features": [
+      {
+        "title": "Lekki kadłub polimerowy",
+        "text": "Kompaktowe gabaryty i niska waga oznaczają wygodny transport na przyczepie oraz łatwe przechowywanie."
+      },
+      {
+        "title": "Silnik Rotax 1000 ACE, 90 KM",
+        "text": "Wyraźnie żywsze przyspieszenie niż wersja 60 KM, przy zachowaniu ekonomii spalania na co dzień."
+      },
+      {
+        "title": "Manualna regulacja trymu",
+        "text": "Dostosuj kąt dziobu do warunków na wodzie i własnego stylu jazdy."
+      },
+      {
+        "title": "Kompatybilność z systemem LinQ",
+        "text": "Szybki montaż dodatkowego bagażnika czy akcesoriów bez narzędzi."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Sunrise Orange / Dragon Red",
+        "hex1": "#e07a2b",
+        "hex2": "#a3241f",
+        "image": "images/seadoo-spark-60-2-1.jpg"
+      },
+      {
+        "name": "Vapor Blue / Dazzling Blue",
+        "hex1": "#6fa8c9",
+        "hex2": "#1f5f8a",
+        "image": "images/seadoo-spark-90-2-1.webp"
+      }
+    ],
+    "images": [
+      "images/seadoo-spark-60-2-1.jpg",
+      "images/seadoo-spark-90-2-1.webp"
+    ],
+    "gallery": [
+      "images/seadoo-spark-60-2-life-1.avif",
+      "images/seadoo-spark-60-2-life-2.avif"
+    ]
+  },
+  {
+    "id": "seadoo-gti-2027",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Recreation",
+    "name": "GTI Standard 130",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1630 ACE, 130 KM",
+    "myYear": 2027,
+    "desc": "Uniwersalna, rodzinna platforma Sea-Doo na rocznik 2027 — bez zmian w sprawdzonej, komfortowej konstrukcji.",
+    "fullDesc": [
+      "GTI na rocznik 2027 to kontynuacja uniwersalnego modelu rekreacyjnego Sea-Doo — pojazd zaprojektowany z myślą o komforcie, stabilności i uniwersalności, sprawdzający się na spokojnym rejsie i aktywnym dniu na wodzie z rodziną.",
+      "Silnik 130 KM zapewnia wystarczającą moc na wodne szaleństwa z bliskimi, a szeroki, stabilny kadłub gwarantuje pewne prowadzenie nawet przy większym obciążeniu."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1630 ACE, 130 KM",
+      "Stabilny, szeroki kadłub rekreacyjny",
+      "Pojemność: do 3 osób",
+      "Przejrzysty panel wskaźników",
+      "Przestrzeń na bagaż na krótsze wypady"
+    ],
+    "forWho": "GTI to naturalny wybór dla rodzin i grup znajomych szukających uniwersalnego, wygodnego skutera na weekendowe wypady nad wodę.",
+    "features": [
+      {
+        "title": "Silnik Rotax 1630 ACE, 130 KM",
+        "text": "Zbalansowana moc do codziennej, rodzinnej jazdy."
+      },
+      {
+        "title": "Szeroki kadłub rekreacyjny",
+        "text": "Zwiększona stabilność przy większym obciążeniu daje pewność mniej doświadczonym pasażerom."
+      },
+      {
+        "title": "Czytelny panel wskaźników",
+        "text": "Przejrzysty odczyt prędkości, poziomu paliwa i przebiegu."
+      },
+      {
+        "title": "Platforma do wsiadania z wody",
+        "text": "Ułatwiony powrót na pokład po kąpieli."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Bright White / Neo Mint",
+        "hex1": "#f2f4f5",
+        "hex2": "#8fd4c8",
+        "image": "images/seadoo-gti-std-2.jpg"
+      }
+    ],
+    "images": [
+      "images/seadoo-gti-std-2.jpg",
+      "images/seadoo-gti-std-1.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-gti-std-life-1.webp",
+      "images/seadoo-gti-std-life-2.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-gti-se-2027",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Recreation",
+    "name": "GTI SE 170",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1630 ACE, 170 KM",
+    "myYear": 2027,
+    "desc": "Rozszerzona wersja GTI na rocznik 2027 — więcej mocy i pakiet wyposażenia SE w sprawdzonej, rodzinnej konstrukcji.",
+    "fullDesc": [
+      "GTI SE na rocznik 2027 rozwija koncepcję rodzinnego GTI o dodatkową moc oraz pakiet wyposażenia SE, podnoszący komfort podróżowania.",
+      "170 KM mocy Rotax daje wyraźnie więcej przyspieszenia niż wersja podstawowa, wciąż zachowując stabilny, rodzinny charakter kadłuba GTI."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1630 ACE, 170 KM",
+      "Wyświetlacz 4,5\" cyfrowy",
+      "System zmiennego trymowania (VTS)",
+      "Pojemność: do 3 osób",
+      "Pakiet wyposażenia SE — podwyższony komfort"
+    ],
+    "forWho": "GTI SE to wybór dla rodzin i aktywnych par, które chcą trochę więcej mocy i komfortu niż w podstawowym modelu GTI.",
+    "features": [
+      {
+        "title": "Silnik Rotax 1630 ACE, 170 KM",
+        "text": "Zauważalnie więcej przyspieszenia niż w wersji Standard."
+      },
+      {
+        "title": "Wyświetlacz 4,5 cala",
+        "text": "Czytelne informacje o jeździe — prędkość, zużycie paliwa i tryby jazdy."
+      },
+      {
+        "title": "System zmiennego trymowania VTS",
+        "text": "Elektroniczna regulacja kąta dziobu jednym przyciskiem."
+      },
+      {
+        "title": "Pakiet wyposażenia SE",
+        "text": "Wygodniejsze siedzisko i dopracowane wykończenia."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Eclipse Black / Laguna Green",
+        "hex1": "#1c1c1c",
+        "hex2": "#2f6b52",
+        "image": "images/seadoo-gti-se-color-eclipseblack.webp"
+      },
+      {
+        "name": "Teal Blue / Manta Green",
+        "hex1": "#1f6b6b",
+        "hex2": "#5a8f3c",
+        "image": "images/seadoo-gti-se-color-tealblue.webp"
+      }
+    ],
+    "images": [
+      "images/seadoo-gti-se-1.jpg",
+      "images/seadoo-gti-se-2.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-gti-se-life-1.webp",
+      "images/seadoo-gti-se-life-2.webp"
+    ]
+  },
+  {
+    "id": "seadoo-gtx-2027",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Touring",
+    "name": "GTX 170",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1630 ACE, 170/230 KM",
+    "myYear": 2027,
+    "desc": "Komfort i osiągi klasy turystycznej Sea-Doo na rocznik 2027 — sprawdzona, stabilna jednostka na dłuższe trasy.",
+    "fullDesc": [
+      "GTX na rocznik 2027 to kontynuacja turystycznej platformy Sea-Doo — pojazd zaprojektowany z myślą o dłuższych trasach, komfortowej jeździe z pasażerem i pewności prowadzenia niezależnie od warunków na wodzie.",
+      "Szeroki kadłub ST3 zapewnia stabilność przy różnych falach, a dostępne warianty mocy 170 i 230 KM pozwalają dobrać dynamikę do własnych potrzeb. Na 2027 rok model zyskuje nową architekturę elektroniczną i większy wyświetlacz dotykowy 10,25\", wcześniej zarezerwowany dla droższych modeli."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1630 ACE, 170 lub 230 KM",
+      "Kadłub turystyczny ST3 — stabilność na dłuższych trasach",
+      "Wyświetlacz dotykowy 10,25\" — nowość na 2027 rok",
+      "System zmiennego trymowania (VTS)",
+      "Pojemność: do 3 osób"
+    ],
+    "forWho": "GTX to dobry wybór dla par i rodzin planujących dłuższe wycieczki wodne, ceniących komfort jazdy i stabilność.",
+    "features": [
+      {
+        "title": "Silniki Rotax 1630 ACE, 170/230 KM",
+        "text": "Pewne, płynne przyspieszenie na dłuższych trasach turystycznych."
+      },
+      {
+        "title": "Kadłub turystyczny ST3",
+        "text": "Zaprojektowany z myślą o stabilności i komforcie przy falowaniu."
+      },
+      {
+        "title": "System zmiennego trymowania VTS",
+        "text": "Łatwa regulacja kąta dziobu jednym przyciskiem."
+      },
+      {
+        "title": "Wyświetlacz dotykowy 10,25 cala",
+        "text": "Nowość na 2027 rok — większy, bardziej czytelny ekran zastępujący dotychczasowy wyświetlacz 7,6\"."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Blue Abyss / Gulfstream Blue",
+        "hex1": "#3a4a5c",
+        "hex2": "#3e6f9e",
+        "image": "images/seadoo-gtx-170-new.webp"
+      }
+    ],
+    "images": [
+      "images/seadoo-gtx-170-new.webp"
+    ],
+    "gallery": [
+      "images/seadoo-gtx-170-life-1.jpg",
+      "images/seadoo-gtx-170-life-2.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-gtx-limited-2027",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Touring",
+    "name": "GTX Limited 350",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1630 SXHO+, 350 KM",
+    "myYear": 2027,
+    "desc": "Flagowy model turystyczny Sea-Doo na rocznik 2027 — nowy silnik 350 KM (wcześniej 325), dotykowy wyświetlacz 10,25\" i najbogatsze wyposażenie w gamie.",
+    "fullDesc": [
+      "GTX Limited na rocznik 2027 to kontynuacja szczytu oferty turystycznej Sea-Doo — na 2027 rok otrzymuje zupełnie nowy silnik Rotax 1630 SXHO+ o mocy 350 KM (zamiast dotychczasowych 325 KM), z większym wirnikiem sprężarki i wzmocnionym układem napędowym.",
+      "10,25-calowy dotykowy wyświetlacz z pełną nawigacją po ustawieniach jazdy, system iBR oraz iDF (z funkcją biegu wstecznego) czynią z niego najbardziej zaawansowany technologicznie model w linii turystycznej."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1630 SXHO+, 350 KM (nowa jednostka na 2027 rok)",
+      "Wyświetlacz 10,25\" dotykowy z pełną nawigacją ustawień",
+      "iBR — inteligentne hamowanie i cofanie",
+      "iDF — automatyczne czyszczenie pompy wodnej z funkcją biegu wstecznego",
+      "Pojemność: do 3 osób"
+    ],
+    "forWho": "GTX Limited to wybór dla klientów, którzy chcą mieć wszystko naraz — najwyższy komfort turystyczny, najbogatszą technologię i najmocniejszy silnik w historii linii turystycznej.",
+    "features": [
+      {
+        "title": "Silnik Rotax 1630 SXHO+, 350 KM",
+        "text": "Nowa jednostka na 2027 rok — większy wirnik sprężarki i wzmocniony układ napędowy zapewniają najwyższą moc w historii GTX."
+      },
+      {
+        "title": "Wyświetlacz dotykowy 10,25 cala",
+        "text": "Pełna nawigacja po ustawieniach jazdy, trybach mocy i danych z podróży."
+      },
+      {
+        "title": "System iBR",
+        "text": "Inteligentne hamowanie i cofanie dla pełnej kontroli podczas precyzyjnych manewrów."
+      },
+      {
+        "title": "System iDF z biegiem wstecznym",
+        "text": "Automatyczne czyszczenie pompy wodnej z zanieczyszczeń, potwierdzone w standardzie na 2027 rok."
+      }
+    ],
+    "colors": [
+      {
+        "name": "White Pearl Premium",
+        "hex1": "#ede9e3",
+        "hex2": "#c3c0ba",
+        "image": "images/seadoo-gtx-limited-350-color-white.jpg"
+      },
+      {
+        "name": "Midnight Blue Metallic",
+        "hex1": "#1c2a3a",
+        "hex2": "#0d141d",
+        "image": "images/seadoo-gtx-limited-350-color-navy.jpg"
+      }
+    ],
+    "images": [
+      "images/seadoo-gtx-limited-350-color-white.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-gtx-limited-350-life-1.jpg",
+      "images/seadoo-gtx-limited-350-life-2.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-explorer-pro-2027",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Adventure",
+    "name": "Explorer Pro 170",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1630 ACE, 170/230 KM",
+    "myYear": 2027,
+    "desc": "Pojazd stworzony do eksploracji na rocznik 2027 — dodatkowa przestrzeń na bagaż i osprzęt do dłuższych wypraw wodnych.",
+    "fullDesc": [
+      "Explorer Pro na rocznik 2027 to kontynuacja odpowiedzi Sea-Doo na potrzeby osób planujących dłuższe wyprawy poza utarte szlaki wodne — dodatkowe schowki z przodu i z tyłu pozwalają zabrać ze sobą sprzęt biwakowy, wędkarski czy fotograficzny.",
+      "Kadłub T3-X zaprojektowano z myślą o stabilności przy większym obciążeniu, a dostępne warianty mocy 170 i 230 KM pozwalają dobrać dynamikę do planowanej trasy."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1630 ACE, 170 lub 230 KM",
+      "Kadłub T3-X zoptymalizowany pod większe obciążenie",
+      "Rozszerzone schowki na sprzęt (przód i tył)",
+      "Stabilność przy dłuższych trasach z pełnym ekwipunkiem",
+      "Pojemność: do 3 osób"
+    ],
+    "forWho": "Explorer Pro to wybór dla osób planujących dłuższe wyprawy wodne poza utarte szlaki — wędkarzy, fotografów przyrody czy miłośników odkrywania nowych zakątków.",
+    "features": [
+      {
+        "title": "Silniki Rotax 1630 ACE, 170/230 KM",
+        "text": "Ekonomiczna jednostka napędowa dostosowana do dłuższych tras z pełnym obciążeniem bagażowym."
+      },
+      {
+        "title": "Kadłub T3-X",
+        "text": "Zoptymalizowany pod większe obciążenie, zapewnia stabilność przy transportowaniu sprzętu."
+      },
+      {
+        "title": "Rozszerzone schowki przód i tył",
+        "text": "Miejsce na sprzęt biwakowy, wędkarski lub fotograficzny."
+      },
+      {
+        "title": "Wzmocnione mocowania LinQ",
+        "text": "Szybki montaż dodatkowych boxów i akcesoriów transportowych."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Eclipse Black / Lemon Zest",
+        "hex1": "#1c1c1e",
+        "hex2": "#c8d400",
+        "image": "images/seadoo-explorer-pro-170-2.jpg"
+      }
+    ],
+    "images": [
+      "images/seadoo-explorer-pro-170-2.jpg",
+      "images/seadoo-explorer-pro-170-1.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-explorer-pro-170-life-1.jpg",
+      "images/seadoo-explorer-pro-170-life-2.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-gtr-2027",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Performance",
+    "name": "GTR 230",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1630 ACE, 230 KM",
+    "myYear": 2027,
+    "desc": "Sportowe osiągi w przystępnej cenie na rocznik 2027 — dynamiczna jazda bez rozbudowanej elektroniki klasy X.",
+    "fullDesc": [
+      "GTR na rocznik 2027 to kontynuacja wejścia w świat sportowych osiągów Sea-Doo bez konieczności sięgania po najdroższe modele klasy X. Sportowy kadłub S3 zapewnia dynamiczne prowadzenie w zakrętach, a mocny silnik dostarcza sporą dawkę adrenaliny.",
+      "To propozycja dla tych, którzy chcą poczuć sportowy charakter Sea-Doo bez płacenia za pełen pakiet technologii dostępnej w wersjach X."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1630 ACE, 230 KM",
+      "Sportowy kadłub S3",
+      "iBR — inteligentne hamowanie i cofanie",
+      "Zwrotne, dynamiczne prowadzenie w zakrętach",
+      "Pojemność: do 3 osób"
+    ],
+    "forWho": "GTR sprawdzi się u osób, które szukają sportowego charakteru jazdy i dynamicznych osiągów w bardziej przystępnej cenie niż topowe modele X.",
+    "features": [
+      {
+        "title": "Silnik Rotax 1630 ACE, 230 KM",
+        "text": "Sportowy charakter przyspieszenia w wyraźnie bardziej przystępnej cenie niż modele klasy X."
+      },
+      {
+        "title": "Sportowy kadłub S3",
+        "text": "Zwrotne, precyzyjne prowadzenie w zakrętach przy zachowaniu stabilności."
+      },
+      {
+        "title": "System iBR",
+        "text": "Inteligentne hamowanie i cofanie ułatwiające pełną kontrolę."
+      },
+      {
+        "title": "Kompaktowa, sportowa sylwetka",
+        "text": "Mniejsza waga niż w modelach turystycznych przekłada się na żywszą reakcję na gaz."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Eclipse Black / Reef Blue",
+        "hex1": "#1c1c1e",
+        "hex2": "#2a9d94",
+        "image": "images/seadoo-gtr-230-new.webp"
+      }
+    ],
+    "images": [
+      "images/seadoo-gtr-230-new.webp"
+    ],
+    "gallery": [
+      "images/seadoo-gtr-230-life-2.jpg",
+      "images/seadoo-gtr-230-teal-life-1.jpg"
+    ]
+  },
+  {
+    "id": "seadoo-gtr-x-2027",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Performance",
+    "name": "GTR-X 300",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1630 ACE, 300 KM",
+    "myYear": 2027,
+    "desc": "Wersja X z podwyższonymi osiągami na rocznik 2027 — ostrzejsze prowadzenie i mocniejsza jednostka napędowa.",
+    "fullDesc": [
+      "GTR-X 300 na rocznik 2027 to kontynuacja odpowiedzi Sea-Doo na potrzeby kierowców szukających więcej niż podstawowa wersja GTR — mocniejszy silnik, system siedzenia Ergolock oraz regulowana kierownica dopasowują skuter do agresywnego stylu jazdy.",
+      "300 KM mocy w połączeniu ze sportowym kadłubem S3 przekłada się na ostre, precyzyjne prowadzenie w zakrętach, a nowa na 2027 rok architektura elektroniczna i wyświetlacz dotykowy 10,25\" z obsługą na kierownicy dają pełną kontrolę nad zachowaniem jednostki."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1630 ACE, 300 KM",
+      "Wyświetlacz dotykowy 10,25\" — nowość na 2027 rok",
+      "System siedzenia Ergolock",
+      "Regulowana kierownica",
+      "iBR — inteligentne hamowanie i cofanie",
+      "Sportowy kadłub S3"
+    ],
+    "forWho": "GTR-X 300 to propozycja dla doświadczonych kierowców, którzy chcą sportowych osiągów i precyzyjnego prowadzenia bez sięgania po najmocniejsze modele RXP/RXT.",
+    "features": [
+      {
+        "title": "Silnik Rotax 1630 ACE, 300 KM",
+        "text": "Wyraźnie więcej mocy niż w wersji GTR, dla kierowców oczekujących bardziej wymagających osiągów."
+      },
+      {
+        "title": "Wyświetlacz dotykowy 10,25 cala",
+        "text": "Nowość na 2027 rok — nowa architektura elektroniczna i obsługa z poziomu kierownicy."
+      },
+      {
+        "title": "System siedzenia Ergolock",
+        "text": "Utrzymuje ciało kierowcy w stabilnej pozycji podczas agresywnego pokonywania zakrętów."
+      },
+      {
+        "title": "Sportowy kadłub S3",
+        "text": "Ostre, przewidywalne prowadzenie przy dużych prędkościach."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Eclipse Black / Deep Marsala",
+        "hex1": "#1c1c1e",
+        "hex2": "#7a1c2e",
+        "image": "images/seadoo-gtr-x-300-new.webp"
+      }
+    ],
+    "images": [
+      "images/seadoo-gtr-x-300-new.webp"
+    ],
+    "gallery": [
+      "images/seadoo-gtr-x-300-life-1.webp",
+      "images/seadoo-gtr-x-300-life-2.webp"
+    ]
+  },
+  {
+    "id": "seadoo-fishpro-sport-2027",
+    "category": "seadoo",
+    "categoryLabel": "Sea-Doo",
+    "segment": "Sport Fishing",
+    "name": "FishPro Sport 170",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1630 ACE, 170 KM",
+    "myYear": 2027,
+    "desc": "Skuter zaprojektowany z myślą o wędkarstwie na rocznik 2027 — 5 uchwytów na wędki, GPS z trybem trolling i stabilny kadłub ST3.",
+    "fullDesc": [
+      "FishPro Sport na rocznik 2027 to kontynuacja skutera wodnego zaprojektowanego od podstaw z myślą o wędkarzach — z 5 uchwytami na wędki rozmieszczonymi wokół pokładu, chłodziarką LinQ oraz stabilną platformą ułatwiającą łowienie bezpośrednio z pokładu.",
+      "170 KM mocy Rotax 1630 ACE pozwala szybko dotrzeć do ulubionych łowisk, a wyszukiwarka ryb i GPS z trybem trolling wspierają wędkarza podczas połowu. Wyświetlacz 7,6\" oraz stabilny kadłub ST3 zapewniają pewność podczas zarzucania i wyciągania sprzętu na wodzie."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1630 ACE, 170 KM",
+      "5 uchwytów na wędki rozmieszczonych wokół pokładu",
+      "Fishfinder i GPS z trybem trolling",
+      "Kadłub ST3 i wyświetlacz 7,6\"",
+      "Pojemność: do 3 osób"
+    ],
+    "forWho": "FishPro Sport to skuter dla wędkarzy, którzy chcą szybko i wygodnie dotrzeć do swoich ulubionych łowisk, nie rezygnując z funkcjonalności dedykowanego sprzętu wędkarskiego.",
+    "features": [
+      {
+        "title": "Silnik Rotax 1630 ACE, 170 KM",
+        "text": "Wystarczająca moc, by szybko dotrzeć do ulubionego łowiska."
+      },
+      {
+        "title": "5 uchwytów na wędki",
+        "text": "Rozmieszczone w różnych punktach pokładu — wygodne przechowywanie i lepsze możliwości trollingu."
+      },
+      {
+        "title": "Fishfinder i GPS z trybem trolling",
+        "text": "Wsparcie w namierzaniu ryb i utrzymaniu stałej, kontrolowanej prędkości podczas połowu."
+      },
+      {
+        "title": "Kadłub ST3 i chłodziarka LinQ",
+        "text": "Stabilna platforma do łowienia z pokładu oraz dodatkowa przestrzeń na przynęty i sprzęt połowowy."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Vapor Blue / Catalyst Grey",
+        "hex1": "#5b9bd5",
+        "hex2": "#6e7578",
+        "image": "images/seadoo-fish-pro-sport-170-1.jpg"
+      }
+    ],
+    "images": [
+      "images/seadoo-fish-pro-sport-170-1.jpg",
+      "images/seadoo-fish-pro-sport-170-2.jpg"
+    ],
+    "gallery": [
+      "images/seadoo-fish-pro-sport-170-life-1.webp",
+      "images/seadoo-fish-pro-sport-170-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-ryker-2027",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Recreation",
+    "name": "Ryker",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 900 ACE, 52 KM",
+    "myYear": 2027,
+    "desc": "Największa ewolucja platformy Rykera w historii — na 2027 rok nowy silnik, wzmocniony chassis i przeprojektowana stylistyka.",
+    "fullDesc": [
+      "Ryker na rocznik 2027 to największa ewolucja platformy od jej powstania — nowy, trzycylindrowy silnik Rotax 900 ACE o mocy 52 KM zastępuje dotychczasową jednostkę 600 cc, oferując mocniejszy moment obrotowy na niskich obrotach, mniejsze wibracje i płynniejszy przebieg mocy.",
+      "Zwiększona sztywność ramy, wzmocniony układ kierowniczy i przekalibrowany system stabilności VSS zapewniają ostrzejsze prowadzenie i większą pewność jazdy, a nowy 5-calowy kolorowy wyświetlacz oraz sterowanie na kierownicy ułatwiają codzienną obsługę."
+    ],
+    "highlights": [
+      "Silnik: Rotax 900 ACE (3-cylindrowy), 52 KM",
+      "Zwiększona sztywność ramy i wzmocniony układ kierowniczy",
+      "Przekalibrowany system stabilności VSS",
+      "Nowy 5-calowy kolorowy wyświetlacz",
+      "Nowe reflektory LED i przeprojektowane felgi"
+    ],
+    "forWho": "Ryker to naturalny wybór dla osób zaczynających przygodę z trójkołowcami — prosty w obsłudze dzięki automatycznej skrzyni CVT, a jednocześnie na tyle lekki i zwinny, że sprawdzi się także jako pojazd do codziennych przejazdów miejskich.",
+    "features": [
+      {
+        "title": "Nowy silnik Rotax 900 ACE, 52 KM",
+        "text": "Trzycylindrowa jednostka zastępująca dotychczasowy silnik 600 cc — mocniejszy moment obrotowy i płynniejsza praca."
+      },
+      {
+        "title": "Wzmocniona rama i układ kierowniczy",
+        "text": "Zwiększona sztywność chassis przekłada się na ostrzejsze, pewniejsze prowadzenie."
+      },
+      {
+        "title": "Przekalibrowany system VSS",
+        "text": "Elektroniczna kontrola stabilności dostrojona pod nową charakterystykę podwozia."
+      },
+      {
+        "title": "Nowy wyświetlacz 5\" i sterowanie na kierownicy",
+        "text": "Czytelniejsze informacje o jeździe i intuicyjny dostęp do funkcji pojazdu."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Carbon Black",
+        "hex1": "#1c1c1e",
+        "hex2": "#2c2c2e",
+        "image": "images/canam-ryker-1.png"
+      }
+    ],
+    "images": [
+      "images/canam-ryker-1.png"
+    ],
+    "gallery": [
+      "images/canam-ryker-black-life-1.jpg",
+      "images/canam-ryker-black-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-ryker-sport-2027",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Recreation",
+    "name": "Ryker Sport",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 900 ACE, 80 KM",
+    "myYear": 2027,
+    "desc": "Sportowa wersja przeprojektowanego Rykera na 2027 — silnik Rotax 900 ACE o mocy 80 KM i wzmocnione podwozie.",
+    "fullDesc": [
+      "Ryker Sport na rocznik 2027 łączy nową, wzmocnioną platformę z mocniejszym wariantem silnika Rotax 900 ACE o mocy 80 KM — to propozycja dla tych, którzy chcą więcej dynamiki i bardziej responsywnej reakcji na gaz niż w bazowym modelu.",
+      "Zwiększona sztywność ramy, wzmocniony układ kierowniczy i przekalibrowany system stabilności VSS zapewniają ostrzejsze, pewniejsze prowadzenie, a nowy 5-calowy kolorowy wyświetlacz i sterowanie na kierownicy ułatwiają codzienną obsługę."
+    ],
+    "highlights": [
+      "Silnik: Rotax 900 ACE (3-cylindrowy), 80 KM",
+      "Zwiększona sztywność ramy i wzmocniony układ kierowniczy",
+      "Przekalibrowany system stabilności VSS",
+      "Nowy 5-calowy kolorowy wyświetlacz",
+      "Sportowo dostrojone zawieszenie"
+    ],
+    "forWho": "Ryker Sport to wybór dla kierowców, którzy cenią lekkość i zwinność platformy Ryker, ale oczekują więcej mocy i bardziej dynamicznego charakteru jazdy niż w wersji bazowej.",
+    "features": [
+      {
+        "title": "Silnik Rotax 900 ACE, 80 KM",
+        "text": "Zauważalnie więcej mocy i bardziej responsywna reakcja na gaz niż w bazowym Rykerze."
+      },
+      {
+        "title": "Wzmocniona rama i układ kierowniczy",
+        "text": "Zwiększona sztywność chassis przekłada się na ostrzejsze, pewniejsze prowadzenie."
+      },
+      {
+        "title": "Przekalibrowany system VSS",
+        "text": "Elektroniczna kontrola stabilności dostrojona pod bardziej dynamiczny charakter jazdy."
+      },
+      {
+        "title": "Nowy wyświetlacz 5\" i sterowanie na kierownicy",
+        "text": "Czytelniejsze informacje o jeździe i intuicyjny dostęp do funkcji pojazdu."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Triple Black / Viper Red",
+        "hex1": "#1c1c1e",
+        "hex2": "#c41e1e",
+        "image": "images/canam-ryker-sport-1.png"
+      }
+    ],
+    "images": [
+      "images/canam-ryker-sport-1.png"
+    ],
+    "gallery": [
+      "images/canam-ryker-sport-black-life-1.jpg",
+      "images/canam-ryker-sport-black-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-ryker-special",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Recreation",
+    "name": "Ryker Special Series",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 900 ACE, 80 KM",
+    "myYear": 2027,
+    "desc": "Limitowana, jednoroczna edycja specjalna Rykera na 2027 — felgi w wykończeniu Liquid Titanium, wydech Akrapovič i ekskluzywne panele.",
+    "fullDesc": [
+      "Ryker Special Series to limitowana edycja dostępna tylko przez jeden rok modelowy — bazuje na sportowej wersji Ryker Sport (silnik Rotax 900 ACE, 80 KM), dokładając ekskluzywne panele, dedykowane naklejki wrap, felgi w wykończeniu Liquid Titanium oraz podium zawieszenia klasy premium.",
+      "Unikalne wykończenie siedziska oraz fabryczny układ wydechowy Akrapovič dopełniają najbardziej ekskluzywną wersję Rykera, jaka kiedykolwiek trafiła do sprzedaży."
+    ],
+    "highlights": [
+      "Silnik: Rotax 900 ACE (3-cylindrowy), 80 KM",
+      "Limitowana, jednoroczna edycja specjalna",
+      "Felgi w wykończeniu Liquid Titanium",
+      "Fabryczny układ wydechowy Akrapovič",
+      "Zawieszenie klasy premium"
+    ],
+    "forWho": "Ryker Special Series to propozycja dla klientów szukających unikalnego, limitowanego egzemplarza — wyróżniającego się wzornictwem, a jednocześnie oferującego pełnię osiągów sportowej wersji Rykera.",
+    "features": [
+      {
+        "title": "Limitowana edycja jednoroczna",
+        "text": "Dostępna tylko w tym roczniku — unikalny, kolekcjonerski charakter pojazdu."
+      },
+      {
+        "title": "Felgi Liquid Titanium i wydech Akrapovič",
+        "text": "Ekskluzywne wykończenia niedostępne w żadnej innej wersji Rykera."
+      },
+      {
+        "title": "Silnik Rotax 900 ACE, 80 KM",
+        "text": "Pełnia sportowych osiągów znanych z wersji Ryker Sport."
+      },
+      {
+        "title": "Zawieszenie klasy premium",
+        "text": "Podium zawieszenia podnoszące komfort i precyzję prowadzenia ponad standardową wersję Sport."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Special Series Graphics",
+        "hex1": "#2c2c2e",
+        "hex2": "#8b1c1c",
+        "image": "images/canam-ryker-special-1.png"
+      }
+    ],
+    "images": [
+      "images/canam-ryker-special-1.png"
+    ],
+    "gallery": [
+      "images/canam-ryker-special-life-1.jpg",
+      "images/canam-ryker-special-life-3.jpg"
+    ]
+  },
+  {
+    "id": "canam-f3-s-2027",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Cruising",
+    "name": "Spyder F3-S",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1330 ACE, SE6",
+    "myYear": 2027,
+    "desc": "Odświeżona stylistyka F3-S na 2027 — nowa rama i wykończenia Liquid Titanium w połączeniu z nadwoziem Monolith Black Satin.",
+    "fullDesc": [
+      "Spyder F3-S na rocznik 2027 otrzymuje nową ramę i wykończenia w kolorze Liquid Titanium, zestawione z nadwoziem Monolith Black Satin — połączenie podkreślające jeszcze bardziej agresywny i premium charakter modelu. Dostępny jest również klasyczny wariant Circuit Yellow.",
+      "Silnik Rotax 1330 ACE o mocy 115 KM w połączeniu z układem Dynamic Power Steering (DPS) oraz systemami stabilności i trakcji (VSS/TCS) zapewnia dynamiczne, a zarazem kontrolowane osiągi na drodze."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1330 ACE, 115 KM",
+      "Nowa rama i wykończenia Liquid Titanium na 2027 rok",
+      "6-biegowa półautomatyczna skrzynia biegów z biegiem wstecznym",
+      "Systemy VSS, TCS, ABS oraz DPS",
+      "Tryb Sport z bardziej dynamiczną reakcją gazu"
+    ],
+    "forWho": "Spyder F3-S to propozycja dla kierowców ceniących sportowy charakter jazdy i zwinność, którzy na 2027 rok chcą wyróżnić się nową, premium kolorystyką modelu.",
+    "features": [
+      {
+        "title": "Rama i wykończenia Liquid Titanium",
+        "text": "Nowy, metaliczny akcent na ramie podkreśla premium i agresywny charakter nadwozia Monolith Black Satin na 2027 rok."
+      },
+      {
+        "title": "Silnik Rotax 1330 ACE, 115 KM",
+        "text": "Żywe przyspieszenie i dynamiczna reakcja gazu w trybie Sport."
+      },
+      {
+        "title": "Dynamic Power Steering (DPS)",
+        "text": "Wspomaganie kierownicy odciąża ręce podczas dynamicznej jazdy."
+      },
+      {
+        "title": "Systemy VSS, TCS i ABS",
+        "text": "Elektroniczna kontrola stabilności i trakcji dająca pewność bezpiecznego wykorzystania mocy silnika."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Monolith Black Satin / Liquid Titanium",
+        "hex1": "#1c1c1e",
+        "hex2": "#8a8d91",
+        "image": "images/canam-f3-s-2027-black-hq.webp"
+      },
+      {
+        "name": "Circuit Yellow",
+        "hex1": "#f2c94c",
+        "hex2": "#1c1c1e",
+        "image": "images/canam-f3-s-2027-yellow-hq.webp"
+      }
+    ],
+    "images": [
+      "images/canam-f3-s-2027-black-hq.webp",
+      "images/canam-f3-s-2027-yellow-hq.webp"
+    ],
+    "gallery": [
+      "images/canam-f3-s-2027-life-1.webp",
+      "images/canam-f3-s-2027-life-2.webp"
+    ]
+  },
+  {
+    "id": "canam-f3-t",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Touring",
+    "name": "Spyder F3-T",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1330 ACE, SE6",
+    "myYear": 2027,
+    "desc": "Turystyczna odmiana F3 na 2027 — dokłada kufry i wyposażenie podróżne do sportowej geometrii kadłuba F3.",
+    "fullDesc": [
+      "Spyder F3-T to pomost pomiędzy sportowym charakterem F3-S a pełnym komfortem turystycznym rodziny RT — zachowuje smukłą, sportową sylwetkę F3, dokładając kufry boczne i praktyczne rozwiązania ułatwiające dłuższe podróże.",
+      "Silnik Rotax 1330 ACE o mocy 115 KM zapewnia żywe osiągi, a dodatkowa przestrzeń bagażowa i wygodniejszy fotel sprawiają, że F3-T sprawdza się zarówno w mieście, jak i na dłuższych trasach drogowych."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1330 ACE, 115 KM",
+      "Kufry boczne — dodatkowa przestrzeń bagażowa",
+      "6-biegowa półautomatyczna skrzynia biegów z biegiem wstecznym",
+      "Systemy VSS, TCS, ABS oraz DPS",
+      "Sportowa geometria kadłuba F3 w turystycznym wydaniu"
+    ],
+    "forWho": "Spyder F3-T to propozycja dla kierowców, którzy chcą zachować sportowy charakter i zwinność F3, ale potrzebują dodatkowej przestrzeni bagażowej na dłuższe wyjazdy — bez przechodzenia na cięższą, w pełni turystyczną platformę RT.",
+    "features": [
+      {
+        "title": "Kufry boczne",
+        "text": "Dodatkowa przestrzeń bagażowa niedostępna w wersji F3-S, przydatna na dłuższe wyjazdy."
+      },
+      {
+        "title": "Silnik Rotax 1330 ACE, 115 KM",
+        "text": "Żywe przyspieszenie przy zachowaniu praktyczności modelu turystycznego."
+      },
+      {
+        "title": "Dynamic Power Steering (DPS)",
+        "text": "Wspomaganie kierownicy odciąża ręce, także przy większym obciążeniu bagażem."
+      },
+      {
+        "title": "Systemy VSS, TCS i ABS",
+        "text": "Elektroniczna kontrola stabilności i trakcji na dłuższych trasach drogowych."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Pearl White",
+        "hex1": "#ede9e3",
+        "hex2": "#c3c0ba",
+        "image": "images/canam-f3-t-1.png"
+      }
+    ],
+    "images": [
+      "images/canam-f3-t-1.png"
+    ],
+    "gallery": [
+      "images/canam-f3-t-life-3.webp",
+      "images/canam-f3-t-life-4.webp"
+    ]
+  },
+  {
+    "id": "canam-f3-2027",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Cruising",
+    "name": "Spyder F3",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1330 ACE, SE6",
+    "myYear": 2027,
+    "desc": "Sportowy trójkołowiec Can-Am na rocznik 2027 — agresywna stylistyka i dynamiczne prowadzenie do jazdy miejskiej i rekreacyjnej.",
+    "fullDesc": [
+      "Spyder F3 na rocznik 2027 to kontynuacja najbardziej sportowej i lekkiej odsłony rodziny F3 — trójkołowiec zbudowany z myślą o dynamicznej jeździe miejskiej i rekreacyjnej. Smukła, muskularna stylistyka podkreśla agresywny charakter maszyny.",
+      "Silnik Rotax 1330 ACE o mocy 115 KM w połączeniu z układem Dynamic Power Steering (DPS) oraz systemami stabilności i trakcji (VSS/TCS) zapewnia żywe przyspieszenie przy zachowaniu pełnej kontroli nad pojazdem."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1330 ACE, 115 KM",
+      "Waga sucha: 408 kg — najlżejszy model w rodzinie F3",
+      "6-biegowa półautomatyczna skrzynia biegów z biegiem wstecznym",
+      "Systemy VSS, TCS, ABS oraz DPS",
+      "Tryb Sport z bardziej dynamiczną reakcją gazu"
+    ],
+    "forWho": "Spyder F3 to propozycja dla kierowców, którzy cenią sobie sportowy charakter jazdy, zwinność i lekkość prowadzenia — dobry wybór na dynamiczną jazdę miejską i rekreacyjną.",
+    "features": [
+      {
+        "title": "Silnik Rotax 1330 ACE, 115 KM",
+        "text": "Żywe przyspieszenie i dynamiczna reakcja gazu w trybie Sport."
+      },
+      {
+        "title": "Najlżejszy model w rodzinie F3 — 408 kg",
+        "text": "Niska waga przekłada się na wyjątkową zwinność w zakrętach."
+      },
+      {
+        "title": "Dynamic Power Steering (DPS)",
+        "text": "Wspomaganie kierownicy odciąża ręce podczas dynamicznej jazdy."
+      },
+      {
+        "title": "Systemy VSS, TCS i ABS",
+        "text": "Elektroniczna kontrola stabilności i trakcji."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Circuit Yellow Metallic",
+        "hex1": "#d9c62a",
+        "hex2": "#8f7a12",
+        "image": "images/canam-f3-s-color-circuityellow.webp"
+      },
+      {
+        "name": "Monolith Black Satin",
+        "hex1": "#2b2b2b",
+        "hex2": "#0d0d0d",
+        "image": "images/canam-f3-s-color-monolithblack.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-f3-s-1.jpg",
+      "images/canam-f3-s-2.jpg"
+    ],
+    "gallery": [
+      "images/canam-f3-s-life-1.avif",
+      "images/canam-f3-s-life-2.avif"
+    ]
+  },
+  {
+    "id": "canam-f3-limited-2027",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Cruising",
+    "name": "Spyder F3 Limited",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1330 ACE, SE6",
+    "myYear": 2027,
+    "desc": "Wersja Limited na rocznik 2027 — rozbudowane wyposażenie premium i więcej komfortu na dłuższe trasy.",
+    "fullDesc": [
+      "Spyder F3 Limited na rocznik 2027 to kontynuacja wersji F3 zbudowanej z myślą o komforcie i dłuższych trasach — zachowuje sportowy charakter linii F3, dokładając rozbudowane schowki, twarde sakwy boczne oraz kufer z oparciem dla pasażera.",
+      "Tylne zawieszenie z regulacją preload ułatwia dostosowanie pojazdu do obciążenia bagażem lub jazdy z pasażerem, a podgrzewane manetki i system audio BRP Audio Premium podnoszą komfort podczas długich godzin za kierownicą."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1330 ACE, 115 KM",
+      "Waga sucha: 448 kg",
+      "Pojemność schowków: 139,5 l",
+      "Tylne zawieszenie z regulacją preload",
+      "Podgrzewane manetki i system audio BRP Audio Premium (6 głośników)"
+    ],
+    "forWho": "Spyder F3 Limited sprawdzi się u kierowców, którzy chcą zachować sportowy charakter F3, ale potrzebują realnej przestrzeni bagażowej i dodatkowego komfortu na dłuższe trasy.",
+    "features": [
+      {
+        "title": "Rozbudowane schowki — 139,5 l",
+        "text": "Twarde sakwy boczne i kufer z oparciem dla pasażera."
+      },
+      {
+        "title": "Tylne zawieszenie z regulacją preload",
+        "text": "Szybkie dostosowanie do obciążenia bagażem lub jazdy z pasażerem."
+      },
+      {
+        "title": "Podgrzewane manetki",
+        "text": "Komfort rąk podczas chłodniejszych, dłuższych tras."
+      },
+      {
+        "title": "System audio BRP Audio Premium (6 głośników)",
+        "text": "Bogate brzmienie w trakcie jazdy."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Vegas White Pearl",
+        "hex1": "#ede9e3",
+        "hex2": "#c3c0ba",
+        "image": "images/canam-f3-ltd-2027-white.webp"
+      },
+      {
+        "name": "Monolith Black Satin",
+        "hex1": "#1c1c1e",
+        "hex2": "#2c2c2e",
+        "image": "images/canam-f3-ltd-2027-black.webp"
+      },
+      {
+        "name": "Mineral Blue Satin",
+        "hex1": "#4a5f66",
+        "hex2": "#2c3a3f",
+        "image": "images/canam-f3-ltd-2027-blue.webp"
+      }
+    ],
+    "images": [
+      "images/canam-f3-ltd-2027-white.webp",
+      "images/canam-f3-ltd-2027-black.webp",
+      "images/canam-f3-ltd-2027-blue.webp"
+    ],
+    "gallery": [
+      "images/canam-f3-ltd-life-1.avif",
+      "images/canam-f3-ltd-life-2.avif"
+    ]
+  },
+  {
+    "id": "canam-rt-2027",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Touring",
+    "name": "Spyder RT",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1330 ACE, SE6",
+    "myYear": 2027,
+    "desc": "Flagowy trójkołowiec turystyczny Can-Am na rocznik 2027 — komfort na długie trasy, kufry i rozbudowane wyposażenie.",
+    "fullDesc": [
+      "Spyder RT na rocznik 2027 to kontynuacja flagowego trójkołowca turystycznego Can-Am — zaprojektowany od podstaw jako pojazd do wielogodzinnych podróży we dwoje, z największą w gamie przestrzenią bagażową sięgającą 177 litrów.",
+      "Podgrzewane siedzenia i manetki, 10,25-calowy dotykowy wyświetlacz z BRP Connect i Apple CarPlay oraz system audio BRP Audio Premium sprawiają, że długie trasy mijają w komforcie zbliżonym do luksusowego samochodu turystycznego."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1330 ACE, 115 KM",
+      "Waga sucha: 464 kg",
+      "Pojemność schowków: 177 l",
+      "Podgrzewane siedzenia i manetki",
+      "Wyświetlacz 10,25\" dotykowy z Apple CarPlay i audio premium"
+    ],
+    "forWho": "Spyder RT to naturalny wybór dla par planujących długie, wielodniowe podróże trójkołowcem — tam, gdzie liczy się komfort, pojemność bagażowa i technologia pokładowa.",
+    "features": [
+      {
+        "title": "Największa przestrzeń bagażowa w gamie — 177 l",
+        "text": "W pełni zintegrowane kufry boczne i tylny."
+      },
+      {
+        "title": "Podgrzewane siedzenia i manetki",
+        "text": "Komfort podczas długich, wielogodzinnych tras."
+      },
+      {
+        "title": "Wyświetlacz 10,25\" z Apple CarPlay",
+        "text": "Nawigacja, muzyka i połączenia pod ręką."
+      },
+      {
+        "title": "System audio BRP Audio Premium (6 głośników)",
+        "text": "Bogate brzmienie umila długie godziny na trasie."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Pearl White",
+        "hex1": "#ede9e3",
+        "hex2": "#c3c0ba",
+        "image": "images/canam-rt-ltd-color-pearlwhite.jpg"
+      },
+      {
+        "name": "Carbon Black",
+        "hex1": "#2b2b2b",
+        "hex2": "#0d0d0d",
+        "image": "images/canam-rt-ltd-color-carbonblack.jpg"
+      },
+      {
+        "name": "Mineral Blue",
+        "hex1": "#3d5a75",
+        "hex2": "#1f3346",
+        "image": "images/canam-rt-ltd-color-mineralblue.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-rt-ltd-color-pearlwhite.jpg",
+      "images/canam-rt-ltd-color-carbonblack.jpg"
+    ],
+    "gallery": [
+      "images/canam-rt-ltd-life-1.webp",
+      "images/canam-rt-ltd-life-2.webp"
+    ]
+  },
+  {
+    "id": "canam-rt-sea-to-sky-2027",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Touring",
+    "name": "Spyder RT Sea-to-Sky",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1330 ACE, SE6",
+    "myYear": 2027,
+    "desc": "Najbogatsza wersja RT na rocznik 2027 — na 2027 rok dochodzi TPMS, nowe materiały siedzeń i markowe torby podróżne.",
+    "fullDesc": [
+      "Spyder RT Sea-to-Sky na rocznik 2027 to kontynuacja najbardziej luksusowej odmiany modelu RT — bazuje na pełnym pakiecie turystycznym Limited, dodając adaptacyjne, piankowe siedzenia z haftowanym logo Sea-to-Sky oraz regulowane deflektory boczne.",
+      "Na 2027 rok model zyskuje system monitorowania ciśnienia w oponach (TPMS), odświeżone materiały tapicerskie oraz markowe torby podróżne Sea-to-Sky, a integracja z nawigacją BRP GO! On-Road ułatwia planowanie dłuższych tras."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1330 ACE, 115 KM",
+      "Waga sucha: 464 kg",
+      "System monitorowania ciśnienia w oponach (TPMS) — nowość MY27",
+      "Nawigacja BRP GO! On-Road — nowość MY27",
+      "Adaptacyjne, piankowe siedzenia z haftowanym logo Sea-to-Sky"
+    ],
+    "forWho": "Spyder RT Sea-to-Sky to propozycja dla klientów, którzy chcą mieć najbardziej ekskluzywną i najlepiej wyposażoną wersję turystyczną Can-Am.",
+    "features": [
+      {
+        "title": "System TPMS",
+        "text": "Monitorowanie ciśnienia w oponach w czasie rzeczywistym — nowość na rocznik 2027."
+      },
+      {
+        "title": "Nawigacja BRP GO! On-Road",
+        "text": "Integracja z aplikacją nawigacyjną BRP GO! ułatwia planowanie i śledzenie dłuższych tras."
+      },
+      {
+        "title": "Adaptacyjne, piankowe siedzenia Sea-to-Sky",
+        "text": "Haftowane logo, odświeżone na 2027 rok materiały i pianka dopasowująca się do sylwetki."
+      },
+      {
+        "title": "Markowe torby podróżne Sea-to-Sky",
+        "text": "Dedykowany zestaw bagażowy dołączony do pakietu na rocznik 2027."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Mars Red Metallic",
+        "hex1": "#a3241f",
+        "hex2": "#5c110e",
+        "image": "images/canam-rt-sea-to-sky-color-marsred-v2.avif"
+      }
+    ],
+    "images": [
+      "images/canam-rt-sea-to-sky-color-marsred-v2.avif"
+    ],
+    "gallery": [
+      "images/canam-rt-sea-to-sky-red-life-1.jpg",
+      "images/canam-rt-sea-to-sky-red-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-canyon-2027",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Adventure",
+    "name": "Canyon",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1330 ACE, SE6",
+    "myYear": 2027,
+    "desc": "Trójkołowiec adventure Can-Am na rocznik 2027 — łączy styl Spydera z możliwościami off-road.",
+    "fullDesc": [
+      "Canyon na rocznik 2027 to kontynuacja trójkołowca adventure łączącego sylwetkę i prowadzenie znane ze Spydera z realnymi możliwościami jazdy w terenie: 160 mm prześwitu i duży skok zawieszenia pozwalają pewnie pokonywać nierówne, szutrowe i polne drogi.",
+      "Cztery tryby jazdy — Normal, Sport, All-Road i Rally — pozwalają dostosować charakter prowadzenia do nawierzchni, a 21 punktów mocowania systemu LinQ umożliwia szeroką personalizację pojazdu."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1330 ACE, 115 KM",
+      "Waga sucha: 452 kg",
+      "Prześwit: 160 mm, skok zawieszenia przód/tył: 10,2\"/9,2\"",
+      "4 tryby jazdy: Normal, Sport, All-Road, Rally",
+      "21 punktów mocowania systemu LinQ"
+    ],
+    "forWho": "Canyon to propozycja dla kierowców, którzy chcą trójkołowca gotowego do jazdy poza asfaltem i otwartego na dalszą personalizację poprzez system LinQ.",
+    "features": [
+      {
+        "title": "Prześwit 160 mm i duży skok zawieszenia",
+        "text": "Realna zdolność pokonywania nierównych, szutrowych i polnych dróg."
+      },
+      {
+        "title": "4 tryby jazdy: Normal, Sport, All-Road, Rally",
+        "text": "Dostosuj charakter prowadzenia do nawierzchni jednym przyciskiem."
+      },
+      {
+        "title": "21 punktów mocowania systemu LinQ",
+        "text": "Szeroka personalizacja pojazdu pod indywidualne potrzeby."
+      },
+      {
+        "title": "Silnik Rotax 1330 ACE, 115 KM",
+        "text": "Wystarczająca moc do pewnego pokonywania podjazdów i trudniejszego terenu."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Sterling Silver Satin",
+        "hex1": "#7a7d82",
+        "hex2": "#5a5d62",
+        "image": "images/canam-canyon-std-1.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-canyon-std-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-canyon-std-life-1.webp",
+      "images/canam-canyon-std-life-2.webp"
+    ]
+  },
+  {
+    "id": "canam-canyon-redrock-2027",
+    "category": "trojkolowce",
+    "categoryLabel": "Can-Am",
+    "segment": "Adventure",
+    "name": "Canyon Redrock",
+    "price": "Cena na zapytanie",
+    "engine": "Rotax 1330 ACE, SE6",
+    "myYear": 2027,
+    "desc": "Najbogatsza wersja Canyon na rocznik 2027 — malowanie Moss Green i pełne wyposażenie podróżne.",
+    "fullDesc": [
+      "Canyon Redrock na rocznik 2027 to kontynuacja najbardziej zaawansowanej wersji Canyon — bazuje na pakiecie XT, ale zastępuje standardowe zawieszenie systemem KYB Smart-Shox, czyli półaktywnym zawieszeniem automatycznie dostosowującym tłumienie do rodzaju terenu.",
+      "Model dodaje kamerę cofania, konfigurowalny tryb jazdy Custom oraz unikalne, ekskluzywne malowanie Moss Green z pomarańczowym akcentem na przednim kole."
+    ],
+    "highlights": [
+      "Silnik: Rotax 1330 ACE, 115 KM",
+      "Waga sucha: 470 kg",
+      "Zawieszenie KYB Smart-Shox — półaktywne, dostosowujące się do terenu",
+      "Konfigurowalny tryb jazdy Custom",
+      "Kamera cofania w standardzie"
+    ],
+    "forWho": "Canyon Redrock to propozycja dla klientów, którzy chcą najbardziej zaawansowanej technologicznie wersji Canyon — z inteligentnym zawieszeniem i unikalnym wzornictwem.",
+    "features": [
+      {
+        "title": "Zawieszenie KYB Smart-Shox",
+        "text": "Półaktywne tłumienie automatycznie dostosowuje się do rodzaju terenu i stylu jazdy."
+      },
+      {
+        "title": "Konfigurowalny tryb jazdy Custom",
+        "text": "Ustaw własne parametry reakcji gazu i zawieszenia."
+      },
+      {
+        "title": "Malowanie Moss Green z akcentem na przednim kole",
+        "text": "Unikalna, ekskluzywna stylistyka."
+      },
+      {
+        "title": "Kamera cofania w standardzie",
+        "text": "Bezpieczne manewrowanie tym najbardziej zaawansowanym modelem Canyon."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Moss Green Satin",
+        "hex1": "#4a6b3a",
+        "hex2": "#3a5530",
+        "image": "images/canam-canyon-redrock-1.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-canyon-redrock-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-canyon-redrock-life-1.webp",
+      "images/canam-canyon-redrock-life-2.webp"
+    ]
+  },
+  {
+    "id": "canam-outlander-x-mr-max",
+    "category": "atv",
+    "categoryLabel": "Can-Am ATV",
+    "segment": "Rec-Sport / Rec-Ute",
+    "name": "Outlander X MR MAX",
+    "price": "Cena na zapytanie",
+    "engine": "1000R",
+    "myYear": 2027,
+    "desc": "Nowość na 2027 rok — dłuższe podwozie MAX błotnego specjalisty X MR, wciąż w wersji jednoosobowej, z wyciągarką 3500 lb w standardzie.",
+    "fullDesc": [
+      "Outlander X MR MAX to nowość na rocznik 2027 — wersja błotnego specjalisty X MR zbudowana na dłuższym podwoziu MAX, mimo to wciąż skonfigurowana fabrycznie jako pojazd jednoosobowy. Przeniesiony niżej i do tyłu przedni zderzak oraz dedykowany błotny bagażnik tylny ze zintegrowanymi uchwytami ułatwiają pracę w najtrudniejszym terenie.",
+      "Fabrycznie montowana wyciągarka 3500 lb z liną syntetyczną, opony XPS Swamp King XL 30″ oraz podniesione zawieszenie i felgi, a napęd Visco-4Lok na przedniej osi zapewnia pewną trakcję w głębokim błocie."
+    ],
+    "highlights": [
+      "Silnik: 1000R",
+      "Dłuższe podwozie MAX — nadal wersja jednoosobowa",
+      "Fabryczna wyciągarka 3500 lb z liną syntetyczną",
+      "Opony XPS Swamp King XL 30\"",
+      "Napęd Visco-4Lok na przedniej osi"
+    ],
+    "forWho": "Outlander X MR MAX to propozycja dla miłośników jazdy w głębokim błocie, którzy na 2027 rok chcą skorzystać z dłuższego, stabilniejszego podwozia MAX, zachowując przy tym pełne możliwości terenowe linii X MR.",
+    "features": [
+      {
+        "title": "Podwozie MAX",
+        "text": "Dłuższy rozstaw osi zwiększa stabilność w najtrudniejszym błotnym terenie, mimo to pojazd pozostaje jednoosobowy."
+      },
+      {
+        "title": "Fabryczna wyciągarka 3500 lb",
+        "text": "Lina syntetyczna i gotowość do samodzielnego wydobycia pojazdu z najgłębszego błota."
+      },
+      {
+        "title": "Opony XPS Swamp King XL 30\"",
+        "text": "Agresywny bieżnik zapewniający przyczepność tam, gdzie standardowe opony grzęzną."
+      },
+      {
+        "title": "Napęd Visco-4Lok",
+        "text": "Automatyczne dozowanie mocy na przednią oś zapewnia trakcję nawet w najtrudniejszych warunkach błotnych."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Loft Green Satin",
+        "hex1": "#3d4a2e",
+        "hex2": "#1f2618",
+        "image": "images/canam-outlander-x-mr-max-1.png"
+      }
+    ],
+    "images": [
+      "images/canam-outlander-x-mr-max-1.png"
+    ],
+    "gallery": [
+      "images/canam-outlander-x-mr-max-life-1.jpeg",
+      "images/canam-outlander-x-mr-max-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-outlander-xtp",
+    "category": "atv",
+    "categoryLabel": "Can-Am ATV",
+    "segment": "Rec-Sport",
+    "name": "Outlander XT-P",
+    "price": "Cena na zapytanie",
+    "engine": "1000R",
+    "myYear": 2027,
+    "desc": "Nowość w gamie na 2027 — sportowo-terenowa wersja Outlandera z fabrycznie zamontowanym osprzętem Performance.",
+    "fullDesc": [
+      "Outlander XT-P to zupełnie nowa pozycja w katalogu — łączy silnik 1000R z fabrycznie zamontowanym pakietem osprzętu Performance, w tym amortyzatorami FOX 1.5 PODIUM QS3 oraz agresywnymi oponami terenowymi, gotowymi do jazdy od razu po wyjściu z salonu.",
+      "Wzmocnione zawieszenie i sportowo dostrojone amortyzatory FOX z regulacją QS3 (Quick Switch 3 — trzy tryby tłumienia) pozwalają pewnie pokonywać nierówny teren przy wyższych prędkościach, a agresywna stylistyka XT-P odróżnia go od standardowych wersji Outlandera."
+    ],
+    "highlights": [
+      "Silnik: 1000R",
+      "Fabrycznie zamontowany pakiet osprzętu Performance",
+      "Amortyzatory FOX 1.5 PODIUM QS3",
+      "Wyświetlacz dotykowy 10,25\" — nowość MY27",
+      "Nowość w katalogu na rocznik 2027"
+    ],
+    "forWho": "Outlander XT-P to propozycja dla kierowców szukających gotowego, sportowo-terenowego quada z fabryczna zamontowanym osprzętem Performance — bez konieczności dokupowania i montowania dodatkowych akcesoriów.",
+    "features": [
+      {
+        "title": "Amortyzatory FOX 1.5 PODIUM QS3",
+        "text": "Sportowo dostrojone zawieszenie z regulacją tłumienia QS3 (3 tryby) pozwala pewnie pokonywać nierówny teren przy wyższych prędkościach."
+      },
+      {
+        "title": "Silnik 1000R",
+        "text": "Najmocniejsza jednostka napędowa dostępna w gamie Outlander, zapewniająca dynamiczne osiągi w terenie."
+      },
+      {
+        "title": "Wyświetlacz dotykowy 10,25\"",
+        "text": "Nowość na 2027 rok — pełna nawigacja i statystyki jazdy dostępne dla mocniejszych wersji Outlandera."
+      },
+      {
+        "title": "Fabryczny pakiet Performance",
+        "text": "Gotowy do jazdy sportowo-terenowej zestaw osprzętu, bez potrzeby dodatkowych zakupów."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Dusty Navy & Orange Crush",
+        "hex1": "#1c2b3a",
+        "hex2": "#e5762a",
+        "image": "images/canam-outlander-xtp-studio-official.png"
+      }
+    ],
+    "images": [
+      "images/canam-outlander-xtp-studio-official.png"
+    ],
+    "gallery": [
+      "images/canam-outlander-xtp-life-1.jpg",
+      "images/canam-outlander-xtp-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-outlander-pro-2027",
+    "category": "atv",
+    "categoryLabel": "Can-Am ATV",
+    "segment": "Rec-Ute",
+    "name": "Outlander PRO",
+    "price": "Cena na zapytanie",
+    "engine": "HD5 / HD7",
+    "myYear": 2027,
+    "desc": "Najbardziej przystępny quad użytkowy z gamy Outlander na rocznik 2027 — solidna podstawa do pracy w gospodarstwie i terenie.",
+    "fullDesc": [
+      "Outlander PRO na rocznik 2027 to kontynuacja najbardziej przystępnego cenowo quada użytkowego w gamie Can-Am — zbudowany z myślą o codziennej pracy w gospodarstwie i terenie. Solidny przedni zderzak, tylny zderzak oraz pełna osłona podwozia chronią pojazd podczas intensywnej eksploatacji.",
+      "Silnik Rotax ACE 650 dostępny w dwóch wersjach mocy — HD5 i HD7 — w połączeniu z systemem Tri-Mode Dynamic Power Steering oraz mechanizmem Visco-4Lok zapewnia pewną trakcję i łatwe prowadzenie nawet przy dużym obciążeniu."
+    ],
+    "highlights": [
+      "Silnik: Rotax ACE 650, HD5 (40 KM) lub HD7 (50 KM)",
+      "Waga sucha: ok. 370 kg",
+      "Udźwig holowniczy: 830 kg",
+      "Tri-Mode Dynamic Power Steering i przedni dyferencjał Visco-4Lok",
+      "Pełna osłona podwozia oraz przedni i tylny zderzak"
+    ],
+    "forWho": "Outlander PRO to propozycja dla rolników, leśników i właścicieli gospodarstw, którzy potrzebują niedrogiego, solidnego quada roboczego do codziennych zadań.",
+    "features": [
+      {
+        "title": "Silnik Rotax ACE 650 (HD5 / HD7)",
+        "text": "Dwa warianty mocy pozwalają dobrać jednostkę napędową dokładnie do zakresu codziennych prac gospodarskich."
+      },
+      {
+        "title": "Tri-Mode Dynamic Power Steering",
+        "text": "Trzy tryby wspomagania kierownicy ułatwiają manewrowanie zarówno w wąskich przejściach, jak i przy pełnym obciążeniu."
+      },
+      {
+        "title": "Przedni dyferencjał Visco-4Lok",
+        "text": "Pewna trakcja na nierównym, śliskim terenie."
+      },
+      {
+        "title": "Pełna osłona podwozia i zderzaki",
+        "text": "Ochrona najważniejszych podzespołów podczas intensywnej, codziennej eksploatacji."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Desert Tan",
+        "hex1": "#c9a876",
+        "hex2": "#8f7245",
+        "image": "images/canam-outlander-pro-color-deserttan.webp"
+      },
+      {
+        "name": "Compass Green",
+        "hex1": "#4d5a3f",
+        "hex2": "#2c3324",
+        "image": "images/canam-outlander-pro-color-compassgreen.webp"
+      }
+    ],
+    "images": [
+      "images/canam-outlander-pro-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-outlander-pro-life-1.avif",
+      "images/canam-outlander-pro-life-2.avif"
+    ]
+  },
+  {
+    "id": "canam-outlander-2027",
+    "category": "atv",
+    "categoryLabel": "Can-Am ATV",
+    "segment": "Rec-Ute",
+    "name": "Outlander",
+    "price": "Cena na zapytanie",
+    "engine": "500 / 700 / 850 / 1000R",
+    "myYear": 2027,
+    "desc": "Uniwersalny quad rekreacyjno-użytkowy na rocznik 2027 — dostępny w wielu wariantach silnikowych, od 500 do 1000R.",
+    "fullDesc": [
+      "Outlander na rocznik 2027 to kontynuacja najbardziej uniwersalnego quada w gamie Can-Am — dostępny w czterech wariantach silnikowych, od ekonomicznego 500 po najmocniejszy 1000R, co pozwala dopasować pojazd zarówno do lekkiej pracy w terenie, jak i bardziej wymagającej jazdy rekreacyjnej.",
+      "Najmocniejsza wersja 1000R korzysta z silnika Rotax V-Twin 999 cm³ o mocy 101 KM z inteligentną kontrolą przepustnicy (iTC) i trybami jazdy, a podwozie z dużym skokiem zawieszenia zapewnia komfort na nierównym terenie."
+    ],
+    "highlights": [
+      "Silniki: 500 / 700 / 850 / 1000R (do 101 KM, Rotax V-Twin)",
+      "Inteligentna kontrola przepustnicy (iTC) z trybami jazdy",
+      "Skok zawieszenia: 10,8\" przód / 12\" tył",
+      "Wodoszczelny schowek przedni i zdejmowany kufer tylny",
+      "System LinQ do szybkiego montażu akcesoriów"
+    ],
+    "forWho": "Outlander to naturalny wybór dla osób szukających jednego, uniwersalnego quada do wielu zastosowań — od prac gospodarskich po rekreacyjną jazdę w terenie.",
+    "features": [
+      {
+        "title": "4 warianty silnikowe (500–1000R)",
+        "text": "Dobierz moc dokładnie do swoich zastosowań i budżetu."
+      },
+      {
+        "title": "Inteligentna kontrola przepustnicy (iTC)",
+        "text": "Tryby jazdy dostosowują reakcję silnika do warunków."
+      },
+      {
+        "title": "Zawieszenie o skoku 10,8\"/12\"",
+        "text": "Komfortowa jazda po nierównym terenie."
+      },
+      {
+        "title": "System LinQ",
+        "text": "Szybki montaż dodatkowych kufrów i akcesoriów bez narzędzi."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Granite Grey",
+        "hex1": "#5a5e62",
+        "hex2": "#34373a",
+        "image": "images/canam-outlander-1.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-outlander-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-outlander-life-1.webp",
+      "images/canam-outlander-life-2.webp"
+    ]
+  },
+  {
+    "id": "canam-outlander-max-6x6-dps-2027",
+    "category": "atv",
+    "categoryLabel": "Can-Am ATV",
+    "segment": "6x6",
+    "name": "Outlander MAX 6x6 DPS",
+    "price": "Cena na zapytanie",
+    "engine": "850 / 1000R",
+    "myYear": 2027,
+    "desc": "Dwuosobowa wersja 6x6 na rocznik 2027 — dodatkowe miejsce pasażera i maksymalna trakcja z układem DPS.",
+    "fullDesc": [
+      "Outlander MAX 6x6 DPS na rocznik 2027 łączy sześciokołowy napęd i udźwig modelu 6x6 z dwuosobowym podwoziem MAX — pozwala zabrać ze sobą pomocnika lub pasażera bez utraty możliwości transportowych i trakcyjnych typowych dla wersji sześciokołowej.",
+      "Napęd 4WD/6WD z Visco-Lok QE oraz zawieszenie z podwójnymi wahaczami zapewniają stabilność nawet przy pełnym obciążeniu, a Tri-Mode Dynamic Power Steering (DPS) ułatwia manewrowanie ciężkim pojazdem."
+    ],
+    "highlights": [
+      "Silniki: 850 / 1000R (do 101 KM)",
+      "Dwuosobowe podwozie z przekształcalnym siedzeniem",
+      "Selektywny napęd 4WD/6WD z Visco-Lok QE",
+      "Skok zawieszenia: przód 9,2\" / tył 9,9\" — podwójne wahacze",
+      "Tri-Mode Dynamic Power Steering"
+    ],
+    "forWho": "Outlander MAX 6x6 DPS sprawdzi się w gospodarstwach i firmach, gdzie praca w najtrudniejszym terenie regularnie wymaga zabrania ze sobą drugiej osoby.",
+    "features": [
+      {
+        "title": "Napęd 4WD/6WD z Visco-Lok QE",
+        "text": "Maksymalna trakcja przy pełnym obciążeniu dwuosobowym i ładunku w skrzyni."
+      },
+      {
+        "title": "Zawieszenie z podwójnymi wahaczami — skok 9,2\"/9,9\"",
+        "text": "Stabilność i komfort nawet przy pełnym załadowaniu pojazdu."
+      },
+      {
+        "title": "Przekształcalne siedzenie dwuosobowe",
+        "text": "Zabierz pomocnika lub pasażera bez utraty możliwości transportowych."
+      },
+      {
+        "title": "Tri-Mode Dynamic Power Steering",
+        "text": "Ułatwia manewrowanie ciężkim, sześciokołowym pojazdem."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Granite Grey",
+        "hex1": "#5a5e62",
+        "hex2": "#34373a",
+        "image": "images/canam-outlander-max-6x6-2.jpg"
+      },
+      {
+        "name": "Stealth Black",
+        "hex1": "#1c1c1c",
+        "hex2": "#0a0a0a",
+        "image": "images/canam-outlander-max-6x6-color-black.png"
+      }
+    ],
+    "images": [
+      "images/canam-outlander-max-6x6-2.jpg",
+      "images/canam-outlander-max-6x6-color-black.png"
+    ],
+    "gallery": [
+      "images/canam-outlander-max-6x6-life-1.webp",
+      "images/canam-outlander-max-6x6-life-2.webp"
+    ]
+  },
+  {
+    "id": "canam-renegade-2027",
+    "category": "atv",
+    "categoryLabel": "Can-Am ATV",
+    "segment": "Rec-Sport",
+    "name": "Renegade",
+    "price": "Cena na zapytanie",
+    "engine": "650 / 1000R",
+    "myYear": 2027,
+    "desc": "Sportowy quad terenowy o wysokich osiągach na rocznik 2027 — dla aktywnej jazdy rekreacyjnej.",
+    "fullDesc": [
+      "Renegade na rocznik 2027 to kontynuacja sportowego quada terenowego Can-Am, zaprojektowanego z myślą o dynamicznej, aktywnej jeździe rekreacyjnej — agresywna stylistyka i niska, sportowa sylwetka odróżniają go od utylitarnych modeli Outlander.",
+      "Zawieszenie z przednimi wahaczami z drążkiem stabilizatora oraz tylnym zawieszeniem TTI na amortyzatorach SHOWA zapewnia dynamiczne, precyzyjne prowadzenie w zakrętach, a inteligentna kontrola przepustnicy z trybami Standard, ECO i Sport pozwala dostosować charakter jazdy."
+    ],
+    "highlights": [
+      "Silniki: 650 (62 KM) / 1000R (91 KM)",
+      "Zawieszenie: przód 9,2\", tył TTI 9,9\", amortyzatory SHOWA",
+      "Inteligentna kontrola przepustnicy: tryby Standard, ECO, Sport",
+      "Prześwit: 10,5\", wysokość siedziska: 34,5\"",
+      "Selektywny napęd 2WD/4WD z Visco-Lok"
+    ],
+    "forWho": "Renegade to propozycja dla kierowców szukających sportowego charakteru jazdy i dynamicznego prowadzenia w terenie.",
+    "features": [
+      {
+        "title": "Zawieszenie TTI z amortyzatorami SHOWA",
+        "text": "Dynamiczne, precyzyjne prowadzenie w zakrętach."
+      },
+      {
+        "title": "Tryby jazdy: Standard, ECO, Sport",
+        "text": "Dostosuj reakcję przepustnicy do warunków."
+      },
+      {
+        "title": "Silniki 650 / 1000R (do 91 KM)",
+        "text": "Wybór mocy pozwala dopasować osiągi do własnych oczekiwań."
+      },
+      {
+        "title": "Niska, sportowa sylwetka",
+        "text": "Agresywna stylistyka i niższy środek ciężkości."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Catalyst Gray & Orange Crush",
+        "hex1": "#8a8d90",
+        "hex2": "#c9541f",
+        "image": "images/canam-renegade-1.jpg"
+      },
+      {
+        "name": "Hyper Silver & Legion Red",
+        "hex1": "#c7c9cb",
+        "hex2": "#b02420",
+        "image": "images/canam-renegade-color-hypersilver-v2.avif"
+      }
+    ],
+    "images": [
+      "images/canam-renegade-1.jpg",
+      "images/canam-renegade-2.jpg"
+    ],
+    "gallery": [
+      "images/canam-renegade-life-1.webp",
+      "images/canam-renegade-life-2.webp"
+    ]
+  },
+  {
+    "id": "canam-traxter-hd9",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Utility",
+    "name": "Traxter HD10",
+    "price": "Cena na zapytanie",
+    "engine": "HD10, 80 KM",
+    "myYear": 2027,
+    "desc": "Nowa środkowa pozycja rodziny Traxter na 2027 — HD9 zastąpiony nowym, trzycylindrowym silnikiem HD10 o mocy 80 KM.",
+    "fullDesc": [
+      "Na rocznik 2027 Traxter HD9 zostaje zastąpiony przez zupełnie nowy silnik HD10 — trzycylindrową jednostkę Rotax ACE 999 cm³ o mocy 80 KM (w miejsce dotychczasowego dwucylindrowego V-twin 976 cc, 65 KM), co oznacza wyraźny skok mocy i kultury pracy względem poprzedniej generacji.",
+      "Nowa jednostka napędowa ogranicza także poziom hałasu, wibracji i ciepła w kabinie. Skrzynia ładunkowa z systemem LinQ oraz zaczep holowniczy o dużym udźwigu sprawiają, że Traxter HD10 sprawdza się zarówno w pracach gospodarczych, jak i przy transporcie sprzętu w trudnym terenie."
+    ],
+    "highlights": [
+      "Silnik: HD10, 80 KM — nowy trzycylindrowy Rotax ACE 999 cm³ (nowość MY27, zastępuje HD9)",
+      "Ograniczony poziom hałasu, wibracji i ciepła w kabinie",
+      "Skrzynia ładunkowa z systemem LinQ",
+      "Zaczep holowniczy o dużym udźwigu",
+      "Napęd 4WD z Visco-Lok QE"
+    ],
+    "forWho": "Traxter HD10 to propozycja dla gospodarstw i firm potrzebujących solidnej platformy roboczej z wyraźnym zapasem mocy większym niż w podstawowym HD7, bez konieczności przechodzenia od razu na najmocniejsze warianty gamy.",
+    "features": [
+      {
+        "title": "Silnik HD10, 80 KM — nowość MY27",
+        "text": "Trzycylindrowy Rotax ACE 999 cm³ zastępuje dotychczasowy dwucylindrowy HD9 (976 cc, 65 KM), oferując zauważalnie więcej mocy i kultury pracy."
+      },
+      {
+        "title": "Skrzynia ładunkowa z systemem LinQ",
+        "text": "Szybki montaż dodatkowych akcesoriów i przechowywanie sprzętu roboczego bez użycia narzędzi."
+      },
+      {
+        "title": "Zaczep holowniczy o dużym udźwigu",
+        "text": "Transport przyczep i sprzętu gospodarczego w trudnym terenie."
+      },
+      {
+        "title": "Napęd 4WD z Visco-Lok QE",
+        "text": "Automatyczne dozowanie mocy na koła zapewnia trakcję w błocie i na luźnym podłożu."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Compass Green",
+        "hex1": "#4a5a3a",
+        "hex2": "#2a3320",
+        "image": "images/canam-traxter-hd9-clean.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-traxter-hd9-clean.jpg"
+    ],
+    "gallery": [
+      "images/canam-traxter-hd9-life-1.jpg",
+      "images/canam-traxter-hd9-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-traxter-xu",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Utility",
+    "name": "Traxter XU",
+    "price": "Cena na zapytanie",
+    "engine": "HD10 (80 KM) / HD11 (95 KM)",
+    "myYear": 2027,
+    "desc": "Całkowicie nowa, przeprojektowana platforma Traxter na 2027 rok — silniki Rotax ACE HD10 (80 KM) lub HD11 (95 KM) i unowocześniona konstrukcja.",
+    "fullDesc": [
+      "Traxter XU to zupełnie nowa generacja platformy Traxter, wprowadzona na rocznik 2027 — z trzycylindrowym silnikiem Rotax ACE w wariancie HD10 (80 KM) lub mocniejszym HD11 (95 KM), unowocześnioną konstrukcją ramy i zawieszenia oraz odświeżoną kabiną roboczą.",
+      "Fabryczna wyciągarka 4500 lb, wzmocniony zderzak przedni, pełny hardtop i metalowy bagażnik dachowy (headache rack) sprawiają, że Traxter XU jest gotowy do pracy od razu po wyjściu z salonu, bez konieczności montażu dodatkowych akcesoriów."
+    ],
+    "highlights": [
+      "Silniki: HD10 (80 KM) lub HD11 (95 KM) — Rotax ACE 999 cc, 3-cylindrowy",
+      "Fabryczna wyciągarka 4500 lb z liną syntetyczną",
+      "Napęd Quick-4Lok — automatyczna blokada przedniego dyferencjału",
+      "Udźwig skrzyni ładunkowej: do 408 kg",
+      "Pojemność: 3 osoby"
+    ],
+    "forWho": "Traxter XU to propozycja dla klientów szukających najnowszej technologii w segmencie roboczych SSV — z wyborem mocy silnika i unowocześnioną konstrukcją względem poprzednich generacji Traxtera.",
+    "features": [
+      {
+        "title": "Silniki HD10 / HD11",
+        "text": "Trzycylindrowy Rotax ACE 999 cc w wersji 80 KM (HD10) lub 95 KM (HD11) — wybór mocy dopasowany do zakresu pracy."
+      },
+      {
+        "title": "Fabryczna wyciągarka 4500 lb",
+        "text": "Lina syntetyczna z funkcją auto-stop, gotowa do pracy bez dodatkowego montażu."
+      },
+      {
+        "title": "Napęd Quick-4Lok",
+        "text": "Automatyczna blokada przedniego dyferencjału zapewnia pewną trakcję w trudnym terenie."
+      },
+      {
+        "title": "Metalowy bagażnik dachowy i uchwyty LinQ 2×2",
+        "text": "Dodatkowa przestrzeń transportowa i szybki montaż akcesoriów roboczych."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Hybrid White",
+        "hex1": "#ede9e3",
+        "hex2": "#c3c0ba",
+        "image": "images/canam-traxter-xu-1.png"
+      },
+      {
+        "name": "Stealth Black",
+        "hex1": "#1c1c1e",
+        "hex2": "#0a0a0a",
+        "image": "images/canam-traxter-xu-life-2.jpeg"
+      }
+    ],
+    "images": [
+      "images/canam-traxter-xu-1.png",
+      "images/canam-traxter-xu-life-2.jpeg"
+    ],
+    "gallery": [
+      "images/canam-traxter-xu-life-1.jpg",
+      "images/canam-defender-xu-nonstop.jpg"
+    ]
+  },
+  {
+    "id": "canam-traxter-xu-pro-6x6",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Utility",
+    "name": "Traxter XU PRO 6x6",
+    "price": "Cena na zapytanie",
+    "engine": "976 cc V-Twin, 82 KM",
+    "myYear": 2027,
+    "desc": "Sześciokołowa wersja platformy XU na 2027 — sprawdzony silnik V-Twin 976 cc (82 KM) i maksymalny udźwig do najcięższych prac terenowych.",
+    "fullDesc": [
+      "Traxter XU PRO 6x6 to najbardziej wytrzymała odmiana platformy XU — sześciokołowy napęd i wzmocniona konstrukcja zapewniają maksymalny udźwig i trakcję w najcięższych warunkach terenowych i przy transporcie dużych ładunków.",
+      "W odróżnieniu od reszty gamy XU (HD10/HD11 z nowym silnikiem 3-cylindrowym), wersja PRO 6x6 na 2027 rok pozostaje przy sprawdzonej jednostce Rotax V-Twin 976 cc o mocy 82 KM, która w połączeniu z selektywnym napędem 4WD/6WD i systemem Quick-4Lok pozwala pewnie pokonywać najtrudniejszy teren, niezależnie od obciążenia skrzyni ładunkowej."
+    ],
+    "highlights": [
+      "Silnik: Rotax V-Twin 976 cc, 82 KM (pozostaje przy sprawdzonej jednostce V-Twin, w odróżnieniu od reszty gamy XU)",
+      "Sześciokołowy napęd 6x6",
+      "Maksymalny udźwig w gamie Traxter",
+      "Napęd Quick-4Lok — automatyczna blokada dyferencjału",
+      "Wzmocniona konstrukcja do najcięższych prac"
+    ],
+    "forWho": "Traxter XU PRO 6x6 to propozycja dla firm i gospodarstw wymagających maksymalnej trakcji i udźwigu w najtrudniejszym terenie — tam, gdzie standardowy napęd 4WD nie wystarcza.",
+    "features": [
+      {
+        "title": "Napęd sześciokołowy 6x6",
+        "text": "Maksymalna trakcja i udźwig w najtrudniejszym terenie, przewyższające możliwości standardowej platformy 4WD."
+      },
+      {
+        "title": "Silnik Rotax V-Twin 976 cc, 82 KM",
+        "text": "Sprawdzona, dwucylindrowa jednostka napędowa — wersja 6x6 na 2027 rok nie przechodzi jeszcze na nowy silnik 3-cylindrowy stosowany w reszcie gamy XU."
+      },
+      {
+        "title": "Napęd Quick-4Lok",
+        "text": "Automatyczna blokada przedniego dyferencjału zapewnia pewną trakcję w zależności od warunków terenowych."
+      },
+      {
+        "title": "Wzmocniona konstrukcja",
+        "text": "Przygotowana do najcięższych prac transportowych i gospodarczych."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Stealth Black",
+        "hex1": "#1c1c1e",
+        "hex2": "#0a0a0a",
+        "image": "images/canam-traxter-xu-pro-6x6-1.png"
+      }
+    ],
+    "images": [
+      "images/canam-traxter-xu-pro-6x6-1.png"
+    ],
+    "gallery": [
+      "images/canam-traxter-xu-pro-6x6-life-1.jpg",
+      "images/canam-traxter-xu-pro-6x6-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-traxter-x-mr",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Utility",
+    "name": "Traxter X MR",
+    "price": "Cena na zapytanie",
+    "engine": "HD10, 80 KM",
+    "myYear": 2027,
+    "desc": "Błotny specjalista rodziny Traxter na 2027 — jedyny model utrzymany na sprawdzonej platformie poprzedniej generacji, poza nową linią XU.",
+    "fullDesc": [
+      "Traxter X MR to dedykowana wersja błotna platformy Traxter — jako jedyny model w gamie na 2027 rok pozostaje przy sprawdzonej konstrukcji poprzedniej generacji, podczas gdy reszta rodziny przechodzi na nową platformę XU. Podniesione zawieszenie, szerokie opony błotne oraz podniesiony układ wydechowy i dolotowy pozwalają pokonywać głębokie błoto i przeszkody wodne bez ryzyka zalania silnika.",
+      "Napęd Visco-Lok QE dostosowuje moc do każdego koła niezależnie, zapewniając trakcję nawet w najbardziej grząskim terenie, a wzmocniona konstrukcja podwozia utrzymuje niezawodność mimo intensywnej eksploatacji błotnej."
+    ],
+    "highlights": [
+      "Silnik: HD10, 80 KM",
+      "Jedyny model rodziny poza nową platformą XU na 2027 rok",
+      "Podniesione zawieszenie i szerokie opony błotne",
+      "Podniesiony układ wydechowy i dolotowy",
+      "Napęd Visco-Lok QE"
+    ],
+    "forWho": "Traxter X MR to propozycja dla entuzjastów jazdy w głębokim błocie, którzy potrzebują dedykowanej, wzmocnionej platformy roboczej gotowej do najbardziej wymagających warunków terenowych.",
+    "features": [
+      {
+        "title": "Podniesione zawieszenie",
+        "text": "Większy prześwit ułatwia pokonywanie głębokiego błota i nierównego terenu."
+      },
+      {
+        "title": "Szerokie opony błotne",
+        "text": "Zwiększona powierzchnia kontaktu z podłożem w grząskim terenie."
+      },
+      {
+        "title": "Podniesiony układ wydechowy i dolotowy",
+        "text": "Ochrona silnika przed zalaniem podczas pokonywania głębokich przeszkód wodnych."
+      },
+      {
+        "title": "Napęd Visco-Lok QE",
+        "text": "Automatyczne dozowanie mocy na koła zapewnia trakcję w najbardziej grząskim terenie."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Loft Green Satin",
+        "hex1": "#7a8560",
+        "hex2": "#3a4530",
+        "image": "images/canam-traxter-x-mr-1.png"
+      }
+    ],
+    "images": [
+      "images/canam-traxter-x-mr-1.png"
+    ],
+    "gallery": [
+      "images/canam-traxter-x-mr-life-1.jpg",
+      "images/canam-traxter-x-mr-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-traxter-xt",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Utility",
+    "name": "Traxter XT CAB",
+    "price": "Cena na zapytanie",
+    "engine": "HD10, 80 KM",
+    "myYear": 2027,
+    "desc": "Wersja XT CAB z fabryczną kabiną na 2027 — silnik HD10 (80 KM) i ochrona przed warunkami atmosferycznymi do całorocznej pracy w terenie.",
+    "fullDesc": [
+      "Traxter XT CAB to wersja wyposażona fabrycznie w pełną kabinę z ogrzewaniem i wycieraczką przedniej szyby — pozwala pracować w terenie niezależnie od pory roku i warunków atmosferycznych, bez konieczności dokupowania osobnego zestawu kabinowego.",
+      "Pełne drzwi, szyby boczne i przednia szyba chronią kierowcę i pasażera przed zimnem, deszczem i wiatrem, a trzycylindrowy silnik Rotax ACE HD10 o mocy 80 KM zapewnia wystarczającą moc do codziennej pracy gospodarczej."
+    ],
+    "highlights": [
+      "Silnik: HD10, 80 KM — Rotax ACE 999 cc, 3-cylindrowy",
+      "Fabryczna, pełna kabina z ogrzewaniem",
+      "Wycieraczka przedniej szyby",
+      "Napęd Quick-4Lok — automatyczna blokada dyferencjału",
+      "Fabryczna wyciągarka 4500 lb"
+    ],
+    "forWho": "Traxter XT CAB to propozycja dla gospodarstw i firm pracujących w terenie przez cały rok, niezależnie od warunków atmosferycznych — bez konieczności przerywania pracy zimą czy w deszczu.",
+    "features": [
+      {
+        "title": "Fabryczna kabina z ogrzewaniem",
+        "text": "Komfortowa praca w terenie nawet w chłodne, zimowe dni."
+      },
+      {
+        "title": "Wycieraczka przedniej szyby",
+        "text": "Utrzymuje dobrą widoczność podczas pracy w deszczu i śniegu."
+      },
+      {
+        "title": "Pełne drzwi i szyby boczne",
+        "text": "Skuteczna ochrona przed wiatrem i zimnem, lepsza niż w zestawach montowanych po fakcie."
+      },
+      {
+        "title": "Silnik HD10, 80 KM",
+        "text": "Trzycylindrowy Rotax ACE zapewniający wystarczającą moc do codziennej pracy gospodarczej i transportowej."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Dolomite Grey",
+        "hex1": "#8a8d90",
+        "hex2": "#5a5d61",
+        "image": "images/canam-traxter-xt-1.png"
+      }
+    ],
+    "images": [
+      "images/canam-traxter-xt-1.png"
+    ],
+    "gallery": [
+      "images/canam-traxter-xt-life-1.jpg",
+      "images/canam-traxter-xt-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-traxter-limited",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Utility",
+    "name": "Traxter Limited",
+    "price": "Cena na zapytanie",
+    "engine": "HD11, 95 KM",
+    "myYear": 2027,
+    "desc": "Najbogaciej wyposażona wersja Traxtera na 2027 — klimatyzacja, system audio Rockford Fosgate i wyświetlacz dotykowy 10,25\".",
+    "fullDesc": [
+      "Traxter Limited to szczytowa wersja wyposażeniowa gamy Traxter — bazuje na nowej platformie XU z najmocniejszym silnikiem HD11 (95 KM), dokładając pełną klimatyzację (HVAC), elektrycznie otwierane szyby oraz przednią szybę ze spryskiwaczem i wycieraczką.",
+      "System audio Rockford Fosgate Premium z subwooferem, wyświetlacz dotykowy 10,25\" z bezprzewodową łącznością oraz kamera cofania dopełniają najbogatszy pakiet wyposażenia w całej gamie Traxter."
+    ],
+    "highlights": [
+      "Silnik: HD11, 95 KM — Rotax ACE 999 cc, 3-cylindrowy",
+      "Klimatyzacja (HVAC) w standardzie",
+      "System audio Rockford Fosgate Premium z subwooferem",
+      "Wyświetlacz dotykowy 10,25\" i kamera cofania",
+      "Elektrycznie otwierane szyby i przednia szyba ze spryskiwaczem"
+    ],
+    "forWho": "Traxter Limited to propozycja dla klientów, którzy oczekują pełnego wyposażenia premium przy zachowaniu wszystkich możliwości roboczych platformy Traxter — bez kompromisów w komforcie.",
+    "features": [
+      {
+        "title": "Klimatyzacja (HVAC)",
+        "text": "Pełny system ogrzewania, wentylacji i klimatyzacji — komfort niezależnie od pory roku."
+      },
+      {
+        "title": "System audio Rockford Fosgate Premium",
+        "text": "Dwa głośniki i subwoofer ze wzmacniaczem dla najwyższej jakości dźwięku na pokładzie."
+      },
+      {
+        "title": "Wyświetlacz dotykowy 10,25\"",
+        "text": "Bezprzewodowa łączność i pełna nawigacja obok dodatkowego wyświetlacza 5\" z klawiaturą."
+      },
+      {
+        "title": "Silnik HD11, 95 KM",
+        "text": "Najmocniejsza, trzycylindrowa jednostka napędowa w gamie Traxter."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Hybrid White",
+        "hex1": "#ede9e3",
+        "hex2": "#c3c0ba",
+        "image": "images/canam-traxter-limited-1.png"
+      }
+    ],
+    "images": [
+      "images/canam-traxter-limited-1.png"
+    ],
+    "gallery": [
+      "images/canam-traxter-limited-life-1.jpg",
+      "images/canam-traxter-limited-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-traxter-lonestar",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Utility",
+    "name": "Traxter Lone Star",
+    "price": "Cena na zapytanie",
+    "engine": "HD11, 95 KM",
+    "myYear": 2027,
+    "desc": "Edycja specjalna Lone Star na 2027 — najmocniejszy silnik HD11 (95 KM) i dedykowana stylistyka inspirowana teksańskim dziedzictwem marki.",
+    "fullDesc": [
+      "Traxter Lone Star to edycja specjalna zbudowana na wydłużonym podwoziu MAX z myślą o entuzjastach terenowej pracy na dużych, otwartych przestrzeniach — dedykowana grafika, panel z napisem \"Lone Star\" na desce rozdzielczej i wykończenia nawiązują do teksańskiego dziedzictwa marki Can-Am.",
+      "Najmocniejszy w gamie silnik Rotax ACE HD11 o mocy 95 KM oraz pełne wyposażenie kabinowe sprawiają, że Lone Star łączy unikalną stylistykę z pełną funkcjonalnością roboczą pozostałych wersji Traxtera."
+    ],
+    "highlights": [
+      "Silnik: HD11, 95 KM — Rotax ACE 999 cc, 3-cylindrowy",
+      "Dedykowana grafika i panel \"Lone Star\" na desce rozdzielczej",
+      "Wydłużone podwozie MAX",
+      "Napęd Quick-4Lok — automatyczna blokada dyferencjału",
+      "Fabryczna wyciągarka 4500 lb"
+    ],
+    "forWho": "Traxter Lone Star to propozycja dla klientów szukających unikalnej stylistyki i charakteru edycji specjalnej, przy zachowaniu pełnej funkcjonalności roboczej standardowego Traxtera.",
+    "features": [
+      {
+        "title": "Dedykowana grafika Lone Star",
+        "text": "Unikalna stylistyka i panel z logo na desce rozdzielczej odróżniające edycję specjalną od standardowych wersji Traxtera."
+      },
+      {
+        "title": "Silnik HD11, 95 KM",
+        "text": "Najmocniejsza, trzycylindrowa jednostka napędowa w gamie Traxter."
+      },
+      {
+        "title": "Napęd Quick-4Lok",
+        "text": "Automatyczna blokada przedniego dyferencjału zapewnia pewną trakcję w terenie."
+      },
+      {
+        "title": "Fabryczna wyciągarka 4500 lb",
+        "text": "Lina syntetyczna z funkcją auto-stop, gotowa do pracy bez dodatkowego montażu."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Stealth Black",
+        "hex1": "#1c1c1e",
+        "hex2": "#0a0a0a",
+        "image": "images/canam-traxter-lonestar-1.png"
+      }
+    ],
+    "images": [
+      "images/canam-traxter-lonestar-1.png"
+    ],
+    "gallery": [
+      "images/canam-traxter-lonestar-life-1.jpg",
+      "images/canam-traxter-lonestar-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-commander-dps",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Utility",
+    "name": "Commander DPS 700",
+    "price": "Cena na zapytanie",
+    "engine": "700, 52 KM",
+    "myYear": 2027,
+    "desc": "Nowość w katalogu — bazowa wersja Commandera na 2027 rok, z silnikiem Rotax ACE 650 cc o mocy 52 KM.",
+    "fullDesc": [
+      "Commander DPS 700 to zupełnie nowa pozycja w katalogu Extreme Club — model plasujący się pomiędzy czysto roboczym Traxterem a sportowym Maverickiem, oferujący jednocylindrowy silnik Rotax ACE 650 cc o mocy 52 KM przy zachowaniu praktycznej skrzyni ładunkowej.",
+      "Układ Dynamic Power Steering (DPS), przedni dyferencjał Visco-Lok QE oraz zawieszenie o skoku 31,8 cm sprawiają, że Commander DPS 700 sprawdza się zarówno w rekreacyjnej jeździe terenowej, jak i codziennych pracach gospodarczych."
+    ],
+    "highlights": [
+      "Silnik: 700, 52 KM — Rotax ACE 650 cc, jednocylindrowy",
+      "Nowość w katalogu na rocznik 2027",
+      "Dynamic Power Steering (DPS)",
+      "Przedni dyferencjał Visco-Lok QE",
+      "Pojemność: 2 osoby"
+    ],
+    "forWho": "Commander DPS 700 to propozycja dla klientów szukających pojazdu łączącego dynamikę jazdy rekreacyjnej z praktycznością roboczą — pomiędzy czysto sportowym Maverickiem a roboczym Traxterem.",
+    "features": [
+      {
+        "title": "Silnik 700, 52 KM",
+        "text": "Jednocylindrowa jednostka Rotax ACE 650 cc — ekonomiczna i wystarczająca do codziennej jazdy rekreacyjnej i roboczej."
+      },
+      {
+        "title": "Dynamic Power Steering (DPS)",
+        "text": "Wspomaganie kierownicy ułatwiające manewrowanie w każdych warunkach terenowych."
+      },
+      {
+        "title": "Przedni dyferencjał Visco-Lok QE",
+        "text": "Automatyczna blokada zapewniająca pewną trakcję w terenie."
+      },
+      {
+        "title": "Skrzynia ładunkowa",
+        "text": "Udźwig 272 kg — praktyczne możliwości transportowe typowe dla roboczych SSV."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Compass Green",
+        "hex1": "#5a6b52",
+        "hex2": "#3a4534",
+        "image": "images/canam-commander-dps-official.png"
+      }
+    ],
+    "images": [
+      "images/canam-commander-dps-official.png"
+    ],
+    "gallery": [
+      "images/canam-commander-dps-life-1.jpg",
+      "images/canam-commander-dps-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-commander-xt",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Utility",
+    "name": "Commander XT 1000R",
+    "price": "Cena na zapytanie",
+    "engine": "1000R, 100 KM",
+    "myYear": 2027,
+    "desc": "Rozszerzona wersja Commandera na 2027 rok — silnik 1000R (100 KM) i dodatkowe wyposażenie terenowe.",
+    "fullDesc": [
+      "Commander XT 1000R dokłada do rodziny Commander wyraźnie mocniejszy silnik Rotax V-twin 976 cc o mocy 100 KM oraz dodatkowe wyposażenie terenowe — w tym felgi aluminiowe, wzmocniony zderzak przedni i fabrycznie montowaną wyciągarkę.",
+      "Wzmocniony chassis, arkadowe zawieszenie z dużym skokiem oraz pełny hardtop czynią Commander XT 1000R gotowym do intensywnej pracy i rekreacji w terenie od razu po wyjściu z salonu."
+    ],
+    "highlights": [
+      "Silnik: 1000R, 100 KM — Rotax V-twin 976 cc",
+      "Felgi aluminiowe 14\"",
+      "Fabrycznie zamontowana wyciągarka 4500 lb",
+      "Dynamic Power Steering (DPS)",
+      "Pojemność: 2 osoby"
+    ],
+    "forWho": "Commander XT 1000R to propozycja dla klientów, którzy chcą mieć dodatkowe wyposażenie terenowe i wyraźnie więcej mocy od razu po zakupie, bez konieczności dokupowania i montowania osobnych akcesoriów.",
+    "features": [
+      {
+        "title": "Fabrycznie zamontowana wyciągarka 4500 lb",
+        "text": "Lina syntetyczna — gotowość do samodzielnego wydobycia pojazdu z trudnego terenu."
+      },
+      {
+        "title": "Silnik 1000R, 100 KM",
+        "text": "Dwucylindrowy Rotax V-twin 976 cc — dynamiczne osiągi zarówno w pracy, jak i rekreacyjnej jeździe terenowej."
+      },
+      {
+        "title": "Felgi aluminiowe 14\"",
+        "text": "Większa odporność na uszkodzenia w trudnym terenie niż standardowe felgi stalowe."
+      },
+      {
+        "title": "Pełny hardtop i wzmocniony zderzak XT",
+        "text": "Dodatkowa ochrona i komfort podczas intensywnej pracy w terenie."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Dolomite Grey",
+        "hex1": "#8a8d90",
+        "hex2": "#5a5d61",
+        "image": "images/canam-commander-xt-official.png"
+      }
+    ],
+    "images": [
+      "images/canam-commander-xt-official.png"
+    ],
+    "gallery": [
+      "images/canam-commander-dps-life-1.jpg",
+      "images/canam-commander-dps-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-commander-max",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Utility",
+    "name": "Commander MAX XT 1000R",
+    "price": "Cena na zapytanie",
+    "engine": "1000R, 100 KM",
+    "myYear": 2027,
+    "desc": "Czteroosobowa wersja Commandera na 2027 rok — silnik 1000R (100 KM), wydłużone podwozie 64\" i fabryczna wyciągarka.",
+    "fullDesc": [
+      "Commander MAX XT 1000R to wydłużona, czteroosobowa wersja Commandera o szerokości 64 cali — dodatkowy rząd siedzeń pozwala zabrać w teren więcej osób, a arkadowe zawieszenie o skoku 38 cm utrzymuje pełną kontrolę mimo większej masy pojazdu.",
+      "Ten sam silnik Rotax V-twin 976 cc o mocy 100 KM, fabryczna wyciągarka 4500 lb oraz pełny hardtop zapewniają dynamiczne osiągi i gotowość do pracy w terenie także w wydłużonej, czteroosobowej konfiguracji."
+    ],
+    "highlights": [
+      "Silnik: 1000R, 100 KM — Rotax V-twin 976 cc",
+      "Czteroosobowe, wydłużone podwozie 64\"",
+      "Fabrycznie zamontowana wyciągarka 4500 lb",
+      "Zawieszenie arkadowe o skoku 38 cm",
+      "Wyświetlacz cyfrowy 7,6\" z klawiaturą"
+    ],
+    "forWho": "Commander MAX XT 1000R to propozycja dla grup i rodzin, które chcą dzielić się osiągami Commandera w terenie — z miejscem dla czterech osób, bez kompromisów w mocy silnika czy praktyczności.",
+    "features": [
+      {
+        "title": "Czteroosobowe podwozie 64\"",
+        "text": "Dodatkowy rząd siedzeń pozwala zabrać w teren więcej osób w jednym pojeździe."
+      },
+      {
+        "title": "Silnik 1000R, 100 KM",
+        "text": "Dwucylindrowy Rotax V-twin 976 cc — dynamiczne osiągi zachowane mimo wydłużonego, cięższego nadwozia."
+      },
+      {
+        "title": "Fabrycznie zamontowana wyciągarka 4500 lb",
+        "text": "Lina syntetyczna gotowa do samodzielnego wydobycia pojazdu z trudnego terenu."
+      },
+      {
+        "title": "Zawieszenie arkadowe o skoku 38 cm",
+        "text": "Zwiększony skok poprawia stabilność i komfort na nierównym terenie w porównaniu do wersji dwuosobowej."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Triple Black",
+        "hex1": "#1c1c1e",
+        "hex2": "#0a0a0a",
+        "image": "images/canam-commander-max-official.png"
+      }
+    ],
+    "images": [
+      "images/canam-commander-max-official.png"
+    ],
+    "gallery": [
+      "images/canam-commander-max-black-life-1.jpg",
+      "images/canam-commander-max-black-life-2.jpg"
+    ]
+  },
+  {
+    "id": "canam-maverick-trail-2027",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Rec-Sport ≤60''",
+    "name": "Maverick Trail",
+    "price": "Cena na zapytanie",
+    "engine": "700 / 1000",
+    "myYear": 2027,
+    "desc": "Kompaktowy SSV do wąskich szlaków leśnych na rocznik 2027 — świetna zwrotność przy szerokości do 60 cali.",
+    "fullDesc": [
+      "Maverick Trail na rocznik 2027 to kontynuacja najbardziej dostępnego cenowo i najwęższego pojazdu SSV w gamie Can-Am — przy szerokości zaledwie 127 cm swobodnie mieści się na wąskich, leśnych i górskich szlakach. Dedykowany fotel kierowcy i pasażera w układzie Ergo-Lok zapewnia komfort mimo kompaktowych wymiarów nadwozia.",
+      "Dostępny w dwóch wariantach silnikowych — 700 i 1000 — pozwala dobrać moc do własnych potrzeb, a selektywny napęd 2WD/4WD z mechanizmem Visco-Lok QE zapewnia pewną trakcję na zróżnicowanej nawierzchni."
+    ],
+    "highlights": [
+      "Silniki: 700 (52 KM) / 1000 (75 KM)",
+      "Szerokość: 127 cm — najwęższy SSV w gamie Can-Am",
+      "Selektywny napęd 2WD/4WD z Visco-Lok QE",
+      "Skok zawieszenia: przód 10\", tył 10,5\"",
+      "Udźwig holowniczy: 680 kg"
+    ],
+    "forWho": "Maverick Trail to propozycja dla osób szukających przystępnego cenowo wejścia w świat pojazdów SSV oraz dla tych, którzy jeżdżą wąskimi, technicznymi szlakami leśnymi i górskimi.",
+    "features": [
+      {
+        "title": "Szerokość 127 cm — najwęższy SSV w gamie",
+        "text": "Swobodnie zmieści się na wąskich, technicznych szlakach leśnych i górskich."
+      },
+      {
+        "title": "Fotele Ergo-Lok",
+        "text": "Dedykowany kształt siedzeń kierowcy i pasażera zapewnia komfort mimo kompaktowych wymiarów."
+      },
+      {
+        "title": "Selektywny napęd 2WD/4WD z Visco-Lok QE",
+        "text": "Pewna trakcja na zróżnicowanej nawierzchni."
+      },
+      {
+        "title": "Silniki 700 / 1000 (do 75 KM)",
+        "text": "Wybór mocy pozwala dopasować pojazd do własnych potrzeb i budżetu."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Catalyst Gray",
+        "hex1": "#8a8d90",
+        "hex2": "#4a4d50",
+        "image": "images/canam-maverick-trail-color-catalystgray-v2.webp"
+      },
+      {
+        "name": "Triple Black",
+        "hex1": "#2b2b2b",
+        "hex2": "#0d0d0d",
+        "image": "images/canam-maverick-trail-1.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-maverick-trail-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-maverick-trail-life-1.avif",
+      "images/canam-maverick-trail-life-2.avif"
+    ]
+  },
+  {
+    "id": "canam-maverick-sport-2027",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Rec-Sport ≤60''",
+    "name": "Maverick Sport",
+    "price": "Cena na zapytanie",
+    "engine": "1000R",
+    "myYear": 2027,
+    "desc": "Sportowy SSV o szerokości do 60 cali na rocznik 2027 — dynamiczne prowadzenie na wąskich trasach.",
+    "fullDesc": [
+      "Maverick Sport na rocznik 2027 to kontynuacja pojazdu SSV zorientowanego na wszechstronne osiągi terenowe — od tras w zaroślach, przez skaliste podjazdy, po błotniste odcinki. Silnik Rotax 976 cm³ V-Twin o mocy 100 KM z inteligentną kontrolą przepustnicy zapewnia dynamiczne, ale przewidywalne prowadzenie.",
+      "Przednie zawieszenie o skoku 11,5 cala oraz podwójne wentylowane tarcze hamulcowe zapewniają kontrolę przy szybkiej jeździe terenowej, a system Hill Descent Control i tryby SPORT/ECO pozwalają dostosować charakter jazdy do warunków."
+    ],
+    "highlights": [
+      "Silnik: Rotax 976 cm³ V-Twin, 100 KM (1000R)",
+      "Skok przedniego zawieszenia: 11,5\"",
+      "Podwójne wentylowane tarcze 220 mm, zaciski dwutłoczkowe",
+      "Tryby jazdy SPORT/ECO oraz Hill Descent Control",
+      "Selektywny napęd 2WD/4WD z Visco-Lok QE"
+    ],
+    "forWho": "Maverick Sport sprawdzi się u kierowców szukających wszechstronnego pojazdu SSV do aktywnej jazdy terenowej — od leśnych duktów po bardziej wymagające, skaliste i błotniste odcinki.",
+    "features": [
+      {
+        "title": "Silnik Rotax 976 cm³ V-Twin, 100 KM",
+        "text": "Dynamiczne, ale przewidywalne prowadzenie na trasach w zaroślach, skalistych podjazdach i błotnistych odcinkach."
+      },
+      {
+        "title": "Przednie zawieszenie o skoku 11,5\"",
+        "text": "Pochłania nierówności terenu przy szybkiej jeździe."
+      },
+      {
+        "title": "Hill Descent Control i tryby SPORT/ECO",
+        "text": "Bezpieczny, kontrolowany zjazd ze stromych podjazdów."
+      },
+      {
+        "title": "Podwójne wentylowane tarcze 220 mm",
+        "text": "Pewne hamowanie przy dynamicznej jeździe terenowej."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Triple Black",
+        "hex1": "#1c1c1e",
+        "hex2": "#2c2c2e",
+        "image": "images/canam-maverick-sport-1.jpg"
+      }
+    ],
+    "images": [
+      "images/canam-maverick-sport-1.jpg"
+    ],
+    "gallery": [
+      "images/canam-maverick-sport-life-1.avif",
+      "images/canam-maverick-sport-life-2.avif"
+    ]
+  },
+  {
+    "id": "canam-maverick-r-2027",
+    "category": "ssv",
+    "categoryLabel": "Can-Am SSV",
+    "segment": "Rec-Sport ≥64''",
+    "name": "Maverick R",
+    "price": "Cena na zapytanie",
+    "engine": "999T DCT",
+    "myYear": 2027,
+    "desc": "Najbardziej ekstremalny SSV w gamie Can-Am na rocznik 2027 — silnik 999T z nową, drugą generacją przekładni DCT z dodatkowym niskim biegiem.",
+    "fullDesc": [
+      "Maverick R na rocznik 2027 to kontynuacja flagowego, najbardziej zaawansowanego pojazdu SSV w historii Can-Am — turbodoładowany silnik Rotax 999T o mocy 240 KM współpracuje z nową, drugą generacją 7-biegowej, dwusprzęgłowej przekładni DCT, która na 2027 rok zyskuje dodatkowy, niski bieg do optymalnego dawkowania mocy w wolnej jeździe terenowej.",
+      "Amortyzatory FOX 2.5 PODIUM z regulacją kompresji QS3, wzmocnione, plecione przewody hamulcowe oraz zintegrowane siatki okienne dodatkowo podnoszą bezpieczeństwo i kontrolę przy najbardziej wymagającej, szybkiej jeździe terenowej."
+    ],
+    "highlights": [
+      "Silnik: Rotax 999T Turbo, 240 KM",
+      "Przekładnia DCT 2. generacji z dodatkowym niskim biegiem — nowość MY27",
+      "Amortyzatory FOX 2.5 PODIUM QS3, skok 63,5 cm (przód i tył)",
+      "Zintegrowane siatki okienne i plecione przewody hamulcowe",
+      "Wyświetlacz dotykowy 10,25\" z nawigacją BRP GO! i aktualizacjami OTA"
+    ],
+    "forWho": "Maverick R to propozycja dla najbardziej wymagających kierowców i entuzjastów wyścigów terenowych, szukających absolutnie najwyższych osiągów.",
+    "features": [
+      {
+        "title": "Silnik Rotax 999T Turbo, 240 KM",
+        "text": "Najwyższe osiągi w historii Can-Am SSV, potwierdzone sukcesami w zawodach wyścigowych."
+      },
+      {
+        "title": "Przekładnia DCT 2. generacji",
+        "text": "Nowość na 2027 rok — dodatkowy, niski bieg zapewnia optymalne dawkowanie mocy w wolnej jeździe terenowej."
+      },
+      {
+        "title": "Amortyzatory FOX 2.5 PODIUM QS3",
+        "text": "Skok 63,5 cm i regulacja kompresji zapewniają kontrolę przy najbardziej wymagającej jeździe."
+      },
+      {
+        "title": "Zintegrowane siatki okienne i plecione przewody hamulcowe",
+        "text": "Dodatkowe bezpieczeństwo i precyzja hamowania — nowość na 2027 rok."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Triple Black (wersja X RS DCT)",
+        "hex1": "#2b2b2b",
+        "hex2": "#0d0d0d",
+        "image": "images/canam-maverick-r-1-white.webp"
+      },
+      {
+        "name": "Dusty Navy (wersja X RS DCT SAS)",
+        "hex1": "#2b4d63",
+        "hex2": "#17222c",
+        "image": "images/canam-maverick-r-color-dustynavy.webp"
+      },
+      {
+        "name": "Loft Green Satin (wersja X RC DCT SAS)",
+        "hex1": "#5f6b52",
+        "hex2": "#333d2c",
+        "image": "images/canam-maverick-r-color-loftgreen-v2.webp"
+      }
+    ],
+    "images": [
+      "images/canam-maverick-r-1-white.webp",
+      "images/canam-maverick-r-2.jpg"
+    ],
+    "gallery": [
+      "images/canam-maverick-r-life-1.webp",
+      "images/canam-maverick-r-life-2.jpg"
+    ]
+  }
+]
