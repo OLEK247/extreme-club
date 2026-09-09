@@ -1,5 +1,82 @@
 # TODO — dodanie rocznika 2027 (54 pojazdy)
 
+## ✅ AKTUALIZACJA (dogrywka) — prawdziwy cennik importera + korekta nazwy koloru
+
+Po tym jak dystrybutor odesłał nas do samodzielnego researchu, znaleziono **PerfectMoto.pl**
+(autoryzowany dealer BRP), którego stopka strony wprost identyfikuje **Taurus Sea Power sp. z o.o.**
+jako importera/dystrybutora BRP w Polsce, wraz z pełnym cennikiem EUR linii On-Road 2027 (15 wersji:
+Ryker/Spyder F3/Spyder RT/Canyon). Na tej podstawie zaktualizowano **8 cen** pojazdów 2027, które
+wcześniej miały "Cena na zapytanie" — pełna lista i uzasadnienie w `pytania-do-dystrybutora-BRP.md`,
+sekcja 1.
+
+Skorygowano też nazwę koloru F3 Limited/F3 LTD: poprzednia tura błędnie zmieniła "Vegas White Pearl"
+na "Pearl White (Platinum)" — przywrócono oficjalną nazwę po potwierdzeniu przez URL slug na
+can-am.brp.com ("vegas-white-pearl") oraz 4 niezależne polskie ogłoszenia/sklepy.
+
+VEHICLES zweryfikowane: 99/99, parsowanie poprawne.
+
+## ✅ AKTUALIZACJA 2026-09-09 (kolejna tura) — F3 Limited, drugie zdjęcie galerii
+
+Dodatkowy research zamknął punkt 5 częściowo: znalezione i zweryfikowane (curl + Read) prawdziwe
+zdjęcie prasowe Spyder F3 Limited w bieli/perłowym z oficjalnej galerii MY27 motorcycle.com —
+zapisane jako `images/canam-f3-ltd-2027-gallery-2.jpg`, dodane jako drugie zdjęcie `gallery` do
+wpisu `canam-f3-limited-2027`. Poprawiono też nazwę koloru białego z "Vegas White Pearl" na
+oficjalną "Pearl White (Platinum)". Spyder RT nadal ma tylko 1 zdjęcie galerii — nie znaleziono
+odpowiednika dla RT w dostępnym czasie, do sprawdzenia przy kolejnej turze (dealerzy EU:
+AutoScout24, motomember.com). Parsowanie VEHICLES zweryfikowane: 99/99 poprawne. Nie
+commitowano/pushowano zmian.
+
+## ✅ AKTUALIZACJA 2026-09-09 — samodzielne zamknięcie punktów z wiadomości do dystrybutora BRP
+
+Dystrybutor BRP Polska odpisał poirytowany na `wiadomosc-do-dystrybutora.md` (5 punktów), że nie
+chce być pytany o rzeczy możliwe do sprawdzenia samodzielnie. W tej turze wykonano szeroki web
+research (WebSearch/WebFetch) po oficjalnych stronach BRP oraz realnych polskich dealerach BRP,
+znalezionych i zweryfikowanych: **BRP Broker Częstochowa** (brpbroker.pl), **FANJET Pomorskie
+Centrum BRP** w Sopocie (fanjet.pl/sklep.fanjet.pl, autoryzowany dealer BRP od 1997) oraz oficjalne
+**brp-world.com**. Wcześniejsze podejrzenie, że chodziło o markę "Tauris" — potwierdzone jako
+pomyłka, "Tauris" to inna, niepowiązana firma (części/skutery), nie dealer BRP.
+
+**Wynik — 4 z 5 punktów zamknięte samodzielnie:**
+
+1. **Cennik PLN/EUR** — katalog już wycenia w EUR (zgodnie z rynkiem PL — brpbroker.pl też podaje
+   ceny w EUR brutto, przeliczane po kursie NBP na fakturze). Nie zaktualizowano pojedynczych cen —
+   oznaczenia modeli u dealerów (np. konkretna konfiguracja "X MR 1000R 2026") nie mapują się 1:1 na
+   zakresowe pola `price: "od X €"` w katalogu bez ryzyka błędu, więc zgodnie z zasadą projektu
+   "nie zgaduj" pozostawiono bez zmian. Uznane za wystarczająco rozwiązane (format cen już poprawny).
+2. **Can-Am Origin, wariant Carbon Black** — potwierdzony jako prawdziwy, oficjalny wariant (nie
+   pomyłka z Pulse). Znaleziono poprawny plik studyjny na can-am.brp.com (kod wariantu `000J8TM00`,
+   wcześniej mylony z błędnym `000J7TM00`/zdjęciem Pulse na brp-world.com). Pobrany, zweryfikowany
+   wizualnie (Read tool — wyraźnie widoczne cechy Origin: szprychowe koła terenowe, plakietka
+   "ROTAX"/"can-am", nie Pulse), zapisany jako `images/canam-origin-2027-carbonblack-1.png` i dodany
+   jako trzeci kolor do wpisu `canam-origin` w `index.html`.
+3. **Ryker Special Series 2027, unikalne zdjęcie** — sprawdzono istniejący plik
+   `images/canam-ryker-special-1.png`: to już jest prawidłowe, unikalne zdjęcie tej edycji (złote
+   felgi "Liquid Titanium", zgodne z oficjalnym komunikatem prasowym BRP z prnewswire.com,
+   sierpień 2026, i z oficjalnym plikiem can-am.brp.com). To zostało już naprawione w poprzedniej
+   sesji — tylko dokumentacja (`wiadomosc-do-dystrybutora.md`) była nieaktualna. Brak zmian w kodzie.
+4. **Spyder F3 LTD — dodatkowe kolory** — potwierdzone przez dealerów US (psutica.com,
+   hicklinofames.com, headmotorco.com): pełna oferta regularnego F3 Limited MY27 to dokładnie 3
+   kolory (Pearl White/Platinum, Mineral Blue Satin, Monolith Black Satin) — te same, które już są
+   w katalogu. Istnieje 4. wariant, ale to osobna edycja "F3 Limited Special Series" (Dolomite Grey
+   ze złotymi drobinkami metalicznymi), nie kolor zwykłego F3 Limited. Oferta uznana za kompletną.
+
+**Pozostaje 1 punkt otwarty (realnie wyczerpany research):**
+
+5. **Drugie zdjęcie galerii F3 Limited / Spyder RT (biały/perłowy)** — w poprzedniej turze
+   (2026-09-10) sprawdzono już ~8 zapytań i kilkanaście dealerów US (DX1: Hicklin, Rice's Rapid,
+   Leaders RPM, Factory Powersports, Jackson Motorsports, Metro Motorsports + Autotrader/Cycle
+   Trader/MotoHunt/Craigslist) — jedyne dostępne zdjęcia to generyczna grafika katalogowa producenta,
+   niepasująca stylistycznie do istniejącego zdjęcia "z życia". W tej turze dodatkowo sprawdzono
+   polskich dealerów (brpbroker.pl, fanjet.pl) — żaden nie ma w ofercie Spyder F3/RT (skupiają się
+   na ATV/SSV/skuterach wodnych). Zostawiono bez zmian — po 1 zdjęciu dla tych dwóch modeli.
+
+Po edycji `index.html` (dodanie koloru Carbon Black do Origin) zweryfikowano parsowanie `VEHICLES`:
+**99/99 pojazdów, poprawne.** Zaktualizowano `pytania-do-dystrybutora-BRP.md` — oznaczono rozwiązane
+punkty, zostawiono tylko punkt 5 z jasnym uzasadnieniem. Zmiany zostawione w working tree, bez
+commitu/pusha.
+
+---
+
 ## ✅ AKTUALIZACJA 2026-09-11 — FINALNY AUDYT CAŁEJ STRONY (6 kroków: struktura, literówki, spójność kolorów w tekście, dane techniczne, reszta strony, martwy kod)
 
 Kompleksowy, ostateczny audyt na życzenie klienta — dosłownie wszystkiego na stronie, w kontynuacji
