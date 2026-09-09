@@ -1873,7 +1873,10 @@ const VEHICLES = [
     colors: [
       { name: "Blue Mist / Coral Blast", hex1: "#7a8a99", hex2: "#e0542a", image: "images/seadoo-spark-x-trixx-hero.jpg" }
     ],
-    images: ["images/seadoo-spark-x-trixx-hero.jpg"], gallery: ["images/seadoo-spark-x-trixx-life-1.jpg", "images/seadoo-spark-x-trixx-life-2.jpeg"] },
+    images: ["images/seadoo-spark-x-trixx-hero.jpg"],
+    // TODO: gallery ma tylko 1 zdjecie - usunieto life-2.jpeg (pokazywalo pomaranczowo-niebieski
+    // wariant Gulfstream Blue/Orange Crush, niezgodny z kolorem karty Blue Mist/Coral Blast)
+    gallery: ["images/seadoo-spark-x-trixx-life-1.jpg"] },
 
   { id: "seadoo-rxp-x", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Performance", name: "RXP-X 350", price: "od 28 890 €", engine: "Rotax 1630 ACE, 350 KM",
     myYear: 2027,
@@ -1972,8 +1975,8 @@ const VEHICLES = [
       { title: "Wyświetlacz dotykowy 10,25\" z BRP GO!", text: "Pełna nawigacja, statystyki jazdy i łączność Bluetooth na pokładzie." },
       { title: "Fabryczny system audio BRP Premium", text: "Dwa wodoszczelne głośniki 50 W ze streamingiem Bluetooth na pokładzie." }
     ],
-    colors: [{ name: "Teal Blue / Manta Green", hex1: "#1abfae", hex2: "#4a9d3c", image: "images/seadoo-wake-pro-hero.jpg" }],
-    images: ["images/seadoo-wake-pro-hero.jpg"], // TODO: galeria pusta - jedno zdjęcie (wake-pro-life-2.jpg) pokazywało piaskowo-niebieski kadłub (kolor Wake Pro 230 z innej karty), niezgodny z jedynym zadeklarowanym kolorem Teal Blue/Manta Green.
+    colors: [{ name: "Teal Metallic / Manta Green", hex1: "#1abfae", hex2: "#4a9d3c", image: "images/seadoo-wake-pro-hero.jpg" }],
+    images: ["images/seadoo-wake-pro-hero.jpg"],
     gallery: [] },
 
   { id: "seadoo-fishpro-trophy", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Sport Fishing", name: "FishPro Trophy", price: "od 28 260 €", engine: "Rotax 1630 ACE, 170 KM",
@@ -1992,7 +1995,7 @@ const VEHICLES = [
       { title: "Chłodziarka-przynętownica LinQ", text: "Chłodziarka wędkarska (51 l) zamienia się w żywą przynętownicę dzięki zintegrowanej pompie wody." }
     ],
     colors: [{ name: "Shark Grey / Orange Crush", hex1: "#8a8d90", hex2: "#e07a2b", image: "images/seadoo-fishpro-trophy-hero.jpg" }],
-    images: ["images/seadoo-fishpro-trophy-hero.jpg"], gallery: ["images/seadoo-fishpro-trophy-life-1.png", "images/seadoo-fishpro-trophy-life-2.jpg"] },
+    images: ["images/seadoo-fishpro-trophy-hero.jpg"], gallery: ["images/seadoo-fishpro-trophy-life-1.png", "images/seadoo-fishpro-trophy-life-2-new.webp"] },
 
   { id: "seadoo-spark-2027", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Rec Lite", name: "Spark 90 For 2", price: "od 11 770 €", engine: "Rotax 1000 ACE, 90 KM",
     myYear: 2027,

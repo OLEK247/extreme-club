@@ -1,5 +1,31 @@
 # TODO — dodanie rocznika 2027 (54 pojazdy)
 
+## ✅ AKTUALIZACJA (reklamacja klienta) — jakość zdjęć RT/Canyon + 3 kolejne pojazdy
+
+Klient zgłosił konkretne problemy ze zdjęciami po wdrożeniu poprzednich poprawek:
+
+1. **RT Sea-to-Sky 2027 i Canyon Redrock 2027 — "obrzydliwa jakość" dodatkowych zdjęć.**
+   Przyczyna: poprzednia tura wpięła MINIATURKI (350×450px i 280×400px) zamiast pełnych zdjęć.
+   Naprawione: znaleziono te same zdjęcia w pełnej rozdzielczości (1015-1280px) na oficjalnej
+   stronie premiery MY27 (can-am.brp.com/on-road/us/en/global-product-reveal/new-lineup.html),
+   podmieniono oba pliki dla obu pojazdów.
+2. **FishPro Trophy 2027 — dwa niemal identyczne zdjęcia dodatkowe** (ta sama scena/poza, tylko
+   inne przycięcie). Znalezione i podmienione jedno z nich na zupełnie inne ujęcie — jazda z pełną
+   prędkością — z oficjalnej strony modelu (sea-doo.brp.com/us/en/models/sport-fishing/fishpro-trophy.html).
+3. **Spark X Trixx 2027 — drugie zdjęcie dodatkowe pokazywało pojazd w kolorze Gulfstream Blue/
+   Orange Crush (wariant 2026)**, niezgodnym z kartą (Blue Mist/Coral Blast). Sprawdzono: pierwsze
+   zdjęcie w galerii jest poprawne (czerwono-szary kadłub = Coral Blast/Blue Mist), błędne drugie
+   zdjęcie usunięte. Nie znaleziono zamiennika w oficjalnych źródłach (tylko zdjęcia studyjne) —
+   galeria zostaje z 1 poprawnym zdjęciem zamiast 2 z czego 1 błędne.
+4. **Wake Pro 230 2027 — pusta galeria, plus znaleziony BONUS: błędna nazwa koloru.** Oficjalna
+   nazwa to "Teal Metallic / Manta Green", nie "Teal Blue / Manta Green" jak było na stronie —
+   potwierdzone przez oficjalną stronę modelu i kilku niezależnych dealerów. Nazwa poprawiona.
+   Galeria zostaje pusta — oficjalna strona modelu ma wyłącznie zdjęcia studyjne, zero lifestyle.
+
+VEHICLES zweryfikowane: 99/99, parsowanie poprawne.
+
+## ✅ AKTUALIZACJA (reklamacja klienta) — 4 karty produktu bez zdjęć dodatkowych
+
 ## ✅ AKTUALIZACJA 2026-09-09 (kolejna tura, reklamacja klienta) — systematyczny skan galerii 2027 vs 2026 (wszystkie 47 pojazdów) + spot-check danych technicznych
 
 Zgłoszenie klienta: `seadoo-spark-2027` (Spark 90 For 2, Sunrise Orange/Dragon Red) miał pustą
