@@ -283,36 +283,6 @@ section { padding: 72px 0; }
 .contact-map-wrap { position: relative; border-radius: var(--radius); overflow: hidden; height: 480px; }
 .contact-map-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
 
-/* Formularz zapytania */
-.contact-form-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 32px; margin-bottom: 32px; }
-.contact-form-card h2 { margin: 0 0 8px; font-size: 22px; font-weight: 800; }
-.contact-form-card > p { margin: 0 0 24px; color: var(--color-text-muted); font-size: 14px; }
-.form-row { margin-bottom: 18px; }
-.form-row-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.form-row label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-muted); font-weight: 700; margin-bottom: 6px; }
-.form-row input, .form-row select, .form-row textarea { width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: 10px; font-size: 15px; font-family: inherit; color: var(--color-text); background: var(--color-surface); outline: none; transition: border-color 0.2s, box-shadow 0.2s; box-sizing: border-box; }
-.form-row textarea { resize: vertical; min-height: 110px; }
-.form-row input:focus, .form-row select:focus, .form-row textarea:focus { border-color: var(--color-accent); box-shadow: 0 0 0 3px rgba(3,105,161,0.12); }
-.form-row.has-error input, .form-row.has-error select, .form-row.has-error textarea { border-color: #c0392b; }
-.form-error { display: none; color: #c0392b; font-size: 12.5px; margin-top: 6px; }
-.form-row.has-error .form-error { display: block; }
-.form-consent-row { display: flex; align-items: flex-start; gap: 10px; }
-.form-consent-row input[type="checkbox"] { margin-top: 3px; flex: none; width: 16px; height: 16px; accent-color: var(--color-accent); }
-.form-consent-row label { font-size: 13px; color: var(--color-text-muted); font-weight: 400; text-transform: none; letter-spacing: normal; margin: 0; }
-.form-consent-row a { color: var(--color-accent); text-decoration: underline; }
-.form-honeypot { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
-.form-submit-row { margin-top: 24px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-.form-submit-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--color-accent); color: #fff; border: none; border-radius: 10px; padding: 13px 26px; font-family: inherit; font-size: 14px; font-weight: 700; letter-spacing: 0.3px; text-transform: uppercase; cursor: pointer; transition: background 0.2s, opacity 0.2s; }
-.form-submit-btn:hover { background: var(--color-dark); }
-.form-submit-btn:disabled { opacity: 0.6; cursor: default; }
-.form-status { font-size: 13.5px; }
-.form-status.success { color: #1f7a4d; }
-.form-status.error { color: #c0392b; }
-@media (max-width: 700px) {
-  .form-row-pair { grid-template-columns: 1fr; gap: 0; }
-  .contact-form-card { padding: 24px; }
-}
-
 /* Pasek benefitów pod mapą */
 .contact-strip { background: var(--color-bg); padding: 72px 0; margin-top: 72px; border-top: 1px solid var(--color-border); }
 .contact-strip-inner { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
@@ -1382,52 +1352,6 @@ body.is-home .nav-social { display: flex; }
           </div>
         </div>
         <div class="contact-map-col">
-          <div class="contact-form-card">
-            <h2>Wyślij zapytanie</h2>
-            <p>Odpowiadamy w ciągu 24 godzin roboczych. Możesz też zadzwonić lub napisać bezpośrednio na adresy powyżej.</p>
-            <form name="zapytanie" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="inquiry-form">
-              <input type="hidden" name="form-name" value="zapytanie">
-              <p class="form-honeypot"><label>Nie wypełniaj tego pola: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
-              <div class="form-row-pair">
-                <div class="form-row">
-                  <label for="inquiry-name">Imię i nazwisko</label>
-                  <input type="text" id="inquiry-name" name="name" autocomplete="name" required>
-                  <span class="form-error" id="err-name"></span>
-                </div>
-                <div class="form-row">
-                  <label for="inquiry-phone">Telefon (opcjonalnie)</label>
-                  <input type="tel" id="inquiry-phone" name="phone" autocomplete="tel">
-                </div>
-              </div>
-              <div class="form-row">
-                <label for="inquiry-email">Email</label>
-                <input type="email" id="inquiry-email" name="email" autocomplete="email" required>
-                <span class="form-error" id="err-email"></span>
-              </div>
-              <div class="form-row">
-                <label for="inquiry-vehicle">Pojazd, którego dotyczy zapytanie (opcjonalnie)</label>
-                <select id="inquiry-vehicle" name="vehicle">
-                  <option value="">— Ogólne zapytanie —</option>
-                </select>
-              </div>
-              <div class="form-row">
-                <label for="inquiry-message">Wiadomość</label>
-                <textarea id="inquiry-message" name="message" rows="4" required></textarea>
-                <span class="form-error" id="err-message"></span>
-              </div>
-              <div class="form-row">
-                <div class="form-consent-row">
-                  <input type="checkbox" id="inquiry-consent" name="consent">
-                  <label for="inquiry-consent">Wyrażam zgodę na przetwarzanie moich danych osobowych w celu odpowiedzi na zapytanie, zgodnie z <a onclick="showPrivacy()">polityką prywatności</a>.</label>
-                </div>
-                <span class="form-error" id="err-consent"></span>
-              </div>
-              <div class="form-submit-row">
-                <button type="submit" class="form-submit-btn" id="inquiry-submit-btn">Wyślij zapytanie</button>
-                <span class="form-status" id="inquiry-status" role="status" aria-live="polite"></span>
-              </div>
-            </form>
-          </div>
           <div class="contact-map-wrap">
             <iframe src="https://www.google.com/maps?q=Nowa+88,+83-031+Łęgowo&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa dojazdu do Extreme Club"></iframe>
           </div>
@@ -3808,8 +3732,6 @@ window.addEventListener("focus", resumeBackgroundVideos);
 function renderContact() {
   showPage("page-contact");
   setActiveNavLink("nav-link-contact");
-  populateInquiryVehicleSelect();
-  initInquiryForm();
 }
 
 /* ============================================================
@@ -3863,130 +3785,10 @@ function showHome() { location.hash = "#/"; }
 function showCatalog(category) { location.hash = category ? `#/katalog/${category}` : "#/katalog"; }
 function showPricing() { location.hash = "#/cennik"; }
 function showEvents() { location.hash = "#/eventy"; }
-function showContact(vehicleId) {
-  if (vehicleId) sessionStorage.setItem("inquiryVehicle", vehicleId);
+function showContact() {
   location.hash = "#/kontakt";
 }
 
-function populateInquiryVehicleSelect() {
-  const select = document.getElementById("inquiry-vehicle");
-  if (!select) return;
-  if (!select.dataset.populated) {
-    select.dataset.populated = "1";
-    const grouped = {};
-    VEHICLES.filter(v => !v.tempHidden).forEach(v => {
-      const label = v.categoryLabel || v.category;
-      (grouped[label] = grouped[label] || []).push(v);
-    });
-    Object.keys(grouped).forEach(label => {
-      const group = document.createElement("optgroup");
-      group.label = label;
-      grouped[label].forEach(v => {
-        const opt = document.createElement("option");
-        opt.value = v.id;
-        opt.textContent = v.name + (v.myYear === 2027 ? " (2027)" : "");
-        group.appendChild(opt);
-      });
-      select.appendChild(group);
-    });
-  }
-  const preselect = sessionStorage.getItem("inquiryVehicle");
-  if (preselect) {
-    select.value = preselect;
-    sessionStorage.removeItem("inquiryVehicle");
-  } else {
-    select.value = "";
-  }
-}
-
-function initInquiryForm() {
-  const form = document.getElementById("inquiry-form");
-  if (!form || form.dataset.bound) return;
-  form.dataset.bound = "1";
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    const fields = [
-      { id: "inquiry-name", err: "err-name", check: v => v.trim().length > 0, msg: "Podaj imię i nazwisko." },
-      { id: "inquiry-email", err: "err-email", check: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()), msg: "Podaj poprawny adres email." },
-      { id: "inquiry-message", err: "err-message", check: v => v.trim().length > 0, msg: "Napisz treść wiadomości." },
-    ];
-    let valid = true;
-    fields.forEach(f => {
-      const input = document.getElementById(f.id);
-      const row = input.closest(".form-row");
-      const errEl = document.getElementById(f.err);
-      if (!f.check(input.value)) {
-        valid = false;
-        row.classList.add("has-error");
-        errEl.textContent = f.msg;
-      } else {
-        row.classList.remove("has-error");
-      }
-    });
-    const consent = document.getElementById("inquiry-consent");
-    const consentRow = consent.closest(".form-row");
-    const consentErr = document.getElementById("err-consent");
-    if (!consent.checked) {
-      valid = false;
-      consentRow.classList.add("has-error");
-      consentErr.textContent = "Zgoda jest wymagana do wysłania zapytania.";
-    } else {
-      consentRow.classList.remove("has-error");
-    }
-    if (!valid) return;
-
-    const name = document.getElementById("inquiry-name").value.trim();
-    const phone = document.getElementById("inquiry-phone").value.trim();
-    const email = document.getElementById("inquiry-email").value.trim();
-    const vehicleSelect = document.getElementById("inquiry-vehicle");
-    const vehicleLabel = vehicleSelect.value ? vehicleSelect.options[vehicleSelect.selectedIndex].textContent : "";
-    const message = document.getElementById("inquiry-message").value.trim();
-
-    const subject = vehicleLabel ? `Zapytanie o ofertę — ${vehicleLabel}` : "Zapytanie o ofertę";
-    const mailtoFallback = () => {
-      const bodyLines = [
-        `Imię i nazwisko: ${name}`,
-        phone ? `Telefon: ${phone}` : null,
-        `Email: ${email}`,
-        vehicleLabel ? `Pojazd: ${vehicleLabel}` : null,
-        "",
-        "Wiadomość:",
-        message,
-      ].filter(Boolean);
-      window.location.href = `mailto:kontakt@extreme-club.pl?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
-    };
-
-    const submitBtn = document.getElementById("inquiry-submit-btn");
-    const statusEl = document.getElementById("inquiry-status");
-    submitBtn.disabled = true;
-    submitBtn.textContent = "Wysyłanie...";
-    statusEl.className = "form-status";
-    statusEl.textContent = "";
-
-    const formData = new FormData(form);
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(res => {
-        if (!res.ok) throw new Error("Netlify form submit failed: " + res.status);
-        form.reset();
-        submitBtn.disabled = false;
-        submitBtn.textContent = "Wyślij zapytanie";
-        statusEl.className = "form-status success";
-        statusEl.textContent = "Dziękujemy! Wiadomość została wysłana — odezwiemy się w ciągu 24 godzin roboczych.";
-        showToast("Zapytanie wysłane pomyślnie.", 3500);
-      })
-      .catch(() => {
-        submitBtn.disabled = false;
-        submitBtn.textContent = "Wyślij zapytanie";
-        statusEl.className = "form-status error";
-        statusEl.textContent = "Nie udało się wysłać formularza. Otwieramy Twój program pocztowy jako zapasową metodę.";
-        mailtoFallback();
-      });
-  });
-}
 function showPrivacy() { location.hash = "#/polityka-prywatnosci"; }
 
 function updateMeta(title, desc, image) {
@@ -4179,7 +3981,7 @@ function openDetail(id) {
         <p>${v.forWho}</p>
       </div>` : ""}
       <div class="detail-actions">
-        <button class="btn btn-primary" onclick="showContact('${v.id}')">Zapytaj o dostępność</button>
+        <button class="btn btn-primary" onclick="showContact()">Zapytaj o dostępność</button>
         <button class="btn btn-outline" onclick="showCatalog('${v.category}')">Wróć do katalogu</button>
       </div>
       <p class="detail-note">Cena brutto w EUR, przeliczana na PLN wg kursu sprzedaży NBP (tabela C) w dniu zakupu. Zdjęcia mają charakter poglądowy.</p>
