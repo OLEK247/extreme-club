@@ -284,6 +284,36 @@ section { padding: 72px 0; }
 .contact-map-wrap { position: relative; border-radius: var(--radius); overflow: hidden; height: 480px; }
 .contact-map-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
 
+/* Formularz zapytania */
+.contact-form-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 32px; margin-bottom: 32px; }
+.contact-form-card h2 { margin: 0 0 8px; font-size: 22px; font-weight: 800; }
+.contact-form-card > p { margin: 0 0 24px; color: var(--color-text-muted); font-size: 14px; }
+.form-row { margin-bottom: 18px; }
+.form-row-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-row label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-muted); font-weight: 700; margin-bottom: 6px; }
+.form-row input, .form-row select, .form-row textarea { width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: 10px; font-size: 15px; font-family: inherit; color: var(--color-text); background: var(--color-surface); outline: none; transition: border-color 0.2s, box-shadow 0.2s; box-sizing: border-box; }
+.form-row textarea { resize: vertical; min-height: 110px; }
+.form-row input:focus, .form-row select:focus, .form-row textarea:focus { border-color: var(--color-accent); box-shadow: 0 0 0 3px rgba(3,105,161,0.12); }
+.form-row.has-error input, .form-row.has-error select, .form-row.has-error textarea { border-color: #c0392b; }
+.form-error { display: none; color: #c0392b; font-size: 12.5px; margin-top: 6px; }
+.form-row.has-error .form-error { display: block; }
+.form-consent-row { display: flex; align-items: flex-start; gap: 10px; }
+.form-consent-row input[type="checkbox"] { margin-top: 3px; flex: none; width: 16px; height: 16px; accent-color: var(--color-accent); }
+.form-consent-row label { font-size: 13px; color: var(--color-text-muted); font-weight: 400; text-transform: none; letter-spacing: normal; margin: 0; }
+.form-consent-row a { color: var(--color-accent); text-decoration: underline; }
+.form-honeypot { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.form-submit-row { margin-top: 24px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.form-submit-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--color-accent); color: #fff; border: none; border-radius: 10px; padding: 13px 26px; font-family: inherit; font-size: 14px; font-weight: 700; letter-spacing: 0.3px; text-transform: uppercase; cursor: pointer; transition: background 0.2s, opacity 0.2s; }
+.form-submit-btn:hover { background: var(--color-dark); }
+.form-submit-btn:disabled { opacity: 0.6; cursor: default; }
+.form-status { font-size: 13.5px; }
+.form-status.success { color: #1f7a4d; }
+.form-status.error { color: #c0392b; }
+@media (max-width: 700px) {
+  .form-row-pair { grid-template-columns: 1fr; gap: 0; }
+  .contact-form-card { padding: 24px; }
+}
+
 /* Pasek benefitów pod mapą */
 .contact-strip { background: var(--color-bg); padding: 72px 0; margin-top: 72px; border-top: 1px solid var(--color-border); }
 .contact-strip-inner { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
@@ -452,6 +482,10 @@ body.is-home .nav-social { display: flex; }
 .detail-tag-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 14px; }
 .detail-tag-row .detail-tag { margin-bottom: 0; }
 .detail-brp-logo { height: 48px; width: auto; flex-shrink: 0; }
+.year-toggle { display: inline-flex; align-items: center; background: var(--color-border); border-radius: 20px; padding: 3px; gap: 2px; margin-bottom: 14px; }
+.year-toggle button { font-family: inherit; border: none; background: none; cursor: pointer; font-size: 13px; font-weight: 700; padding: 6px 16px; border-radius: 17px; color: var(--color-text-muted); transition: background 0.2s, color 0.2s; }
+.year-toggle button.active { background: var(--color-dark); color: #fff; }
+.year-toggle button:not(.active):hover { color: var(--color-text); }
 .detail-name { font-size: 36px; font-weight: 800; margin: 0 0 12px; }
 .detail-price { font-size: 22px; font-weight: 700; color: var(--color-accent); margin-bottom: 20px; }
 .detail-desc { color: var(--color-text-muted); font-size: 16px; margin-bottom: 28px; }
@@ -1421,6 +1455,52 @@ body.is-home .nav-social { display: flex; }
           </div>
         </div>
         <div class="contact-map-col">
+          <div class="contact-form-card">
+            <h2>Wyślij zapytanie</h2>
+            <p>Odpowiadamy w ciągu 24 godzin roboczych. Możesz też zadzwonić lub napisać bezpośrednio na adresy powyżej.</p>
+            <form name="zapytanie" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="inquiry-form">
+              <input type="hidden" name="form-name" value="zapytanie">
+              <p class="form-honeypot"><label>Nie wypełniaj tego pola: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+              <div class="form-row-pair">
+                <div class="form-row">
+                  <label for="inquiry-name">Imię i nazwisko</label>
+                  <input type="text" id="inquiry-name" name="name" autocomplete="name" required>
+                  <span class="form-error" id="err-name"></span>
+                </div>
+                <div class="form-row">
+                  <label for="inquiry-phone">Telefon (opcjonalnie)</label>
+                  <input type="tel" id="inquiry-phone" name="phone" autocomplete="tel">
+                </div>
+              </div>
+              <div class="form-row">
+                <label for="inquiry-email">Email</label>
+                <input type="email" id="inquiry-email" name="email" autocomplete="email" required>
+                <span class="form-error" id="err-email"></span>
+              </div>
+              <div class="form-row">
+                <label for="inquiry-vehicle">Pojazd, którego dotyczy zapytanie (opcjonalnie)</label>
+                <select id="inquiry-vehicle" name="vehicle">
+                  <option value="">— Ogólne zapytanie —</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="inquiry-message">Wiadomość</label>
+                <textarea id="inquiry-message" name="message" rows="4" required></textarea>
+                <span class="form-error" id="err-message"></span>
+              </div>
+              <div class="form-row">
+                <div class="form-consent-row">
+                  <input type="checkbox" id="inquiry-consent" name="consent">
+                  <label for="inquiry-consent">Wyrażam zgodę na przetwarzanie moich danych osobowych w celu odpowiedzi na zapytanie, zgodnie z <a onclick="showPrivacy()">polityką prywatności</a>.</label>
+                </div>
+                <span class="form-error" id="err-consent"></span>
+              </div>
+              <div class="form-submit-row">
+                <button type="submit" class="form-submit-btn" id="inquiry-submit-btn">Wyślij zapytanie</button>
+                <span class="form-status" id="inquiry-status" role="status" aria-live="polite"></span>
+              </div>
+            </form>
+          </div>
           <div class="contact-map-wrap">
             <iframe src="https://www.google.com/maps?q=Nowa+88,+83-031+Łęgowo&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa dojazdu do Extreme Club"></iframe>
           </div>
@@ -1583,7 +1663,8 @@ const VEHICLES = [
       { name: "Sunrise Orange / Dragon Red", hex1: "#e07a2b", hex2: "#a3241f", image: "images/seadoo-spark-60-2-1.jpg" },
       { name: "Vapor Blue / Dazzling Blue", hex1: "#6fa8c9", hex2: "#1f5f8a", image: "images/seadoo-spark-90-2-1.webp" }
     ],
-    images: ["images/seadoo-spark-60-2-1.jpg", "images/seadoo-spark-60-2-2.jpg"], gallery: ["images/seadoo-spark-60-2-life-1.avif", "images/seadoo-spark-60-2-life-2.avif"] },
+    images: ["images/seadoo-spark-60-2-1.jpg", "images/seadoo-spark-60-2-2.jpg"], // TODO: galeria pusta - zdjęcia pokazywały niebieski schowek, niezgodny z Sunrise Orange/Dragon Red.
+    gallery: [] },
   { id: "seadoo-spark-90-2", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Rec Lite", name: "Spark 90 For 2", price: "od 11 600 €", engine: "Rotax 1000 ACE, 90 KM",
     desc: "Mocniejsza odsłona najlżejszego skutera Sea-Doo — 90 KM daje wyraźnie więcej zabawy i przyspieszenia, a kompaktowe rozmiary zostają bez zmian. Świetny wybór dla dwóch osób szukających czegoś żywszego niż podstawowy Spark.",
     fullDesc: [
@@ -1824,7 +1905,7 @@ const VEHICLES = [
       { title: "Wzmocnione mocowania LinQ", text: "Szybki montaż dodatkowych boxów i akcesoriów transportowych bez użycia narzędzi." },
       { title: "Zwiększona autonomia paliwowa", text: "Dłuższy zasięg na wyprawach poza utarte szlaki wodne, bez konieczności częstego tankowania." }
     ],
-    colors: [{ name: "Eclipse Black / Lemon Zest", hex1: "#1c1c1e", hex2: "#c8d400", image: "images/seadoo-explorer-pro-170-2.jpg" }],
+    colors: [{ name: "Iceland Grey", hex1: "#1c1c1e", hex2: "#c8d400", image: "images/seadoo-explorer-pro-170-2.jpg" }],
     images: ["images/seadoo-explorer-pro-170-2.jpg", "images/seadoo-explorer-pro-170-1.jpg"], gallery: ["images/seadoo-explorer-pro-170-life-1.jpg", "images/seadoo-explorer-pro-170-life-2.jpg"] },
   { id: "seadoo-explorer-pro-230", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Adventure", name: "Explorer Pro 230", price: "od 25 740 €", engine: "Rotax 1630 ACE, 230 KM",
     desc: "Mocniejsza wersja Explorera dla dłuższych i bardziej wymagających wypraw poza utarte szlaki. 230 KM mocy przy zachowaniu tej samej, pojemnej konstrukcji.",
@@ -1841,7 +1922,7 @@ const VEHICLES = [
       { title: "Wzmocnione mocowania LinQ", text: "Łatwy montaż dodatkowych boxów transportowych, bez konieczności modyfikacji kadłuba." },
       { title: "Wyższa dynamika na dystansie", text: "Mocniejsza jednostka napędowa skraca czas pokonywania dłuższych tras eksploracyjnych." }
     ],
-    colors: [{ name: "Eclipse Black / Lemon Zest", hex1: "#1c1c1e", hex2: "#c8d400", image: "images/seadoo-explorer-pro-230-front.jfif" }],
+    colors: [{ name: "Iceland Grey", hex1: "#1c1c1e", hex2: "#c8d400", image: "images/seadoo-explorer-pro-230-front.jfif" }],
     images: ["images/seadoo-explorer-pro-230-front.jfif", "images/seadoo-explorer-pro-230-1.jpg", "images/seadoo-explorer-pro-230-2.jpg"], gallery: ["images/seadoo-explorer-pro-230-life-1.jpg", "images/seadoo-explorer-pro-230-life-2.jpg"] },
   { id: "seadoo-fish-pro-sport-170", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Sport Fishing", name: "FishPro Sport 170", price: "od 21 700 €", engine: "Rotax 1630 ACE, 170 KM",
     desc: "Skuter zaprojektowany z myślą o wędkarstwie — uchwyty na wędki, przestrzeń na sprzęt i stabilna platforma. 170 KM mocy dla wędkarzy, którzy chcą szybko dotrzeć w ulubione miejsce łowienia.",
@@ -1858,7 +1939,7 @@ const VEHICLES = [
       { title: "Dodatkowa przestrzeń na sprzęt połowowy", text: "Schowki dopasowane do przechowywania przynęt, kołowrotków i pozostałych akcesoriów wędkarskich." },
       { title: "Wykończenie pokładu odporne na sól i wodę", text: "Trwałość materiałów w stałym kontakcie ze sprzętem wędkarskim i wilgocią." }
     ],
-    colors: [{ name: "Vapor Blue / Catalyst Grey", hex1: "#5b9bd5", hex2: "#6e7578", image: "images/seadoo-fish-pro-sport-170-1.jpg" }],
+    colors: [{ name: "Bright White / Gulfstream Blue", hex1: "#f2f2f0", hex2: "#3e6f9e", image: "images/seadoo-fishpro-sport-2027-brightwhite-1.webp" }],
     images: ["images/seadoo-fish-pro-sport-170-1.jpg", "images/seadoo-fish-pro-sport-170-2.jpg"], gallery: ["images/seadoo-fish-pro-sport-170-life-1.webp", "images/seadoo-fish-pro-sport-170-life-2.jpg"] },
   { id: "seadoo-wake-pro-230", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Tow Sports", name: "Wake Pro 230", price: "od 24 310 €", engine: "Rotax 1630 ACE, 230 KM",
     desc: "Dedykowany do wakeboardingu i sportów holowanych — wzmocniony uchwyt holowniczy i stabilne prowadzenie. 230 KM mocy dla tych, którzy tworzą fale i holują innych.",
@@ -1912,7 +1993,7 @@ const VEHICLES = [
       { title: "Pakiet Trixx", text: "Regulowana, podniesiona kierownica oraz kliny na stopnie ułatwiające kontrolę podczas akrobacji." }
     ],
     colors: [
-      { name: "Coral Blast", hex1: "#e0542a", hex2: "#7a8a99", image: "images/seadoo-spark-x-trixx-hero.jpg" }
+      { name: "Blue Mist / Coral Blast", hex1: "#7a8a99", hex2: "#e0542a", image: "images/seadoo-spark-x-trixx-hero.jpg" }
     ],
     images: ["images/seadoo-spark-x-trixx-hero.jpg"], gallery: ["images/seadoo-spark-x-trixx-life-1.jpg", "images/seadoo-spark-x-trixx-life-2.jpeg"] },
 
@@ -2011,7 +2092,8 @@ const VEHICLES = [
       { title: "Fabryczny system audio BRP Premium", text: "Dwa wodoszczelne głośniki 50 W ze streamingiem Bluetooth na pokładzie." }
     ],
     colors: [{ name: "Teal Blue / Manta Green", hex1: "#1abfae", hex2: "#4a9d3c", image: "images/seadoo-wake-pro-hero.jpg" }],
-    images: ["images/seadoo-wake-pro-hero.jpg"], gallery: ["images/seadoo-wake-pro-230-life-3.jpg", "images/seadoo-wake-pro-life-2.jpg"] },
+    images: ["images/seadoo-wake-pro-hero.jpg"], // TODO: galeria pusta - jedno zdjęcie (wake-pro-life-2.jpg) pokazywało piaskowo-niebieski kadłub (kolor Wake Pro 230 z innej karty), niezgodny z jedynym zadeklarowanym kolorem Teal Blue/Manta Green.
+    gallery: [] },
 
   { id: "seadoo-fishpro-trophy", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Sport Fishing", name: "FishPro Trophy", price: "od 28 260 €", engine: "Rotax 1630 ACE, 170 KM",
     myYear: 2027,
@@ -2050,7 +2132,8 @@ const VEHICLES = [
       { name: "Sunrise Orange / Dragon Red", hex1: "#e07a2b", hex2: "#a3241f", image: "images/seadoo-spark-60-2-1.jpg" },
       { name: "Vapor Blue / Dazzling Blue", hex1: "#6fa8c9", hex2: "#1f5f8a", image: "images/seadoo-spark-90-2-1.webp" }
     ],
-    images: ["images/seadoo-spark-60-2-1.jpg", "images/seadoo-spark-90-2-1.webp"], gallery: ["images/seadoo-spark-60-2-life-1.avif", "images/seadoo-spark-60-2-life-2.avif"] },
+    images: ["images/seadoo-spark-60-2-1.jpg", "images/seadoo-spark-90-2-1.webp"], // TODO: galeria pusta - zdjęcia pokazywały niebieski schowek, niezgodny z Sunrise Orange/Dragon Red.
+    gallery: [] },
 
   { id: "seadoo-gti-2027", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Recreation", name: "GTI Standard 130", price: "od 15 390 €", engine: "Rotax 1630 ACE, 130 KM",
     myYear: 2027,
@@ -2145,7 +2228,7 @@ const VEHICLES = [
       { title: "Rozszerzone schowki przód i tył", text: "Miejsce na sprzęt biwakowy, wędkarski lub fotograficzny." },
       { title: "Wzmocnione mocowania LinQ", text: "Szybki montaż dodatkowych boxów i akcesoriów transportowych." }
     ],
-    colors: [{ name: "Eclipse Black / Lemon Zest", hex1: "#1c1c1e", hex2: "#c8d400", image: "images/seadoo-explorer-pro-170-2.jpg" }],
+    colors: [{ name: "Iceland Grey", hex1: "#1c1c1e", hex2: "#c8d400", image: "images/seadoo-explorer-pro-170-2.jpg" }],
     images: ["images/seadoo-explorer-pro-170-2.jpg", "images/seadoo-explorer-pro-170-1.jpg"], gallery: ["images/seadoo-explorer-pro-170-life-1.jpg", "images/seadoo-explorer-pro-170-life-2.jpg"] },
 
   { id: "seadoo-gtr-2027", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Performance", name: "GTR 230", price: "od 19 620 €", engine: "Rotax 1630 ACE, 230 KM",
@@ -2202,8 +2285,8 @@ const VEHICLES = [
       { title: "Fishfinder i GPS z trybem trolling", text: "Wsparcie w namierzaniu ryb i utrzymaniu stałej, kontrolowanej prędkości podczas połowu." },
       { title: "Kadłub ST3 i chłodziarka LinQ", text: "Stabilna platforma do łowienia z pokładu oraz dodatkowa przestrzeń na przynęty i sprzęt połowowy." }
     ],
-    colors: [{ name: "Vapor Blue / Catalyst Grey", hex1: "#5b9bd5", hex2: "#6e7578", image: "images/seadoo-fish-pro-sport-170-1.jpg" }],
-    images: ["images/seadoo-fish-pro-sport-170-1.jpg", "images/seadoo-fish-pro-sport-170-2.jpg"], gallery: ["images/seadoo-fish-pro-sport-170-life-1.webp", "images/seadoo-fish-pro-sport-170-life-2.jpg"] },
+    colors: [{ name: "Bright White / Gulfstream Blue", hex1: "#f2f2f0", hex2: "#3e6f9e", image: "images/seadoo-fishpro-sport-2027-brightwhite-1.webp" }],
+    images: ["images/seadoo-fishpro-sport-2027-brightwhite-1.webp", "images/seadoo-fish-pro-sport-170-2.jpg"], gallery: ["images/seadoo-fish-pro-sport-170-life-1.webp", "images/seadoo-fish-pro-sport-170-life-2.jpg"] },
 
   { id: "canam-f3-s", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Cruising", name: "Spyder F3 S", price: "od 25 350 €", engine: "Rotax 1330 ACE, SE6",
     desc: "Sportowy trójkołowiec Can-Am do jazdy miejskiej i rekreacyjnej — agresywna stylistyka i dynamiczne prowadzenie.",
@@ -2243,7 +2326,8 @@ const VEHICLES = [
     colors: [
       { name: "Vegas White Pearl", hex1: "#ede9e3", hex2: "#c3c0ba", image: "images/canam-f3-ltd-1.jpg" }
     ],
-    images: ["images/canam-f3-ltd-1.jpg"], gallery: ["images/canam-f3-ltd-life-1.avif", "images/canam-f3-ltd-life-2.avif"] },
+    images: ["images/canam-f3-ltd-1.jpg"], // TODO: galeria pusta - zdjęcia pokazywały zielony pojazd, niezgodny z Vegas White Pearl.
+    gallery: [] },
   { id: "canam-f3-ltd-special", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Cruising", name: "Spyder F3 LTD Special Series", price: "od 34 050 €", engine: "Rotax 1330 ACE, SE6",
     desc: "Edycja specjalna F3 LTD z unikalnym malowaniem Mars Red Metallic i pełnym wyposażeniem LTD.",
     fullDesc: [
@@ -2262,7 +2346,8 @@ const VEHICLES = [
       { name: "Mars Red Metallic", hex1: "#8b1c1c", hex2: "#6b1010", image: "images/canam-f3-ltd-special-1.jpg" },
       { name: "Dolomite Grey", hex1: "#8a8d91", hex2: "#5a5d61", image: "images/canam-f3-ltd-special-dolomite-hq.webp" }
     ],
-    images: ["images/canam-f3-ltd-special-1.jpg", "images/canam-f3-ltd-special-dolomite-hq.webp"], gallery: ["images/canam-f3-ltd-special-life-1.avif", "images/canam-f3-ltd-special-life-2.avif"] },
+    images: ["images/canam-f3-ltd-special-1.jpg", "images/canam-f3-ltd-special-dolomite-hq.webp"], // TODO: galeria pusta - zdjęcia pokazywały żółty pojazd, niezgodny z Mars Red Metallic.
+    gallery: [] },
   { id: "canam-rt-ltd", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Touring", name: "Spyder RT LTD", price: "od 34 800 €", engine: "Rotax 1330 ACE, SE6",
     desc: "Flagowy trójkołowiec turystyczny Can-Am — komfort na długie trasy, kufry i rozbudowane wyposażenie.",
     fullDesc: [
@@ -2283,7 +2368,8 @@ const VEHICLES = [
       { name: "Mineral Blue", hex1: "#3d5a75", hex2: "#1f3346", image: "images/canam-rt-ltd-color-mineralblue.jpg" }
     ],
     images: ["images/canam-rt-ltd-color-pearlwhite.jpg", "images/canam-rt-ltd-color-carbonblack.jpg"],
-    gallery: ["images/canam-rt-ltd-life-1.webp", "images/canam-rt-ltd-life-2.webp"] },
+    // TODO: galeria pusta - zdjęcia pokazywały czarny pojazd (Carbon Black), niezgodny z Pearl White.
+    gallery: [] },
   { id: "canam-rt-sea-to-sky", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Touring", name: "Spyder RT Sea-to-Sky", price: "od 37 000 €", engine: "Rotax 1330 ACE, SE6",
     desc: "Najbogatsza wersja RT z pełnym pakietem turystycznym premium i unikalnym malowaniem.",
     fullDesc: [
@@ -2334,7 +2420,7 @@ const VEHICLES = [
       { title: "Podgrzewane manetki kierowcy i pasażera", text: "Komfort obu osób na trasie nawet w chłodniejsze dni podróży terenowej." },
       { title: "Oparcie dla pasażera", text: "Dodatkowe bezpieczeństwo i wygoda drugiej osoby na wymagających, dłuższych odcinkach adventure." }
     ],
-    colors: [{ name: "Catalyst Grey / Viper Red", hex1: "#7a7d82", hex2: "#c41e1e", image: "images/canam-canyon-xt-1.jpg" }],
+    colors: [{ name: "Sterling Silver Satin", hex1: "#a8abaf", hex2: "#7a7d82", image: "images/canam-canyon-xt-1.jpg" }],
     images: ["images/canam-canyon-xt-1.jpg"],
     gallery: ["images/canam-canyon-xt-life-1.webp", "images/canam-canyon-xt-life-2.webp"] },
   { id: "canam-canyon-redrock", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Adventure", name: "Canyon Redrock", price: "od 35 220 €", engine: "Rotax 1330 ACE, SE6",
@@ -2368,7 +2454,7 @@ const VEHICLES = [
       { title: "Najlżejszy model w gamie — 270 kg", text: "Niska waga ułatwia manewrowanie i buduje pewność siebie u początkujących kierowców." },
       { title: "Systemy VSS, TCS i ABS w standardzie", text: "Elektroniczne wsparcie stabilności działa w tle, dodatkowo zabezpieczając na etapie nauki jazdy." }
     ],
-    colors: [{ name: "Triple Black", hex1: "#1c1c1e", hex2: "#2c2c2e", image: "images/canam-ryker-std-600-1.jpg" }],
+    colors: [{ name: "Intense Black", hex1: "#1c1c1e", hex2: "#2c2c2e", image: "images/canam-ryker-std-600-1.jpg" }],
     images: ["images/canam-ryker-std-600-1.jpg"],
     gallery: ["images/canam-ryker-std-600-life-2.webp", "images/canam-ryker-std-600-life-3.webp"] },
   { id: "canam-ryker-std-900", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Recreation", name: "Ryker STD 900", price: "od 13 300 €", engine: "Rotax 900 ACE, CVT",
@@ -2385,7 +2471,7 @@ const VEHICLES = [
       { title: "Automatyczna skrzynia CVT z biegiem wstecznym", text: "Prosta, wygodna obsługa na co dzień bez ręcznej zmiany biegów." },
       { title: "Systemy VSS, TCS i ABS w standardzie", text: "Elektroniczne wsparcie stabilności i trakcji zapewnia bezpieczeństwo przy bardziej dynamicznym charakterze jazdy." }
     ],
-    colors: [{ name: "Triple Black", hex1: "#1c1c1e", hex2: "#2c2c2e", image: "images/canam-ryker-std-900-1.jpg" }],
+    colors: [{ name: "Intense Black", hex1: "#1c1c1e", hex2: "#2c2c2e", image: "images/canam-ryker-std-900-1.jpg" }],
     images: ["images/canam-ryker-std-900-1.jpg"],
     gallery: ["images/canam-ryker-std-900-life-2.webp", "images/canam-ryker-std-900-life-3.avif"] },
   { id: "canam-ryker-sport", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Recreation", name: "Ryker Sport", price: "od 15 200 €", engine: "Rotax 900 ACE, CVT",
@@ -2402,7 +2488,7 @@ const VEHICLES = [
       { title: "Komfortowy fotel Sport", text: "Lepsze podparcie podczas bardziej agresywnego prowadzenia, bez utraty wygody na co dzień." },
       { title: "Tempomat", text: "Ułatwia dłuższe trasy poza miastem, odciążając rękę od stałego trzymania przepustnicy." }
     ],
-    colors: [{ name: "Triple Black / Viper Red", hex1: "#1c1c1e", hex2: "#c41e1e", image: "images/canam-ryker-sport-1.jpg" }],
+    colors: [{ name: "Intense Black", hex1: "#1c1c1e", hex2: "#2c2c2e", image: "images/canam-ryker-sport-1.jpg" }],
     images: ["images/canam-ryker-sport-1.jpg"],
     gallery: ["images/canam-ryker-sport-life-2.webp", "images/canam-ryker-sport-life-3.webp"] },
   { id: "canam-ryker-rally", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Recreation", name: "Ryker Rally", price: "od 17 160 €", engine: "Rotax 900 ACE, CVT",
@@ -2419,7 +2505,7 @@ const VEHICLES = [
       { title: "Dedykowany tryb Rally", text: "Ułatwia kontrolowane, sportowe zachowanie pojazdu na luźnej nawierzchni, w tym driftowanie na zakrętach." },
       { title: "Komfortowy fotel Rally i tempomat", text: "Sprawdza się równie dobrze na dłuższych, mieszanych trasach asfaltowo-terenowych jak i typowo terenowych wypadach." }
     ],
-    colors: [{ name: "Triple Black", hex1: "#1c1c1e", hex2: "#2c2c2e", image: "images/canam-ryker-rally-1.jpg" }],
+    colors: [{ name: "Intense Black", hex1: "#1c1c1e", hex2: "#2c2c2e", image: "images/canam-ryker-rally-1.jpg" }],
     images: ["images/canam-ryker-rally-1.jpg"],
     gallery: ["images/canam-ryker-rally-life-1.webp", "images/canam-ryker-rally-life-2.webp"] },
 
@@ -2557,7 +2643,8 @@ const VEHICLES = [
       { name: "Monolith Black Satin", hex1: "#1c1c1e", hex2: "#2c2c2e", image: "images/canam-f3-ltd-2027-black.webp" },
       { name: "Mineral Blue Satin", hex1: "#4a5f66", hex2: "#2c3a3f", image: "images/canam-f3-ltd-2027-blue.webp" }
     ],
-    images: ["images/canam-f3-ltd-2027-white.webp", "images/canam-f3-ltd-2027-black.webp", "images/canam-f3-ltd-2027-blue.webp"], gallery: ["images/canam-f3-ltd-life-1.avif", "images/canam-f3-ltd-life-2.avif"] },
+    images: ["images/canam-f3-ltd-2027-white.webp", "images/canam-f3-ltd-2027-black.webp", "images/canam-f3-ltd-2027-blue.webp"], // TODO: galeria pusta - zdjęcia pokazywały zielony pojazd, niezgodny z Vegas White Pearl.
+    gallery: [] },
 
   { id: "canam-rt-2027", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Touring", name: "Spyder RT", price: "Cena na zapytanie", engine: "Rotax 1330 ACE, SE6",
     myYear: 2027,
@@ -2580,7 +2667,8 @@ const VEHICLES = [
       { name: "Mineral Blue", hex1: "#3d5a75", hex2: "#1f3346", image: "images/canam-rt-ltd-color-mineralblue.jpg" }
     ],
     images: ["images/canam-rt-ltd-color-pearlwhite.jpg", "images/canam-rt-ltd-color-carbonblack.jpg"],
-    gallery: ["images/canam-rt-ltd-life-1.webp", "images/canam-rt-ltd-life-2.webp"] },
+    // TODO: galeria pusta - zdjęcia pokazywały czarny pojazd (Carbon Black), niezgodny z Pearl White.
+    gallery: [] },
 
   { id: "canam-rt-sea-to-sky-2027", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Touring", name: "Spyder RT Sea-to-Sky", price: "Cena na zapytanie", engine: "Rotax 1330 ACE, SE6",
     myYear: 2027,
@@ -2597,9 +2685,10 @@ const VEHICLES = [
       { title: "Adaptacyjne, piankowe siedzenia Sea-to-Sky", text: "Haftowane logo, odświeżone na 2027 rok materiały i pianka dopasowująca się do sylwetki." },
       { title: "Markowe torby podróżne Sea-to-Sky", text: "Dedykowany zestaw bagażowy dołączony do pakietu na rocznik 2027." }
     ],
-    colors: [{ name: "Mars Red Metallic", hex1: "#a3241f", hex2: "#5c110e", image: "images/canam-rt-sea-to-sky-color-marsred-v2.avif" }],
-    images: ["images/canam-rt-sea-to-sky-color-marsred-v2.avif"],
-    gallery: ["images/canam-rt-sea-to-sky-red-life-1.jpg", "images/canam-rt-sea-to-sky-red-life-2.jpg"] },
+    colors: [{ name: "Dolomite Grey", hex1: "#8a8d90", hex2: "#5a5d61", image: "images/canam-rt-sea-to-sky-2027-dolomitegrey-1.jpg" }],
+    images: ["images/canam-rt-sea-to-sky-2027-dolomitegrey-1.jpg"],
+    // TODO: galeria pusta - usunięte 2 zdjęcia (czerwony Mars Red Metallic), niezgodne z Dolomite Grey.
+    gallery: [] },
 
   { id: "canam-canyon-2027", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Adventure", name: "Canyon", price: "Cena na zapytanie", engine: "Rotax 1330 ACE, SE6",
     myYear: 2027,
@@ -2622,22 +2711,23 @@ const VEHICLES = [
 
   { id: "canam-canyon-redrock-2027", category: "trojkolowce", categoryLabel: "Can-Am", segment: "Adventure", name: "Canyon Redrock", price: "Cena na zapytanie", engine: "Rotax 1330 ACE, SE6",
     myYear: 2027,
-    desc: "Najbogatsza wersja Canyon na rocznik 2027 — malowanie Moss Green i pełne wyposażenie podróżne.",
+    desc: "Najbogatsza wersja Canyon na rocznik 2027 — nowe malowanie Sandstone i pełne wyposażenie podróżne.",
     fullDesc: [
       "Canyon Redrock na rocznik 2027 to kontynuacja najbardziej zaawansowanej wersji Canyon — bazuje na pakiecie XT, ale zastępuje standardowe zawieszenie systemem KYB Smart-Shox, czyli półaktywnym zawieszeniem automatycznie dostosowującym tłumienie do rodzaju terenu.",
-      "Model dodaje kamerę cofania, konfigurowalny tryb jazdy Custom oraz unikalne, ekskluzywne malowanie Moss Green z pomarańczowym akcentem na przednim kole."
+      "Model dodaje kamerę cofania, konfigurowalny tryb jazdy Custom oraz nowe na rocznik 2027 malowanie Sandstone."
     ],
     highlights: ["Silnik: Rotax 1330 ACE, 115 KM", "Waga sucha: 470 kg", "Zawieszenie KYB Smart-Shox — półaktywne, dostosowujące się do terenu", "Konfigurowalny tryb jazdy Custom", "Kamera cofania w standardzie"],
     forWho: "Canyon Redrock to propozycja dla klientów, którzy chcą najbardziej zaawansowanej technologicznie wersji Canyon — z inteligentnym zawieszeniem i unikalnym wzornictwem.",
     features: [
       { title: "Zawieszenie KYB Smart-Shox", text: "Półaktywne tłumienie automatycznie dostosowuje się do rodzaju terenu i stylu jazdy." },
       { title: "Konfigurowalny tryb jazdy Custom", text: "Ustaw własne parametry reakcji gazu i zawieszenia." },
-      { title: "Malowanie Moss Green z akcentem na przednim kole", text: "Unikalna, ekskluzywna stylistyka." },
+      { title: "Nowe malowanie Sandstone", text: "Sygnaturowy kolor rocznika 2027, wprowadzony wraz z odświeżoną gamą Canyon Redrock." },
       { title: "Kamera cofania w standardzie", text: "Bezpieczne manewrowanie tym najbardziej zaawansowanym modelem Canyon." }
     ],
-    colors: [{ name: "Moss Green Satin", hex1: "#4a6b3a", hex2: "#3a5530", image: "images/canam-canyon-redrock-1.jpg" }],
-    images: ["images/canam-canyon-redrock-1.jpg"],
-    gallery: ["images/canam-canyon-redrock-life-1.webp", "images/canam-canyon-redrock-life-2.webp"] },
+    colors: [{ name: "Sandstone", hex1: "#c9a876", hex2: "#8f7245", image: "images/canam-canyon-redrock-2027-sandstone-1.webp" }],
+    images: ["images/canam-canyon-redrock-2027-sandstone-1.webp"],
+    // TODO: galeria pusta - usunięte 2 zdjęcia (zielony Moss Green), niezgodne z Sandstone.
+    gallery: [] },
 
   { id: "canam-outlander-pro", category: "atv", categoryLabel: "Can-Am ATV", segment: "Rec-Ute", name: "Outlander PRO", price: "od 10 890 €", engine: "HD5 / HD7",
     desc: "Najbardziej przystępny quad użytkowy z gamy Outlander — solidna podstawa do pracy w gospodarstwie i terenie.",
@@ -2657,7 +2747,8 @@ const VEHICLES = [
       { name: "Desert Tan", hex1: "#c9a876", hex2: "#8f7245", image: "images/canam-outlander-pro-color-deserttan.webp", price: "od 10 890 €" },
       { name: "Compass Green", hex1: "#4d5a3f", hex2: "#2c3324", image: "images/canam-outlander-pro-color-compassgreen.webp", price: "od 12 960 €" }
     ],
-    images: ["images/canam-outlander-pro-1.jpg"], gallery: ["images/canam-outlander-pro-life-1.avif", "images/canam-outlander-pro-life-2.avif"] },
+    images: ["images/canam-outlander-pro-1.jpg"], // TODO: galeria pusta - zdjęcia pokazywały zielony panel, niezgodny z Desert Tan.
+    gallery: [] },
   { id: "canam-outlander", category: "atv", categoryLabel: "Can-Am ATV", segment: "Rec-Ute", name: "Outlander", price: "od 11 990 €", engine: "500 / 700 / 850 / 1000R",
     desc: "Uniwersalny quad rekreacyjno-użytkowy dostępny w wielu wariantach silnikowych — od 500 do 1000R.",
     fullDesc: [
@@ -2752,7 +2843,8 @@ const VEHICLES = [
       { name: "Hyper Silver & Legion Red", hex1: "#c7c9cb", hex2: "#b02420", image: "images/canam-renegade-color-hypersilver-v2.avif", price: "od 21 300 €" }
     ],
     images: ["images/canam-renegade-1.jpg", "images/canam-renegade-2.jpg"],
-    gallery: ["images/canam-renegade-life-1.webp", "images/canam-renegade-life-2.webp"] },
+    // TODO: galeria pusta - zdjęcia pokazywały biało-żółty pojazd, niezgodny z Catalyst Gray/Orange Crush ani Hyper Silver/Legion Red.
+    gallery: [] },
   { id: "canam-outlander-6x6", category: "atv", categoryLabel: "Can-Am ATV", segment: "6x6", name: "Outlander 6x6", price: "od 17 600 €", engine: "700 / 850 / 1000R",
     desc: "Sześciokołowy quad do zastosowań specjalistycznych i transportu w trudnym terenie.",
     fullDesc: [
@@ -2827,7 +2919,7 @@ const VEHICLES = [
       { title: "Wyświetlacz dotykowy 10,25\"", text: "Nowość na 2027 rok — pełna nawigacja i statystyki jazdy dostępne dla mocniejszych wersji Outlandera." },
       { title: "Fabryczny pakiet Performance", text: "Gotowy do jazdy sportowo-terenowej zestaw osprzętu, bez potrzeby dodatkowych zakupów." }
     ],
-    colors: [{ name: "Dusty Navy & Orange Crush", hex1: "#1c2b3a", hex2: "#e5762a", image: "images/canam-outlander-xtp-studio-official.png" }],
+    colors: [{ name: "Mineral Grey & Orange Crush", hex1: "#3a3d40", hex2: "#e5762a", image: "images/canam-outlander-xtp-studio-official.png" }],
     images: ["images/canam-outlander-xtp-studio-official.png"], gallery: ["images/canam-outlander-xtp-life-1.jpg", "images/canam-outlander-xtp-life-2.jpg"] },
 
   { id: "canam-outlander-pro-2027", category: "atv", categoryLabel: "Can-Am ATV", segment: "Rec-Ute", name: "Outlander PRO", price: "Cena na zapytanie", engine: "HD5 / HD7",
@@ -2849,7 +2941,8 @@ const VEHICLES = [
       { name: "Desert Tan", hex1: "#c9a876", hex2: "#8f7245", image: "images/canam-outlander-pro-color-deserttan.webp" },
       { name: "Compass Green", hex1: "#4d5a3f", hex2: "#2c3324", image: "images/canam-outlander-pro-color-compassgreen.webp" }
     ],
-    images: ["images/canam-outlander-pro-1.jpg"], gallery: ["images/canam-outlander-pro-life-1.avif", "images/canam-outlander-pro-life-2.avif"] },
+    images: ["images/canam-outlander-pro-1.jpg"], // TODO: galeria pusta - zdjęcia pokazywały zielony panel, niezgodny z Desert Tan.
+    gallery: [] },
 
   { id: "canam-outlander-2027", category: "atv", categoryLabel: "Can-Am ATV", segment: "Rec-Ute", name: "Outlander", price: "Cena na zapytanie", engine: "500 / 700 / 850 / 1000R",
     myYear: 2027,
@@ -2912,7 +3005,8 @@ const VEHICLES = [
       { name: "Hyper Silver & Legion Red", hex1: "#c7c9cb", hex2: "#b02420", image: "images/canam-renegade-color-hypersilver-v2.avif" }
     ],
     images: ["images/canam-renegade-1.jpg", "images/canam-renegade-2.jpg"],
-    gallery: ["images/canam-renegade-life-1.webp", "images/canam-renegade-life-2.webp"] },
+    // TODO: galeria pusta - zdjęcia pokazywały biało-żółty pojazd, niezgodny z Catalyst Gray/Orange Crush ani Hyper Silver/Legion Red.
+    gallery: [] },
 
   { id: "canam-maverick-trail", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≤60''", name: "Maverick Trail", price: "od 16 230 €", engine: "700 / 1000",
     desc: "Kompaktowy SSV do wąskich szlaków leśnych — świetna zwrotność przy szerokości do 60 cali.",
@@ -2928,12 +3022,15 @@ const VEHICLES = [
       { title: "Selektywny napęd 2WD/4WD z Visco-Lok QE", text: "Pewna trakcja na zróżnicowanej nawierzchni bez zbędnego zużycia paliwa na łatwiejszych odcinkach." },
       { title: "Silniki 700 / 1000 (do 75 KM)", text: "Wybór mocy pozwala dopasować pojazd do własnych potrzeb i budżetu na starcie z SSV." }
     ],
+    // TODO: usunięto kolor "Catalyst Gray" (2026-09-09) — oficjalna strona can-am.brp.com/off-road/us/en/models/previous-models/2026/maverick-trail.html
+    // oraz karta katalogowa MY26 DPS potwierdzają jeden kolor dla całej linii: Triple Black. Cena "od 18 470 €" (wariant 1000)
+    // zachowana jako jedyny wpis, cena bazowa "od 16 230 €" (wariant 700) pozostaje w polu `price` pojazdu.
     colors: [
-      { name: "Catalyst Gray", hex1: "#8a8d90", hex2: "#4a4d50", image: "images/canam-maverick-trail-color-catalystgray-v2.webp", price: "od 16 230 €" },
-      { name: "Triple Black", hex1: "#2b2b2b", hex2: "#0d0d0d", image: "images/canam-maverick-trail-1.jpg", price: "od 18 470 €" }
+      { name: "Triple Black", hex1: "#2b2b2b", hex2: "#0d0d0d", image: "images/canam-maverick-trail-1.jpg" }
     ],
     images: ["images/canam-maverick-trail-1.jpg"],
-    gallery: ["images/canam-maverick-trail-life-1.avif", "images/canam-maverick-trail-life-2.avif"] },
+    // TODO: galeria pusta - usunięte 2 zdjęcia (czerwony/żółty pojazd), niezgodne z Triple Black.
+    gallery: [] },
   { id: "canam-traxter", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Utility", name: "Traxter", price: "od 16 990 €", engine: "HD7 / HD9 / HD11",
     desc: "Podstawowy model użytkowy z rodziny Traxter — niezawodny pojazd roboczy na co dzień.",
     fullDesc: [
@@ -3044,14 +3141,17 @@ const VEHICLES = [
     ],
     images: ["images/canam-traxter-pro-1.jpg"],
     gallery: ["images/canam-traxter-pro-life-1.jpg", "images/canam-traxter-pro-life-2.webp"] },
-  { id: "canam-maverick", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≥64''", name: "Maverick", price: "od 29 840 €", engine: "Turbo RR",
+  { id: "canam-maverick", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≥64''", name: "Maverick X3", price: "od 29 840 €", engine: "Turbo RR",
+    // TODO (2026-09-09): nazwa poprawiona z "Maverick" na "Maverick X3" — oficjalna nomenklatura BRP
+    // (can-am.brp.com/off-road/us/en/models/sxs/sport/maverick-x3.html) nazywa ten model (silnik Turbo RR)
+    // "Maverick X3", odróżniając go od zupełnie innej, nowej platformy "Maverick R" (999T DCT).
     desc: "Szeroki, wyczynowy SSV z turbodoładowanym silnikiem Rotax — stworzony do jazdy na granicy możliwości.",
     fullDesc: [
-      "Maverick (Turbo RR) to wysokowydajny pojazd SSV Can-Am — 3-cylindrowy, turbodoładowany silnik Rotax ACE 900 cm³ ze zintegrowanym intercoolerem generuje aż 200 KM mocy, czyniąc ten model jednym z najbardziej dynamicznych pojazdów w swojej klasie.",
+      "Maverick X3 (Turbo RR) to wysokowydajny pojazd SSV Can-Am — 3-cylindrowy, turbodoładowany silnik Rotax ACE 900 cm³ ze zintegrowanym intercoolerem generuje aż 200 KM mocy, czyniąc ten model jednym z najbardziej dynamicznych pojazdów w swojej klasie.",
       "Inteligentna kontrola przepustnicy (iTC) oraz wysokowydajny filtr powietrza pozwalają w pełni wykorzystać potencjał silnika niezależnie od warunków terenowych, a agresywna, sportowa sylwetka podkreśla nastawienie na osiągi, a nie pracę użytkową."
     ],
     highlights: ["Silnik: Rotax ACE 900 cm³ Turbo, 200 KM", "Zintegrowany intercooler i wysokowydajny filtr powietrza", "Inteligentna kontrola przepustnicy (iTC)", "Sportowa, dwuosobowa sylwetka nastawiona na osiągi", "Zaawansowany układ turbodoładowania Rotax"],
-    forWho: "Maverick (Turbo RR) to propozycja dla kierowców szukających najwyższych osiągów i adrenaliny w terenie — nie jest to pojazd do pracy gospodarskiej, lecz maszyna zbudowana wyłącznie z myślą o dynamicznej, sportowej jeździe.",
+    forWho: "Maverick X3 (Turbo RR) to propozycja dla kierowców szukających najwyższych osiągów i adrenaliny w terenie — nie jest to pojazd do pracy gospodarskiej, lecz maszyna zbudowana wyłącznie z myślą o dynamicznej, sportowej jeździe.",
     features: [
       { title: "Silnik Rotax ACE 900 cm³ Turbo, 200 KM", text: "Turbodoładowanie ze zintegrowanym intercoolerem daje jeden z najbardziej dynamicznych pojazdów w swojej klasie." },
       { title: "Inteligentna kontrola przepustnicy (iTC)", text: "Precyzyjne dawkowanie mocy pozwala w pełni wykorzystać potencjał silnika niezależnie od warunków terenowych." },
@@ -3066,16 +3166,17 @@ const VEHICLES = [
     ],
     images: ["images/canam-maverick-1-white.webp"],
     gallery: ["images/canam-maverick-life-1.webp", "images/canam-maverick-life-2.webp"] },
-  { id: "canam-maverick-max", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≥64''", name: "Maverick MAX", price: "od 45 990 €", engine: "Turbo RR",
-    desc: "Czteroosobowa wersja Maverick o wysokich osiągach — ekstremalna jazda w większym gronie.",
+  { id: "canam-maverick-max", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≥64''", name: "Maverick X3 MAX", price: "od 45 990 €", engine: "Turbo RR",
+    // TODO (2026-09-09): nazwa poprawiona z "Maverick MAX" na "Maverick X3 MAX" — jw., oficjalna nomenklatura BRP.
+    desc: "Czteroosobowa wersja Maverick X3 o wysokich osiągach — ekstremalna jazda w większym gronie.",
     fullDesc: [
-      "Maverick MAX to czteroosobowa wersja topowego Maverick Turbo RR — wydłużony rozstaw osi pozwala zabrać w teren trzech dodatkowych pasażerów, a turbodoładowany silnik Rotax ACE 900 cm³ o mocy 200 KM zapewnia dokładnie te same, wysokie osiągi co w wersji dwuosobowej.",
-      "Dzięki temu grupa czterech osób może wspólnie doświadczyć pełni sportowego charakteru Maverick Turbo RR — bez kompromisów w mocy silnika czy dynamice prowadzenia, jedynie z większą przestrzenią pasażerską."
+      "Maverick X3 MAX to czteroosobowa wersja topowego Maverick X3 Turbo RR — wydłużony rozstaw osi pozwala zabrać w teren trzech dodatkowych pasażerów, a turbodoładowany silnik Rotax ACE 900 cm³ o mocy 200 KM zapewnia dokładnie te same, wysokie osiągi co w wersji dwuosobowej.",
+      "Dzięki temu grupa czterech osób może wspólnie doświadczyć pełni sportowego charakteru Maverick X3 Turbo RR — bez kompromisów w mocy silnika czy dynamice prowadzenia, jedynie z większą przestrzenią pasażerską."
     ],
     highlights: ["Silnik: Rotax ACE 900 cm³ Turbo, 200 KM", "4-osobowa kabina — wydłużony rozstaw osi", "Zintegrowany intercooler i wysokowydajny filtr powietrza", "Inteligentna kontrola przepustnicy (iTC)", "Pełna moc silnika bez kompromisów względem wersji 2-osobowej"],
-    forWho: "Maverick MAX to propozycja dla grup przyjaciół i rodzin, które chcą wspólnie doświadczyć najwyższych osiągów pojazdu SSV Can-Am — bez rezygnacji z mocy i dynamiki na rzecz dodatkowych miejsc pasażerskich.",
+    forWho: "Maverick X3 MAX to propozycja dla grup przyjaciół i rodzin, które chcą wspólnie doświadczyć najwyższych osiągów pojazdu SSV Can-Am — bez rezygnacji z mocy i dynamiki na rzecz dodatkowych miejsc pasażerskich.",
     features: [
-      { title: "4-osobowa kabina — wydłużony rozstaw osi", text: "Trzech dodatkowych pasażerów może wspólnie doświadczyć pełni sportowego charakteru Maverick Turbo RR." },
+      { title: "4-osobowa kabina — wydłużony rozstaw osi", text: "Trzech dodatkowych pasażerów może wspólnie doświadczyć pełni sportowego charakteru Maverick X3 Turbo RR." },
       { title: "Silnik Rotax ACE 900 cm³ Turbo, 200 KM", text: "Dokładnie te same, wysokie osiągi co w wersji dwuosobowej, bez kompromisów mimo dłuższego nadwozia." },
       { title: "Zintegrowany intercooler", text: "Stabilna moc turbodoładowanego silnika niezależnie od intensywności jazdy w grupie." },
       { title: "Inteligentna kontrola przepustnicy (iTC)", text: "Przewidywalne, pełne wykorzystanie mocy silnika przy jeździe z pełnym obciążeniem pasażerskim." }
@@ -3140,8 +3241,11 @@ const VEHICLES = [
       { title: "Zaczep holowniczy o dużym udźwigu", text: "Transport przyczep i sprzętu gospodarczego w trudnym terenie." },
       { title: "Napęd 4WD z Visco-Lok QE", text: "Automatyczne dozowanie mocy na koła zapewnia trakcję w błocie i na luźnym podłożu." }
     ],
-    colors: [{ name: "Compass Green", hex1: "#4a5a3a", hex2: "#2a3320", image: "images/canam-traxter-hd9-clean.jpg" }],
-    images: ["images/canam-traxter-hd9-clean.jpg"], gallery: ["images/canam-traxter-hd9-life-1.jpg", "images/canam-traxter-hd9-life-2.jpg"] },
+    colors: [{ name: "Dolomite Grey", hex1: "#8a8d90", hex2: "#5a5d61", image: "images/canam-traxter-hd10-2027-dolomitegrey-1.png" }],
+    // TODO: gallery puste — usunięte 2 zdjęcia akcji, bo pokazywały zielony pojazd (Compass Green),
+    // niezgodny z potwierdzonym kolorem Dolomite Grey. Brak znalezionego oficjalnego zdjęcia akcji
+    // w Dolomite Grey dla tej platformy — do uzupełnienia realnym zdjęciem z portalu dealerskiego.
+    images: ["images/canam-traxter-hd10-2027-dolomitegrey-1.png"], gallery: [] },
 
   { id: "canam-traxter-xu", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Utility", name: "Traxter XU", price: "Cena na zapytanie", engine: "HD10 (80 KM) / HD11 (95 KM)",
     myYear: 2027,
@@ -3288,7 +3392,8 @@ const VEHICLES = [
       { title: "Pełny hardtop i wzmocniony zderzak XT", text: "Dodatkowa ochrona i komfort podczas intensywnej pracy w terenie." }
     ],
     colors: [{ name: "Dolomite Grey", hex1: "#8a8d90", hex2: "#5a5d61", image: "images/canam-commander-xt-official.png" }],
-    images: ["images/canam-commander-xt-official.png"], gallery: ["images/canam-commander-dps-life-1.jpg", "images/canam-commander-dps-life-2.jpg"] },
+    // TODO: galeria pusta - usunięte 2 zdjęcia współdzielone z Commander DPS (zielony Compass Green), niezgodne z Dolomite Grey.
+    images: ["images/canam-commander-xt-official.png"], gallery: [] },
 
   { id: "canam-commander-max", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Utility", name: "Commander MAX XT 1000R", price: "Cena na zapytanie", engine: "1000R, 100 KM",
     myYear: 2027,
@@ -3323,12 +3428,10 @@ const VEHICLES = [
       { title: "Selektywny napęd 2WD/4WD z Visco-Lok QE", text: "Pewna trakcja na zróżnicowanej nawierzchni." },
       { title: "Silniki 700 / 1000 (do 75 KM)", text: "Wybór mocy pozwala dopasować pojazd do własnych potrzeb i budżetu." }
     ],
-    colors: [
-      { name: "Catalyst Gray", hex1: "#8a8d90", hex2: "#4a4d50", image: "images/canam-maverick-trail-color-catalystgray-v2.webp" },
-      { name: "Triple Black", hex1: "#2b2b2b", hex2: "#0d0d0d", image: "images/canam-maverick-trail-1.jpg" }
-    ],
-    images: ["images/canam-maverick-trail-1.jpg"],
-    gallery: ["images/canam-maverick-trail-life-1.avif", "images/canam-maverick-trail-life-2.avif"] },
+    colors: [{ name: "Granite Grey", hex1: "#5a5e62", hex2: "#34373a", image: "images/canam-maverick-trail-2027-granitegrey-1.webp" }],
+    images: ["images/canam-maverick-trail-2027-granitegrey-1.webp"],
+    // TODO: galeria pusta - usunięte 2 zdjęcia (czerwony/żółty pojazd), niezgodne z Granite Grey.
+    gallery: [] },
 
   { id: "canam-maverick-sport-2027", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≤60''", name: "Maverick Sport", price: "Cena na zapytanie", engine: "1000R",
     myYear: 2027,
@@ -3345,9 +3448,10 @@ const VEHICLES = [
       { title: "Hill Descent Control i tryby SPORT/ECO", text: "Bezpieczny, kontrolowany zjazd ze stromych podjazdów." },
       { title: "Podwójne wentylowane tarcze 220 mm", text: "Pewne hamowanie przy dynamicznej jeździe terenowej." }
     ],
-    colors: [{ name: "Triple Black", hex1: "#1c1c1e", hex2: "#2c2c2e", image: "images/canam-maverick-sport-1.jpg" }],
-    images: ["images/canam-maverick-sport-1.jpg"],
-    gallery: ["images/canam-maverick-sport-life-1.avif", "images/canam-maverick-sport-life-2.avif"] },
+    colors: [{ name: "Granite Grey", hex1: "#5a5e62", hex2: "#34373a", image: "images/canam-maverick-sport-2027-granitegrey-1.webp" }],
+    images: ["images/canam-maverick-sport-2027-granitegrey-1.webp"],
+    // TODO: galeria pusta - usunięte 2 zdjęcia (czarny Triple Black, kolor 2026), niezgodne z Granite Grey.
+    gallery: [] },
 
   { id: "canam-maverick-r-2027", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≥64''", name: "Maverick R", price: "Cena na zapytanie", engine: "999T DCT",
     myYear: 2027,
@@ -3366,7 +3470,7 @@ const VEHICLES = [
     ],
     colors: [
       { name: "Triple Black (wersja X RS DCT)", hex1: "#2b2b2b", hex2: "#0d0d0d", image: "images/canam-maverick-r-1-white.webp" },
-      { name: "Dusty Navy (wersja X RS DCT SAS)", hex1: "#2b4d63", hex2: "#17222c", image: "images/canam-maverick-r-color-dustynavy.webp" },
+      { name: "Dolomite Grey & Orange Crush (wersja X RS DCT SAS)", hex1: "#8a8d90", hex2: "#e0722d", image: "images/canam-maverick-r-2027-dolomitegrey-xrs-1.png" },
       { name: "Loft Green Satin (wersja X RC DCT SAS)", hex1: "#5f6b52", hex2: "#333d2c", image: "images/canam-maverick-r-color-loftgreen-v2.webp" }
     ],
     images: ["images/canam-maverick-r-1-white.webp", "images/canam-maverick-r-2.jpg"],
@@ -3547,17 +3651,17 @@ function vehicleCard(v) {
   `;
 }
 
+function dedupeByModelName(list) {
+  const primaryByName = new Map();
+  list.forEach(v => {
+    const current = primaryByName.get(v.name);
+    if (!current || (v.myYear || 2026) > (current.myYear || 2026)) primaryByName.set(v.name, v);
+  });
+  return [...primaryByName.values()];
+}
+
 function renderCategoryGrid(grid, list) {
-  const y2027 = list.filter(v => v.myYear === 2027);
-  const rest = list.filter(v => v.myYear !== 2027);
-  let html = "";
-  if (y2027.length) {
-    html += `<div class="my-year-heading">Rocznik 2027</div><div class="vehicle-grid-inner">${y2027.map(vehicleCard).join("")}</div>`;
-    if (rest.length) html += `<div class="my-year-heading">Rocznik 2026</div><div class="vehicle-grid-inner">${rest.map(vehicleCard).join("")}</div>`;
-  } else {
-    html += rest.map(vehicleCard).join("");
-  }
-  grid.innerHTML = html;
+  grid.innerHTML = dedupeByModelName(list).map(vehicleCard).join("");
 }
 
 document.querySelectorAll(".vehicle-grid").forEach(grid => {
@@ -3799,6 +3903,8 @@ window.addEventListener("focus", resumeBackgroundVideos);
 function renderContact() {
   showPage("page-contact");
   setActiveNavLink("nav-link-contact");
+  populateInquiryVehicleSelect();
+  initInquiryForm();
 }
 
 /* ============================================================
@@ -3859,28 +3965,32 @@ function showContact(vehicleId) {
 
 function populateInquiryVehicleSelect() {
   const select = document.getElementById("inquiry-vehicle");
-  if (!select || select.dataset.populated) return;
-  select.dataset.populated = "1";
-  const grouped = {};
-  VEHICLES.filter(v => !v.tempHidden).forEach(v => {
-    const label = v.categoryLabel || v.category;
-    (grouped[label] = grouped[label] || []).push(v);
-  });
-  Object.keys(grouped).forEach(label => {
-    const group = document.createElement("optgroup");
-    group.label = label;
-    grouped[label].forEach(v => {
-      const opt = document.createElement("option");
-      opt.value = v.id;
-      opt.textContent = v.name + (v.myYear === 2027 ? " (2027)" : "");
-      group.appendChild(opt);
+  if (!select) return;
+  if (!select.dataset.populated) {
+    select.dataset.populated = "1";
+    const grouped = {};
+    VEHICLES.filter(v => !v.tempHidden).forEach(v => {
+      const label = v.categoryLabel || v.category;
+      (grouped[label] = grouped[label] || []).push(v);
     });
-    select.appendChild(group);
-  });
+    Object.keys(grouped).forEach(label => {
+      const group = document.createElement("optgroup");
+      group.label = label;
+      grouped[label].forEach(v => {
+        const opt = document.createElement("option");
+        opt.value = v.id;
+        opt.textContent = v.name + (v.myYear === 2027 ? " (2027)" : "");
+        group.appendChild(opt);
+      });
+      select.appendChild(group);
+    });
+  }
   const preselect = sessionStorage.getItem("inquiryVehicle");
   if (preselect) {
     select.value = preselect;
     sessionStorage.removeItem("inquiryVehicle");
+  } else {
+    select.value = "";
   }
 }
 
@@ -3928,18 +4038,48 @@ function initInquiryForm() {
     const message = document.getElementById("inquiry-message").value.trim();
 
     const subject = vehicleLabel ? `Zapytanie o ofertę — ${vehicleLabel}` : "Zapytanie o ofertę";
-    const bodyLines = [
-      `Imię i nazwisko: ${name}`,
-      phone ? `Telefon: ${phone}` : null,
-      `Email: ${email}`,
-      vehicleLabel ? `Pojazd: ${vehicleLabel}` : null,
-      "",
-      "Wiadomość:",
-      message,
-    ].filter(Boolean);
-    const mailtoUrl = `mailto:kontakt@extreme-club.pl?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
-    window.location.href = mailtoUrl;
-    showToast("Otwieramy Twój program pocztowy z gotową wiadomością...", 3500);
+    const mailtoFallback = () => {
+      const bodyLines = [
+        `Imię i nazwisko: ${name}`,
+        phone ? `Telefon: ${phone}` : null,
+        `Email: ${email}`,
+        vehicleLabel ? `Pojazd: ${vehicleLabel}` : null,
+        "",
+        "Wiadomość:",
+        message,
+      ].filter(Boolean);
+      window.location.href = `mailto:kontakt@extreme-club.pl?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
+    };
+
+    const submitBtn = document.getElementById("inquiry-submit-btn");
+    const statusEl = document.getElementById("inquiry-status");
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Wysyłanie...";
+    statusEl.className = "form-status";
+    statusEl.textContent = "";
+
+    const formData = new FormData(form);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(res => {
+        if (!res.ok) throw new Error("Netlify form submit failed: " + res.status);
+        form.reset();
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Wyślij zapytanie";
+        statusEl.className = "form-status success";
+        statusEl.textContent = "Dziękujemy! Wiadomość została wysłana — odezwiemy się w ciągu 24 godzin roboczych.";
+        showToast("Zapytanie wysłane pomyślnie.", 3500);
+      })
+      .catch(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Wyślij zapytanie";
+        statusEl.className = "form-status error";
+        statusEl.textContent = "Nie udało się wysłać formularza. Otwieramy Twój program pocztowy jako zapasową metodę.";
+        mailtoFallback();
+      });
   });
 }
 function showPrivacy() { location.hash = "#/polityka-prywatnosci"; }
@@ -4025,6 +4165,22 @@ function galleryMarkup(v) {
   return (v.gallery || []).map(src => `<div class="detail-gallery-item"><img src="${av(src)}" alt="${v.name}" loading="lazy"></div>`).join("");
 }
 
+function siblingYearOf(v) {
+  return VEHICLES.find(x => x.name === v.name && x.id !== v.id && !x.tempHidden);
+}
+
+function yearToggleMarkup(v) {
+  const sibling = siblingYearOf(v);
+  if (!sibling) return "";
+  const yearOf = x => x.myYear || 2026;
+  const [a, b] = yearOf(v) >= yearOf(sibling) ? [v, sibling] : [sibling, v];
+  return `
+    <div class="year-toggle">
+      <button class="${a.id === v.id ? "active" : ""}" onclick="location.hash = '#/pojazd/${a.id}'">${yearOf(a)}</button>
+      <button class="${b.id === v.id ? "active" : ""}" onclick="location.hash = '#/pojazd/${b.id}'">${yearOf(b)}</button>
+    </div>`;
+}
+
 function openDetail(id) {
   const v = VEHICLES.find(x => x.id === id);
   if (!v || v.tempHidden) {
@@ -4061,6 +4217,7 @@ function openDetail(id) {
         <span class="detail-tag${v.category === "trojkolowce" ? " detail-tag--canam" : v.category === "atv" ? " detail-tag--atv" : v.category === "ssv" ? " detail-tag--ssv" : v.category === "electric" ? " detail-tag--electric" : ""}"><span class="detail-tag-brand">${v.categoryLabel}</span><span class="detail-tag-sep">·</span><span class="detail-tag-segment">${v.segment}</span></span>
         <img class="detail-brp-logo" src="images/brp-logo.png" alt="BRP" loading="lazy">
       </div>
+      ${yearToggleMarkup(v)}
       <h1 class="detail-name">${v.name}</h1>
       <div class="detail-price" id="detail-price">${v.price}</div>
       ${v.colors && v.colors.length ? `
@@ -4148,10 +4305,10 @@ function openDetail(id) {
   }
   const priceOf = x => parseInt(x.price.replace(/\D/g, ""), 10);
   const sameSegment = VEHICLES
-    .filter(x => x.category === v.category && x.segment === v.segment && x.id !== v.id && !x.tempHidden)
+    .filter(x => x.category === v.category && x.segment === v.segment && x.id !== v.id && x.name !== v.name && !x.tempHidden)
     .sort((a, b) => priceOf(a) - priceOf(b));
   const rest = VEHICLES
-    .filter(x => x.category === v.category && x.segment !== v.segment && x.id !== v.id && !x.tempHidden)
+    .filter(x => x.category === v.category && x.segment !== v.segment && x.id !== v.id && x.name !== v.name && !x.tempHidden)
     .sort((a, b) => Math.abs(priceOf(a) - priceOf(v)) - Math.abs(priceOf(b) - priceOf(v)));
   const related = [...sameSegment, ...rest].slice(0, 3);
   document.getElementById("detail-related").innerHTML = related.length ? `
