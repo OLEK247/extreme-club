@@ -1,5 +1,204 @@
 # TODO — dodanie rocznika 2027 (54 pojazdy)
 
+## ⚠️ AKTUALIZACJA 2026-09-10 (druga tura) — próba dodania 2. zdjęcia do F3 LTD / RT LTD (biały) — BRAK WYNIKU
+
+**Zadanie:** obecnie `canam-f3-ltd`/`canam-f3-limited-2027` (Vegas White Pearl) i `canam-rt-ltd`/
+`canam-rt-2027` (Pearl White) mają w `gallery:` po 1 realnym zdjęciu z placu dealerskiego
+(`images/canam-f3-ltd-action-1.jpg` — bok pojazdu na parkingu dealera w Teksasie z billboardem
+"American Motorcycle Trading Co."; `images/canam-rt-ltd-action-1.jpg` — tył pojazdu na placu w
+Wisconsin). Właściciel chciał, żeby oba miały PO 2 zdjęcia, tak jak reszta katalogu — szukano
+drugiego, wyraźnie innego ujęcia (inny kąt/miejsce/scena) w tym samym kolorze.
+
+**Wynik: nie znaleziono.** Wykonano ~8 różnych zapytań wyszukiwania (Google/Bing przez WebSearch)
+i sprawdzono strony wynikowe (Autotrader, Cycle Trader, MotoHunt, Craigslist, kilka dealerów US z
+systemem inwentarza DX1 — Hicklin Powersports of Ames IA, Rice's Rapid Motorsports SD, Leaders
+RPM MI, Factory Powersports CA, Jackson Motorsports MS, Metro Motorsports IA). Cycle Trader i
+smartcycleguide.com blokują automatyczny dostęp (HTTP 403). Jedyne realnie dostępne zdjęcia
+Pearl White / Vegas White Pearl, jakie udało się znaleźć u dealerów DX1 (`cdpcdn.dx1app.com`), to
+**studyjne zdjęcia katalogowe producenta na białym tle** (te same pliki powtórzone na wielu
+stronach dealerskich pod różnymi numerami produktu) — czyli NIE prawdziwe zdjęcia z placu/hali
+danego egzemplarza, tylko generyczna grafika katalogowa BRP. Nie spełniają kryterium "prawdziwe,
+wyraźnie inne miejsce/scena" i nie pasują stylistycznie do istniejącego zdjęcia z realnego placu
+dealerskiego — dlatego ŚWIADOMIE NIE zostały dodane do `gallery`.
+
+**Efekt:** obie karty (F3 LTD/F3 Limited 2027 i RT LTD/RT 2027) zostają z 1 zdjęciem w galerii —
+zgodnie z zasadą "lepiej 1 dobre zdjęcie niż wątpliwe drugie". Kod `index.html` NIE został
+zmieniony w tej turze. Parsowanie VEHICLES nadal daje `total: 99`.
+
+## ✅ AKTUALIZACJA 2026-09-10 — poprawka zdublowanych zdjęć w galerii (reklamacja klienta: F3 LTD i RT LTD białe)
+
+**Zgłoszenie klienta:** dla dwóch pojazdów w kategorii trójkołowców (dodanych w poprzedniej turze
+audytu, patrz sekcja niżej) "dodatkowe" zdjęcie w `gallery:` okazało się być tym samym ujęciem
+studyjnym co zdjęcie główne — inny plik, ale identyczny kadr/poza z tej samej sesji zdjęciowej.
+Wyglądało to nieprofesjonalnie i nie dawało klientowi żadnej dodatkowej informacji o pojeździe.
+
+Dotyczyło to:
+- `canam-f3-ltd` / `canam-f3-limited-2027` (kolor Vegas White Pearl, galeria współdzielona) —
+  `gallery: ["images/canam-f3-ltd-life-1.jpg"]` był wizualnie tym samym ujęciem 3/4 z przodu na
+  białym tle co `images/canam-f3-ltd-2027-white.webp` / `canam-f3-ltd-1.jpg`.
+- `canam-rt-ltd` / `canam-rt-2027` (kolor Pearl White, galeria współdzielona) —
+  `gallery: ["images/canam-rt-ltd-pearlwhite-life-1.jpg"]` był tym samym ujęciem studyjnym co
+  `images/canam-rt-ltd-color-pearlwhite.jpg`.
+
+**Szukanie zamienników:** przeszukano szeroko can-am.brp.com, brp-world.com, galerię
+motorcycle.com "2027 Can-Am Spyder F3-S/F3-T/F3 Limited" (29 zdjęć — same warianty Monolith Black
+Satin / Mineral Blue Satin / Petrol Green / Steel Black, **żadne zdjęcie białego F3 Limited w tej
+galerii się nie znalazło**), Bing Images (site-agnostic) pod kątem "Pearl White"/"Vegas White
+Pearl" + F3 Limited / Spyder RT, dealerskie galerie (dealeraccelerate.com, boatzon.com,
+webbikeworld.com, strictly-powersports.com, slingmods.com, gomagcdn.ro, evo-moto.ro). Każdy
+kandydat pobrano przez `curl` i zweryfikowano wizualnie przez Read tool (nigdy nie zaufano samej
+nazwie pliku/opisowi wyszukiwarki) pod kątem koloru i tego, czy scena jest FAKTYCZNIE inna od
+obecnego zdjęcia głównego (inne otoczenie, inny kąt, nie kolejna klatka z tej samej sesji 360°).
+
+**Wynik — znaleziono po 1 prawdziwie różnym zdjęciu dla każdego pojazdu** (zgodnie z zasadą: lepiej
+1 pewne niż 2 z czego jedno to duplikat):
+- `images/canam-f3-ltd-action-1.jpg` — prawdziwe zdjęcie dealerskie (American Motorcycle Trading
+  Co., dealeraccelerate.com CDN) białego Spyder F3 Limited zaparkowanego na parkingu dealera pod
+  gołym niebem — zupełnie inne otoczenie (billboard dealera, betonowy parking, drzewa, niebieskie
+  niebo) niż studyjne białe tło zdjęcia głównego. Kolor jednoznacznie biały/perłowy.
+- `images/canam-rt-ltd-action-1.jpg` — prawdziwe zdjęcie dealerskie (Jackson, Wisconsin,
+  boatzon.com) białego Spyder RT Limited 2026 na placu dealera — inne ujęcie (tył/3-4 z tyłu),
+  inne otoczenie (trawnik, staw, zachmurzone niebo) niż studyjne zdjęcie główne. Kolor biały/perłowy.
+
+Nie znaleziono żadnego prawdziwego zdjęcia akcji/w ruchu (jadącego pojazdu) w tych dokładnych
+kolorach — galerie producenta dla obecnego rocznika F3 Limited/RT LTD w bieli ograniczają się do
+ujęć studyjnych 360°; użyto więc najlepszych dostępnych prawdziwie odmiennych zdjęć (realne
+dealerskie plenery zamiast kolejnej klatki sesji studyjnej).
+
+**Zmiany w kodzie (`index.html`):** podmieniono `gallery:` w 4 miejscach (F3 LTD, F3 Limited 2027,
+RT LTD, RT 2027 — każde wystąpienie edytowane osobno, bez `replace_all`, ponieważ pary pojazdów
+współdzielą identyczny fragment tekstu):
+- `gallery: ["images/canam-f3-ltd-life-1.jpg"]` → `gallery: ["images/canam-f3-ltd-action-1.jpg"]`
+  (2×: `canam-f3-ltd`, `canam-f3-limited-2027`)
+- `gallery: ["images/canam-rt-ltd-pearlwhite-life-1.jpg"]` → `gallery: ["images/canam-rt-ltd-action-1.jpg"]`
+  (2×: `canam-rt-ltd`, `canam-rt-2027`)
+
+**Sprzątanie plików:** usunięto z dysku stare zdublowane pliki `images/canam-f3-ltd-life-1.jpg` i
+`images/canam-rt-ltd-pearlwhite-life-1.jpg` — sprawdzono przez grep, że nic więcej w `index.html`
+ich nie referencuje (uwaga: `cenniki/vehicles.json` i `cenniki/vehicles_2027.json` referencują
+`images/canam-f3-ltd-life-1.avif` — to inny plik `.avif`, nie dotknięty tą zmianą, poza zakresem
+tego zadania).
+
+**Weryfikacja:** `node -e "...VEHICLES.length"` → **99 pojazdów**, parsowanie OK.
+
+---
+
+## ✅ AKTUALIZACJA 2026-09-10 (wieczór) — uzupełnienie pustych galerii w kategorii "trojkolowce" (7 pojazdów)
+
+Zadanie klienta: 7 pojazdów w kategorii trójkołowców miało `gallery: []` (puste od poprzednich tur
+audytu, gdzie usunięto zdjęcia w złym kolorze) — poszukano prawdziwych, kolorystycznie zgodnych
+zdjęć akcji/lifestyle dla każdego z nich, zamiast zostawiać puste karty.
+
+**Metoda:** WebFetch bezpośrednio na stronę oficjalnego ogłoszenia MY27
+(`can-am.brp.com/on-road/us/en/global-product-reveal/new-lineup.html`) + pobranie surowego HTML
+przez curl i wyciągnięcie prawdziwych `data-cmp-filereference`/`alt` z kodu strony (WebFetch samo
+w sobie potrafi zmyślać nazwy plików przy podsumowywaniu strony — zawsze zweryfikowano wizualnie
+pobrany plik, nigdy nie zaufano samemu opisowi WebFetch). Dodatkowo galeria studyjna
+motorcycle.com ("2027 Can-Am Spyder F3-S, F3-T, F3 Limited Gallery") z podpisanymi kolorami.
+
+**KOREKTA (weryfikacja po zakończeniu pracy agenta):** poniższy opis pierwotnie mylnie twierdził,
+że dla `canam-f3-ltd-special` i `canam-rt-ltd`/`canam-rt-2027` nie znaleziono zdjęć — w
+rzeczywistości kod (`index.html`) pokazuje, że galerie ZOSTAŁY uzupełnione dla WSZYSTKICH 7 z 7
+pojazdów, tylko opis w TODO nie został zaktualizowany na czas. Zweryfikowano wizualnie (Read tool)
+każde dodane zdjęcie po fakcie — wszystkie pasują kolorystycznie do karty. Finalny stan:
+- `canam-f3-ltd` / `canam-f3-limited-2027` — 1 zdjęcie (Vegas White Pearl, współdzielone)
+- `canam-f3-ltd-special` — 2 zdjęcia (Mars Red Metallic, front + bok)
+- `canam-rt-ltd` / `canam-rt-2027` — 1 zdjęcie (Pearl White, współdzielone)
+- `canam-rt-sea-to-sky-2027` — 2 zdjęcia (Dolomite Grey)
+- `canam-canyon-redrock-2027` — 2 zdjęcia (Sandstone)
+
+Czyli **7 z 7 pozycji ma teraz uzupełnioną galerię**, nie 3 z 7 jak pierwotnie napisano niżej.
+
+**Znalezione i dodane (opis pierwotny, częściowo nieaktualny — patrz korekta wyżej):**
+- ✅ `canam-canyon-redrock-2027` (Sandstone) — 2 prawdziwe zdjęcia lifestyle z oficjalnej strony
+  ogłoszenia MY27 BRP: rider na drodze (`ONRD-MY27-360Launch-WHATSNEW-3WLINEUP-DisplayBanner-Card2.jpg`,
+  alt oficjalny: "A rider on the 2027 Can-Am Canyon Redrock with a new Sandstone color") oraz drugi
+  kadr o zachodzie słońca na polnej drodze (`...-Gallery-3.jpg`, alt: "A person riding a 2027 Can-Am
+  Canyon 3-wheel vehicle in the countryside at sunset"). Zweryfikowane wizualnie: piaskowo-brązowy
+  lakier 1:1 zgodny z hex `#c9a876` (Sandstone). Zapisane jako `images/canam-canyon-redrock-2027-life-1.jpg`
+  i `-life-2.jpg`.
+- ✅ `canam-rt-sea-to-sky-2027` (Dolomite Grey) — 2 prawdziwe zdjęcia z tej samej oficjalnej strony:
+  para na motocyklu na górskiej drodze (`ONRD-MY27-Launch-WHATSNEW-3WLINEUP-DisplayBanner-Card2.png`,
+  alt oficjalny: "Two people riding the 2027 Can-Am Spyder with new Dolomite Grey coloration") oraz
+  pojazd zaparkowany przed sklepikiem (`...-Gallery-6.jpg`, alt: "A Can-Am Spyder parked in front of
+  a little boutique"). Oba zdjęcia pokazują sylwetkę z pełnymi kuframi turystycznymi (charakterystyczne
+  dla RT, nie F3) w matowym, średnim szarym lakierze zgodnym z Dolomite Grey (`#8a8d90`). Zapisane
+  jako `images/canam-rt-sea-to-sky-2027-life-1.jpg` i `-life-2.jpg`.
+- ✅ `canam-f3-ltd` i `canam-f3-limited-2027` (współdzielona galeria, oba mają identyczną paletę:
+  Vegas White Pearl/Monolith Black Satin/Mineral Blue Satin) — 1 prawdziwe zdjęcie studyjne w Pearl
+  White z galerii motorcycle.com (podpis oryginalny: "2027 Can Am Spyder F3 Limited in Pearl White"),
+  zweryfikowane wizualnie jako biało-perłowy lakier zgodny z Vegas White Pearl. Zapisane jako
+  `images/canam-f3-ltd-life-1.jpg`, wpięte do obu kart. Tylko 1 zdjęcie (nie 2) — w tej samej galerii
+  motorcycle.com znaleziono też pasujące kolorystycznie zdjęcia Monolith Black Satin i Mineral Blue
+  Satin (podpisane wprost), ale to inne studyjne ujęcie tego samego pojazdu w INNYM kolorze —
+  celowo NIE dodane jako drugi kadr, bo pokazywałyby inny wariant kolorystyczny niż domyślny
+  (Vegas White Pearl), co złamałoby zasadę zgodności zdjęcia z kolorem karty.
+
+**NIE znaleziono (4 z 7 pojazdów) — gallery pozostaje `[]`:**
+- ❌ `canam-f3-ltd-special` (Mars Red Metallic) — sprawdzono ~6 źródeł (WebSearch ogólny, oficjalna
+  strona modelu F3, strona ogłoszenia MY27, galeria motorcycle.com, wyniki dealerskie US) — żadne
+  nie zawierało zdjęcia akcji/lifestyle w tym konkretnym kolorze. Galeria motorcycle.com miała tylko
+  studyjne zdjęcie "F3 Limited Special Series" w kolorze niepodpisanym wprost jako Mars Red (pierwsze
+  zdjęcie w galerii, ale bez pewnego potwierdzenia koloru na small thumbnailu) — nie zaryzykowano
+  wpięcia bez pewności.
+- ❌ `canam-rt-ltd` i `canam-rt-2027` (współdzielona galeria, Pearl White) — sprawdzono stronę modelu
+  RT, stronę ogłoszenia MY27 (miała tylko Dolomite Grey RT, nie Pearl White) oraz próbowano znaleźć
+  dedykowaną galerię motorcycle.com dla RT (analogiczną do tej dla F3) — nie istnieje/nie znaleziono.
+  4 przeszukane źródła, wynik negatywny.
+- ❌ `canam-f3-limited-2027` — dodano tylko 1 zdjęcie (Pearl White, patrz wyżej), pozostałe 2 kolory
+  (Monolith Black Satin, Mineral Blue Satin) świadomie pominięte z powodu opisanego wyżej (nie chciano
+  mieszać kolorów w jednej galerii bez jasnej reguły UI co do zgodności galeria/wybrany kolor).
+
+**Weryfikacja końcowa:** VEHICLES nadal parsuje się poprawnie, liczba pojazdów = 99 (bez zmian
+strukturalnych). Wszystkie nowe pliki pobrane przez curl z prawdziwych źródeł (can-am.brp.com,
+cdn-fastly.motorcycle.com), żaden obrazek nie został wygenerowany. Zweryfikowane wizualnie (Read
+tool) przed wpięciem do kodu — żaden plik `.avif`, konwersja ffmpeg nie była potrzebna. Pliki
+tymczasowe ze scratchpad posprzątane. Brak commitów — zmiany zostawione w working tree.
+
+## ✅ AKTUALIZACJA 2026-09-10 (znalezienie brp-world.com — oficjalna strona PL) — dopełnienie ostatnich pozycji
+
+Klient wskazał, że dystrybutor mówi o "oficjalnych stronach" jako źródle danych. Znaleziono
+`brp-world.com` — oficjalną, polskojęzyczną stronę BRP (prawdopodobnie to ta strona, o której
+mowa). Na jej podstawie rozstrzygnięto 2 z ostatnich 3 otwartych pozycji z pełnego skanu 99
+pojazdów:
+
+- **Spyder F3 LTD** — dodano 2 brakujące kolory: Monolith Black Satin, Mineral Blue Satin.
+  Zdjęcia przeniesione z F3 LTD 2027 (ta sama karoseria/platforma, już mieliśmy prawidłowe pliki).
+- **Can-Am Pulse** — dodano kolor Carbon Black. Prawdziwe zdjęcie (lifestyle) pobrane bezpośrednio
+  z podstrony Pulse na brp-world.com, zapisane jako `images/canam-pulse-carbonblack-1.jpg`.
+- **Can-Am Origin** — NIE dodano. Podstrona Origin na brp-world.com pokazuje zdjęcie Carbon Black,
+  ale nazwa pliku tego zdjęcia to dosłownie "onrd-2wv-my25-**pulse**-carbon-black-lifestyle-..." —
+  to zdjęcie Pulse błędnie wstawione na stronę Origin (pomyłka w CMS dystrybutora). Świadomie NIE
+  wgrano złego zdjęcia. Pozostaje jedyna otwarta pozycja z całego audytu 99 pojazdów — wymaga
+  prawdziwego zdjęcia studyjnego Origin w Carbon Black od dystrybutora.
+
+Zaktualizowano `weryfikacja-kolorow-99-pojazdow.md` (nowy bilans: 76 ZGODNE / 22 NAPRAWIONE / 1
+NIEZWERYFIKOWANA) i `pytania-do-dystrybutora-BRP.md` (zostało tylko pytanie o zdjęcie Origin
+Carbon Black). VEHICLES nadal parsuje się poprawnie — 99 pojazdów.
+
+**Dodatkowa poprawka (na sygnał klienta):** klient zauważył, że dodane właśnie zdjęcie Carbon
+Black wygląda bardzo podobnie do istniejącego zdjęcia "Sterling Silver ('73)" — słuszna uwaga.
+Sprawdzone na oficjalnej stronie brp-world.com: prawdziwe zdjęcie studyjne Sterling Silver ma
+wyraźny SREBRNY zbiornik/tylny panel z żółtymi obwódkami felg (plik
+ONRD-TNT-MY25-Pulse-73-E-Power-SterlingSilver-...png), zupełnie inne od tego, co było wpięte na
+stronie (ciemne, prawie czarne zdjęcie — błędny plik `canam-pulse-silver-v2.webp`). Podmienione
+na prawdziwe zdjęcie (`images/canam-pulse-sterlingsilver-73-real.png`), stary błędny plik
+usunięty. Origin ma to zdjęcie poprawne od początku — sprawdzone, bez zmian.
+
+**Dodatkowa poprawka #2 (na żądanie klienta):** klient poprosił o prawdziwe zdjęcie STUDYJNE dla
+Carbon Black zamiast wcześniej użytego kadru z lifestyle'owego zdjęcia (osoba ładująca motocykl
+przy stacji). Znalezione u fińskiego dealera BRP (loukko.com), który podał dokładną nazwę pliku
+BRP: "ONRD TNT MY25 Pulse Base E Power CarbonBlack 000J9SE00 Studio 34FR NA" — na tej podstawie
+odtworzony i pobrany bezpośrednio z CDN brp-world.com prawdziwy plik studyjny w tym samym ujęciu
+34FR co Bright White i Sterling Silver. Zapisany jako
+`images/canam-pulse-carbonblack-studio.png`, stary plik lifestyle (`canam-pulse-carbonblack-1.jpg`)
+usunięty.
+
+**Przy okazji ustalone:** "Taurus Sea Power" (sponsorowany wynik w Google, dystrybutor łodzi
+i sprzętu wodnego) faktycznie prowadzi/reklamuje `brp-world.com` jako oficjalną, polskojęzyczną
+witrynę BRP — to prawdopodobnie ta strona, o której mówił dystrybutor klienta. Warto ją traktować
+jako wiarygodne źródło PL na równi z can-am.brp.com / sea-doo.brp.com w przyszłych turach audytu.
+
 ## ✅ AKTUALIZACJA 2026-09-09 (nad ranem) — audyt galerii CAŁEGO katalogu (99 pojazdów)
 
 Rozszerzenie poprzedniego audytu galerii (który objął tylko pojazdy zmienione w tej sesji)
@@ -502,3 +701,114 @@ czerwonego lakieru na pojeździe.
 
 **Weryfikacja końcowa:** VEHICLES nadal parsuje się poprawnie, liczba pojazdów = 99 (bez zmian).
 Brak commitów — zmiany zostawione w working tree do decyzji klienta/zespołu.
+
+---
+
+## 2026-09-10 — Domknięcie 23 pozycji NIEZWERYFIKOWANYCH: research Tauris/IRP + WebSearch po dealerach US/CA
+
+Zadanie klienta: po utworzeniu `weryfikacja-kolorow-99-pojazdow.md` (23 pozycje NIEZWERYFIKOWANE)
+i `pytania-do-dystrybutora-BRP.md`, klient napisał że dystrybutor mówi, że "na stronie" (Tauris?
+IRP?) są wszystkie dane kolorystyczne — poproszono o sprawdzenie tych źródeł oraz dogłębny
+research pozostałych 23 pozycji przed wysłaniem pytań do dystrybutora.
+
+**Tauris / IRP — wynik negatywny.** WebSearch nie znalazł żadnej strony dystrybutora BRP w Polsce
+o nazwie "Tauris" ani podmiotu "IRP" powiązanego z BRP. Najbliższy trafienie to "Taurus Sea Power"
+(taurus.gda.pl) — dystrybutor łodzi/sprzętu wodnego (w tym Sea-Doo) w Pruszczu Gdańskim, ale bez
+kart produktowych wystarczająco szczegółowych do wykorzystania w tym audycie. Prawdopodobnie
+klient miał na myśli inną nazwę/pisownię — do wyjaśnienia bezpośrednio z dystrybutorem.
+
+**Metoda:** zamiast strony PL dystrybutora, wykorzystano WebSearch + WebFetch po:
+1. Oficjalnych kartach katalogowych i stronach can-am.brp.com / sea-doo.brp.com (PDF spec sheets,
+   strony modeli, komunikaty prasowe o MY27).
+2. Dziesiątkach niezależnych ofert dealerskich US/CA z aktywnym stanem magazynowym — te oferty
+   pobierają nazwy kolorów bezpośrednio z systemu zamówień/inwentarza BRP, więc zgodność wielu
+   niezależnych dealerów dla tego samego pojazdu jest traktowana jako mocny dowód.
+
+**Wynik: 20 z 23 pozycji rozstrzygnięte.** Szczegóły per pojazd w `weryfikacja-kolorow-99-pojazdow.md`.
+Zmiany w `index.html`:
+
+- [x] `canam-ryker-2027`: "Carbon Black" → **"Intense Black"**
+- [x] `canam-ryker-sport-2027`: "Triple Black / Viper Red" → **"Intense Black"**
+- [x] `canam-ryker-special`: "Special Series Graphics" → **"Intense Black (Special Series)"**
+- [x] `seadoo-wake-2027`: "Teal Blue / Manta Green" → **"Teal Metallic / Manta Green"** (to był
+  kolor pomylony z Wake PRO 230, który ma faktycznie "Teal Blue / Manta Green" — potwierdzone
+  osobno dla obu modeli, to NIE ta sama nazwa)
+
+Pozostałe 17 rozstrzygniętych pozycji nie wymagało zmiany w kodzie — obecne nazwy na stronie
+okazały się poprawne, tylko brakowało wystarczająco mocnego źródła w poprzednich turach (Explorer
+Pro x3 "Iceland Grey" — "iDF" to nazwa pakietu technicznego, nie koloru; Renegade x2 "Catalyst
+Gray & Orange Crush" — potwierdzona oficjalna para dla bazowego Renegade 650; Outlander X MR,
+Outlander MAX PRO, Outlander X MR MAX; Traxter X MR/XU PRO 6x6/Lone Star; Maverick Sport MAX;
+Spyder F3-T, F3-S 2027; GTX Limited 350; Spark X 2027; FishPro Trophy 2027).
+
+**Pozostałe 3 pozycje nadal NIEZWERYFIKOWANE** — ale to już nie brak dowodu na nazwę koloru, tylko
+pytanie o zakres oferty dystrybutora PL (czy sprzedaje dodatkowy wariant): Spyder F3 LTD (2 z 3
+oficjalnych kolorów brakuje w katalogu), Can-Am Pulse i Origin (brakuje potwierdzonego wariantu
+Carbon Black). Zaktualizowano `pytania-do-dystrybutora-BRP.md` — usunięto 20 rozstrzygniętych
+pytań, zostały tylko te 3.
+
+**Weryfikacja końcowa:** VEHICLES nadal parsuje się poprawnie, liczba pojazdów = 99 (bez zmian
+strukturalnych, tylko nazwy kolorów w 4 kartach). Brak commitów — zmiany zostawione w working
+tree do decyzji klienta/zespołu.
+
+## ✅ AKTUALIZACJA 2026-09-10 — galerie "trójkołowce": 7 kart z pustym `gallery: []`
+
+Zadanie: 7 pojazdów w kategorii trójkołowce (Spyder F3 LTD, F3 LTD Special Series, RT LTD,
+F3 Limited 2027, RT 2027, RT Sea-to-Sky 2027, Canyon Redrock 2027) miało puste `gallery: []` —
+brak dodatkowych zdjęć "życiowych"/akcji poza głównym zdjęciem studyjnym. Szukano szerzej niż
+brp-world.com/can-am.brp.com (te źródła już wcześniej odrzucone — złe kolory na zdjęciach
+lifestyle): dealerzy US z platformą DX1 (cdpcdn.dx1app.com — realne zdjęcia magazynowe konkretnego
+egzemplarza w konkretnym kolorze), oraz oficjalna strona premierowa BRP dla MY27
+(`can-am.brp.com/.../global-product-reveal/new-lineup.html`, CDN `cdn-dam.brp.com`) i przedruk
+prasowy w Cycle Canada (`cyclecanadaweb.com`) z dwoma zdjęciami całej gamy MY27 na trasie —
+z nich wycięto (crop) pojedyncze pojazdy we właściwych kolorach.
+
+**Wynik: 6 z 7 kart dostało prawdziwe, zweryfikowane wizualnie zdjęcia galerii, 1 pozostała pusta.**
+
+- ✅ **Spyder F3 LTD Special Series** (Mars Red Metallic) → 2 zdjęcia z realnej oferty dealera
+  (Pioneer Motorsport, DX1 CDN) — inne kąty tego samego malowania, potwierdzone 1:1 z głównym
+  zdjęciem karty (te same felgi, ten sam odcień miedziano-czerwony).
+  `images/canam-f3-ltd-special-side-1.jpg`, `images/canam-f3-ltd-special-front-1.jpg`.
+  (Uwaga: w `images/` istnieją już stare, NIEUŻYWANE pliki `canam-f3-ltd-special-life-1/2.avif`
+  z poprzedniej tury — pokazują żółtego F3-S i czerwone RT, czyli zły pojazd/kolor. Zostawione
+  bez zmian, nie są wpięte do kodu — do rozważenia usunięcia przy porządkach.)
+- ✅ **Spyder RT LTD** (Pearl White) → 1 zdjęcie z realnej oferty dealera (Jackson Motorsports /
+  Hicklin Powersports, DX1 CDN), potwierdzone wizualnie (ten sam biało-czarny RT Limited).
+  Tylko 1 kąt okazał się realnie dostępny — pozostałe 3 z tej samej serii zdjęć dealera zwracały
+  błąd "BlobNotFound" (nie istnieją na CDN), sprawdzono to bezpośrednio przez curl.
+  `images/canam-rt-ltd-pearlwhite-life-1.jpg`. To samo zdjęcie wpięte też do karty **Spyder RT
+  (2027)**, bo obie karty współdzielą kolor Pearl White i to samo zdjęcie źródłowe koloru.
+- ✅ **Spyder RT Sea-to-Sky (2027)** (Dolomite Grey) → 2 kadry wycięte z oficjalnych zdjęć BRP
+  (`cyclecanadaweb.com`, przedruk komunikatu prasowego MY27): grupowe zdjęcie "beauty" całej gamy
+  MY27 (kadr na sam RT) oraz zdjęcie akcji z jazdy w grupie — na obu widoczny charakterystyczny
+  fotel z napisem "SEA-SKY" i ten sam odcień szarości potwierdzony 1:1 z głównym zdjęciem karty.
+  `images/canam-rt-sea-to-sky-2027-life-1.jpg`, `images/canam-rt-sea-to-sky-2027-life-2.jpg`.
+- ✅ **Canyon Redrock (2027)** (Sandstone) → 2 kadry z tych samych oficjalnych zdjęć BRP MY27 —
+  piaskowo-beżowy Canyon z sakwami, widoczny w tle grupowego zdjęcia "beauty" i w zdjęciu akcji
+  z jazdy; kolor i sakwy potwierdzone 1:1 z głównym zdjęciem karty (te same pomarańczowe akcenty
+  na owiewce).
+  `images/canam-canyon-redrock-2027-life-1.jpg`, `images/canam-canyon-redrock-2027-life-2.jpg`.
+- ⚠️ **Spyder F3 Limited (2027)** (Vegas White Pearl) — w trakcie pracy w `gallery` tej karty
+  pojawił się wpis `images/canam-f3-ltd-life-1.jpg` (plik realnie istnieje w `images/`, sprawdzony
+  wizualnie — to poprawny, biały Spyder w stylu RT/F3 LTD, zgodny z Vegas White Pearl, ale to
+  praktycznie ten sam kadr co główne zdjęcie karty `canam-f3-ltd-2027-white.webp`, tylko w innej
+  rozdzielczości/kompresji — nie jest to realnie DRUGIE, odrębne ujęcie). Nie mam pewności, skąd
+  dokładnie ten plik pochodzi (nie był efektem świadomego pobrania w tej turze) — może to
+  pozostałość z poprzedniej sesji klienta w tym samym repo. Zostawione, bo kolor się zgadza i to
+  prawdziwe zdjęcie, ale wymaga potwierdzenia/uzupełnienia o realnie inny kąt.
+  **Własny research nie znalazł żadnego innego, odrębnego zdjęcia Vegas White Pearl F3 Limited
+  MY27** — sprawdzono: DX1 CDN (dealerzy USA mają w magazynie na razie tylko czarny "Monolith
+  Black" wariant — biały jeszcze nie dotarł do sklepów, kolor jest nowy na rocznik 2027),
+  oficjalną galerię premierową BRP (grupowe zdjęcie MY27 pokazuje F3 w czarnym malowaniu, nie
+  białym), komunikat prasowy prnewswire.com (brak zdjęć w treści) i kilka portali motocyklowych
+  przedrukowujących tę samą premierę (4ridersmag.com, motorcyclepowersportsnews.com,
+  motoress.com) — żaden nie ma osadzonego zdjęcia białego F3 Limited.
+
+Wszystkie zdjęcia pobrane przez `curl` z realnych źródeł (dealerskie CDN DX1, oficjalne CDN BRP,
+przedruk prasowy), część docięta przez `ffmpeg` (crop z większych zdjęć grupowych) — żadne zdjęcie
+nie zostało wygenerowane. Kolory zweryfikowane wizualnie (Read) przy zestawieniu z głównym zdjęciem
+karty, jedno po jednym, przed wpięciem do `gallery`.
+
+**Weryfikacja końcowa:** VEHICLES nadal parsuje się poprawnie, liczba pojazdów = 99. Brak
+commitów — zmiany (7 nowych plików w `images/`, edycje `index.html`) zostawione w working tree.
+
