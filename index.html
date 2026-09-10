@@ -555,7 +555,12 @@ body.is-home .nav-social { display: flex; }
 .pricing-header p { color: rgba(255,255,255,0.92); max-width: 560px; margin: 0 auto; text-shadow: 0 2px 10px rgba(0,0,0,0.55), 0 1px 3px rgba(0,0,0,0.75); }
 .pricing-brp-badge { display: inline-flex; align-items: center; justify-content: center; margin-top: 20px; color: rgba(255,255,255,0.9); font-size: 17px; font-weight: 600; gap: 10px; text-shadow: 0 2px 6px rgba(0,0,0,0.5); }
 .pricing-cards { padding-top: 24px; }
-.pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 22px; max-width: 1440px; margin: 0 auto; }
+.pricing-category { max-width: 1440px; margin: 0 auto; }
+.pricing-category + .pricing-category { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--color-border); }
+.pricing-category-head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 20px; }
+.pricing-category-head h2 { font-size: 20px; font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase; margin: 0; color: var(--color-dark); }
+.pricing-category-head .pricing-category-count { font-size: 12.5px; color: var(--color-text-muted); font-weight: 600; }
+.pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 22px; }
 .pricing-card { display: flex; flex-direction: column; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); overflow: hidden; text-decoration: none; color: inherit; cursor: pointer; transition: transform 0.28s cubic-bezier(.2,.8,.2,1), box-shadow 0.28s cubic-bezier(.2,.8,.2,1), border-color 0.28s; }
 .pricing-card:hover { transform: translateY(-6px); box-shadow: 0 24px 48px rgba(20,24,28,0.14); border-color: var(--color-accent); }
 .pricing-card-media { aspect-ratio: 4/3; overflow: hidden; background: var(--color-bg-alt); }
@@ -1245,89 +1250,118 @@ body.is-home .nav-social { display: flex; }
 
   <section class="pricing-cards">
     <div class="container">
-      <div class="pricing-grid">
-        <a class="pricing-card" href="cenniki/cennik-seadoo.pdf" target="_blank" rel="noopener">
-          <div class="pricing-card-media"><img src="images/pricing-seadoo.avif" alt="Sea-Doo — skutery wodne" loading="lazy"></div>
-          <div class="pricing-card-body">
-            <span class="pricing-card-tag">Dokument PDF</span>
-            <h3>Sea-Doo — skutery wodne</h3>
-            <p>Pełny cennik modeli Spark, GTI, GTX, RXP-X, RXT-X i innych.</p>
-            <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
-          </div>
-        </a>
-        <a class="pricing-card" href="cenniki/cennik-seadoo-2027.pdf" target="_blank" rel="noopener">
-          <div class="pricing-card-media"><img src="images/pricing-seadoo.avif" alt="Sea-Doo — rocznik 2027" loading="lazy"></div>
-          <div class="pricing-card-body">
-            <span class="pricing-card-tag">Dokument PDF · Nowość</span>
-            <h3>Sea-Doo — rocznik 2027</h3>
-            <p>Aktualny cennik nowej gamy 2027 — silnik 350 KM, GTX Limited i cała reszta lineupu.</p>
-            <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
-          </div>
-        </a>
-        <a class="pricing-card" href="cenniki/cennik-can-am-atv.pdf" target="_blank" rel="noopener">
-          <div class="pricing-card-media"><img src="images/pricing-atv.avif" alt="Can-Am — quady ATV" loading="lazy"></div>
-          <div class="pricing-card-body">
-            <span class="pricing-card-tag">Dokument PDF</span>
-            <h3>Can-Am — quady ATV</h3>
-            <p>Outlander, Outlander MAX, Renegade oraz wersje 6x6.</p>
-            <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
-          </div>
-        </a>
-        <a class="pricing-card" href="cenniki/cennik-can-am-atv-2027.pdf" target="_blank" rel="noopener">
-          <div class="pricing-card-media"><img src="images/pricing-atv.avif" alt="Can-Am — quady ATV rocznik 2027" loading="lazy"></div>
-          <div class="pricing-card-body">
-            <span class="pricing-card-tag">Dokument PDF · Nowość</span>
-            <h3>Can-Am — quady ATV rocznik 2027</h3>
-            <p>Outlander, Outlander MAX, Renegade i 6x6 — aktualny cennik nowej gamy 2027.</p>
-            <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
-          </div>
-        </a>
-        <a class="pricing-card" href="cenniki/cennik-can-am-off-road.pdf" target="_blank" rel="noopener">
-          <div class="pricing-card-media"><img src="images/pricing-ssv.jpg" alt="Can-Am — SSV" loading="lazy"></div>
-          <div class="pricing-card-body">
-            <span class="pricing-card-tag">Dokument PDF</span>
-            <h3>Can-Am — SSV</h3>
-            <p>Maverick, Maverick R oraz Traxter — pojazdy side-by-side.</p>
-            <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
-          </div>
-        </a>
-        <a class="pricing-card" href="cenniki/cennik-can-am-off-road-2027.pdf" target="_blank" rel="noopener">
-          <div class="pricing-card-media"><img src="images/pricing-ssv.jpg" alt="Can-Am — SSV rocznik 2027" loading="lazy"></div>
-          <div class="pricing-card-body">
-            <span class="pricing-card-tag">Dokument PDF · Nowość</span>
-            <h3>Can-Am — SSV rocznik 2027</h3>
-            <p>Maverick R, Maverick i Traxter — aktualny cennik nowej gamy 2027.</p>
-            <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
-          </div>
-        </a>
-        <a class="pricing-card" href="cenniki/cennik-can-am-trojkolowce.pdf" target="_blank" rel="noopener">
-          <div class="pricing-card-media"><img src="images/pricing-trojkolowce.avif" alt="Can-Am — trójkołowce" loading="lazy"></div>
-          <div class="pricing-card-body">
-            <span class="pricing-card-tag">Dokument PDF</span>
-            <h3>Can-Am — trójkołowce</h3>
-            <p>Spyder F3, Spyder RT, Canyon oraz Ryker.</p>
-            <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
-          </div>
-        </a>
-        <a class="pricing-card" href="cenniki/cennik-can-am-trojkolowce-2027.pdf" target="_blank" rel="noopener">
-          <div class="pricing-card-media"><img src="images/pricing-trojkolowce.avif" alt="Can-Am — trójkołowce rocznik 2027" loading="lazy"></div>
-          <div class="pricing-card-body">
-            <span class="pricing-card-tag">Dokument PDF · Nowość</span>
-            <h3>Can-Am — trójkołowce rocznik 2027</h3>
-            <p>Ryker, Spyder F3, Spyder RT i Canyon — aktualny cennik nowej gamy 2027.</p>
-            <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/></svg></span>
-          </div>
-        </a>
-        <a class="pricing-card" href="cenniki/cennik-can-am-elektryczne.pdf" target="_blank" rel="noopener">
-          <div class="pricing-card-media"><img src="images/canam-electric-cennik.avif" alt="Can-Am — pojazdy elektryczne" loading="lazy"></div>
-          <div class="pricing-card-body">
-            <span class="pricing-card-tag">Dokument PDF</span>
-            <h3>Can-Am — elektryczne</h3>
-            <p>Origin, Pulse oraz Outlander i Outlander MAX Electric.</p>
-            <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
-          </div>
-        </a>
+
+      <div class="pricing-category">
+        <div class="pricing-category-head"><h2>Sea-Doo</h2><span class="pricing-category-count">skutery wodne</span></div>
+        <div class="pricing-grid">
+          <a class="pricing-card" href="cenniki/cennik-seadoo.pdf" target="_blank" rel="noopener">
+            <div class="pricing-card-media"><img src="images/pricing-seadoo.avif" alt="Sea-Doo — skutery wodne" loading="lazy"></div>
+            <div class="pricing-card-body">
+              <span class="pricing-card-tag">Dokument PDF</span>
+              <h3>Sea-Doo — skutery wodne</h3>
+              <p>Pełny cennik modeli Spark, GTI, GTX, RXP-X, RXT-X i innych.</p>
+              <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
+            </div>
+          </a>
+          <a class="pricing-card" href="cenniki/cennik-seadoo-2027.pdf" target="_blank" rel="noopener">
+            <div class="pricing-card-media"><img src="images/pricing-seadoo.avif" alt="Sea-Doo — rocznik 2027" loading="lazy"></div>
+            <div class="pricing-card-body">
+              <span class="pricing-card-tag">Dokument PDF · Nowość</span>
+              <h3>Sea-Doo — rocznik 2027</h3>
+              <p>Aktualny cennik nowej gamy 2027 — silnik 350 KM, GTX Limited i cała reszta lineupu.</p>
+              <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
+            </div>
+          </a>
+        </div>
       </div>
+
+      <div class="pricing-category">
+        <div class="pricing-category-head"><h2>Can-Am ATV</h2><span class="pricing-category-count">quady</span></div>
+        <div class="pricing-grid">
+          <a class="pricing-card" href="cenniki/cennik-can-am-atv.pdf" target="_blank" rel="noopener">
+            <div class="pricing-card-media"><img src="images/pricing-atv.avif" alt="Can-Am — quady ATV" loading="lazy"></div>
+            <div class="pricing-card-body">
+              <span class="pricing-card-tag">Dokument PDF</span>
+              <h3>Can-Am — quady ATV</h3>
+              <p>Outlander, Outlander MAX, Renegade oraz wersje 6x6.</p>
+              <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
+            </div>
+          </a>
+          <a class="pricing-card" href="cenniki/cennik-can-am-atv-2027.pdf" target="_blank" rel="noopener">
+            <div class="pricing-card-media"><img src="images/pricing-atv.avif" alt="Can-Am — quady ATV rocznik 2027" loading="lazy"></div>
+            <div class="pricing-card-body">
+              <span class="pricing-card-tag">Dokument PDF · Nowość</span>
+              <h3>Can-Am — quady ATV rocznik 2027</h3>
+              <p>Outlander, Outlander MAX, Renegade i 6x6 — aktualny cennik nowej gamy 2027.</p>
+              <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="pricing-category">
+        <div class="pricing-category-head"><h2>Can-Am SSV</h2><span class="pricing-category-count">pojazdy side-by-side</span></div>
+        <div class="pricing-grid">
+          <a class="pricing-card" href="cenniki/cennik-can-am-off-road.pdf" target="_blank" rel="noopener">
+            <div class="pricing-card-media"><img src="images/pricing-ssv.jpg" alt="Can-Am — SSV" loading="lazy"></div>
+            <div class="pricing-card-body">
+              <span class="pricing-card-tag">Dokument PDF</span>
+              <h3>Can-Am — SSV</h3>
+              <p>Maverick, Maverick R oraz Traxter — pojazdy side-by-side.</p>
+              <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
+            </div>
+          </a>
+          <a class="pricing-card" href="cenniki/cennik-can-am-off-road-2027.pdf" target="_blank" rel="noopener">
+            <div class="pricing-card-media"><img src="images/pricing-ssv.jpg" alt="Can-Am — SSV rocznik 2027" loading="lazy"></div>
+            <div class="pricing-card-body">
+              <span class="pricing-card-tag">Dokument PDF · Nowość</span>
+              <h3>Can-Am — SSV rocznik 2027</h3>
+              <p>Maverick R, Maverick i Traxter — aktualny cennik nowej gamy 2027.</p>
+              <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="pricing-category">
+        <div class="pricing-category-head"><h2>Can-Am — trójkołowce</h2><span class="pricing-category-count">Spyder, Ryker, Canyon</span></div>
+        <div class="pricing-grid">
+          <a class="pricing-card" href="cenniki/cennik-can-am-trojkolowce.pdf" target="_blank" rel="noopener">
+            <div class="pricing-card-media"><img src="images/pricing-trojkolowce.avif" alt="Can-Am — trójkołowce" loading="lazy"></div>
+            <div class="pricing-card-body">
+              <span class="pricing-card-tag">Dokument PDF</span>
+              <h3>Can-Am — trójkołowce</h3>
+              <p>Spyder F3, Spyder RT, Canyon oraz Ryker.</p>
+              <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
+            </div>
+          </a>
+          <a class="pricing-card" href="cenniki/cennik-can-am-trojkolowce-2027.pdf" target="_blank" rel="noopener">
+            <div class="pricing-card-media"><img src="images/pricing-trojkolowce.avif" alt="Can-Am — trójkołowce rocznik 2027" loading="lazy"></div>
+            <div class="pricing-card-body">
+              <span class="pricing-card-tag">Dokument PDF · Nowość</span>
+              <h3>Can-Am — trójkołowce rocznik 2027</h3>
+              <p>Ryker, Spyder F3, Spyder RT i Canyon — aktualny cennik nowej gamy 2027.</p>
+              <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/></svg></span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="pricing-category">
+        <div class="pricing-category-head"><h2>Can-Am — elektryczne</h2><span class="pricing-category-count">Origin, Pulse, Outlander Electric</span></div>
+        <div class="pricing-grid">
+          <a class="pricing-card" href="cenniki/cennik-can-am-elektryczne.pdf" target="_blank" rel="noopener">
+            <div class="pricing-card-media"><img src="images/canam-electric-cennik.avif" alt="Can-Am — pojazdy elektryczne" loading="lazy"></div>
+            <div class="pricing-card-body">
+              <span class="pricing-card-tag">Dokument PDF</span>
+              <h3>Can-Am — elektryczne</h3>
+              <p>Origin, Pulse oraz Outlander i Outlander MAX Electric.</p>
+              <span class="pricing-card-link">Pobierz cennik <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
+            </div>
+          </a>
+        </div>
+      </div>
+
     </div>
   </section>
 </div>
