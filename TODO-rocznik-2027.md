@@ -1,5 +1,32 @@
 # TODO — dodanie rocznika 2027 (54 pojazdy)
 
+## ✅ AKTUALIZACJA 2026-09-13 — finalny audyt przed wydaniem (agent + weryfikacja ręczna)
+
+Pełny audyt 99 pojazdów + globalny skan md5 wszystkich 395 plików w `images/`. Pełny raport:
+`AUDYT-FINALNY-2026-09-13.md`. Znalezione i naprawione:
+
+1. **`seadoo-spark-trixx-3` (Spark Trixx 90 For 3)** — galeria pokazywała bajt-w-bajt te same
+   zdjęcia co `seadoo-spark-trixx-1` (For 1, model 1-osobowy) — fizycznie inna łódź. Galeria
+   wyczyszczona do pustej (brak prawdziwego zdjęcia For 3 w plikach). **Otwarte pytanie do
+   dystrybutora**: potrzebne prawdziwe zdjęcia "z życia" Spark Trixx 90 For 3.
+2. **`seadoo-gti-se` (GTI SE 170)** — drugie zdjęcie główne (`seadoo-gti-se-2.jpg`) było bajt-w-bajt
+   kopią zdjęcia GTI Standard w kolorze Bright White/Neo Mint — kolor którego SE w ogóle nie ma.
+   Usunięte, zostaje 1 poprawne zdjęcie główne (Eclipse Black/Laguna Green, zgodne z `colors[0]`).
+3. **`canam-maverick` (Maverick X3)** — główne zdjęcie karty było identyczne z `canam-maverick-r`
+   (Maverick R) — dwa różne produkty w różnej cenie (29 840 € vs 54 540 €) pokazane tym samym
+   zdjęciem. Zdjęcie główne zmienione na unikalny kolor DS (Scandi Blue & Orange Crush).
+   **Nadal otwarte**: swatch koloru "Triple Black (X RS)" u X3 nadal wskazuje na zdjęcie należące
+   do Maverick R (brak własnego zdjęcia czarnego wariantu X3 w plikach) — potrzebne od
+   dystrybutora prawdziwe zdjęcie Maverick X3 w Triple Black.
+4. Usunięte z dysku 2 nieużywane, zaśmiecające pliki: `canam-f3-t-life-1.webp`,
+   `canam-f3-t-life-2.webp` (kopie używanych `-life-3`/`-life-4`, nigdzie niereferencjonowane).
+
+Zgłoszenie klienta o rzekomym duplikacie `canam-f3-t-life-3/4.webp` NIE potwierdziło się —
+to dwa różne pliki (różne md5, różne rozmiary), F3-T ma poprawnie dwa różne zdjęcia w galerii.
+
+Wideo hero: sprawdzone technicznie (H.264, moov na początku pliku/fast-start, brak uszkodzeń,
+wszystkie wymagane atrybuty `<video>` obecne) — bez zastrzeżeń, gotowe dla nowych odwiedzających.
+
 ## ✅ AKTUALIZACJA (reklamacja klienta) — jakość zdjęć RT/Canyon + 3 kolejne pojazdy
 
 Klient zgłosił konkretne problemy ze zdjęciami po wdrożeniu poprzednich poprawek:

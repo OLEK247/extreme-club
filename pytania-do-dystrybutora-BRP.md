@@ -135,8 +135,21 @@ w galerii, tylko zdjęcie główne.
 
 ---
 
+## ⏳ 6. Spark Trixx 90 For 3 — zero zdjęć "z życia" — NOWE, 2026-09-13
+
+Finalny audyt wykrył, że galeria tego pojazdu błędnie pokazywała skopiowane zdjęcia z modelu
+For 1 (1-osobowego) — usunięte, galeria zostaje pusta. Potrzebne prawdziwe zdjęcia 3-osobowego
+Spark Trixx (For 3), w kolorach White/Dragon Red lub Gulfstream Blue/Orange Crush.
+
+## ⏳ 7. Maverick X3 — wariant Triple Black (X RS) bez własnego zdjęcia — NOWE, 2026-09-13
+
+Karta Maverick X3 nie ma własnego zdjęcia wariantu kolorystycznego "Triple Black (X RS)" — na
+dysku nie było żadnego zdjęcia X3 w tym kolorze, więc tymczasowo swatch nadal wskazuje na zdjęcie
+należące do zupełnie innego, droższego modelu (Maverick R). Potrzebne prawdziwe zdjęcie Maverick
+X3 (silnik Turbo RR, nie R/999T) w kolorze Triple Black.
+
 ## Jak odpowiedzieć (jeśli w ogóle potrzebne)
 
-Poza punktem powyżej, nic więcej nie jest wymagane pilnie. Dodatkowo, opcjonalnie: **"Macie
+Poza punktami powyżej, nic więcej nie jest wymagane pilnie. Dodatkowo, opcjonalnie: **"Macie
 dodatkowe, prawdziwe zdjęcie (nie katalogowe) Spyder F3 Limited lub Spyder RT w białym/perłowym
 kolorze — inny kąt/scena niż to, które już mamy?"**
