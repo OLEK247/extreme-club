@@ -2976,7 +2976,8 @@ const VEHICLES = [
       { title: "Selektywny napęd 2WD/4WD z Visco-Lok QE", text: "Pewna trakcja na różnych nawierzchniach bez zbędnego zużycia paliwa." }
     ],
     colors: [
-      { name: "Compass Green", hex1: "#4d5a3f", hex2: "#2c3324", image: "images/canam-traxter-color-compassgreen.webp", price: "od 16 990 €" },
+      { name: "Compass Green (BASE T)", hex1: "#4d5a3f", hex2: "#2c3324", image: "images/canam-traxter-color-compassgreen.webp", price: "od 16 990 €" },
+      { name: "Compass Green (XU T, HD7)", hex1: "#4d5a3f", hex2: "#2c3324", image: "images/canam-traxter-color-compassgreen.webp", price: "od 20 890 €" },
       { name: "Dusty Navy Satin", hex1: "#2b4d63", hex2: "#17222c", image: "images/canam-traxter-color-dustynavy.webp", price: "od 25 290 €" }
     ],
     images: ["images/canam-traxter-1.jpg", "images/canam-traxter-2.jpg"],
@@ -2998,7 +2999,7 @@ const VEHICLES = [
     colors: [{ name: "Triple Black", hex1: "#1c1c1e", hex2: "#2c2c2e", image: "images/canam-maverick-sport-1.jpg" }],
     images: ["images/canam-maverick-sport-1.jpg"],
     gallery: ["images/canam-maverick-sport-life-1.avif", "images/canam-maverick-sport-life-2.avif"] },
-  { id: "canam-traxter-max", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Utility", name: "Traxter MAX", price: "od 23 050 €", engine: "HD9 / HD11",
+  { id: "canam-traxter-max", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Utility", name: "Traxter MAX", price: "od 24 760 €", engine: "HD9 / HD11",
     desc: "Wersja MAX z dodatkowymi miejscami dla pasażerów, bez utraty przestrzeni roboczej.",
     fullDesc: [
       "Traxter MAX to szersza, bardziej rozbudowana odmiana Traxtera — poszerzona o 64-calowa rama z wygiętymi wahaczami zwiększa stabilność i prześwit do 33 cm, a silnik Rotax 976 cm³ V-Twin (HD9, 65 KM) zapewnia więcej mocy niż podstawowy wariant HD7.",
@@ -3013,11 +3014,27 @@ const VEHICLES = [
       { title: "Fotel VERSA-PRO ze składanymi siedziskami", text: "Wygoda przewozu dodatkowych osób bez utraty przestrzeni roboczej." }
     ],
     colors: [
-      { name: "Compass Green", hex1: "#4d5a3f", hex2: "#2c3324", image: "images/canam-traxter-max-color-compassgreen-v2.webp", price: "od 23 050 €" },
-      { name: "Stealth Black", hex1: "#1c1c1c", hex2: "#0a0a0a", image: "images/canam-traxter-max-color-stealthblack.webp", price: "od 29 990 €" }
+      { name: "Compass Green (MAX DPS, HD9)", hex1: "#4d5a3f", hex2: "#2c3324", image: "images/canam-traxter-max-color-compassgreen-v2.webp", price: "od 24 760 €" },
+      { name: "Stealth Black (MAX XU T ABS, HD11)", hex1: "#1c1c1c", hex2: "#0a0a0a", image: "images/canam-traxter-max-color-stealthblack.webp", price: "od 32 190 €" }
     ],
     images: ["images/canam-traxter-max-1.jpg"], gallery: ["images/canam-traxter-max-life-1.webp", "images/canam-traxter-max-life-2.webp"] },
-  { id: "canam-maverick-sport-max", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≤60''", name: "Maverick Sport MAX", price: "od 23 970 €", engine: "1000R",
+  { id: "canam-traxter-dps", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Utility", name: "Traxter DPS", price: "od 21 990 €", engine: "HD9",
+    desc: "Dwuosobowa wersja robocza Traxtera ze wspomaganiem kierownicy — solidny wybór do codziennej pracy w gospodarstwie i lesie.",
+    fullDesc: [
+      "Traxter DPS to podstawowa, dwuosobowa wersja robocza z rodziny Traxter — silnik Rotax 976 cm³ V-Twin (HD9, 65 KM) współpracuje z układem wspomagania kierownicy (DPS), co zauważalnie odciąża ręce podczas długich godzin pracy w terenie.",
+      "Solidna skrzynia ładunkowa i sprawdzony napęd 2WD/4WD z Visco-Lok QE czynią ten model dobrym, przystępnym cenowo wyborem do codziennej pracy w gospodarstwie i lesie, bez homologacji drogowej."
+    ],
+    highlights: ["Silnik: Rotax 976 cm³ V-Twin, 65 KM (HD9)", "Wspomaganie kierownicy (DPS)", "Selektywny napęd 2WD/4WD z Visco-Lok QE", "Skrzynia ładunkowa o dużej pojemności roboczej", "Pojemność: 2 osoby"],
+    forWho: "Traxter DPS to propozycja dla gospodarstw i właścicieli terenów, którzy potrzebują solidnego, dwuosobowego pojazdu roboczego ze wspomaganiem kierownicy, bez konieczności inwestowania w droższe warianty MAX czy PRO.",
+    features: [
+      { title: "Silnik Rotax 976 cm³ V-Twin, 65 KM (HD9)", text: "Wystarczająca moc do codziennej pracy w gospodarstwie i lesie." },
+      { title: "Wspomaganie kierownicy (DPS)", text: "Zauważalnie odciąża ręce podczas długich godzin pracy w terenie." },
+      { title: "Selektywny napęd 2WD/4WD z Visco-Lok QE", text: "Pewna trakcja na różnych nawierzchniach bez zbędnego zużycia paliwa." },
+      { title: "Solidna skrzynia ładunkowa", text: "Wystarczająca przestrzeń transportowa do codziennych zadań gospodarskich." }
+    ],
+    colors: [{ name: "Compass Green", hex1: "#4d5a3f", hex2: "#2c3324", image: "images/canam-traxter-color-compassgreen.webp", price: "od 21 990 €" }],
+    images: ["images/canam-traxter-color-compassgreen.webp"], gallery: [] },
+  { id: "canam-maverick-sport-max", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≤60''", name: "Maverick Sport MAX", price: "od 24 890 €", engine: "1000R",
     desc: "Sportowy SSV MAX na czteroosobową załogę — zabawa w terenie z bliskimi.",
     fullDesc: [
       "Maverick Sport MAX to czteroosobowa wersja Maverick Sport — wydłużony rozstaw osi pozwala zabrać w teren dwóch dodatkowych pasażerów, bez rezygnacji z silnika Rotax 976 cm³ V-Twin o mocy 100 KM ani z dynamicznego charakteru jazdy znanego z wersji dwuosobowej.",
@@ -3031,10 +3048,10 @@ const VEHICLES = [
       { title: "Hill Descent Control i tryby SPORT/ECO", text: "Bezpieczny zjazd ze stromizn oraz dostosowanie charakteru jazdy nawet przy pełnym obciążeniu pasażerskim." },
       { title: "Przednie zawieszenie o skoku 11,5\"", text: "Zwinność w terenie zachowana mimo dodatkowej długości nadwozia na czterech pasażerów." }
     ],
-    colors: [{ name: "Triple Black", hex1: "#1c1c1e", hex2: "#2c2c2e", image: "images/canam-maverick-sport-max-2.jpg" }],
+    colors: [{ name: "Triple Black", hex1: "#1c1c1e", hex2: "#2c2c2e", image: "images/canam-maverick-sport-max-2.jpg", price: "od 24 890 €" }],
     images: ["images/canam-maverick-sport-max-2.jpg"],
     gallery: ["images/canam-maverick-sport-max-life-1.webp", "images/canam-maverick-sport-max-life-2.webp"] },
-  { id: "canam-traxter-6x6", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Utility", name: "Traxter 6x6", price: "od 25 430 €", engine: "HD10",
+  { id: "canam-traxter-6x6", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Utility", name: "Traxter 6x6", price: "od 26 340 €", engine: "HD10",
     desc: "Sześciokołowa wersja Traxtera do zadań specjalnych i maksymalnego udźwigu.",
     fullDesc: [
       "Traxter 6x6 to sześciokołowa wersja Traxtera zaprojektowana do zadań, w których standardowy napęd 4x4 nie wystarcza — silnik Rotax 976 cm³ V-Twin (HD10, 82 KM) w połączeniu z przekładnią PRO-TORQ CVT i selektywnym napędem Turf/2WD/4WD z Visco-Lok QE zapewnia wyjątkową trakcję na każdej nawierzchni.",
@@ -3048,10 +3065,13 @@ const VEHICLES = [
       { title: "Modułowa skrzynia ładunkowa 180 x 138 x 25 cm", text: "Duża, elastyczna przestrzeń transportowa dopasowana do różnych zadań gospodarskich." },
       { title: "Przekładnia PRO-TORQ CVT z systemem QRS", text: "Płynna, wydajna praca silnika przy dużym obciążeniu i niskich prędkościach roboczych." }
     ],
-    colors: [{ name: "Compass Green", hex1: "#4d5a3f", hex2: "#2c3324", image: "images/canam-traxter-6x6-1.jpg" }],
+    colors: [
+      { name: "Compass Green (DPS)", hex1: "#4d5a3f", hex2: "#2c3324", image: "images/canam-traxter-6x6-1.jpg", price: "od 26 340 €" },
+      { name: "Compass Green (XU T, homologacja 60 km/h)", hex1: "#4d5a3f", hex2: "#2c3324", image: "images/canam-traxter-6x6-1.jpg", price: "od 27 990 €" }
+    ],
     images: ["images/canam-traxter-6x6-1.jpg"],
     gallery: ["images/canam-traxter-6x6-life-1.webp", "images/canam-traxter-6x6-life-2.jpg"] },
-  { id: "canam-traxter-pro", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Utility", name: "Traxter PRO", price: "od 27 490 €", engine: "HD10",
+  { id: "canam-traxter-pro", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Utility", name: "Traxter PRO", price: "od 27 990 €", engine: "HD10",
     desc: "Najbardziej rozbudowana wersja użytkowa Traxtera, z pełnym wyposażeniem roboczym.",
     fullDesc: [
       "Traxter PRO to najbardziej rozbudowana robocza odmiana Traxtera — silnik Rotax 976 cm³ V-Twin (HD10, 82 KM) współpracuje z konfiguracją nadwozia przypominającą pakę pickupa, co dodatkowo zwiększa możliwości transportowe pojazdu.",
@@ -3066,12 +3086,12 @@ const VEHICLES = [
       { title: "Tylna szyba w kabinie", text: "Dodatkowy komfort i ochrona przed warunkami atmosferycznymi podczas pracy w terenie." }
     ],
     colors: [
-      { name: "Compass Green", hex1: "#4d5a3f", hex2: "#2c3324", image: "images/canam-traxter-pro-color-compassgreen-v2.jpg", price: "od 27 490 €" },
+      { name: "Compass Green", hex1: "#4d5a3f", hex2: "#2c3324", image: "images/canam-traxter-pro-color-compassgreen-v2.jpg", price: "od 27 990 €" },
       { name: "Stealth Black", hex1: "#1c1c1c", hex2: "#0a0a0a", image: "images/canam-traxter-pro-color-stealthblack-v2.jpg", price: "od 28 310 €" }
     ],
     images: ["images/canam-traxter-pro-1.jpg"],
     gallery: ["images/canam-traxter-pro-life-1.jpg", "images/canam-traxter-pro-life-2.webp"] },
-  { id: "canam-maverick", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≥64''", name: "Maverick X3", price: "od 29 840 €", engine: "Turbo RR",
+  { id: "canam-maverick", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≥64''", name: "Maverick X3", price: "od 29 990 €", engine: "Turbo RR",
     // TODO (2026-09-09): nazwa poprawiona z "Maverick" na "Maverick X3" — oficjalna nomenklatura BRP
     // (can-am.brp.com/off-road/us/en/models/sxs/sport/maverick-x3.html) nazywa ten model (silnik Turbo RR)
     // "Maverick X3", odróżniając go od zupełnie innej, nowej platformy "Maverick R" (999T DCT).
@@ -3089,10 +3109,10 @@ const VEHICLES = [
       { title: "Sportowa, dwuosobowa sylwetka", text: "Agresywna stylistyka podkreśla nastawienie na osiągi, nie na pracę użytkową." }
     ],
     colors: [
-      { name: "Scandi Blue & Orange Crush (DS)", hex1: "#2f5f7a", hex2: "#c9541f", image: "images/canam-maverick-color-scandiblue-v2.jpg", price: "od 29 840 €" },
-      { name: "Triple Black (X RS)", hex1: "#2b2b2b", hex2: "#0d0d0d", image: "images/canam-maverick-1-white.webp", price: "od 39 990 €" },
-      { name: "Loft Green Satin (X RC)", hex1: "#5f6b52", hex2: "#333d2c", image: "images/canam-maverick-loftgreen-white.webp", price: "od 41 990 €" },
-      { name: "Dusty Navy Satin (X RS SAS)", hex1: "#2b4d63", hex2: "#17222c", image: "images/canam-maverick-2.jpg", price: "od 42 290 €" }
+      { name: "Scandi Blue & Orange Crush (DS)", hex1: "#2f5f7a", hex2: "#c9541f", image: "images/canam-maverick-color-scandiblue-v2.jpg", price: "od 29 990 €" },
+      { name: "Triple Black (X RS)", hex1: "#2b2b2b", hex2: "#0d0d0d", image: "images/canam-maverick-1-white.webp", price: "od 40 890 €" },
+      { name: "Loft Green Satin (X RC)", hex1: "#5f6b52", hex2: "#333d2c", image: "images/canam-maverick-loftgreen-white.webp", price: "od 42 790 €" },
+      { name: "Dusty Navy Satin (X RS SAS)", hex1: "#2b4d63", hex2: "#17222c", image: "images/canam-maverick-2.jpg", price: "od 42 990 €" }
     ],
     images: ["images/canam-maverick-color-scandiblue-v2.jpg"],
     gallery: ["images/canam-maverick-life-1.webp", "images/canam-maverick-life-2.webp"] },
@@ -3135,7 +3155,7 @@ const VEHICLES = [
     ],
     images: ["images/canam-maverick-r-1-white.webp", "images/canam-maverick-r-2.jpg"],
     gallery: ["images/canam-maverick-r-life-1.webp", "images/canam-maverick-r-life-2.jpg"] },
-  { id: "canam-maverick-r-max", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≥64''", name: "Maverick R MAX", price: "od 60 880 €", engine: "999T DCT",
+  { id: "canam-maverick-r-max", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≥64''", name: "Maverick R MAX", price: "od 58 830 €", engine: "999T DCT",
     desc: "Czteroosobowa wersja Maverick R o topowych osiągach — szczyt oferty Can-Am SSV.",
     fullDesc: [
       "Maverick R MAX to czteroosobowa wersja flagowego Maverick R — znacznie wydłużony rozstaw osi (do 457 cm) pozwala zabrać w teren trzech dodatkowych pasażerów, zachowując przy tym ten sam turbodoładowany silnik Rotax 999T o mocy 240 KM i 7-biegową przekładnię DCT.",
@@ -3151,12 +3171,12 @@ const VEHICLES = [
       { title: "System Smart-Lok i wyświetlacz 10,25\"", text: "Pełna kontrola napędu i nawigacja BRP GO! na pokładzie najbardziej zaawansowanego, wieloosobowego SSV w gamie." }
     ],
     colors: [
-      { name: "Dusty Navy & Legion Red", hex1: "#2b4d63", hex2: "#17222c", image: "images/canam-maverick-r-max-color-dustynavy-v2.jpg", price: "od 60 880 €" }
+      { name: "Dusty Navy & Legion Red", hex1: "#2b4d63", hex2: "#17222c", image: "images/canam-maverick-r-max-color-dustynavy-v2.jpg", price: "od 58 830 €" }
     ],
     images: ["images/canam-maverick-r-max-1.jpg", "images/canam-maverick-r-max-2.jpg"],
     gallery: ["images/canam-maverick-r-max-life-1.webp", "images/canam-maverick-r-max-life-2.webp"] },
 
-  { id: "canam-traxter-hd9", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Utility", name: "Traxter HD10", price: "Cena na zapytanie", engine: "HD10, 80 KM",
+  { id: "canam-traxter-hd9", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Utility", name: "Traxter HD10", price: "od 24 990 €", engine: "HD10, 80 KM",
     myYear: 2027,
     desc: "Nowa środkowa pozycja rodziny Traxter na 2027 — HD9 zastąpiony nowym, trzycylindrowym silnikiem HD10 o mocy 80 KM.",
     fullDesc: [
@@ -3171,7 +3191,7 @@ const VEHICLES = [
       { title: "Zaczep holowniczy o dużym udźwigu", text: "Transport przyczep i sprzętu gospodarczego w trudnym terenie." },
       { title: "Napęd 4WD z Visco-Lok QE", text: "Automatyczne dozowanie mocy na koła zapewnia trakcję w błocie i na luźnym podłożu." }
     ],
-    colors: [{ name: "Dolomite Grey", hex1: "#8a8d90", hex2: "#5a5d61", image: "images/canam-traxter-hd10-2027-dolomitegrey-2.webp" }],
+    colors: [{ name: "Dolomite Grey", hex1: "#8a8d90", hex2: "#5a5d61", image: "images/canam-traxter-hd10-2027-dolomitegrey-2.webp", price: "od 24 990 €" }],
     // TODO: gallery puste — usunięte 2 zdjęcia akcji, bo pokazywały zielony pojazd (Compass Green),
     // niezgodny z potwierdzonym kolorem Dolomite Grey. Brak znalezionego oficjalnego zdjęcia akcji
     // w Dolomite Grey dla tej platformy — do uzupełnienia realnym zdjęciem z portalu dealerskiego.
@@ -3181,7 +3201,7 @@ const VEHICLES = [
     // odpowiednik europejskiego Traxter HD10) — 2-osobowy, dach ochronny, bez pełnej oszklonej kabiny.
     images: ["images/canam-traxter-hd10-2027-dolomitegrey-2.webp"], gallery: [] },
 
-  { id: "canam-traxter-xu", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Utility", name: "Traxter XU", price: "Cena na zapytanie", engine: "HD10 (80 KM) / HD11 (95 KM)",
+  { id: "canam-traxter-xu", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Utility", name: "Traxter XU", price: "od 24 990 €", engine: "HD10 (80 KM) / HD11 (95 KM)",
     myYear: 2027,
     desc: "Całkowicie nowa, przeprojektowana platforma Traxter na 2027 rok — silniki Rotax ACE HD10 (80 KM) lub HD11 (95 KM) i unowocześniona konstrukcja.",
     fullDesc: [
@@ -3197,8 +3217,8 @@ const VEHICLES = [
       { title: "Metalowy bagażnik dachowy i uchwyty LinQ 2×2", text: "Dodatkowa przestrzeń transportowa i szybki montaż akcesoriów roboczych." }
     ],
     colors: [
-      { name: "Hybrid White", hex1: "#ede9e3", hex2: "#c3c0ba", image: "images/canam-traxter-xu-1.png" },
-      { name: "Stealth Black", hex1: "#1c1c1e", hex2: "#0a0a0a", image: "images/canam-traxter-xu-life-2.jpeg" }
+      { name: "Hybrid White (XU T ABS, HD10 G2)", hex1: "#ede9e3", hex2: "#c3c0ba", image: "images/canam-traxter-xu-1.png", price: "od 24 990 €" },
+      { name: "Stealth Black (XU T ABS, HD11 G2)", hex1: "#1c1c1e", hex2: "#0a0a0a", image: "images/canam-traxter-xu-life-2.jpeg", price: "od 29 490 €" }
     ],
     images: ["images/canam-traxter-xu-1.png", "images/canam-traxter-xu-life-2.jpeg"], gallery: ["images/canam-traxter-xu-life-1.jpg", "images/canam-defender-xu-nonstop.jpg"] },
 
@@ -3347,7 +3367,7 @@ const VEHICLES = [
     colors: [{ name: "Triple Black", hex1: "#1c1c1e", hex2: "#0a0a0a", image: "images/canam-commander-max-official.png" }],
     images: ["images/canam-commander-max-official.png"], gallery: ["images/canam-commander-max-black-life-1.jpg", "images/canam-commander-max-black-life-2.jpg"] },
 
-  { id: "canam-maverick-trail-2027", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≤60''", name: "Maverick Trail", price: "od 18 590 €", engine: "700 / 1000",
+  { id: "canam-maverick-trail-2027", category: "ssv", categoryLabel: "Can-Am SSV", segment: "Rec-Sport ≤60''", name: "Maverick Trail", price: "od 16 590 €", engine: "700 / 1000",
     myYear: 2027,
     desc: "Kompaktowy SSV do wąskich szlaków leśnych na rocznik 2027 — świetna zwrotność przy szerokości do 60 cali.",
     fullDesc: [
@@ -3362,7 +3382,11 @@ const VEHICLES = [
       { title: "Selektywny napęd 2WD/4WD z Visco-Lok QE", text: "Pewna trakcja na zróżnicowanej nawierzchni." },
       { title: "Silniki 700 / 1000 (do 75 KM)", text: "Wybór mocy pozwala dopasować pojazd do własnych potrzeb i budżetu." }
     ],
-    colors: [{ name: "Granite Grey", hex1: "#5a5e62", hex2: "#34373a", image: "images/canam-maverick-trail-2027-granitegrey-1.webp" }],
+    colors: [
+      { name: "Granite Grey (BASE T, silnik 700)", hex1: "#5a5e62", hex2: "#34373a", image: "images/canam-maverick-trail-2027-granitegrey-1.webp", price: "od 16 590 €" },
+      { name: "Granite Grey (DPS T ABS, silnik 700)", hex1: "#5a5e62", hex2: "#34373a", image: "images/canam-maverick-trail-2027-granitegrey-1.webp", price: "od 18 590 €" },
+      { name: "Granite Grey (DPS T ABS, silnik 1000)", hex1: "#5a5e62", hex2: "#34373a", image: "images/canam-maverick-trail-2027-granitegrey-1.webp", price: "od 20 790 €" }
+    ],
     images: ["images/canam-maverick-trail-2027-granitegrey-1.webp"],
     // TODO: galeria pusta - usunięte 2 zdjęcia (czerwony/żółty pojazd), niezgodne z Granite Grey.
     gallery: [] },

@@ -9,3 +9,6 @@ xdddd*
 # Systemowe
 .DS_Store
 Thumbs.db
+
+# Archiwum surowych zdjec zrodlowych (nieuzywane przez strone, tylko do wglqdu)
+zrodlowe-zdjecia-2027/
