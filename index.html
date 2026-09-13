@@ -650,6 +650,8 @@ body.is-home .nav-social { display: flex; }
   .category-nav-inner.open { display: flex; }
   .category-nav-inner .category-pill { width: 100%; text-align: left; border: none; border-radius: 8px; padding: 13px 14px; }
   .category-nav-inner .category-pill.active { background: var(--color-bg-alt); color: var(--color-text); }
+  .category-nav-inner .category-pill.active::before { background: var(--color-bg-alt); transform: translateY(0); }
+  .category-nav-inner .category-pill.active::after { display: none; }
   .cookie-banner { background: #fff; color: var(--color-dark); border: 1px solid var(--color-border); box-shadow: 0 20px 48px rgba(20,24,28,0.18); }
   .cookie-banner p { color: var(--color-text-muted); }
   .cookie-banner p a { color: var(--color-dark); }
