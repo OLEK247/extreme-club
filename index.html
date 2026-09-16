@@ -4300,6 +4300,20 @@ const _mutObs = new MutationObserver(() => {
 _mutObs.observe(document.body, { childList: true, subtree: true });
 _makeAccessible();
 
+// Wymuszenie autoplay wideo hero w restrykcyjnych przegladarkach (np. Instagram/Facebook in-app browser)
+(function ensureHeroVideoPlays() {
+  const video = document.querySelector('.hero-video');
+  if (!video) return;
+  const tryPlay = () => { video.play().catch(() => {}); };
+  tryPlay();
+  document.addEventListener('DOMContentLoaded', tryPlay);
+  window.addEventListener('load', tryPlay);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) tryPlay(); });
+  ['touchstart', 'click', 'scroll'].forEach(evt => {
+    document.addEventListener(evt, tryPlay, { once: true, passive: true });
+  });
+})();
+
 // Animuj statyczne elementy po załadowaniu strony
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll(
