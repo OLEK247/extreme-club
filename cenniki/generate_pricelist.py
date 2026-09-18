@@ -25,8 +25,8 @@ ROW_ALT = colors.HexColor("#f1f3f5")
 
 COMPANY_NAME = "EXTREME CLUB"
 COMPANY_ADDRESS = "ul. Nowa 88, 83-031 Łęgowo"
-COMPANY_PHONE = "Tel. 501 564 518"
-COMPANY_EMAIL = "kontakt@extreme-club.pl"
+COMPANY_PHONE = "Tel. 502 123 568"
+COMPANY_EMAIL = "marketing@extreme-club.pl"
 
 styles = getSampleStyleSheet()
 style_company = ParagraphStyle("company", parent=styles["Normal"], fontName="Arial-Bold", fontSize=13, textColor=DARK_TEXT, alignment=TA_RIGHT, leading=16)
@@ -48,11 +48,11 @@ def build_pdf(filename, header_cols, sections, footer_note, col_widths, brp_tagl
     )
     story = []
 
-    logo_path = os.path.join(IMAGES, "logo-extreme.png")
-    logo = Image(logo_path, width=42 * mm, height=42 * mm * (1))
-    logo.drawWidth = 46 * mm
-    logo.drawHeight = 46 * mm * 0.32
-    logo._restrictSize(46 * mm, 20 * mm)
+    logo_path = os.path.join(IMAGES, "logo-exbrp.png")
+    logo = Image(logo_path, mask="auto")
+    logo.drawHeight = 19 * mm
+    logo.drawWidth = 19 * mm * (1200 / 526)
+    logo.hAlign = "LEFT"
 
     company_block = [
         Paragraph(COMPANY_NAME, style_company),
