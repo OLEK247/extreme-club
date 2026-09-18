@@ -50,8 +50,8 @@ def build_pdf(filename, header_cols, sections, footer_note, col_widths, brp_tagl
 
     logo_path = os.path.join(IMAGES, "logo-exbrp.png")
     logo = Image(logo_path, mask="auto")
-    logo.drawHeight = 19 * mm
-    logo.drawWidth = 19 * mm * (1200 / 526)
+    logo.drawHeight = 18 * mm
+    logo.drawWidth = 18 * mm * (1200 / 439)
     logo.hAlign = "LEFT"
 
     company_block = [
