@@ -961,7 +961,8 @@ body.is-home .nav-social { display: flex; }
 
   <section class="hero">
     <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="images/hero-video-poster.webp?v=20260921v5" fetchpriority="high">
-      <source src="images/hero-video-optimized.mp4?v=20260921v5" type="video/mp4">
+      <source src="images/hero-720.mp4?v=20261009" type="video/mp4" media="(max-width: 900px)">
+      <source src="images/hero-1080.mp4?v=20261009" type="video/mp4">
     </video>
     <div class="hero-content">
       <h1>Poczuj adrenalinę<br>na wodzie i na lądzie</h1>
@@ -1939,11 +1940,12 @@ const VEHICLES = [
       { title: "Pakiet Trixx", text: "Regulowana, podniesiona kierownica oraz kliny na stopnie ułatwiające kontrolę podczas akrobacji." }
     ],
     colors: [
-      { name: "Blue Mist / Coral Blast", hex1: "#7a8a99", hex2: "#e0542a", image: "images/seadoo-spark-x-trixx-hero.jpg" }
+      { name: "Blue Mist / Coral Blast", hex1: "#7a8a99", hex2: "#e0542a", image: "images/seadoo-spark-x-trixx-hero.jpg" },
+      { name: "Gulfstream Blue / Orange Crush", hex1: "#2e7fae", hex2: "#e0722d", image: "images/seadoo-spark-trixx-3-1.jpg" }
     ],
     images: ["images/seadoo-spark-x-trixx-hero.jpg"],
-    // TODO: gallery ma tylko 1 zdjecie - usunieto life-2.jpeg (pokazywalo pomaranczowo-niebieski
-    // wariant Gulfstream Blue/Orange Crush, niezgodny z kolorem karty Blue Mist/Coral Blast)
+    // Potwierdzone na sea-doo.brp.com (US) i w oficjalnym BRP Spec Book EMEA 2027 (str. 12), 2027-09-30:
+    // model ma 2 kolory (Blue Mist/Coral Blast i Gulfstream Blue/Orange Crush).
     gallery: ["images/seadoo-spark-x-trixx-life-1.jpg"] },
 
   { id: "seadoo-rxp-x", category: "seadoo", categoryLabel: "Sea-Doo", segment: "Performance", name: "RXP-X 350", price: "od 28 890 €", engine: "Rotax 1630 ACE, 350 KM",
