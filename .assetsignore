@@ -1,0 +1,8 @@
+*.mp4
+!images/*.mp4
+*.md
+zrodlowe-zdjecia-2027
+SEA-MY25-*.pdf
+audit_report.html
+raport-prac-2027.html
+netlify.toml
