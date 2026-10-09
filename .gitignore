@@ -12,3 +12,11 @@ Thumbs.db
 
 # Archiwum surowych zdjec zrodlowych (nieuzywane przez strone, tylko do wglqdu)
 zrodlowe-zdjecia-2027/
+dist
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
