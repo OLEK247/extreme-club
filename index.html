@@ -201,7 +201,6 @@ section { padding: 72px 0; }
 /* Pasek marek */
 .brand-strip { overflow: hidden; background: #fff; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
 .brand-strip-track { display: flex; align-items: center; gap: 0; width: max-content; animation: brand-ticker 40s linear infinite; }
-.brand-strip-track:hover { animation-play-state: paused; }
 @keyframes brand-ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 .brand-strip-logo { flex: none; display: flex; align-items: center; padding: 8px 44px; background: #fff; }
 .brand-strip-logo img { height: 52px; width: auto; max-width: 130px; object-fit: contain; display: block; }
@@ -307,7 +306,7 @@ section { padding: 72px 0; }
 
 /* Stopka */
 .site-footer-main { background: var(--color-bg); color: var(--color-text-muted); padding: 56px 0 24px; }
-.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; margin-bottom: 40px; }
+.footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 0.8fr 1.3fr; gap: 32px; margin-bottom: 40px; }
 .footer-brand .logo { color: var(--color-text); display: block; margin-bottom: 4px; }
 .footer-brand .logo-img img { height: 56px; width: auto; }
 .footer-brand p { color: var(--color-text-muted); font-size: 14px; margin-top: 12px; max-width: 280px; }
@@ -323,6 +322,9 @@ body.is-home .nav-social { display: flex; }
 .footer-col a { display: block; color: var(--color-text-muted); font-size: 14px; margin-bottom: 10px; cursor: pointer; }
 .footer-col a:hover { color: var(--color-text); }
 .footer-contact-note { font-size: 12px; opacity: 0.7; }
+.footer-company { display: block; color: var(--color-text-muted); font-size: 14px; margin-bottom: 10px; }
+.footer-group + .footer-group { margin-top: 18px; }
+.footer-group-label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--color-text-muted); opacity: 0.7; margin-bottom: 8px; }
 .footer-bottom { border-top: 1px solid var(--color-border); padding-top: 20px; font-size: 13px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
 .footer-brp-badge { display: flex; align-items: center; gap: 10px; color: var(--color-text-muted); font-size: 12.5px; }
 .footer-brp-badge img { width: 26px; height: 26px; object-fit: contain; flex: none; }
@@ -649,10 +651,13 @@ body.is-home .nav-social { display: flex; }
   .contact-layout { grid-template-columns: 1fr; gap: 40px; }
   .contact-map-wrap { height: 320px; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px 20px; align-items: start; }
-  .footer-brand { grid-column: 1; }
-  .footer-col:nth-child(2) { grid-column: 2; grid-row: 1; }
-  .footer-col:nth-child(3) { grid-column: 1; grid-row: 2; }
-  .footer-col:nth-child(4) { grid-column: 2; grid-row: 2; }
+  .footer-brand { grid-column: 1 / -1; grid-row: 1; }
+  .footer-col:nth-child(2) { grid-column: 1; grid-row: 2; }
+  .footer-col:nth-child(3) { grid-column: 2; grid-row: 2; }
+  .footer-col:nth-child(4) { grid-column: 1 / -1; grid-row: 3; display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; padding-top: 24px; border-top: 1px solid var(--color-border); }
+  .footer-col:nth-child(4) h5 { grid-column: 1 / -1; }
+  .footer-col:nth-child(4) .footer-group { margin-top: 0; margin-bottom: 18px; }
+  .footer-col:nth-child(4) .footer-group:last-child { grid-column: 1 / -1; margin-bottom: 0; }
   .category-nav::after { display: none; }
   .category-nav-trigger { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; margin: 14px 24px; width: calc(100% - 48px); border: 1.5px solid var(--color-border); background: var(--color-surface); color: var(--color-text); padding: 13px 18px; border-radius: 10px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; cursor: pointer; }
   .category-nav-trigger-icon { flex: none; color: var(--color-text-muted); transition: transform 0.25s ease; }
@@ -1411,6 +1416,14 @@ body.is-home .nav-social { display: flex; }
           </div>
           <dl class="contact-facts">
             <div class="contact-facts-row">
+              <span class="contact-facts-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v16"/><path d="M15 10h4a1 1 0 0 1 1 1v10"/><path d="M3 21h18"/><path d="M8 8h3M8 12h3M8 16h3"/></svg></span>
+              <div>
+                <dt>Dane firmy</dt>
+                <dd>Extreme-Club C.T.A Radosław Radziwilski</dd>
+                <dd>NIP: 7441062790</dd>
+              </div>
+            </div>
+            <div class="contact-facts-row">
               <span class="contact-facts-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-7.5 7-12a7 7 0 1 0-14 0c0 4.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
               <div>
                 <dt>Adres</dt>
@@ -1517,7 +1530,7 @@ body.is-home .nav-social { display: flex; }
   <section class="legal-content">
     <div class="container legal-content-inner">
       <h3>Administrator danych</h3>
-      <p>Administratorem danych osobowych zbieranych za pośrednictwem niniejszej strony jest Extreme Club, ul. Nowa 88, 83-031 Łęgowo. Kontakt w sprawach ochrony danych: <a href="mailto:kontakt@extreme-club.pl">kontakt@extreme-club.pl</a>.</p>
+      <p>Administratorem danych osobowych zbieranych za pośrednictwem niniejszej strony jest Extreme-Club C.T.A Radosław Radziwilski (NIP: 7441062790), ul. Nowa 88, 83-031 Łęgowo. Kontakt w sprawach ochrony danych: <a href="mailto:kontakt@extreme-club.pl">kontakt@extreme-club.pl</a>.</p>
 
       <h3>Jakie dane przetwarzamy</h3>
       <p>Przetwarzamy dane podane dobrowolnie w wiadomościach e-mail lub podczas rozmowy telefonicznej (imię, numer telefonu, adres e-mail, treść zapytania) wyłącznie w celu udzielenia odpowiedzi na zapytanie ofertowe dotyczące pojazdów Sea-Doo i Can-Am.</p>
@@ -1560,11 +1573,22 @@ body.is-home .nav-social { display: flex; }
       </div>
       <div class="footer-col">
         <h5>Kontakt</h5>
-        <a onclick="showContact()" style="cursor:pointer;">502 123 568 <span class="footer-contact-note">Radek</span></a>
-        <a onclick="showContact()" style="cursor:pointer;">501 564 518 <span class="footer-contact-note">Patryk</span></a>
-        <a onclick="showContact()" style="cursor:pointer;">509 323 542 <span class="footer-contact-note">Paulina</span></a>
-        <a onclick="showContact()" style="cursor:pointer;">marketing@extreme-club.pl</a>
-        <a onclick="showContact()" style="cursor:pointer;">ul. Nowa 88, 83-031 Łęgowo</a>
+        <div class="footer-group">
+          <span class="footer-group-label">Dane firmy</span>
+          <span class="footer-company">Extreme-Club C.T.A Radosław Radziwilski</span>
+          <span class="footer-company">NIP: 7441062790</span>
+        </div>
+        <div class="footer-group">
+          <span class="footer-group-label">Telefon</span>
+          <a onclick="showContact()" style="cursor:pointer;">502 123 568 <span class="footer-contact-note">Radek</span></a>
+          <a onclick="showContact()" style="cursor:pointer;">501 564 518 <span class="footer-contact-note">Patryk</span></a>
+          <a onclick="showContact()" style="cursor:pointer;">509 323 542 <span class="footer-contact-note">Paulina</span></a>
+        </div>
+        <div class="footer-group">
+          <span class="footer-group-label">Email i adres</span>
+          <a onclick="showContact()" style="cursor:pointer;">marketing@extreme-club.pl</a>
+          <a onclick="showContact()" style="cursor:pointer;">ul. Nowa 88, 83-031 Łęgowo</a>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
