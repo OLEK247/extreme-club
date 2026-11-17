@@ -1,6 +1,6 @@
 {
-  "seadoo-spark-x": { "engine_displacement_cc": 1000, "engine_power_hp": 110, "dry_weight_kg": 207, "fuel_capacity_l": 30, "storage_capacity_l": 44.7, "length_cm": 283, "width_cm": 117, "height_cm": 107, "rider_capacity": 3 },
-  "seadoo-spark-x-trixx": { "engine_displacement_cc": 1000, "engine_power_hp": 110, "dry_weight_kg": 210, "fuel_capacity_l": 30, "storage_capacity_l": 44.7, "length_cm": 306, "width_cm": 117, "height_cm": 109, "rider_capacity": 3 },
+  "seadoo-spark-x": { "engine_displacement_cc": 1000, "engine_power_hp": 110, "dry_weight_kg": 214, "fuel_capacity_l": 30, "storage_capacity_l": 44.7, "length_cm": 306, "width_cm": 117, "height_cm": 107, "rider_capacity": 3 },
+  "seadoo-spark-x-trixx": { "engine_displacement_cc": 1000, "engine_power_hp": 110, "dry_weight_kg": 214, "fuel_capacity_l": 30, "storage_capacity_l": 44.7, "length_cm": 306, "width_cm": 117, "height_cm": 109, "rider_capacity": 3 },
   "seadoo-rxp-x": { "engine_displacement_cc": 1630, "engine_power_hp": 350, "dry_weight_kg": 362, "fuel_capacity_l": 70, "storage_capacity_l": 153.7, "length_cm": 332, "width_cm": 125, "height_cm": 111, "rider_capacity": 2 },
   "seadoo-rxp-x-senna": { "engine_displacement_cc": 1630, "engine_power_hp": 350, "dry_weight_kg": 353, "fuel_capacity_l": 70, "storage_capacity_l": 153.7, "length_cm": 332, "width_cm": 125, "height_cm": 111, "rider_capacity": 2 },
   "seadoo-rxt-x": { "engine_displacement_cc": 1630, "engine_power_hp": 350, "dry_weight_kg": 382, "fuel_capacity_l": 70, "storage_capacity_l": 98.9, "length_cm": 345, "width_cm": 125, "height_cm": 115, "rider_capacity": 3 },
