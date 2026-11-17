@@ -31,6 +31,7 @@ CSS = CSS.replace(".topbar img.logo{height:46px;}", ".topbar img.logo{height:64p
 CSS = CSS.replace("background:var(--bg-soft); height:340px;}", "background:#fff; height:340px;}")
 CSS = re.sub(r"@media print\{.*\}\s*$", "", CSS.strip(), flags=re.S)
 CSS += """
+  .hero{padding:18px 24px;}
   .hero img.contain{object-fit:contain; object-position:center;}
   .model-tag{margin-bottom:6px;}
   h1{margin-bottom:6px;}
@@ -171,7 +172,7 @@ def card_html(v, specs):
         subtitle = det[1] or e(v["engine"])
         tagline = det[2] or e(v["desc"])
         year = 2027
-        hero_cls = ""
+        hero_cls = ' class="contain"'
     else:
         title = f"{brand} {e(v['name'])}"
         cols = v.get("colors") or []
