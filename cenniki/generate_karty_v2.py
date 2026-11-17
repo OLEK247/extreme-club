@@ -12,9 +12,6 @@ WZOR = os.path.join(PL, "WZOR-sea-doo-spark-x-trixx-110.html")
 DETAILED = {
     "seadoo-spark-x-trixx": ("WZOR-sea-doo-spark-x-trixx-110.html", "Rotax® 1000 ACE™ – 110 · Kadłub Spark® · Lekka i pełna zabawy platforma", "„Psotnik na wodzie, jeszcze bardziej niż kiedykolwiek.”"),
     "seadoo-spark-x": ("sea-doo-spark-x-110-for-3.html", None, None),
-    "seadoo-spark-60-2": ("sea-doo-spark-60-for-2.html", None, None),
-    "seadoo-spark-2027": ("sea-doo-spark-convenience-90-for-2.html", None, None),
-    "seadoo-explorer-pro-230": ("sea-doo-explorer-pro-230.html", None, None),
     "seadoo-fishpro-trophy": ("sea-doo-fishpro-trophy-170.html", None, None),
     "seadoo-gtr-2027": ("sea-doo-gtr-230.html", None, None),
     "seadoo-gtr-x-2027": ("sea-doo-gtr-x-300.html", None, None),
@@ -78,6 +75,11 @@ def fmt(x):
 
 def e(s):
     return H.escape(str(s), quote=False)
+
+
+OVERRIDES = {
+    "seadoo-gtr-2027": {"Masa sucha (olej, płyn chłodzący, bez paliwa)": "361 kg", "Stosunek mocy do masy (KM / kg)": "0,64"},
+}
 
 
 def parse_detailed(fname):
@@ -173,6 +175,8 @@ def card_html(v, specs):
     det = DETAILED.get(v["id"])
     if det:
         d = parse_detailed(det[0])
+        ov = OVERRIDES.get(v["id"], {})
+        d["sections"] = [(t, k, [(a, ov.get(a, b)) for a, b in rows] if k == "table" else rows) for t, k, rows in d["sections"]]
         title, hero, colors, secs, footnote = d["title"], d["hero"], d["colors"], d["sections"], d["footnote"]
         subtitle = det[1] or e(v["engine"])
         tagline = det[2] or e(v["desc"])
