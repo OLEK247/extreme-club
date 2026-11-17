@@ -37,8 +37,13 @@ CSS += """
   h1{margin-bottom:6px;}
   .tagline{margin:12px 0 22px;}
   .color-block{margin-top:18px;}
-  @page{size:24.9cm 400cm; margin:0;}
-  .page{padding:34px 44px 44px;}
+  @page{size:A4; margin:14mm 0 14mm;}
+  @page:first{margin-top:0;}
+  .page{padding:30px 40px 0;}
+  tr, li, .desc-item, .swatch-item, .contact-band, .footer-note{break-inside:avoid;}
+  h2.section{break-after:avoid;}
+  table.spec{break-inside:auto;}
+  .page{zoom:.86;}
 """
 CONTACT = re.search(r'(<div class="contact-band">.*?)\s*<div class="footer-note">', TPL, re.S).group(1)
 BRP_IMG = re.search(r'<img class="brp-mark"[^>]*>', TPL).group(0)
@@ -256,19 +261,8 @@ def render(html_text, pdf_path, tmpdir):
                     "--virtual-time-budget=8000", f"--print-to-pdf={raw}", "file:///" + hp.replace("\\", "/")],
                    check=True, capture_output=True, timeout=180)
     d = pymupdf.open(raw)
-    p = d[0]
-    bottom = 0
-    for b in p.get_text("blocks"): bottom = max(bottom, b[3])
-    for im in p.get_images(full=True):
-        for r in p.get_image_rects(im[0]): bottom = max(bottom, r.y1)
-    out = pymupdf.open()
-    w = p.rect.width
-    h = bottom + 33
-    np_ = out.new_page(width=w, height=h)
-    np_.show_pdf_page(np_.rect, d, 0, clip=pymupdf.Rect(0, 0, w, h))
-    out.save(pdf_path, garbage=4, deflate=True)
-    out.close(); d.close()
-
+    d.save(pdf_path, garbage=4, deflate=True)
+    d.close()
 
 def main():
     only = sys.argv[1:]
@@ -280,7 +274,6 @@ def main():
     for v in V:
         if only and v["id"] not in only: continue
         spec = s27.get(v["id"]) or sm.get(v["id"])
-        if not spec and v["id"] not in DETAILED: continue
         render(card_html(v, spec or {}), os.path.join(OUT, v["id"] + ".pdf"), tmp)
         done += 1
         print("ok", v["id"], flush=True)

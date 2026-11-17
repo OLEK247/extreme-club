@@ -3708,7 +3708,25 @@ function showPage(id) {
   PAGE_IDS.forEach(pid => document.getElementById(pid).classList.toggle("active", pid === id));
   document.body.classList.toggle("is-home", id === "page-home");
   document.body.classList.toggle("is-light-header", id === "page-detail");
-  window.scrollTo(0, 0);
+  scrollToTopHard();
+}
+
+if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+
+function scrollToTopHard() {
+  const html = document.documentElement;
+  const toTop = () => { window.scrollTo(0, 0); html.scrollTop = 0; document.body.scrollTop = 0; };
+  const prevOverflow = html.style.overflow;
+  html.style.overflow = "hidden";
+  toTop();
+  html.style.overflow = prevOverflow;
+  let cancelled = false;
+  const cancel = () => { cancelled = true; };
+  window.addEventListener("touchstart", cancel, { once: true, passive: true });
+  window.addEventListener("wheel", cancel, { once: true, passive: true });
+  requestAnimationFrame(() => { if (!cancelled) toTop(); });
+  [80, 250, 500].forEach(t => setTimeout(() => { if (!cancelled) toTop(); }, t));
+  setTimeout(() => { window.removeEventListener("touchstart", cancel); window.removeEventListener("wheel", cancel); }, 600);
 }
 
 function setActiveNavLink(id) {
